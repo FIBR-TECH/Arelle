@@ -6,7 +6,7 @@ Created on Oct 3, 2010
 '''
 from collections import defaultdict
 import os, sys, re, traceback, uuid
-import logging
+import logging #Changed from arelle.plugin
 from decimal import Decimal
 from arelle import UrlUtil, XmlUtil, ModelValue, XbrlConst, XmlValidate
 from arelle.FileSource import FileNamedStringIO
@@ -97,6 +97,7 @@ def loadSchemalocatedSchemas(modelXbrl):
     if modelXbrl.modelDocument is not None and modelXbrl.modelDocument.type < ModelDocument.Type.DTSENTRIES:
         # at this point DTS is fully discovered but schemaLocated xsd's are not yet loaded
         modelDocumentsSchemaLocated = set()
+        print('loadSchemalocatedSchemas')
         while True: # need this logic because each new pass may add new urlDocs
             modelDocuments = set(modelXbrl.urlDocs.values()) - modelDocumentsSchemaLocated
             if not modelDocuments:
@@ -1119,20 +1120,20 @@ class ModelXbrl:
         """
         logger = self.logger
         messageCode, logArgs, extras = self.logArguments(codes, msg, args)
-        if messageCode == "asrtNoLog":
-            self.errors.append(args["assertionResults"])
-        elif (messageCode and
-              (not logger.messageCodeFilter or logger.messageCodeFilter.match(messageCode)) and
-              (not logger.messageLevelFilter or logger.messageLevelFilter.match(level.lower()))):
-            numericLevel = logging._checkLevel(level)
-            self.logCount[numericLevel] = self.logCount.get(numericLevel, 0) + 1
-            if numericLevel >= self.errorCaptureLevel:
-                try: # if there's a numeric errorCount arg, extend messages codes by count
-                    self.errors.extend([messageCode] * int(logArgs[1]["errorCount"]))
-                except (IndexError, KeyError, ValueError): # no msgArgs, no errorCount, or not int
-                    self.errors.append(messageCode) # assume one error occurence
-            """@messageCatalog=[]"""
-            logger.log(numericLevel, *logArgs, exc_info=args.get("exc_info"), extra=extras)
+#        if messageCode == "asrtNoLog":
+#            self.errors.append(args["assertionResults"])
+#        elif (messageCode and
+#              (not logger.messageCodeFilter or logger.messageCodeFilter.match(messageCode)) and
+#              (not logger.messageLevelFilter or logger.messageLevelFilter.match(level.lower()))):
+#            numericLevel = logging._checkLevel(level)
+#            self.logCount[numericLevel] = self.logCount.get(numericLevel, 0) + 1
+#            if numericLevel >= self.errorCaptureLevel:
+#                try: # if there's a numeric errorCount arg, extend messages codes by count
+#                    self.errors.extend([messageCode] * int(logArgs[1]["errorCount"]))
+#                except (IndexError, KeyError, ValueError): # no msgArgs, no errorCount, or not int
+#                    self.errors.append(messageCode) # assume one error occurence
+#            """@messageCatalog=[]"""
+#            logger.log(numericLevel, *logArgs, exc_info=args.get("exc_info"), extra=extras)
                     
     def error(self, codes, msg, **args):
         """Logs a message as info, by code, logging-system message text (using %(name)s named arguments 

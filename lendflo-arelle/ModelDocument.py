@@ -46,7 +46,7 @@ def load(modelXbrl, uri, base=None, referringElement=None, isEntry=False, isDisc
     :param checkModifiedTime: True if desired to check modifed time of web cached entry point (ahead of usual time stamp checks).
     :type checkModifiedTime: bool
     """
-    
+#    print('Hellol kurwa load' + uri)
     if referringElement is None: # used for error messages
         referringElement = modelXbrl
     normalizedUri = modelXbrl.modelManager.cntlr.webCache.normalizeUrl(uri, base)
@@ -376,6 +376,7 @@ def create(modelXbrl, type, uri, schemaRefs=None, isEntry=False, initialXml=None
     :param initialXml is initial xml content for xml documents
     :type isEntry: str
     """
+    print('Hellol kurwa create' + uri)
     normalizedUri = modelXbrl.modelManager.cntlr.webCache.normalizeUrl(uri, base)
     if isEntry:
         modelXbrl.uri = normalizedUri
@@ -690,9 +691,12 @@ class ModelDocument:
         
         :param overrideFilepath: specify to override saving in instance's modelDocument.filepath
         """
+        print('This string' + str(self.filepath))
         if outputZip:
             fh = io.StringIO();
+#            print(self.filepath)
         else:
+#            print(self.filepath)
             fh = open( (overrideFilepath or self.filepath), "w", encoding='utf-8')
         XmlUtil.writexml(fh, self.xmlDocument, encoding=encoding, **kwargs)
         if outputZip:

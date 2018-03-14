@@ -17,7 +17,9 @@ def viewFacts(modelXbrl, outfile, arcrole=None, linkrole=None, linkqname=None, a
     modelXbrl.modelManager.showStatus(_("viewing facts"))
     view = ViewFacts(modelXbrl, outfile, arcrole, linkrole, linkqname, arcqname, ignoreDims, showDimDefaults, labelrole, lang)
     view.view(modelXbrl.modelDocument)
-    view.close()
+#    print('View facts' + str(outfile))
+#    view.close()
+    return view.close()
     
 class ViewFacts(ViewFile.View):
     def __init__(self, modelXbrl, outfile, arcrole, linkrole, linkqname, arcqname, ignoreDims, showDimDefaults, labelrole, lang):
@@ -57,6 +59,7 @@ class ViewFacts(ViewFile.View):
         self.periodContexts = defaultdict(set)
         contextStartDatetimes = {}
         for context in self.modelXbrl.contexts.values():
+#            print('Type: ' + str(self.type))
             if self.type in (CSV, XLSX, HTML):
                 if self.ignoreDims:
                     if context.isForeverPeriod:

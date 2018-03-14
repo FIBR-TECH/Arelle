@@ -34,7 +34,7 @@ from arelle import Locale, XbrlConst, ModelXbrl, XmlUtil
 from arelle.ModelValue import qname
 from arelle.PrototypeInstanceObject import DimValuePrototype
 from arelle.ValidateXbrlDimensions import loadDimensionDefaults
-from arelle.XbrlConst import conceptLabel, conceptReference, qnXsiNil
+from arelle.XbrlConst import conceptLabel, conceptReference
 from lxml import etree
 try:
     import exrex
@@ -87,7 +87,7 @@ def generateSampleInstance(dts, instanceFilename,
             for rootConcept in linkRelationshipSet.rootConcepts:
                 genFact(dts, rootConcept, None, arcrole, linkRelationshipSet, 1, set(), 
                         {"inCube": False,
-                         "dims":{}, "contexts":{},
+                         "dims":{},
                          "lineItems":False})
             if dts and separateLinkroleFiles:
                 dts.saveInstance(overrideFilepath=sampleFile)
@@ -232,22 +232,6 @@ def genSampleUtrUnitId(concept):
                                 # allow dates to be missing the "-"
                                 return value
                             
-def factConceptTypedDims(factConcept, relationshipSet):
-    # find cube
-    def tables(concept):
-        for rel in relationshipSet.toModelObject(concept):
-            parent = rel.fromModelObject
-            if parent.isHypercubeItem:
-                return [parent]
-            parentTable = tables(parent)
-            if parentTable:
-                return parentTable
-        return []
-    return [(rel.toModelObject, rel.toModelObject.typedDomainElement)
-            for _table in tables(factConcept) 
-            for rel in relationshipSet.fromModelObject(_table) 
-            if rel.toModelObject.isTypedDimension]
-                                             
 def genFact(dts, concept, preferredLabel, arcrole, relationshipSet, level, visited, elrInfo):
     try:
         if concept is not None:
@@ -255,7 +239,8 @@ def genFact(dts, concept, preferredLabel, arcrole, relationshipSet, level, visit
                 elrInfo["inCube"] = level
                 elrInfo["dims"] = {}
                 elrInfo["lineItems"] =False
-                elrInfo["contexts"] = {}
+                elrInfo.pop("instant", None)
+                elrInfo.pop("duration", None)
             elif concept.isDimensionItem:
                 elrInfo["currentDim"] = concept
                 if concept.isTypedDimension:
@@ -272,15 +257,9 @@ def genFact(dts, concept, preferredLabel, arcrole, relationshipSet, level, visit
                 elif ((not elrInfo["inCube"] or # before any hypercube
                        elrInfo["lineItems"]) # in Cube and within Line Items
                       and not concept.isAbstract): # or within line items
-                    contextKey = concept.periodType
-                    nilTypedDims = []
-                    if not elrInfo["inCube"]: # out-of-cube concepts, check for typed dim in (subsequently-encountered) cube
-                        nilTypedDims = factConceptTypedDims(concept, relationshipSet)
-                        if nilTypedDims:
-                            contextKey += "," + ",".join(sorted([d[0].name for d in nilTypedDims]))
                     # generate a fact
                     sampVals = sampleDataValues[elrInfo.get("domainIter",1)] # use first entry if no domain iter
-                    if contextKey not in elrInfo["contexts"]:
+                    if concept.periodType not in elrInfo:
                         qnameDims = {}
                         for _dimConcept, _domConcept in elrInfo["dims"].values():
                             if _dimConcept.isExplicitDimension:
@@ -296,13 +275,7 @@ def genFact(dts, concept, preferredLabel, arcrole, relationshipSet, level, visit
                                                          appendChild=False)
                             _dimObj = DimValuePrototype(dts, None, _dimConcept.qname, _memVal, "segment")
                             qnameDims[_dimConcept.qname] = _dimObj
-                        for _dimConcept, _domConcept in nilTypedDims:
-                            _memVal = XmlUtil.addChild(dts.modelDocument.xmlRootElement, 
-                                                     _domConcept.qname, attributes=((qnXsiNil,"true"),),
-                                                     appendChild=False)
-                            _dimObj = DimValuePrototype(dts, None, _dimConcept.qname, _memVal, "segment")
-                            qnameDims[_dimConcept.qname] = _dimObj
-                        elrInfo["contexts"][contextKey] = dts.createContext(
+                        elrInfo[concept.periodType] = dts.createContext(
                                     dts.conceptSampleScheme or "http://www.treasury.gov", 
                                     "entityId", 
                                     concept.periodType, 
@@ -310,7 +283,7 @@ def genFact(dts, concept, preferredLabel, arcrole, relationshipSet, level, visit
                                     else None, 
                                     sampVals["periodEnd"], 
                                     concept.qname, qnameDims, [], []) 
-                    cntx = elrInfo["contexts"][contextKey]
+                    cntx = elrInfo[concept.periodType]
                     cntxId = cntx.id
                     if concept.isNumeric:
                         if concept.isMonetary:
@@ -365,7 +338,8 @@ def genFact(dts, concept, preferredLabel, arcrole, relationshipSet, level, visit
                     if reIterateCube: # repeat typed dim container
                         iRel = iFirstLineItem
                         elrInfo["domainIter"] += 1
-                        elrInfo["contexts"] = {} # want new contexts for next iteration
+                        elrInfo.pop("instant", None) # want new contexts for next iteration
+                        elrInfo.pop("duration", None)
                     isFirstLineItem = not elrInfo["lineItems"]
                     genFact(dts, toConcept, modelRel.preferredLabel, arcrole, relationshipSet, level+1, visited, elrInfo)
                     if isFirstLineItem and elrInfo["lineItems"] and elrInfo.get("domainIter",0) > 0:

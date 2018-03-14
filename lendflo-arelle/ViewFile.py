@@ -153,6 +153,7 @@ class View:
         elif self.type == JSON:
             self.entries = []
             self.entryLevels = [self.entries]
+            print(str(self.entries))
             self.jsonObject = {self.rootElementName: self.entries}
             
     def setColWidths(self, colWidths):
@@ -320,10 +321,14 @@ class View:
                 else:
                     fh = open(self.outfile, "w", encoding="utf-8")
                 if self.type == JSON:
+                    
                     return self.jsonObject
+                
+#                    fh.write(json.dumps(self.jsonObject, ensure_ascii=False))
                 else:
-                    XmlUtil.writexml(fh, self.xmlDoc, encoding="utf-8",
-                                     xmlcharrefreplace= (self.type == HTML) )
+                    return self.xmlDoc
+#                    XmlUtil.writexml(fh, self.xmlDoc, encoding="utf-8",
+#                                     xmlcharrefreplace= (self.type == HTML) )
                 if not isinstance(self.outfile, FileNamedStringIO):
                     fh.close()
                 self.modelXbrl.info("info", _("Saved output %(type)s to %(file)s"), file=self.outfile, type=fileType)

@@ -96,11 +96,11 @@ def fn_abs(xc, p, contextItem, args):
 
 def fn_ceiling(xc, p, contextItem, args):
     if len(args) != 1: raise XPathContext.FunctionNumArgs()
-    return math.ceil(numericArg(xc, p, args))
+    math.ceil(numericArg(xc, p, args))
 
 def fn_floor(xc, p, contextItem, args):
     if len(args) != 1: raise XPathContext.FunctionNumArgs()
-    return math.floor(numericArg(xc, p, args))
+    math.floor(numericArg(xc, p, args))
 
 def fn_round(xc, p, contextItem, args):
     if len(args) != 1: raise XPathContext.FunctionNumArgs()
