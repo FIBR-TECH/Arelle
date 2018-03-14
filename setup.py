@@ -2,7 +2,7 @@ from distutils.core import setup
 setup(
   name = 'lendflo-arelle',
   packages = ['lendflo-arelle'], # this must be the same as the name above
-  version = '0.1',
+  version = '0.0.1',
   description = 'arelle xblr modified by Lendflo',
   author = 'Remi Tuyaerts / Przemyslaw Winszczyk',
   author_email = 'remi.tuyaerts@lendflo.com',
