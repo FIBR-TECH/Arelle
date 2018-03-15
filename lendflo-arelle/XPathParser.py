@@ -15,7 +15,7 @@ if sys.version[0] >= '3':
                  Combine, Optional, nums, Or, Forward, Group, ZeroOrMore, StringEnd, alphanums,
                  ParserElement, quotedString, delimitedList, Suppress, Regex)
 else:
-    # installed for python 2.7 and clean packages, otherwise use tweaked version
+#     installed for python 2.7 and clean packages, otherwise use tweaked version
     from arelle.pyparsing.pyparsing_py2 import (Word, Keyword, alphas, ParseException, ParseSyntaxException,
                  Literal, CaselessLiteral,
                  Combine, Optional, nums, Or, Forward, Group, ZeroOrMore, StringEnd, alphanums,

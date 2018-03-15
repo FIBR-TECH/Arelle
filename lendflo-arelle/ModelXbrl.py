@@ -6,7 +6,7 @@ Created on Oct 3, 2010
 '''
 from collections import defaultdict
 import os, sys, re, traceback, uuid
-import logging #Changed from arelle.plugin
+import logging
 from decimal import Decimal
 from arelle import UrlUtil, XmlUtil, ModelValue, XbrlConst, XmlValidate
 from arelle.FileSource import FileNamedStringIO
@@ -65,6 +65,8 @@ def load(modelManager, url, nextaction=None, base=None, useFileSource=None, erro
         modelXbrl.fileSource = FileSource.FileSource(url, modelManager.cntlr)
         modelXbrl.closeFileSource= True
     modelXbrl.modelDocument = ModelDocument.load(modelXbrl, url, base, isEntry=True, **kwargs)
+    
+    print('Model Document' + str(modelXbrl.modelDocument))
     if supplementalUrls:
         for url in supplementalUrls:
             ModelDocument.load(modelXbrl, url, base, isEntry=False, isDiscovered=True, **kwargs)
@@ -97,7 +99,6 @@ def loadSchemalocatedSchemas(modelXbrl):
     if modelXbrl.modelDocument is not None and modelXbrl.modelDocument.type < ModelDocument.Type.DTSENTRIES:
         # at this point DTS is fully discovered but schemaLocated xsd's are not yet loaded
         modelDocumentsSchemaLocated = set()
-        print('loadSchemalocatedSchemas')
         while True: # need this logic because each new pass may add new urlDocs
             modelDocuments = set(modelXbrl.urlDocs.values()) - modelDocumentsSchemaLocated
             if not modelDocuments:
@@ -339,6 +340,7 @@ class ModelXbrl:
         from arelle import ModelDocument
         self.init(keepViews=True)
         self.modelDocument = ModelDocument.load(self, self.fileSource.url, isEntry=True, reloadCache=reloadCache)
+        
         self.modelManager.showStatus(_("xbrl loading finished, {0}...").format(nextaction),5000)
         self.modelManager.reloadViews(self)
             
@@ -1118,8 +1120,8 @@ class ModelXbrl:
     def log(self, level, codes, msg, **args):
         """Same as error(), but level passed in as argument
         """
-        logger = self.logger
-        messageCode, logArgs, extras = self.logArguments(codes, msg, args)
+#        logger = self.logger
+#        messageCode, logArgs, extras = self.logArguments(codes, msg, args)
 #        if messageCode == "asrtNoLog":
 #            self.errors.append(args["assertionResults"])
 #        elif (messageCode and

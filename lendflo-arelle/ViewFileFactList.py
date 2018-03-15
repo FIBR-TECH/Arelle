@@ -11,8 +11,8 @@ def viewFacts(modelXbrl, outfile, lang=None, labelrole=None, cols=None):
     modelXbrl.modelManager.showStatus(_("viewing facts"))
     view = ViewFacts(modelXbrl, outfile, labelrole, lang, cols)
     view.view(modelXbrl.modelDocument)
-    view.close()
-    
+    outputf=view.close()
+    return outputf
 COL_WIDTHS = {
     "Label": 80,
     "Name":  40,
@@ -67,11 +67,14 @@ class ViewFacts(ViewFile.View):
         
     def tupleDepth(self, modelFacts, indentedCol):
         if indentedCol > self.treeCols: self.treeCols = indentedCol
+        global modelFact   # Change it 
         for modelFact in modelFacts:
+            
             if modelFact.context is not None:
                 numDims = len(modelFact.context.qnameDims) * 2
                 if numDims > self.maxNumDims: self.maxNumDims = numDims
             self.tupleDepth(modelFact.modelTupleFacts, indentedCol + 1)
+#        print('Viewfilefactlist modelFact: ' + str(modelFact))
         
     def viewFacts(self, modelFacts, indent):
         for modelFact in modelFacts:

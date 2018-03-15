@@ -1,1 +1,0 @@
-./arelleCmdLine --webserver localhost:8080

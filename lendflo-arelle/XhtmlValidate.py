@@ -478,20 +478,20 @@ def xhtmlValidate(modelXbrl, elt):
                             toChild.tail = fromChild.tail    
                             
     # copy xhtml elements to fresh tree
-#    with open(os.path.join(modelXbrl.modelManager.cntlr.configDir, "xhtml1-strict-ix.dtd")) as fh:
-#        dtd = DTD(fh)
-#    try:
-#        #with open("/users/hermf/temp/testDtd.htm", "w") as fh:
-#        #    fh.write(etree.tostring(ixToXhtml(elt), encoding=_STR_UNICODE, pretty_print=True))
-#        if not dtd.validate( ixToXhtml(elt) ):
-#            modelXbrl.error("html:syntaxError",
-#                _("%(element)s error %(error)s"),
-#                modelObject=elt, element=elt.localName.title(),
-#                error=', '.join(e.message for e in dtd.error_log.filter_from_errors()))
-#        if isEFM:
-#            ValidateFilingText.validateHtmlContent(modelXbrl, elt, elt, "InlineXBRL", "EFM.5.02.05.", isInline=True) 
-#    except XMLSyntaxError as err:
-#        modelXbrl.error("html:syntaxError",
-#            _("%(element)s error %(error)s"),
-#            modelObject=elt, element=elt.localName.title(), error=dtd.error_log.filter_from_errors())
+    with open(os.path.join(modelXbrl.modelManager.cntlr.configDir, "xhtml1-strict-ix.dtd")) as fh:
+        dtd = DTD(fh)
+    try:
+        #with open("/users/hermf/temp/testDtd.htm", "w") as fh:
+        #    fh.write(etree.tostring(ixToXhtml(elt), encoding=_STR_UNICODE, pretty_print=True))
+        if not dtd.validate( ixToXhtml(elt) ):
+            modelXbrl.error("html:syntaxError",
+                _("%(element)s error %(error)s"),
+                modelObject=elt, element=elt.localName.title(),
+                error=', '.join(e.message for e in dtd.error_log.filter_from_errors()))
+        if isEFM:
+            ValidateFilingText.validateHtmlContent(modelXbrl, elt, elt, "InlineXBRL", "EFM.5.02.05.", isInline=True) 
+    except XMLSyntaxError as err:
+        modelXbrl.error("html:syntaxError",
+            _("%(element)s error %(error)s"),
+            modelObject=elt, element=elt.localName.title(), error=dtd.error_log.filter_from_errors())
 
