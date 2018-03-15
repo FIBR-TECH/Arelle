@@ -62,11 +62,13 @@ def load(modelManager, url, nextaction=None, base=None, useFileSource=None, erro
         else:
             url = modelXbrl.fileSource.url
     else:
+        
         modelXbrl.fileSource = FileSource.FileSource(url, modelManager.cntlr)
         modelXbrl.closeFileSource= True
     modelXbrl.modelDocument = ModelDocument.load(modelXbrl, url, base, isEntry=True, **kwargs)
+#    
+#    print('Model Document' + str(modelXbrl.modelDocument))
     
-    print('Model Document' + str(modelXbrl.modelDocument))
     if supplementalUrls:
         for url in supplementalUrls:
             ModelDocument.load(modelXbrl, url, base, isEntry=False, isDiscovered=True, **kwargs)

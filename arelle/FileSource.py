@@ -88,6 +88,7 @@ class FileSource:
         self.baseIsHttp = isHttpUrl(self.url)
         self.cntlr = cntlr
         self.type = self.url.lower()[-7:]
+#        print('Type :' + str(self.type) )
         self.isTarGz = self.type == ".tar.gz"
         if not self.isTarGz:
             self.type = self.type[3:]
@@ -109,7 +110,9 @@ class FileSource:
             self.type == ".xml"):
             if os.path.split(self.url)[-1] in TAXONOMY_PACKAGE_FILE_NAMES:
                 self.isInstalledTaxonomyPackage = True
+                
             elif checkIfXmlIsEis:
+                
                 try:
                     file = open(self.cntlr.webCache.getfilename(self.url), 'r', errors='replace')
                     l = file.read(128)
@@ -126,6 +129,7 @@ class FileSource:
             self.cntlr.addToLog(_("[{0}] {1}").format(type(err).__name__, err))
 
     def open(self, reloadCache=False):
+        
         if not self.isOpen:
             if (self.isZip or self.isTarGz or self.isEis or self.isXfd or self.isRss or self.isInstalledTaxonomyPackage) and self.cntlr:
                 self.basefile = self.cntlr.webCache.getfilename(self.url, reload=reloadCache)
@@ -592,6 +596,7 @@ class FileSource:
                 self.url = self.basedUrl(selection)
             
 def openFileStream(cntlr, filepath, mode='r', encoding=None):
+    
     if PackageManager.isMappedUrl(filepath):
         filepath = PackageManager.mappedUrl(filepath)
     elif isHttpUrl(filepath) and cntlr and hasattr(cntlr, "modelManager"): # may be called early in initialization for PluginManager
@@ -634,6 +639,7 @@ def openFileStream(cntlr, filepath, mode='r', encoding=None):
         return io.open(filepath, mode=mode, encoding=encoding)
     
 def openXmlFileStream(cntlr, filepath, stripDeclaration=False):
+#    print('Ta droga' + str(filepath))
     # returns tuple: (fileStream, encoding)
     openedFileStream = openFileStream(cntlr, filepath, 'rb')
     # check encoding

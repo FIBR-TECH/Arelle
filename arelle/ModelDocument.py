@@ -46,7 +46,7 @@ def load(modelXbrl, uri, base=None, referringElement=None, isEntry=False, isDisc
     :param checkModifiedTime: True if desired to check modifed time of web cached entry point (ahead of usual time stamp checks).
     :type checkModifiedTime: bool
     """
-    print('uri or url ' + str(uri))
+#    print('uri or url ' + str(uri))
     if referringElement is None: # used for error messages
         referringElement = modelXbrl
     normalizedUri = modelXbrl.modelManager.cntlr.webCache.normalizeUrl(uri, base)

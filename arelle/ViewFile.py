@@ -43,7 +43,7 @@ class View:
             if not lang: 
                 self.lang = modelXbrl.modelManager.defaultLang
 
-        print('We modify JSON entries')
+        
         self.entries = []
         self.entryLevels = [self.entries]
         self.jsonObject = {self.rootElementName: self.entries}
@@ -109,7 +109,7 @@ class View:
 #            self.numHdrCols += lastColSpan - 1
                                 
     def close(self, noWrite=False):
-        print('viefile Type : ' + str(self.type))
+#        print('viefile Type : ' + str(self.type))
         if self.type == CSV:
             if not isinstance(self.outfile, FileNamedStringIO):
                 self.csvFile.close()
