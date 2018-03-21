@@ -224,6 +224,7 @@ class Cntlr:
             if not os.path.exists(self.userAppDir):
                 print(' 225 userAppDir ' + str(self.userAppDir))
                 self.userAppDir = str(self.userAppDir).replace('.config','tmp/.config')
+                self.userAppDir = str(self.userAppDir)[19:]
                 print(' 227 userAppDir ' + str(self.userAppDir))
                 os.makedirs(self.userAppDir)
             # load config if it exists
