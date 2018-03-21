@@ -3,7 +3,7 @@ setup(
   name = 'arelle',
   packages = ['arelle'], # this must be the same as the name above
   package_data={'arelle': ['config/*', 'plugin/*', 'pyparsing/*', '__pycache__/*']},
-  version = '0.0.9',
+  version = '0.1.0',
   description = 'arelle xblr modified by Lendflo',
   author = 'Remi Tuyaerts / Przemyslaw Winszczyk',
   author_email = 'remi.tuyaerts@lendflo.com',

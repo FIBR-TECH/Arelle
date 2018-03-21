@@ -100,7 +100,7 @@ class Cntlr:
     def __init__(self, hasGui=False, logFileName=None, logFileMode=None, logFileEncoding=None, logFormat=None):
         self.hasWin32gui = False
         self.hasGui = hasGui
-        self.hasFileSystem = True # no file system on Google App Engine servers
+        self.hasFileSystem = False # no file system on Google App Engine servers or AWS Lambda
         self.isGAE = False
         self.isCGI = False
         self.systemWordSize = int(round(math.log(sys.maxsize, 2)) + 1) # e.g., 32 or 64

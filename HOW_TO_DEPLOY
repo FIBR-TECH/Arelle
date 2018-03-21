@@ -1,0 +1,18 @@
+------------------------------------------------------------------
+| This assumes that both PyPi and Twine are setup on the machine |
+------------------------------------------------------------------
+
+1. change version number in setup.py
+2. build the pip package in the dist/ 
+    $ python setup.py sdist
+3. upload to pip
+    $ twine upload dist/*
+4. check on PyPi if the package was indeed uploaded:
+    https://pypi.python.org/pypi/arelle/0.1.0
+--------------
+| Reference: |
+--------------
+https://github.com/pypa/twine
+http://peterdowns.com/posts/first-time-with-pypi.html
+
+Remi Tuyaerts :. 03.2018
