@@ -196,18 +196,21 @@ class Cntlr:
             else: # 32 bit
                 self.updateURL = "http://arelle.org/downloads/10"
         else: # Unix/Linux
+            print("First message after else in UNIX:")
             self.isMac = False
             self.isMSW = False
             if self.hasFileSystem and not configHomeDir:
                 self.userAppDir = os.path.join( os.path.expanduser("~/.config"), "arelle")
-                print(self.userAppDir)
+                print('Has file system ' + str(self.userAppDir))
             if hasGui:
+                print("Has GUI")
                 try:
                     import gtk
                     self.hasClipboard = True
                 except ImportError:
                     self.hasClipboard = False
             else:
+                print("Neither GUI nor Files System")
                 self.hasClipboard = False
             self.contextMenuClick = "<Button-3>"
         try:
@@ -219,6 +222,7 @@ class Cntlr:
         self.config = None
         if self.hasFileSystem:
             if not os.path.exists(self.userAppDir):
+                print(' 225 userAppDir ' + str(self.userAppDir))
                 os.makedirs(self.userAppDir)
             # load config if it exists
             self.configJsonFile = self.userAppDir + os.sep + "config.json"
