@@ -199,7 +199,8 @@ class Cntlr:
             self.isMac = False
             self.isMSW = False
             if self.hasFileSystem and not configHomeDir:
-                    self.userAppDir = os.path.join( os.path.expanduser("~/.config"), "arelle")
+                self.userAppDir = os.path.join( os.path.expanduser("~/.config"), "arelle")
+                print(self.userAppDir)
             if hasGui:
                 try:
                     import gtk
