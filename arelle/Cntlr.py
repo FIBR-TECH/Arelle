@@ -223,6 +223,8 @@ class Cntlr:
         if self.hasFileSystem:
             if not os.path.exists(self.userAppDir):
                 print(' 225 userAppDir ' + str(self.userAppDir))
+                self.userAppDir = str(self.userAppDir).replace('.config','tmp/.config')
+                print(' 227 userAppDir ' + str(self.userAppDir))
                 os.makedirs(self.userAppDir)
             # load config if it exists
             self.configJsonFile = self.userAppDir + os.sep + "config.json"
