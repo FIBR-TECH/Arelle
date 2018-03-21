@@ -101,6 +101,7 @@ class WebCache:
                 self.encodeFileChars = re.compile(r'[<>:"\\|?*^]')
             else:
                 self.encodeFileChars = re.compile(r'[:^]') 
+                
         self.decodeFileChars = re.compile(r'\^[0-9]{3}')
         self.workOffline = False
         self._logDownloads = False

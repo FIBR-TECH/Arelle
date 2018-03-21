@@ -20,7 +20,9 @@ isPy3 = (sys.version[0] >= '3')
 def resourcesDir():
     if getattr(sys, 'frozen', False): # Check if frozen by cx_Freeze
         _resourcesDir = os.path.dirname(sys.executable)
+        print("in frozen: " + str(_resourcesDir))
         if os.path.exists(os.path.join(_resourcesDir,"images")):
+            print("in path exist image: " + str(_resourcesDir))
             return _resourcesDir
     _moduleDir = os.path.dirname(__file__)
     if not os.path.isabs(_moduleDir):
@@ -30,14 +32,18 @@ def resourcesDir():
         _moduleDir = os.path.dirname(_moduleDir)
     if _moduleDir.endswith("python32.zip/arelle"): # older cx_Freezes use this
         _resourcesDir = os.path.dirname(os.path.dirname(os.path.dirname(_moduleDir)))
+        print("in endswith: " + str(_resourcesDir))
     elif (re.match(r".*[\\/](library|python{0.major}{0.minor}).zip[\\/]arelle$".format(sys.version_info),
                    _moduleDir)): # cx_Freexe uses library up to 3.4 and python35 after 3.5
         _resourcesDir = os.path.dirname(os.path.dirname(_moduleDir))
+        print("in re.match long ass string: " + str(_resourcesDir))
     else:
         _resourcesDir = _moduleDir
+        print("in resourcesDir = ModuleDir: " + str(_resourcesDir))
     if not os.path.exists(os.path.join(_resourcesDir,"images")) and \
        os.path.exists(os.path.join(os.path.dirname(_resourcesDir),"images")):
         _resourcesDir = os.path.dirname(_resourcesDir)
+        print("in last one: " + str(_resourcesDir))
     return _resourcesDir
 
 class Cntlr:
@@ -100,7 +106,7 @@ class Cntlr:
     def __init__(self, hasGui=False, logFileName=None, logFileMode=None, logFileEncoding=None, logFormat=None):
         self.hasWin32gui = False
         self.hasGui = hasGui
-        self.hasFileSystem = False # no file system on Google App Engine servers or AWS Lambda
+        self.hasFileSystem = True # no file system on Google App Engine servers or AWS Lambda
         self.isGAE = False
         self.isCGI = False
         self.systemWordSize = int(round(math.log(sys.maxsize, 2)) + 1) # e.g., 32 or 64
