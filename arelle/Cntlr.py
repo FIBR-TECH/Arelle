@@ -223,7 +223,7 @@ class Cntlr:
         if self.hasFileSystem:
             if not os.path.exists(self.userAppDir):
                 print(' 225 userAppDir ' + str(self.userAppDir))
-                self.userAppDir = str(self.userAppDir)[19:]
+                self.userAppDir = str(self.userAppDir)[18:]
                 print(' 226 userAppDir ' + str(self.userAppDir))
                 self.userAppDir = str(self.userAppDir).replace('/.config','/tmp/.config')
                 print(' 227 userAppDir ' + str(self.userAppDir))
