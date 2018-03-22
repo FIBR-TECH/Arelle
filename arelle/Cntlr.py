@@ -222,7 +222,7 @@ class Cntlr:
         self.config = None
         if self.hasFileSystem:
             if not os.path.exists(self.userAppDir):
-                )
+                
                 self.userAppDir = str(self.userAppDir)[18:]
                 
                 self.userAppDir = str(self.userAppDir).replace('/.config','/tmp/.config')
@@ -245,7 +245,7 @@ class Cntlr:
             
         # start language translation for domain
         self.setUiLanguage(self.config.get("userInterfaceLangOverride",None), fallbackToDefault=True)
-        p   
+           
         from arelle.WebCache import WebCache
         self.webCache = WebCache(self, self.config.get("proxySettings"))
         
