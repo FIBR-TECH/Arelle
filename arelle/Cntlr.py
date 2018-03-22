@@ -228,6 +228,7 @@ class Cntlr:
                 self.userAppDir = str(self.userAppDir).replace('/.config','/tmp/.config')
                 print(' 227 userAppDir ' + str(self.userAppDir))
                 os.makedirs(self.userAppDir)
+                print(' 231 there we are userAppDir ' + str(self.userAppDir))
             # load config if it exists
             self.configJsonFile = self.userAppDir + os.sep + "config.json"
             if os.path.exists(self.configJsonFile):
@@ -244,16 +245,16 @@ class Cntlr:
             
         # start language translation for domain
         self.setUiLanguage(self.config.get("userInterfaceLangOverride",None), fallbackToDefault=True)
-            
+        print(' 248 ho hO before webcache' + str(self.userAppDir))   
         from arelle.WebCache import WebCache
         self.webCache = WebCache(self, self.config.get("proxySettings"))
-        
+        print(' 251 after webcache' + str(self.userAppDir)) 
         # start plug in server (requres web cache initialized, but not logger)
         PluginManager.init(self, loadPluginConfig=hasGui)
-
+        print(' 254 after Plugin manager' + str(self.userAppDir))
         # requires plug ins initialized
         self.modelManager = ModelManager.initialize(self)
- 
+        print(' 254 after Model Manager' + str(self.userAppDir))
         # start taxonomy package server (requres web cache initialized, but not logger)
         PackageManager.init(self, loadPackagesConfig=hasGui)
  
@@ -262,6 +263,7 @@ class Cntlr:
         # Cntlr.Init after logging started
         for pluginMethod in PluginManager.pluginClassMethods("Cntlr.Init"):
             pluginMethod(self)
+        print(' 266 This is the end of init in Cntlr' + str(self.userAppDir))
             
     def setUiLanguage(self, lang, fallbackToDefault=False):
         try:
