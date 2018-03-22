@@ -47,6 +47,7 @@ def load(modelXbrl, uri, base=None, referringElement=None, isEntry=False, isDisc
     :type checkModifiedTime: bool
     """
 #    print('uri or url ' + str(uri))
+    print( 'ModelDocument line 50 beginning of everything')
     if referringElement is None: # used for error messages
         referringElement = modelXbrl
     print( 'ModelDocument line 52 before Webcache')    

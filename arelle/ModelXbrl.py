@@ -65,7 +65,7 @@ def load(modelManager, url, nextaction=None, base=None, useFileSource=None, erro
         
         modelXbrl.fileSource = FileSource.FileSource(url, modelManager.cntlr)
         modelXbrl.closeFileSource= True
-    print('Here wea are in 68 in ModelXBRL before loading model Document')    
+    print('Here wea are in 68 in ModelXBRL before loading model Document' + str(url))    
     modelXbrl.modelDocument = ModelDocument.load(modelXbrl, url, base, isEntry=True, **kwargs)
     print('Here wea are in 70 in ModelXBRL after loading model Document')  
 #    print('Model Document' + str(modelXbrl.modelDocument))
