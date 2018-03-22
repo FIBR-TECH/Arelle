@@ -20,9 +20,9 @@ isPy3 = (sys.version[0] >= '3')
 def resourcesDir():
     if getattr(sys, 'frozen', False): # Check if frozen by cx_Freeze
         _resourcesDir = os.path.dirname(sys.executable)
-        print("in frozen: " + str(_resourcesDir))
+        
         if os.path.exists(os.path.join(_resourcesDir,"images")):
-            print("in path exist image: " + str(_resourcesDir))
+            
             return _resourcesDir
     _moduleDir = os.path.dirname(__file__)
     if not os.path.isabs(_moduleDir):
@@ -32,18 +32,18 @@ def resourcesDir():
         _moduleDir = os.path.dirname(_moduleDir)
     if _moduleDir.endswith("python32.zip/arelle"): # older cx_Freezes use this
         _resourcesDir = os.path.dirname(os.path.dirname(os.path.dirname(_moduleDir)))
-        print("in endswith: " + str(_resourcesDir))
+        
     elif (re.match(r".*[\\/](library|python{0.major}{0.minor}).zip[\\/]arelle$".format(sys.version_info),
                    _moduleDir)): # cx_Freexe uses library up to 3.4 and python35 after 3.5
         _resourcesDir = os.path.dirname(os.path.dirname(_moduleDir))
-        print("in re.match long ass string: " + str(_resourcesDir))
+        
     else:
         _resourcesDir = _moduleDir
-        print("in resourcesDir = ModuleDir: " + str(_resourcesDir))
+        
     if not os.path.exists(os.path.join(_resourcesDir,"images")) and \
        os.path.exists(os.path.join(os.path.dirname(_resourcesDir),"images")):
         _resourcesDir = os.path.dirname(_resourcesDir)
-        print("in last one: " + str(_resourcesDir))
+        
     return _resourcesDir
 
 class Cntlr:
@@ -196,21 +196,21 @@ class Cntlr:
             else: # 32 bit
                 self.updateURL = "http://arelle.org/downloads/10"
         else: # Unix/Linux
-            print("First message after else in UNIX:")
+            
             self.isMac = False
             self.isMSW = False
             if self.hasFileSystem and not configHomeDir:
                 self.userAppDir = os.path.join( os.path.expanduser("~/.config"), "arelle")
-                print('Has file system ' + str(self.userAppDir))
+                
             if hasGui:
-                print("Has GUI")
+               
                 try:
                     import gtk
                     self.hasClipboard = True
                 except ImportError:
                     self.hasClipboard = False
             else:
-                print("Neither GUI nor Files System")
+                
                 self.hasClipboard = False
             self.contextMenuClick = "<Button-3>"
         try:
@@ -222,13 +222,13 @@ class Cntlr:
         self.config = None
         if self.hasFileSystem:
             if not os.path.exists(self.userAppDir):
-                print(' 225 userAppDir ' + str(self.userAppDir))
+                )
                 self.userAppDir = str(self.userAppDir)[18:]
-                print(' 226 userAppDir ' + str(self.userAppDir))
+                
                 self.userAppDir = str(self.userAppDir).replace('/.config','/tmp/.config')
-                print(' 227 userAppDir ' + str(self.userAppDir))
+                
                 os.makedirs(self.userAppDir)
-                print(' 231 there we are userAppDir ' + str(self.userAppDir))
+                
             # load config if it exists
             self.configJsonFile = self.userAppDir + os.sep + "config.json"
             if os.path.exists(self.configJsonFile):
@@ -245,16 +245,16 @@ class Cntlr:
             
         # start language translation for domain
         self.setUiLanguage(self.config.get("userInterfaceLangOverride",None), fallbackToDefault=True)
-        print(' 248 ho hO before webcache' + str(self.userAppDir))   
+        p   
         from arelle.WebCache import WebCache
         self.webCache = WebCache(self, self.config.get("proxySettings"))
-        print(' 251 after webcache' + str(self.userAppDir)) 
+        
         # start plug in server (requres web cache initialized, but not logger)
         PluginManager.init(self, loadPluginConfig=hasGui)
-        print(' 254 after Plugin manager' + str(self.userAppDir))
+        
         # requires plug ins initialized
         self.modelManager = ModelManager.initialize(self)
-        print(' 254 after Model Manager' + str(self.userAppDir))
+        
         # start taxonomy package server (requres web cache initialized, but not logger)
         PackageManager.init(self, loadPackagesConfig=hasGui)
  
@@ -263,7 +263,7 @@ class Cntlr:
         # Cntlr.Init after logging started
         for pluginMethod in PluginManager.pluginClassMethods("Cntlr.Init"):
             pluginMethod(self)
-        print(' 266 This is the end of init in Cntlr' + str(self.userAppDir))
+        
             
     def setUiLanguage(self, lang, fallbackToDefault=False):
         try:
