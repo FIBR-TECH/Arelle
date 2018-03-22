@@ -49,20 +49,23 @@ def load(modelXbrl, uri, base=None, referringElement=None, isEntry=False, isDisc
 #    print('uri or url ' + str(uri))
     if referringElement is None: # used for error messages
         referringElement = modelXbrl
+    print( 'ModelDocument line 52 before Webcache')    
     normalizedUri = modelXbrl.modelManager.cntlr.webCache.normalizeUrl(uri, base)
+    print( 'ModelDocument line 54 after Webcache') 
 #    print('Normalizeuri' + str(normalizedUri))
     modelDocument = modelXbrl.urlDocs.get(normalizedUri)
     if modelDocument:
         return modelDocument
     elif modelXbrl.urlUnloadableDocs.get(normalizedUri):  # only return None if in this list and marked True (really not loadable)
         return None
-
+    print( 'ModelDocument line 61 after getting DoCs')
     if isEntry:
         modelXbrl.entryLoadingUrl = normalizedUri   # for error loggiong during loading
         modelXbrl.uri = normalizedUri
         modelXbrl.uriDir = os.path.dirname(normalizedUri)
         for i in range(modelXbrl.modelManager.disclosureSystem.maxSubmissionSubdirectoryEntryNesting):
             modelXbrl.uriDir = os.path.dirname(modelXbrl.uriDir)
+    print( 'ModelDocument line 68 after getting DoCs')
     if modelXbrl.modelManager.validateDisclosureSystem and \
        not normalizedUri.startswith(modelXbrl.uriDir) and \
        not modelXbrl.modelManager.disclosureSystem.hrefValid(normalizedUri):
@@ -79,7 +82,7 @@ def load(modelXbrl, uri, base=None, referringElement=None, isEntry=False, isDisc
             modelXbrl.urlUnloadableDocs[normalizedUri] = blocked
         if blocked:
             return None
-    
+    print( 'ModelDocument line 85 after Validation')
     if modelXbrl.modelManager.skipLoading and modelXbrl.modelManager.skipLoading.match(normalizedUri):
         return None
     
@@ -103,7 +106,7 @@ def load(modelXbrl, uri, base=None, referringElement=None, isEntry=False, isDisc
         if filepath:
             uri = modelXbrl.modelManager.cntlr.webCache.normalizeUrl(filepath)
     
-    
+    print( 'ModelDocument line 109 before checking Filepath')
     if filepath is None: # error such as HTTPerror is already logged
         if modelXbrl.modelManager.abortOnMajorError and (isEntry or isDiscovered):
             modelXbrl.error("FileNotLoadable",
@@ -121,7 +124,7 @@ def load(modelXbrl, uri, base=None, referringElement=None, isEntry=False, isDisc
                         modelObject=referringElement, fileName=normalizedUri)
             modelXbrl.urlUnloadableDocs[normalizedUri] = True # always blocked if not loadable on this error
         return None
-    
+    print( 'ModelDocument line 127 after checking Filepath')
     isPullLoadable = any(pluginMethod(modelXbrl, mappedUri, normalizedUri, filepath, isEntry=isEntry, namespace=namespace, **kwargs)
                          for pluginMethod in pluginClassMethods("ModelDocument.IsPullLoadable"))
     
@@ -135,6 +138,7 @@ def load(modelXbrl, uri, base=None, referringElement=None, isEntry=False, isDisc
     # load XML and determine type of model document
     modelXbrl.modelManager.showStatus(_("parsing {0}").format(uri))
     file = None
+    print( 'ModelDocument line 141 before plugins')
     try:
         for pluginMethod in pluginClassMethods("ModelDocument.PullLoader"):
             # assumes not possible to check file in string format or not all available at once
@@ -210,7 +214,7 @@ def load(modelXbrl, uri, base=None, referringElement=None, isEntry=False, isDisc
     #            os.path.basename(uri)))
     modelXbrl.modelManager.showStatus(_("loading {0}").format(uri))
     modelDocument = None
-    
+    print( 'ModelDocument line 217 getting root')
     rootNode = xmlDocument.getroot()
     if rootNode is not None:
         ln = rootNode.localName
@@ -303,7 +307,7 @@ def load(modelXbrl, uri, base=None, referringElement=None, isEntry=False, isDisc
         modelDocument.xmlRootElement = rootNode
         modelDocument.schemaLocationElements.add(rootNode)
         modelDocument.documentEncoding = _encoding
-
+        print( 'ModelDocument line 310 after getting root')
         if isEntry or isDiscovered:
             modelDocument.inDTS = True
         
@@ -349,7 +353,7 @@ def load(modelXbrl, uri, base=None, referringElement=None, isEntry=False, isDisc
             modelXbrl.baseSets = OrderedDefaultDict( # order by linkRole, arcRole of key
                 modelXbrl.baseSets.default_factory,
                 sorted(modelXbrl.baseSets.items(), key=lambda i: (i[0][0] or "",i[0][1] or "")))
-
+        print( 'ModelDocument line 356 finish')
     return modelDocument
 
 def loadSchemalocatedSchema(modelXbrl, element, relativeUrl, namespace, baseUrl):
