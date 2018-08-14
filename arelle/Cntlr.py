@@ -227,7 +227,6 @@ class Cntlr:
                 self.userAppDir = str(self.userAppDir)[18:]
                 
                 self.userAppDir = str(self.userAppDir).replace('/.config','/tmp/.config')
-<<<<<<< HEAD
                 self.userAppDir = r'/home/nagat/.local/lib/python3.5/site-packages/arelle'
                 #print("[{}] Keeping the cache".format(self.userAppDir))
                 #if os.path.exists(self.userAppDir):
@@ -235,11 +234,6 @@ class Cntlr:
                 if not os.path.exists(self.userAppDir):
                     os.makedirs(self.userAppDir)
 
-=======
-                
-                os.makedirs(self.userAppDir)
-                
->>>>>>> 4dc4757a8a3dcdaa077759f32830ac82713c10b6
             # load config if it exists
             self.configJsonFile = self.userAppDir + os.sep + "config.json"
             if os.path.exists(self.configJsonFile):
