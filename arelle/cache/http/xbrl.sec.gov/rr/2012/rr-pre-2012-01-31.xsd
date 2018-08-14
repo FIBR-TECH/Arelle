@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="US-ASCII"?>
+<xs:schema targetNamespace="http://xbrl.sec.gov/rr-pre/2012-01-31" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:rr-pre="http://xbrl.sec.gov/rr-pre/2012-01-31" xmlns:link="http://www.xbrl.org/2003/linkbase" xmlns:xlink="http://www.w3.org/1999/xlink">
+<xs:annotation>
+<xs:appinfo>
+<link:linkbaseRef xlink:type="simple" xlink:href="rr-pre-2012-01-31.xml" xlink:role="http://www.xbrl.org/2003/role/presentationLinkbaseRef" xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase"/>
+</xs:appinfo>
+</xs:annotation>
+<xs:import namespace="http://www.xbrl.org/2003/instance" schemaLocation="http://www.xbrl.org/2003/xbrl-instance-2003-12-31.xsd"/>
+<xs:import namespace="http://xbrl.sec.gov/rr/2012-01-31" schemaLocation="rr-2012-01-31.xsd"/>
+<xs:import namespace="http://xbrl.sec.gov/dei/2012-01-31" schemaLocation="../../dei/2012/dei-2012-01-31.xsd"/>  
+</xs:schema>

@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  This file is part of the Nederlandse taxonomy (NT, Dutch Taxonomy) 
+  Intellectual Property State of the Netherlands 
+  Version 6.0 
+  Released by the Dutch SBR Programme 
+  Release date Tue October 4 7:30:00 2011
+-->
+<link:linkbase xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.xbrl.org/2006/ref http://www.xbrl.org/2006/ref-2006-02-27.xsd" xmlns:link="http://www.xbrl.org/2003/linkbase" xmlns:ref="http://www.xbrl.org/2006/ref" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <link:referenceLink xlink:type="extended" xlink:role="http://www.xbrl.org/2003/role/link">
+    <link:loc xlink:type="locator" xlink:href="nl-common-data.xsd#nl-cd_CountryCodeISO" xlink:label="nl-cd_CountryCodeISO_loc"/>
+    <link:loc xlink:type="locator" xlink:href="nl-common-data.xsd#nl-cd_CountryNameISO" xlink:label="nl-cd_CountryNameISO_loc"/>
+    <link:loc xlink:type="locator" xlink:href="nl-common-data.xsd#nl-cd_DateOfBirth" xlink:label="nl-cd_DateOfBirth_loc"/>
+    <link:loc xlink:type="locator" xlink:href="nl-common-data.xsd#nl-cd_DateOfDeath" xlink:label="nl-cd_DateOfDeath_loc"/>
+    <link:loc xlink:type="locator" xlink:href="nl-common-data.xsd#nl-cd_DescriptionLocationAbroad" xlink:label="nl-cd_DescriptionLocationAbroad_loc"/>
+    <link:loc xlink:type="locator" xlink:href="nl-common-data.xsd#nl-cd_DescriptionLocationNL" xlink:label="nl-cd_DescriptionLocationNL_loc"/>
+    <link:loc xlink:type="locator" xlink:href="nl-common-data.xsd#nl-cd_DocumentCreationDate" xlink:label="nl-cd_DocumentCreationDate_loc"/>
+    <link:loc xlink:type="locator" xlink:href="nl-common-data.xsd#nl-cd_EndDateForFinancialPeriod" xlink:label="nl-cd_EndDateForFinancialPeriod_loc"/>
+    <link:loc xlink:type="locator" xlink:href="nl-common-data.xsd#nl-cd_FamilyName" xlink:label="nl-cd_FamilyName_loc"/>
+    <link:loc xlink:type="locator" xlink:href="nl-common-data.xsd#nl-cd_FirstName" xlink:label="nl-cd_FirstName_loc"/>
+    <link:loc xlink:type="locator" xlink:href="nl-common-data.xsd#nl-cd_HouseNumberAbroad" xlink:label="nl-cd_HouseNumberAbroad_loc"/>
+    <link:loc xlink:type="locator" xlink:href="nl-common-data.xsd#nl-cd_HouseNumberAddition" xlink:label="nl-cd_HouseNumberAddition_loc"/>
+    <link:loc xlink:type="locator" xlink:href="nl-common-data.xsd#nl-cd_HouseNumberNL" xlink:label="nl-cd_HouseNumberNL_loc"/>
+    <link:loc xlink:type="locator" xlink:href="nl-common-data.xsd#nl-cd_LegalForm" xlink:label="nl-cd_LegalForm_loc"/>
+    <link:loc xlink:type="locator" xlink:href="nl-common-data.xsd#nl-cd_NameRegion" xlink:label="nl-cd_NameRegion_loc"/>
+    <link:loc xlink:type="locator" xlink:href="nl-common-data.xsd#nl-cd_Namebusiness" xlink:label="nl-cd_Namebusiness_loc"/>
+    <link:loc xlink:type="locator" xlink:href="nl-common-data.xsd#nl-cd_Nationality" xlink:label="nl-cd_Nationality_loc"/>
+    <link:loc xlink:type="locator" xlink:href="nl-common-data.xsd#nl-cd_POBoxNumber" xlink:label="nl-cd_POBoxNumber_loc"/>
+    <link:loc xlink:type="locator" xlink:href="nl-common-data.xsd#nl-cd_PlaceOfResidenceAbroad" xlink:label="nl-cd_PlaceOfResidenceAbroad_loc"/>
+    <link:loc xlink:type="locator" xlink:href="nl-common-data.xsd#nl-cd_PlaceOfResidenceNL" xlink:label="nl-cd_PlaceOfResidenceNL_loc"/>
+    <link:loc xlink:type="locator" xlink:href="nl-common-data.xsd#nl-cd_PostalCodeAbroad" xlink:label="nl-cd_PostalCodeAbroad_loc"/>
+    <link:loc xlink:type="locator" xlink:href="nl-common-data.xsd#nl-cd_PostalCodeNL" xlink:label="nl-cd_PostalCodeNL_loc"/>
+    <link:loc xlink:type="locator" xlink:href="nl-common-data.xsd#nl-cd_Prefix" xlink:label="nl-cd_Prefix_loc"/>
+    <link:loc xlink:type="locator" xlink:href="nl-common-data.xsd#nl-cd_PrivatePersonIdentification" xlink:label="nl-cd_PrivatePersonIdentification_loc"/>
+    <link:loc xlink:type="locator" xlink:href="nl-common-data.xsd#nl-cd_SexCode" xlink:label="nl-cd_SexCode_loc"/>
+    <link:loc xlink:type="locator" xlink:href="nl-common-data.xsd#nl-cd_StartDateForFinancialPeriod" xlink:label="nl-cd_StartDateForFinancialPeriod_loc"/>
+    <link:loc xlink:type="locator" xlink:href="nl-common-data.xsd#nl-cd_StatutoryNameEntity" xlink:label="nl-cd_StatutoryNameEntity_loc"/>
+    <link:loc xlink:type="locator" xlink:href="nl-common-data.xsd#nl-cd_StreetNameAbroad" xlink:label="nl-cd_StreetNameAbroad_loc"/>
+    <link:loc xlink:type="locator" xlink:href="nl-common-data.xsd#nl-cd_StreetNameNL" xlink:label="nl-cd_StreetNameNL_loc"/>
+    <link:loc xlink:type="locator" xlink:href="nl-common-data.xsd#nl-cd_TaxReferenceNumber" xlink:label="nl-cd_TaxReferenceNumber_loc"/>
+    <link:loc xlink:type="locator" xlink:href="nl-common-data.xsd#nl-cd_TelephoneNumber" xlink:label="nl-cd_TelephoneNumber_loc"/>
+    <link:reference xlink:type="resource" xlink:label="nl-cd_BesluitIntSpaarrenterichtlijn_ref" xlink:role="http://www.xbrl.org/2003/role/reference" id="nl-cd_BesluitIntSpaarrenterichtlijn_ref">
+      <ref:Name>Besluit internationale spaarrenterichtlijn</ref:Name>
+    </link:reference>
+    <link:reference xlink:type="resource" xlink:label="nl-cd_GBA_LO3.7_241_ref" xlink:role="http://www.xbrl.org/2003/role/reference" id="nl-cd_GBA_LO3.7_241_ref">
+      <ref:Name>LO3.7</ref:Name>
+      <ref:Page>241</ref:Page>
+      <ref:Publisher>Gemeentelijke basisadministratie</ref:Publisher>
+    </link:reference>
+    <link:reference xlink:type="resource" xlink:label="nl-cd_RJ_300_105_a_ref" xlink:role="http://www.xbrl.org/2003/role/reference" id="nl-cd_RJ_300_105_a_ref">
+      <ref:Name>Richtlijnen voor de Jaarverslaggeving</ref:Name>
+      <ref:Article>300</ref:Article>
+      <ref:Paragraph>105</ref:Paragraph>
+      <ref:Subparagraph>a</ref:Subparagraph>
+    </link:reference>
+    <link:reference xlink:type="resource" xlink:label="nl-cd_RJk_B18_104_ref" xlink:role="http://www.xbrl.org/2003/role/reference" id="nl-cd_RJk_B18_104_ref">
+      <ref:Name>Richtlijnen voor de Jaarverslaggeving voor kleine rechtspersonen</ref:Name>
+      <ref:Article>B18</ref:Article>
+      <ref:Paragraph>104</ref:Paragraph>
+    </link:reference>
+    <link:reference xlink:type="resource" xlink:label="nl-cd_GBA_LO3.7_240_ref" xlink:role="http://www.xbrl.org/2003/role/reference" id="nl-cd_GBA_LO3.7_240_ref">
+      <ref:Publisher>Gemeentelijke basisadministratie</ref:Publisher>
+      <ref:Name>LO3.7</ref:Name>
+      <ref:Page>240</ref:Page>
+    </link:reference>
+    <link:reference xlink:type="resource" xlink:label="nl-cd_GBA_LO3.7_254_ref" xlink:role="http://www.xbrl.org/2003/role/reference" id="nl-cd_GBA_LO3.7_254_ref">
+      <ref:Publisher>Gemeentelijke basisadministratie</ref:Publisher>
+      <ref:Name>LO3.7</ref:Name>
+      <ref:Page>254</ref:Page>
+    </link:reference>
+    <link:reference xlink:type="resource" xlink:label="nl-cd_RJ_160_401_ref" xlink:role="http://www.xbrl.org/2003/role/reference" id="nl-cd_RJ_160_401_ref">
+      <ref:Name>Richtlijnen voor de Jaarverslaggeving</ref:Name>
+      <ref:Article>160</ref:Article>
+      <ref:Paragraph>401</ref:Paragraph>
+    </link:reference>
+    <link:reference xlink:type="resource" xlink:label="nl-cd_RJk_B4_110_ref" xlink:role="http://www.xbrl.org/2003/role/reference" id="nl-cd_RJk_B4_110_ref">
+      <ref:Name>Richtlijnen voor de Jaarverslaggeving voor kleine rechtspersonen</ref:Name>
+      <ref:Article>B4</ref:Article>
+      <ref:Paragraph>110</ref:Paragraph>
+    </link:reference>
+    <link:reference xlink:type="resource" xlink:label="nl-cd_BW2_362_2_ref" xlink:role="http://www.xbrl.org/2003/role/reference" id="nl-cd_BW2_362_2_ref">
+      <ref:Publisher>Burgelijk wetboek deel 2</ref:Publisher>
+      <ref:Name>362</ref:Name>
+      <ref:Page>2</ref:Page>
+    </link:reference>
+    <link:reference xlink:type="resource" xlink:label="nl-cd_BW2_362_3_ref" xlink:role="http://www.xbrl.org/2003/role/reference" id="nl-cd_BW2_362_3_ref">
+      <ref:Publisher>Burgelijk wetboek deel 2</ref:Publisher>
+      <ref:Name>362</ref:Name>
+      <ref:Page>3</ref:Page>
+    </link:reference>
+    <link:reference xlink:type="resource" xlink:label="nl-cd_GBA_LO3.7_238_ref" xlink:role="http://www.xbrl.org/2003/role/reference" id="nl-cd_GBA_LO3.7_238_ref">
+      <ref:Publisher>Gemeentelijke basisadministratie</ref:Publisher>
+      <ref:Name>LO3.7</ref:Name>
+      <ref:Page>238</ref:Page>
+    </link:reference>
+    <link:reference xlink:type="resource" xlink:label="nl-cd_WetIB2001_38_ref" xlink:role="http://www.xbrl.org/2003/role/reference" id="nl-cd_WetIB2001_38_ref">
+      <ref:Name>Wet inkomstenbelasting 2001</ref:Name>
+      <ref:Article>3.8</ref:Article>
+    </link:reference>
+    <link:reference xlink:type="resource" xlink:label="nl-cd_RJ_110_103_a_ref" xlink:role="http://www.xbrl.org/2003/role/reference" id="nl-cd_RJ_110_103_a_ref">
+      <ref:Name>Richtlijnen voor de Jaarverslaggeving</ref:Name>
+      <ref:Section>110</ref:Section>
+      <ref:Paragraph>103</ref:Paragraph>
+      <ref:Subparagraph>a</ref:Subparagraph>
+    </link:reference>
+    <link:reference xlink:type="resource" xlink:label="nl-cd_GBA_LO3.7_244_ref" xlink:role="http://www.xbrl.org/2003/role/reference" id="nl-cd_GBA_LO3.7_244_ref">
+      <ref:Publisher>Gemeentelijke basisadministratie</ref:Publisher>
+      <ref:Name>LO3.7</ref:Name>
+      <ref:Page>244</ref:Page>
+    </link:reference>
+    <link:reference xlink:type="resource" xlink:label="nl-cd_WetOB1968_37_A_ref" xlink:role="http://www.xbrl.org/2003/role/reference" id="nl-cd_WetOB1968_37_A_ref">
+      <ref:Name>Wet omzetbelasting 1968</ref:Name>
+      <ref:Article>37</ref:Article>
+      <ref:Paragraph>A</ref:Paragraph>
+    </link:reference>
+    <link:reference xlink:type="resource" xlink:label="nl-cd_GBA_LO3.7_245_ref" xlink:role="http://www.xbrl.org/2003/role/reference" id="nl-cd_GBA_LO3.7_245_ref">
+      <ref:Publisher>Gemeentelijke basisadministratie</ref:Publisher>
+      <ref:Name>LO3.7</ref:Name>
+      <ref:Page>245</ref:Page>
+    </link:reference>
+    <link:reference xlink:type="resource" xlink:label="nl-cd_Hrw_10_3_b_ref" xlink:role="http://www.xbrl.org/2003/role/reference" id="nl-cd_Hrw_10_3_b_ref">
+      <ref:Name>Handelsregisterwet</ref:Name>
+      <ref:Article>10</ref:Article>
+      <ref:Paragraph>3</ref:Paragraph>
+      <ref:Subparagraph>b</ref:Subparagraph>
+    </link:reference>
+    <link:reference xlink:type="resource" xlink:label="nl-cd_Hrw_12_b_ref" xlink:role="http://www.xbrl.org/2003/role/reference" id="nl-cd_Hrw_12_b_ref">
+      <ref:Name>Handelsregisterwet</ref:Name>
+      <ref:Article>12</ref:Article>
+      <ref:Subparagraph>b</ref:Subparagraph>
+    </link:reference>
+    <link:reference xlink:type="resource" xlink:label="nl-cd_RJk_A1_306_ref" xlink:role="http://www.xbrl.org/2003/role/reference" id="nl-cd_RJk_A1_306_ref">
+      <ref:Name>Richtlijnen voor de Jaarverslaggeving voor kleine rechtspersonen</ref:Name>
+      <ref:Article>A1</ref:Article>
+      <ref:Paragraph>306</ref:Paragraph>
+    </link:reference>
+    <link:reference xlink:type="resource" xlink:label="nl-cd_GBA_LO3.7_237_ref" xlink:role="http://www.xbrl.org/2003/role/reference" id="nl-cd_GBA_LO3.7_237_ref">
+      <ref:Publisher>Gemeentelijke basisadministratie</ref:Publisher>
+      <ref:Name>LO3.7</ref:Name>
+      <ref:Page>237</ref:Page>
+    </link:reference>
+    <link:referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="nl-cd_CountryCodeISO_loc" xlink:to="nl-cd_BesluitIntSpaarrenterichtlijn_ref"/>
+    <link:referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="nl-cd_CountryCodeISO_loc" xlink:to="nl-cd_GBA_LO3.7_241_ref"/>
+    <link:referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="nl-cd_CountryNameISO_loc" xlink:to="nl-cd_RJ_300_105_a_ref"/>
+    <link:referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="nl-cd_CountryNameISO_loc" xlink:to="nl-cd_RJk_B18_104_ref"/>
+    <link:referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="nl-cd_DateOfBirth_loc" xlink:to="nl-cd_GBA_LO3.7_240_ref"/>
+    <link:referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="nl-cd_DateOfBirth_loc" xlink:to="nl-cd_GBA_LO3.7_241_ref"/>
+    <link:referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="nl-cd_DateOfDeath_loc" xlink:to="nl-cd_GBA_LO3.7_254_ref"/>
+    <link:referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="nl-cd_DocumentCreationDate_loc" xlink:to="nl-cd_RJ_160_401_ref"/>
+    <link:referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="nl-cd_DocumentCreationDate_loc" xlink:to="nl-cd_RJk_B4_110_ref"/>
+    <link:referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="nl-cd_EndDateForFinancialPeriod_loc" xlink:to="nl-cd_BW2_362_2_ref"/>
+    <link:referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="nl-cd_EndDateForFinancialPeriod_loc" xlink:to="nl-cd_BW2_362_3_ref"/>
+    <link:referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="nl-cd_FamilyName_loc" xlink:to="nl-cd_GBA_LO3.7_241_ref"/>
+    <link:referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="nl-cd_FirstName_loc" xlink:to="nl-cd_GBA_LO3.7_238_ref"/>
+    <link:referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="nl-cd_HouseNumberAddition_loc" xlink:to="nl-cd_RJ_300_105_a_ref"/>
+    <link:referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="nl-cd_HouseNumberAddition_loc" xlink:to="nl-cd_RJk_B18_104_ref"/>
+    <link:referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="nl-cd_HouseNumberNL_loc" xlink:to="nl-cd_RJ_300_105_a_ref"/>
+    <link:referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="nl-cd_HouseNumberNL_loc" xlink:to="nl-cd_RJk_B18_104_ref"/>
+    <link:referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="nl-cd_LegalForm_loc" xlink:to="nl-cd_WetIB2001_38_ref"/>
+    <link:referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="nl-cd_NameRegion_loc" xlink:to="nl-cd_RJ_300_105_a_ref"/>
+    <link:referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="nl-cd_NameRegion_loc" xlink:to="nl-cd_RJk_B18_104_ref"/>
+    <link:referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="nl-cd_Namebusiness_loc" xlink:to="nl-cd_RJ_110_103_a_ref"/>
+    <link:referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="nl-cd_Nationality_loc" xlink:to="nl-cd_GBA_LO3.7_244_ref"/>
+    <link:referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="nl-cd_PlaceOfResidenceNL_loc" xlink:to="nl-cd_GBA_LO3.7_241_ref"/>
+    <link:referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="nl-cd_PlaceOfResidenceNL_loc" xlink:to="nl-cd_RJ_300_105_a_ref"/>
+    <link:referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="nl-cd_PlaceOfResidenceNL_loc" xlink:to="nl-cd_RJk_B18_104_ref"/>
+    <link:referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="nl-cd_PlaceOfResidenceNL_loc" xlink:to="nl-cd_WetOB1968_37_A_ref"/>
+    <link:referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="nl-cd_PostalCodeNL_loc" xlink:to="nl-cd_RJ_300_105_a_ref"/>
+    <link:referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="nl-cd_PostalCodeNL_loc" xlink:to="nl-cd_RJk_B18_104_ref"/>
+    <link:referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="nl-cd_PostalCodeNL_loc" xlink:to="nl-cd_WetOB1968_37_A_ref"/>
+    <link:referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="nl-cd_PrivatePersonIdentification_loc" xlink:to="nl-cd_GBA_LO3.7_237_ref"/>
+    <link:referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="nl-cd_SexCode_loc" xlink:to="nl-cd_GBA_LO3.7_245_ref"/>
+    <link:referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="nl-cd_StartDateForFinancialPeriod_loc" xlink:to="nl-cd_BW2_362_3_ref"/>
+    <link:referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="nl-cd_StatutoryNameEntity_loc" xlink:to="nl-cd_Hrw_10_3_b_ref"/>
+    <link:referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="nl-cd_StatutoryNameEntity_loc" xlink:to="nl-cd_Hrw_12_b_ref"/>
+    <link:referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="nl-cd_StatutoryNameEntity_loc" xlink:to="nl-cd_RJ_110_103_a_ref"/>
+    <link:referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="nl-cd_StatutoryNameEntity_loc" xlink:to="nl-cd_RJ_300_105_a_ref"/>
+    <link:referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="nl-cd_StatutoryNameEntity_loc" xlink:to="nl-cd_RJk_A1_306_ref"/>
+    <link:referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="nl-cd_StatutoryNameEntity_loc" xlink:to="nl-cd_RJk_B18_104_ref"/>
+    <link:referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="nl-cd_StreetNameNL_loc" xlink:to="nl-cd_GBA_LO3.7_241_ref"/>
+    <link:referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="nl-cd_StreetNameNL_loc" xlink:to="nl-cd_RJ_300_105_a_ref"/>
+    <link:referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="nl-cd_StreetNameNL_loc" xlink:to="nl-cd_RJk_B18_104_ref"/>
+    <link:referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="nl-cd_TelephoneNumber_loc" xlink:to="nl-cd_WetOB1968_37_A_ref"/>
+  </link:referenceLink>
+</link:linkbase>

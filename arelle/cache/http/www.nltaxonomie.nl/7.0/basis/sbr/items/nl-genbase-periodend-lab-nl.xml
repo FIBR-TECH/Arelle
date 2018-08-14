@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  This file is part of the Nederlandse taxonomy (NT, Dutch Taxonomy) 
+  Intellectual Property State of the Netherlands 
+  Version 7.0 
+  Released by the Dutch SBR Programme 
+  Release date Tue May 15 15:52:00 2012
+-->
+<link:linkbase xmlns:link="http://www.xbrl.org/2003/linkbase" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <link:labelLink xlink:type="extended" xlink:role="http://www.xbrl.org/2003/role/link">
+    <link:loc xlink:type="locator" xlink:href="nl-genbase.xsd#nl-gen_CashAndCashEquivalentsCashFlow" xlink:label="nl-gen_CashAndCashEquivalentsCashFlow_loc"/>
+    <link:loc xlink:type="locator" xlink:href="nl-genbase.xsd#nl-gen_CashAndCashEquivalents" xlink:label="nl-gen_CashAndCashEquivalents_loc"/>
+    <link:loc xlink:type="locator" xlink:href="nl-genbase.xsd#nl-gen_Equity" xlink:label="nl-gen_Equity_loc"/>
+    <link:loc xlink:type="locator" xlink:href="nl-genbase.xsd#nl-gen_EquityGroup" xlink:label="nl-gen_GroupEquity_loc"/>
+    <link:loc xlink:type="locator" xlink:href="nl-genbase.xsd#nl-gen_FinancialAssets" xlink:label="nl-gen_FinancialAssets_loc"/>
+    <link:loc xlink:type="locator" xlink:href="nl-genbase.xsd#nl-gen_IntangibleAssets" xlink:label="nl-gen_IntangibleAssets_loc"/>
+    <link:loc xlink:type="locator" xlink:href="nl-genbase.xsd#nl-gen_PropertyPlantEquipment" xlink:label="nl-gen_PropertyPlantAndEquipment_loc"/>
+    <link:loc xlink:type="locator" xlink:href="nl-genbase.xsd#nl-gen_Provisions" xlink:label="nl-gen_Provisions_loc"/>
+    <link:loc xlink:type="locator" xlink:href="nl-genbase.xsd#nl-gen_RevaluationReserve" xlink:label="nl-gen_RevaluationReserve_loc"/>
+    <link:label xlink:type="resource" xlink:label="nl-gen_CashAndCashEquivalentsCashFlow_periodend_nl" xlink:role="http://www.xbrl.org/2003/role/periodEndLabel" xml:lang="nl" id="nl-gen_CashAndCashEquivalentsCashFlow_periodend_nl">Geldmiddelen, einde van de periode</link:label>
+    <link:label xlink:type="resource" xlink:label="nl-gen_CashAndCashEquivalents_periodend_nl" xlink:role="http://www.xbrl.org/2003/role/periodEndLabel" xml:lang="nl" id="nl-gen_CashAndCashEquivalents_periodend_nl">Liquide middelen, einde van de periode</link:label>
+    <link:label xlink:type="resource" xlink:label="nl-gen_Equity_periodend_nl" xlink:role="http://www.xbrl.org/2003/role/periodEndLabel" xml:lang="nl" id="nl-gen_Equity_periodend_nl">Eigen vermogen, einde van de periode</link:label>
+    <link:label xlink:type="resource" xlink:label="nl-gen_GroupEquity_periodend_nl" xlink:role="http://www.xbrl.org/2003/role/periodEndLabel" xml:lang="nl" id="nl-gen_GroupEquity_periodend_nl">Groepsvermogen, einde van de periode</link:label>
+    <link:label xlink:type="resource" xlink:label="nl-gen_FinancialAssets_periodend_nl" xlink:role="http://www.xbrl.org/2003/role/periodEndLabel" xml:lang="nl" id="nl-gen_FinancialAssets_periodend_nl">Financiële vaste activa, einde van de periode</link:label>
+    <link:label xlink:type="resource" xlink:label="nl-gen_IntangibleAssets_periodend_nl" xlink:role="http://www.xbrl.org/2003/role/periodEndLabel" xml:lang="nl" id="nl-gen_IntangibleAssets_periodend_nl">Immateriële vaste activa, einde van de periode</link:label>
+    <link:label xlink:type="resource" xlink:label="nl-gen_PropertyPlantAndEquipment_periodend_nl" xlink:role="http://www.xbrl.org/2003/role/periodEndLabel" xml:lang="nl" id="nl-gen_PropertyPlantAndEquipment_periodend_nl">Materiële vaste activa, einde van de periode</link:label>
+    <link:label xlink:type="resource" xlink:label="nl-gen_Provisions_periodend_nl" xlink:role="http://www.xbrl.org/2003/role/periodEndLabel" xml:lang="nl" id="nl-gen_Provisions_periodend_nl">Voorzieningen, einde van de periode</link:label>
+    <link:label xlink:type="resource" xlink:label="nl-gen_RevaluationReserve_periodend_nl" xlink:role="http://www.xbrl.org/2003/role/periodEndLabel" xml:lang="nl" id="nl-gen_RevaluationReserve_periodend_nl">Herwaarderingsreserve, einde van de periode</link:label>
+    <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="nl-gen_CashAndCashEquivalentsCashFlow_loc" xlink:to="nl-gen_CashAndCashEquivalentsCashFlow_periodend_nl"/>
+    <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="nl-gen_CashAndCashEquivalents_loc" xlink:to="nl-gen_CashAndCashEquivalents_periodend_nl"/>
+    <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="nl-gen_Equity_loc" xlink:to="nl-gen_Equity_periodend_nl"/>
+    <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="nl-gen_GroupEquity_loc" xlink:to="nl-gen_GroupEquity_periodend_nl"/>
+    <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="nl-gen_FinancialAssets_loc" xlink:to="nl-gen_FinancialAssets_periodend_nl"/>
+    <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="nl-gen_IntangibleAssets_loc" xlink:to="nl-gen_IntangibleAssets_periodend_nl"/>
+    <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="nl-gen_PropertyPlantAndEquipment_loc" xlink:to="nl-gen_PropertyPlantAndEquipment_periodend_nl"/>
+    <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="nl-gen_Provisions_loc" xlink:to="nl-gen_Provisions_periodend_nl"/>
+    <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="nl-gen_RevaluationReserve_loc" xlink:to="nl-gen_RevaluationReserve_periodend_nl"/>
+  </link:labelLink>
+</link:linkbase>

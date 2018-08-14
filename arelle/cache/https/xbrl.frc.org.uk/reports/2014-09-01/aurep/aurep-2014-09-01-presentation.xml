@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<linkbase xmlns="http://www.xbrl.org/2003/linkbase" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xsi:schemaLocation=" http://www.xbrl.org/2003/linkbase http://www.xbrl.org/2003/xbrl-linkbase-2003-12-31.xsd">
+  <roleRef xlink:type="simple" xlink:href="aurep-2014-09-01.xsd#AuditReport" roleURI="http://xbrl.frc.org.uk/aurep/roles/AuditReport"/>
+  <presentationLink xlink:type="extended" xlink:role="http://xbrl.frc.org.uk/aurep/roles/AuditReport" xlink:title="AuditReport ">
+    <loc xlink:type="locator" xlink:href="aurep-2014-09-01.xsd#aurep_AuditReportHeading" xlink:label="aurep_AuditReportHeading"/>
+    <loc xlink:type="locator" xlink:href="aurep-2014-09-01.xsd#aurep_StatementOnRespectiveResponsibilitiesDirectorsAuditors" xlink:label="aurep_StatementOnRespectiveResponsibilitiesDirectorsAuditors"/>
+    <presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="aurep_AuditReportHeading" xlink:to="aurep_StatementOnRespectiveResponsibilitiesDirectorsAuditors" order="1" use="optional"/>
+    <loc xlink:type="locator" xlink:href="aurep-2014-09-01.xsd#aurep_OpinionAuditorsOnEntity" xlink:label="aurep_OpinionAuditorsOnEntity"/>
+    <presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="aurep_AuditReportHeading" xlink:to="aurep_OpinionAuditorsOnEntity" order="2" use="optional"/>
+    <loc xlink:type="locator" xlink:href="aurep-2014-09-01.xsd#aurep_OpinionAuditorsInRespectAdditionalFinancialReportingFramework" xlink:label="aurep_OpinionAuditorsInRespectAdditionalFinancialReportingFramework"/>
+    <presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="aurep_AuditReportHeading" xlink:to="aurep_OpinionAuditorsInRespectAdditionalFinancialReportingFramework" order="3" use="optional"/>
+    <loc xlink:type="locator" xlink:href="aurep-2014-09-01.xsd#aurep_EmphasisMatterStatement" xlink:label="aurep_EmphasisMatterStatement"/>
+    <presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="aurep_AuditReportHeading" xlink:to="aurep_EmphasisMatterStatement" order="4" use="optional"/>
+    <loc xlink:type="locator" xlink:href="aurep-2014-09-01.xsd#aurep_StatementOnRisksMaterialMisstatementIdentifiedByAuditor" xlink:label="aurep_StatementOnRisksMaterialMisstatementIdentifiedByAuditor"/>
+    <presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="aurep_AuditReportHeading" xlink:to="aurep_StatementOnRisksMaterialMisstatementIdentifiedByAuditor" order="5" use="optional"/>
+    <loc xlink:type="locator" xlink:href="aurep-2014-09-01.xsd#aurep_StatementOnApplicationMaterialityToAudit" xlink:label="aurep_StatementOnApplicationMaterialityToAudit"/>
+    <presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="aurep_AuditReportHeading" xlink:to="aurep_StatementOnApplicationMaterialityToAudit" order="6" use="optional"/>
+    <loc xlink:type="locator" xlink:href="aurep-2014-09-01.xsd#aurep_StatementOnScopeAuditReport" xlink:label="aurep_StatementOnScopeAuditReport"/>
+    <presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="aurep_AuditReportHeading" xlink:to="aurep_StatementOnScopeAuditReport" order="7" use="optional"/>
+    <loc xlink:type="locator" xlink:href="aurep-2014-09-01.xsd#aurep_StatementOnMattersOnWhichAuditorReportsByException" xlink:label="aurep_StatementOnMattersOnWhichAuditorReportsByException"/>
+    <presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="aurep_AuditReportHeading" xlink:to="aurep_StatementOnMattersOnWhichAuditorReportsByException" order="8" use="optional"/>
+    <loc xlink:type="locator" xlink:href="aurep-2014-09-01.xsd#aurep_CompanyEntitledToDeliverAbbreviatedAccountsAccountsProperlyPreparedTruefalse" xlink:label="aurep_CompanyEntitledToDeliverAbbreviatedAccountsAccountsProperlyPreparedTruefalse"/>
+    <presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="aurep_AuditReportHeading" xlink:to="aurep_CompanyEntitledToDeliverAbbreviatedAccountsAccountsProperlyPreparedTruefalse" order="9" use="optional"/>
+    <loc xlink:type="locator" xlink:href="aurep-2014-09-01.xsd#aurep_DescriptionMattersGivingRiseToAnyModifiedAuditOpinion" xlink:label="aurep_DescriptionMattersGivingRiseToAnyModifiedAuditOpinion"/>
+    <presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="aurep_AuditReportHeading" xlink:to="aurep_DescriptionMattersGivingRiseToAnyModifiedAuditOpinion" order="10" use="optional"/>
+    <loc xlink:type="locator" xlink:href="aurep-2014-09-01.xsd#aurep_DirectorsReportConsistentWithAccountsTruefalse" xlink:label="aurep_DirectorsReportConsistentWithAccountsTruefalse"/>
+    <presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="aurep_AuditReportHeading" xlink:to="aurep_DirectorsReportConsistentWithAccountsTruefalse" order="11" use="optional"/>
+    <loc xlink:type="locator" xlink:href="aurep-2014-09-01.xsd#aurep_AuditablePartRemunerationReportHasBeenProperlyPreparedTruefalse" xlink:label="aurep_AuditablePartRemunerationReportHasBeenProperlyPreparedTruefalse"/>
+    <presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="aurep_AuditReportHeading" xlink:to="aurep_AuditablePartRemunerationReportHasBeenProperlyPreparedTruefalse" order="12" use="optional"/>
+    <loc xlink:type="locator" xlink:href="aurep-2014-09-01.xsd#aurep_OpinionAuditorPublicSectorEntitiesOnRegularity" xlink:label="aurep_OpinionAuditorPublicSectorEntitiesOnRegularity"/>
+    <presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="aurep_AuditReportHeading" xlink:to="aurep_OpinionAuditorPublicSectorEntitiesOnRegularity" order="13" use="optional"/>
+    <loc xlink:type="locator" xlink:href="aurep-2014-09-01.xsd#aurep_DateAuditorsReport" xlink:label="aurep_DateAuditorsReport"/>
+    <presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="aurep_AuditReportHeading" xlink:to="aurep_DateAuditorsReport" order="14" use="optional"/>
+    <loc xlink:type="locator" xlink:href="aurep-2014-09-01.xsd#aurep_AuditorInformationHeading" xlink:label="aurep_AuditorInformationHeading"/>
+    <loc xlink:type="locator" xlink:href="../../../cd/2014-09-01/business/bus-2014-09-01.xsd#bus_NameEntityAuditors" xlink:label="bus_NameEntityAuditors"/>
+    <presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="aurep_AuditorInformationHeading" xlink:to="bus_NameEntityAuditors" order="1" use="optional"/>
+    <loc xlink:type="locator" xlink:href="aurep-2014-09-01.xsd#aurep_NameOrLocationOfficePerformingAudit" xlink:label="aurep_NameOrLocationOfficePerformingAudit" xlink:title="Go down to: nameLocationOfOfficePerformingAudit"/>
+    <presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="aurep_AuditorInformationHeading" xlink:to="aurep_NameOrLocationOfficePerformingAudit" xlink:title="Go down to: nameLocationOfOfficePerformingAudit" order="2" use="optional"/>
+    <loc xlink:type="locator" xlink:href="aurep-2014-09-01.xsd#aurep_NameIndividualAuditor" xlink:label="aurep_NameIndividualAuditor"/>
+    <presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="aurep_AuditorInformationHeading" xlink:to="aurep_NameIndividualAuditor" order="3" use="optional"/>
+    <loc xlink:type="locator" xlink:href="aurep-2014-09-01.xsd#aurep_NameSeniorStatutoryAuditor" xlink:label="aurep_NameSeniorStatutoryAuditor"/>
+    <presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="aurep_AuditorInformationHeading" xlink:to="aurep_NameSeniorStatutoryAuditor" order="4" use="optional"/>
+    <loc xlink:type="locator" xlink:href="aurep-2014-09-01.xsd#aurep_DescriptionReasonsIfSeniorStatutoryAuditorsNameNotDisclosed" xlink:label="aurep_DescriptionReasonsIfSeniorStatutoryAuditorsNameNotDisclosed"/>
+    <presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="aurep_AuditorInformationHeading" xlink:to="aurep_DescriptionReasonsIfSeniorStatutoryAuditorsNameNotDisclosed" order="5" use="optional"/>
+    <loc xlink:type="locator" xlink:href="aurep-2014-09-01.xsd#aurep_UseThirdPartyAgentStatusDimensionToIdentifyAuditorsInCasesMultipleAuditorsOrJointAuditorsGuidance" xlink:label="aurep_UseThirdPartyAgentStatusDimensionToIdentifyAuditorsInCasesMultipleAuditorsOrJointAuditorsGuidance"/>
+    <presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="aurep_AuditorInformationHeading" xlink:to="aurep_UseThirdPartyAgentStatusDimensionToIdentifyAuditorsInCasesMultipleAuditorsOrJointAuditorsGuidance" order="6" use="optional"/>
+  </presentationLink>
+</linkbase>

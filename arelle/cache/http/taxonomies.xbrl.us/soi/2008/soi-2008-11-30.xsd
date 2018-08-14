@@ -1,0 +1,365 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+Notice: Authorized Uses are Set Forth at http://taxonomies.xbrl.us/terms/soi_legal.html
+Copyright (C) 2008 XBRL US, Inc. All Rights Reserved.
+  -->
+<xsd:schema elementFormDefault='qualified' targetNamespace='http://xbrl.us/soi/2008-11-30' xmlns:link='http://www.xbrl.org/2003/linkbase' xmlns:soi='http://xbrl.us/soi/2008-11-30' xmlns:us-types='http://xbrl.us/us-types/2008-03-31' xmlns:xbrldt='http://xbrl.org/2005/xbrldt' xmlns:xbrli='http://www.xbrl.org/2003/instance' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:xsd='http://www.w3.org/2001/XMLSchema'>
+<xsd:import namespace='http://xbrl.org/2005/xbrldt' schemaLocation='http://www.xbrl.org/2005/xbrldt-2005.xsd' />
+<xsd:import namespace='http://www.xbrl.org/2003/instance' schemaLocation='http://www.xbrl.org/2003/xbrl-instance-2003-12-31.xsd' />
+<xsd:import namespace='http://xbrl.us/us-types/2008-03-31' schemaLocation='http://xbrl.us/us-gaap/1.0/elts/us-types-2008-03-31.xsd' />
+<xsd:annotation>
+<xsd:appinfo>
+<link:roleType id='Investment' roleURI='http://xbrl.us/us-gaap/role/document/Investment'>
+<definition xmlns='http://www.xbrl.org/2003/linkbase'>995470 - Document - Investment</definition>
+<link:usedOn>link:calculationLink</link:usedOn>
+<link:usedOn>link:definitionLink</link:usedOn>
+<link:usedOn>link:presentationLink</link:usedOn>
+</link:roleType>
+<link:roleType id='ScheduleOfInvestmentsInvestmentHoldings' roleURI='http://xbrl.us/us-gaap/role/disclosure/ScheduleOfInvestmentsInvestmentHoldings'>
+<definition xmlns='http://www.xbrl.org/2003/linkbase'>993500 - Disclosure - Schedule of Investments, Investment Holdings</definition>
+<link:usedOn>link:calculationLink</link:usedOn>
+<link:usedOn>link:definitionLink</link:usedOn>
+<link:usedOn>link:presentationLink</link:usedOn>
+</link:roleType>
+<link:roleType id='ScheduleOfInvestmentsInvestmentsSoldNotYetPurchased' roleURI='http://xbrl.us/us-gaap/role/disclosure/ScheduleOfInvestmentsInvestmentsSoldNotYetPurchased'>
+<definition xmlns='http://www.xbrl.org/2003/linkbase'>993540 - Disclosure - Schedule of Investments, Investments Sold Not yet Purchased</definition>
+<link:usedOn>link:calculationLink</link:usedOn>
+<link:usedOn>link:definitionLink</link:usedOn>
+<link:usedOn>link:presentationLink</link:usedOn>
+</link:roleType>
+<link:roleType id='ScheduleOfInvestmentsSummaryOfInvestmentHoldings' roleURI='http://xbrl.us/us-gaap/role/disclosure/ScheduleOfInvestmentsSummaryOfInvestmentHoldings'>
+<definition xmlns='http://www.xbrl.org/2003/linkbase'>993520 - Disclosure - Schedule of Investments, Summary of Investment Holdings</definition>
+<link:usedOn>link:calculationLink</link:usedOn>
+<link:usedOn>link:definitionLink</link:usedOn>
+<link:usedOn>link:presentationLink</link:usedOn>
+</link:roleType>
+<link:roleType id='ScheduleOfInvestmentsOpenOptionContractsWritten' roleURI='http://xbrl.us/us-gaap/role/disclosure/ScheduleOfInvestmentsOpenOptionContractsWritten'>
+<definition xmlns='http://www.xbrl.org/2003/linkbase'>993560 - Disclosure - Schedule of Investments, Open Option Contracts Written</definition>
+<link:usedOn>link:calculationLink</link:usedOn>
+<link:usedOn>link:definitionLink</link:usedOn>
+<link:usedOn>link:presentationLink</link:usedOn>
+</link:roleType>
+<link:roleType id='ScheduleOfInvestmentsInvestmentsInAndAdvancesToAffiliates' roleURI='http://xbrl.us/us-gaap/role/disclosure/ScheduleOfInvestmentsInvestmentsInAndAdvancesToAffiliates'>
+<definition xmlns='http://www.xbrl.org/2003/linkbase'>993570 - Disclosure - Schedule of Investments, Investments In and Advances to Affiliates</definition>
+<link:usedOn>link:calculationLink</link:usedOn>
+<link:usedOn>link:definitionLink</link:usedOn>
+<link:usedOn>link:presentationLink</link:usedOn>
+</link:roleType>
+<link:roleType id='ScheduleOfInvestmentsInvestmentsSoldNotYetPurchasedFormSH' roleURI='http://xbrl.us/us-gaap/role/disclosure/ScheduleOfInvestmentsInvestmentsSoldNotYetPurchasedFormSH'>
+<definition xmlns='http://www.xbrl.org/2003/linkbase'>993550 - Disclosure - Schedule of Investments, Investments Sold Not yet Purchased, Form SH</definition>
+<link:usedOn>link:calculationLink</link:usedOn>
+<link:usedOn>link:definitionLink</link:usedOn>
+<link:usedOn>link:presentationLink</link:usedOn>
+</link:roleType>
+<link:roleType id='ScheduleOfInvestmentsOtherThanSecuritiesInvestmentHoldings' roleURI='http://xbrl.us/us-gaap/role/disclosure/ScheduleOfInvestmentsOtherThanSecuritiesInvestmentHoldings'>
+<definition xmlns='http://www.xbrl.org/2003/linkbase'>993510 - Disclosure - Schedule of Investments, Other than Securities Investment Holdings</definition>
+<link:usedOn>link:calculationLink</link:usedOn>
+<link:usedOn>link:definitionLink</link:usedOn>
+<link:usedOn>link:presentationLink</link:usedOn>
+</link:roleType>
+<link:roleType id='ScheduleOfInvestmentsFederalTaxNote' roleURI='http://xbrl.us/us-gaap/role/disclosure/ScheduleOfInvestmentsFederalTaxNote'>
+<definition xmlns='http://www.xbrl.org/2003/linkbase'>993530 - Disclosure - Schedule of Investments, Federal Income Tax Note</definition>
+<link:usedOn>link:calculationLink</link:usedOn>
+<link:usedOn>link:definitionLink</link:usedOn>
+<link:usedOn>link:presentationLink</link:usedOn>
+</link:roleType>
+</xsd:appinfo>
+</xsd:annotation>
+<xsd:complexType name='restrictedInvestmentItemType'>
+<xsd:simpleContent>
+<xsd:restriction base='xbrli:tokenItemType'>
+<xsd:enumeration value='Restricted Investment' />
+<xsd:enumeration value='Restricted Investment Exempt from Registration' />
+<xsd:enumeration value='Restricted Investment Not Exempt from Registration' />
+</xsd:restriction>
+</xsd:simpleContent>
+</xsd:complexType>
+<xsd:complexType name='foreignCurrencyContractTransactionItemType'>
+<xsd:simpleContent>
+<xsd:restriction base='xbrli:tokenItemType'>
+<xsd:enumeration value='Buy' />
+<xsd:enumeration value='Sell' />
+</xsd:restriction>
+</xsd:simpleContent>
+</xsd:complexType>
+<xsd:complexType name='investmentOnLoanForShortSalesItemType'>
+<xsd:simpleContent>
+<xsd:restriction base='xbrli:tokenItemType'>
+<xsd:enumeration value='Investment on Loan' />
+<xsd:enumeration value='Entire Investment on Loan' />
+<xsd:enumeration value='Partial Investment on Loan' />
+</xsd:restriction>
+</xsd:simpleContent>
+</xsd:complexType>
+<xsd:complexType name='investmentPledgedItemType'>
+<xsd:simpleContent>
+<xsd:restriction base='xbrli:tokenItemType'>
+<xsd:enumeration value='Investment Pledged' />
+<xsd:enumeration value='Entire Investment Pledged' />
+<xsd:enumeration value='Partial Investment Pledged' />
+</xsd:restriction>
+</xsd:simpleContent>
+</xsd:complexType>
+<xsd:element abstract='true' id='soi_InvestmentLineItems' name='InvestmentLineItems' nillable='true' substitutionGroup='xbrli:item' type='xbrli:stringItemType' xbrli:periodType='duration' />
+<xsd:element abstract='false' id='soi_InvestmentInterestRateType' name='InvestmentInterestRateType' nillable='true' substitutionGroup='xbrli:item' type='xbrli:stringItemType' xbrli:periodType='duration' />
+<xsd:element abstract='true' id='soi_InvestmentInterestRateRangeAbstract' name='InvestmentInterestRateRangeAbstract' nillable='true' substitutionGroup='xbrli:item' type='xbrli:stringItemType' xbrli:periodType='duration' />
+<xsd:element abstract='false' id='soi_InvestmentInterestRateRangeStart' name='InvestmentInterestRateRangeStart' nillable='true' substitutionGroup='xbrli:item' type='xbrli:pureItemType' xbrli:periodType='duration' />
+<xsd:element abstract='false' id='soi_InvestmentInterestRateRangeEnd' name='InvestmentInterestRateRangeEnd' nillable='true' substitutionGroup='xbrli:item' type='xbrli:pureItemType' xbrli:periodType='duration' />
+<xsd:element abstract='false' id='soi_MiscellaneousInvestmentsMember' name='MiscellaneousInvestmentsMember' nillable='true' substitutionGroup='xbrli:item' type='us-types:domainItemType' xbrli:periodType='duration' />
+<xsd:element abstract='true' id='soi_InvestmentRepurchaseAgreementAbstract' name='InvestmentRepurchaseAgreementAbstract' nillable='true' substitutionGroup='xbrli:item' type='xbrli:stringItemType' xbrli:periodType='duration' />
+<xsd:element abstract='false' id='soi_InvestmentRepurchaseAgreementNameOfParty' name='InvestmentRepurchaseAgreementNameOfParty' nillable='true' substitutionGroup='xbrli:item' type='xbrli:stringItemType' xbrli:periodType='duration' />
+<xsd:element abstract='false' id='soi_InvestmentRepurchaseAgreementDateOfAgreement' name='InvestmentRepurchaseAgreementDateOfAgreement' nillable='true' substitutionGroup='xbrli:item' type='xbrli:dateItemType' xbrli:periodType='duration' />
+<xsd:element abstract='false' id='soi_InvestmentRepurchaseAgreementRepurchaseDate' name='InvestmentRepurchaseAgreementRepurchaseDate' nillable='true' substitutionGroup='xbrli:item' type='xbrli:dateItemType' xbrli:periodType='duration' />
+<xsd:element abstract='false' id='soi_InvestmentTypeDomain' name='InvestmentTypeDomain' nillable='true' substitutionGroup='xbrli:item' type='us-types:domainItemType' xbrli:periodType='duration' />
+<xsd:element abstract='false' id='soi_FixedIncomeInvestmentsMember' name='FixedIncomeInvestmentsMember' nillable='true' substitutionGroup='xbrli:item' type='us-types:domainItemType' xbrli:periodType='duration' />
+<xsd:element abstract='false' id='soi_RepurchaseAgreementsMember' name='RepurchaseAgreementsMember' nillable='true' substitutionGroup='xbrli:item' type='us-types:domainItemType' xbrli:periodType='duration' />
+<xsd:element abstract='false' id='soi_OtherInvestmentCompaniesMember' name='OtherInvestmentCompaniesMember' nillable='true' substitutionGroup='xbrli:item' type='us-types:domainItemType' xbrli:periodType='duration' />
+<xsd:element abstract='true' id='soi_OpenOptionContractsWrittenTypeAxis' name='OpenOptionContractsWrittenTypeAxis' nillable='true' substitutionGroup='xbrldt:dimensionItem' type='xbrli:stringItemType' xbrli:periodType='duration' />
+<xsd:element abstract='false' id='soi_InvestmentsBySecondaryCategorizationDomain' name='InvestmentsBySecondaryCategorizationDomain' nillable='true' substitutionGroup='xbrli:item' type='us-types:domainItemType' xbrli:periodType='duration' />
+<xsd:element abstract='true' id='soi_InvestmentsInAndAdvancesToAffiliatesCategorizationAxis' name='InvestmentsInAndAdvancesToAffiliatesCategorizationAxis' nillable='true' substitutionGroup='xbrldt:dimensionItem' type='xbrli:stringItemType' xbrli:periodType='duration' />
+<xsd:element abstract='false' id='soi_InvestmentsInAndAdvancesToAffiliatesCategorizationDomain' name='InvestmentsInAndAdvancesToAffiliatesCategorizationDomain' nillable='true' substitutionGroup='xbrli:item' type='us-types:domainItemType' xbrli:periodType='duration' />
+<xsd:element abstract='false' id='soi_InvestmentsInMajorityOwnedSubsidiariesMember' name='InvestmentsInMajorityOwnedSubsidiariesMember' nillable='true' substitutionGroup='xbrli:item' type='us-types:domainItemType' xbrli:periodType='duration' />
+<xsd:element abstract='false' id='soi_OtherControlledCompaniesMember' name='OtherControlledCompaniesMember' nillable='true' substitutionGroup='xbrli:item' type='us-types:domainItemType' xbrli:periodType='duration' />
+<xsd:element abstract='false' id='soi_OtherAffiliatesMember' name='OtherAffiliatesMember' nillable='true' substitutionGroup='xbrli:item' type='us-types:domainItemType' xbrli:periodType='duration' />
+<xsd:element abstract='false' id='soi_CUSIPMember' name='CUSIPMember' nillable='true' substitutionGroup='xbrli:item' type='us-types:domainItemType' xbrli:periodType='duration' />
+<xsd:element abstract='false' id='soi_SEDOLMember' name='SEDOLMember' nillable='true' substitutionGroup='xbrli:item' type='us-types:domainItemType' xbrli:periodType='duration' />
+<xsd:element abstract='false' id='soi_InternalIdentifierSchemeMember' name='InternalIdentifierSchemeMember' nillable='true' substitutionGroup='xbrli:item' type='us-types:domainItemType' xbrli:periodType='duration' />
+<xsd:element abstract='false' id='soi_InvestmentTextBlock' name='InvestmentTextBlock' nillable='true' substitutionGroup='xbrli:item' type='us-types:textBlockItemType' xbrli:periodType='duration' />
+<xsd:element abstract='true' id='soi_InvestmentIdentifierTable' name='InvestmentIdentifierTable' nillable='true' substitutionGroup='xbrldt:hypercubeItem' type='xbrli:stringItemType' xbrli:periodType='duration' />
+<xsd:element abstract='true' id='soi_InvestmentAxis' name='InvestmentAxis' nillable='true' substitutionGroup='xbrldt:dimensionItem' type='xbrli:stringItemType' xbrli:periodType='duration' />
+<xsd:element abstract='false' id='soi_InvestmentDomain' name='InvestmentDomain' nillable='true' substitutionGroup='xbrli:item' type='us-types:domainItemType' xbrli:periodType='duration' />
+<xsd:element abstract='true' id='soi_InvestmentIdentifierLineItems' name='InvestmentIdentifierLineItems' nillable='true' substitutionGroup='xbrli:item' type='xbrli:stringItemType' xbrli:periodType='duration' />
+<xsd:element abstract='false' id='soi_InvestmentIdentifierSchemeDomain' name='InvestmentIdentifierSchemeDomain' nillable='true' substitutionGroup='xbrli:item' type='us-types:domainItemType' xbrli:periodType='duration' />
+<xsd:element abstract='false' id='soi_InvestmentIdentifier' name='InvestmentIdentifier' nillable='true' substitutionGroup='xbrli:item' type='xbrli:stringItemType' xbrli:periodType='duration' />
+<xsd:element abstract='true' id='soi_InvestmentIdentifierSchemeAxis' name='InvestmentIdentifierSchemeAxis' nillable='true' substitutionGroup='xbrldt:dimensionItem' type='xbrli:stringItemType' xbrli:periodType='duration' />
+<xsd:element abstract='false' id='soi_InvestmentHoldingsTextBlock' name='InvestmentHoldingsTextBlock' nillable='true' substitutionGroup='xbrli:item' type='us-types:textBlockItemType' xbrli:periodType='duration' />
+<xsd:element abstract='false' id='soi_OpenOptionContractsWrittenTextBlock' name='OpenOptionContractsWrittenTextBlock' nillable='true' substitutionGroup='xbrli:item' type='us-types:textBlockItemType' xbrli:periodType='duration' />
+<xsd:element abstract='true' id='soi_OpenOptionContractsWrittenTable' name='OpenOptionContractsWrittenTable' nillable='true' substitutionGroup='xbrldt:hypercubeItem' type='xbrli:stringItemType' xbrli:periodType='duration' />
+<xsd:element abstract='false' id='soi_InvestmentsInAndAdvancesToAffiliatesTextBlock' name='InvestmentsInAndAdvancesToAffiliatesTextBlock' nillable='true' substitutionGroup='xbrli:item' type='us-types:textBlockItemType' xbrli:periodType='duration' />
+<xsd:element abstract='true' id='soi_InvestmentsInAndAdvancesToAffiliatesTable' name='InvestmentsInAndAdvancesToAffiliatesTable' nillable='true' substitutionGroup='xbrldt:hypercubeItem' type='xbrli:stringItemType' xbrli:periodType='duration' />
+<xsd:element abstract='true' id='soi_InvestmentHoldingsLineItems' name='InvestmentHoldingsLineItems' nillable='true' substitutionGroup='xbrli:item' type='xbrli:stringItemType' xbrli:periodType='duration' />
+<xsd:element abstract='false' id='soi_InvestmentOwnedAtFairValue' name='InvestmentOwnedAtFairValue' nillable='true' substitutionGroup='xbrli:item' type='xbrli:monetaryItemType' xbrli:balance='debit' xbrli:periodType='instant' />
+<xsd:element abstract='false' id='soi_InvestmentNonIncomeProducingFlag' name='InvestmentNonIncomeProducingFlag' nillable='true' substitutionGroup='xbrli:item' type='xbrli:booleanItemType' xbrli:periodType='duration' />
+<xsd:element abstract='true' id='soi_InvestmentsSoldNotYetPurchasedLineItems' name='InvestmentsSoldNotYetPurchasedLineItems' nillable='true' substitutionGroup='xbrli:item' type='xbrli:stringItemType' xbrli:periodType='duration' />
+<xsd:element abstract='false' id='soi_InvestmentsSoldNotYetPurchasedTextBlock' name='InvestmentsSoldNotYetPurchasedTextBlock' nillable='true' substitutionGroup='xbrli:item' type='us-types:textBlockItemType' xbrli:periodType='duration' />
+<xsd:element abstract='true' id='soi_InvestmentsSoldNotYetPurchasedTable' name='InvestmentsSoldNotYetPurchasedTable' nillable='true' substitutionGroup='xbrldt:hypercubeItem' type='xbrli:stringItemType' xbrli:periodType='duration' />
+<xsd:element abstract='false' id='soi_InvestmentSoldNotYetPurchasedAtFairValue' name='InvestmentSoldNotYetPurchasedAtFairValue' nillable='true' substitutionGroup='xbrli:item' type='xbrli:monetaryItemType' xbrli:balance='credit' xbrli:periodType='instant' />
+<xsd:element abstract='true' id='soi_OpenOptionContractsWrittenLineItems' name='OpenOptionContractsWrittenLineItems' nillable='true' substitutionGroup='xbrli:item' type='xbrli:stringItemType' xbrli:periodType='duration' />
+<xsd:element abstract='false' id='soi_OpenOptionContractsWrittenNumberOfContracts' name='OpenOptionContractsWrittenNumberOfContracts' nillable='true' substitutionGroup='xbrli:item' type='xbrli:decimalItemType' xbrli:periodType='instant' />
+<xsd:element abstract='false' id='soi_OpenOptionContractsWrittenExpirationDate' name='OpenOptionContractsWrittenExpirationDate' nillable='true' substitutionGroup='xbrli:item' type='xbrli:dateItemType' xbrli:periodType='instant' />
+<xsd:element abstract='false' id='soi_OpenOptionContractsWrittenAtFairValue' name='OpenOptionContractsWrittenAtFairValue' nillable='true' substitutionGroup='xbrli:item' type='xbrli:monetaryItemType' xbrli:balance='credit' xbrli:periodType='instant' />
+<xsd:element abstract='true' id='soi_InvestmentsInAndAdvancesToAffiliatesLineItems' name='InvestmentsInAndAdvancesToAffiliatesLineItems' nillable='true' substitutionGroup='xbrli:item' type='xbrli:stringItemType' xbrli:periodType='duration' />
+<xsd:element abstract='false' id='soi_InvestmentsInAndAdvancesToAffiliatesAmountOfEquity' name='InvestmentsInAndAdvancesToAffiliatesAmountOfEquity' nillable='true' substitutionGroup='xbrli:item' type='xbrli:monetaryItemType' xbrli:balance='debit' xbrli:periodType='instant' />
+<xsd:element abstract='false' id='soi_InvestmentsInAndAdvancesToAffiliatesDividendsOrInterest' name='InvestmentsInAndAdvancesToAffiliatesDividendsOrInterest' nillable='true' substitutionGroup='xbrli:item' type='xbrli:monetaryItemType' xbrli:balance='credit' xbrli:periodType='duration' />
+<xsd:element abstract='false' id='soi_InvestmentsInAndAdvancesToAffiliatesDividendOrInterestCreditedToIncome' name='InvestmentsInAndAdvancesToAffiliatesDividendOrInterestCreditedToIncome' nillable='true' substitutionGroup='xbrli:item' type='xbrli:monetaryItemType' xbrli:balance='credit' xbrli:periodType='duration' />
+<xsd:element abstract='false' id='soi_InvestmentsInAndAdvancesToAffiliatesDividendOrInterestOther' name='InvestmentsInAndAdvancesToAffiliatesDividendOrInterestOther' nillable='true' substitutionGroup='xbrli:item' type='xbrli:monetaryItemType' xbrli:balance='credit' xbrli:periodType='duration' />
+<xsd:element abstract='false' id='soi_TaxBasisOfInvestmentsUnrealizedAppreciationDepreciationNet' name='TaxBasisOfInvestmentsUnrealizedAppreciationDepreciationNet' nillable='true' substitutionGroup='xbrli:item' type='xbrli:monetaryItemType' xbrli:balance='debit' xbrli:periodType='instant' />
+<xsd:element abstract='false' id='soi_TaxBasisOfInvestmentsAdditionalInformation' name='TaxBasisOfInvestmentsAdditionalInformation' nillable='true' substitutionGroup='xbrli:item' type='xbrli:stringItemType' xbrli:periodType='duration' />
+<xsd:element abstract='false' id='soi_ExplanationDifferencesBetweenBookAndTaxBasis' name='ExplanationDifferencesBetweenBookAndTaxBasis' nillable='true' substitutionGroup='xbrli:item' type='xbrli:stringItemType' xbrli:periodType='duration' />
+<xsd:element abstract='true' id='soi_InvestmentOwnedBalanceAbstract' name='InvestmentOwnedBalanceAbstract' nillable='true' substitutionGroup='xbrli:item' type='xbrli:stringItemType' xbrli:periodType='duration' />
+<xsd:element abstract='false' id='soi_InvestmentOwnedBalanceShares' name='InvestmentOwnedBalanceShares' nillable='true' substitutionGroup='xbrli:item' type='xbrli:sharesItemType' xbrli:periodType='instant' />
+<xsd:element abstract='false' id='soi_InvestmentOwnedBalanceOtherMeasure' name='InvestmentOwnedBalanceOtherMeasure' nillable='true' substitutionGroup='xbrli:item' type='xbrli:decimalItemType' xbrli:periodType='instant' />
+<xsd:element abstract='true' id='soi_InvestmentSoldNotYetPurchasedBalanceAbstract' name='InvestmentSoldNotYetPurchasedBalanceAbstract' nillable='true' substitutionGroup='xbrli:item' type='xbrli:stringItemType' xbrli:periodType='duration' />
+<xsd:element abstract='false' id='soi_InvestmentSoldNotYetPurchasedBalanceShares' name='InvestmentSoldNotYetPurchasedBalanceShares' nillable='true' substitutionGroup='xbrli:item' type='xbrli:sharesItemType' xbrli:periodType='instant' />
+<xsd:element abstract='false' id='soi_InvestmentsInAndAdvancesToAffiliatesAdditionalInformation' name='InvestmentsInAndAdvancesToAffiliatesAdditionalInformation' nillable='true' substitutionGroup='xbrli:item' type='xbrli:stringItemType' xbrli:periodType='duration' />
+<xsd:element abstract='false' id='soi_InvestmentOwnedInvestmentAdditionalInformation' name='InvestmentOwnedInvestmentAdditionalInformation' nillable='true' substitutionGroup='xbrli:item' type='xbrli:stringItemType' xbrli:periodType='duration' />
+<xsd:element abstract='false' id='soi_OpenOptionContractsWrittenTypeDomain' name='OpenOptionContractsWrittenTypeDomain' nillable='true' substitutionGroup='xbrli:item' type='us-types:domainItemType' xbrli:periodType='duration' />
+<xsd:element abstract='false' id='soi_InvestmentsInAndAdvancesToAffiliatesNoncashDividendsFlag' name='InvestmentsInAndAdvancesToAffiliatesNoncashDividendsFlag' nillable='true' substitutionGroup='xbrli:item' type='xbrli:booleanItemType' xbrli:periodType='duration' />
+<xsd:element abstract='true' id='soi_TaxBasisOfInvestmentsUnrealizedAppreciationDepreciationNetAbstract' name='TaxBasisOfInvestmentsUnrealizedAppreciationDepreciationNetAbstract' nillable='true' substitutionGroup='xbrli:item' type='xbrli:stringItemType' xbrli:periodType='duration' />
+<xsd:element abstract='false' id='soi_InvestmentRepurchaseAgreementAmountToBeReceived' name='InvestmentRepurchaseAgreementAmountToBeReceived' nillable='true' substitutionGroup='xbrli:item' type='xbrli:monetaryItemType' xbrli:balance='credit' xbrli:periodType='duration' />
+<xsd:element abstract='false' id='soi_InvestmentRepurchaseAgreementDescriptionOfInvestmentsSubjectToAgreement' name='InvestmentRepurchaseAgreementDescriptionOfInvestmentsSubjectToAgreement' nillable='true' substitutionGroup='xbrli:item' type='xbrli:stringItemType' xbrli:periodType='duration' />
+<xsd:element abstract='false' id='soi_InvestmentIssuer' name='InvestmentIssuer' nillable='true' substitutionGroup='xbrli:item' type='xbrli:normalizedStringItemType' xbrli:periodType='duration' />
+<xsd:element abstract='false' id='soi_InvestmentTitle' name='InvestmentTitle' nillable='true' substitutionGroup='xbrli:item' type='xbrli:normalizedStringItemType' xbrli:periodType='duration' />
+<xsd:element abstract='false' id='soi_InvestmentSoldNotYetPurchasedBalanceOtherMeasure' name='InvestmentSoldNotYetPurchasedBalanceOtherMeasure' nillable='true' substitutionGroup='xbrli:item' type='xbrli:decimalItemType' xbrli:periodType='instant' />
+<xsd:element abstract='false' id='soi_OpenOptionContractsWrittenExercisePrice' name='OpenOptionContractsWrittenExercisePrice' nillable='true' substitutionGroup='xbrli:item' type='xbrli:decimalItemType' xbrli:periodType='instant' />
+<xsd:element abstract='false' id='soi_InvestmentAdditionalInformation' name='InvestmentAdditionalInformation' nillable='true' substitutionGroup='xbrli:item' type='xbrli:stringItemType' xbrli:periodType='duration' />
+<xsd:element abstract='false' id='soi_InvestmentOwnedOpenPutOrCallOptionFlag' name='InvestmentOwnedOpenPutOrCallOptionFlag' nillable='true' substitutionGroup='xbrli:item' type='xbrli:booleanItemType' xbrli:periodType='duration' />
+<xsd:element abstract='true' id='soi_InvestmentSoldNotYetPurchasedIntraPeriodActivityAbstract' name='InvestmentSoldNotYetPurchasedIntraPeriodActivityAbstract' nillable='true' substitutionGroup='xbrli:item' type='xbrli:stringItemType' xbrli:periodType='duration' />
+<xsd:element abstract='true' id='soi_InvestmentSoldNotYetPurchasedNumberOfInvestmentsSoldShortAbstract' name='InvestmentSoldNotYetPurchasedNumberOfInvestmentsSoldShortAbstract' nillable='true' substitutionGroup='xbrli:item' type='xbrli:stringItemType' xbrli:periodType='duration' />
+<xsd:element abstract='false' id='soi_InvestmentSoldNotYetPurchasedNumberOfInvestmentsSoldShortShares' name='InvestmentSoldNotYetPurchasedNumberOfInvestmentsSoldShortShares' nillable='true' substitutionGroup='xbrli:item' type='xbrli:sharesItemType' xbrli:periodType='duration' />
+<xsd:element abstract='false' id='soi_InvestmentSoldNotYetPurchasedNumberOfInvestmentsSoldShortPrincipalAmount' name='InvestmentSoldNotYetPurchasedNumberOfInvestmentsSoldShortPrincipalAmount' nillable='true' substitutionGroup='xbrli:item' type='xbrli:monetaryItemType' xbrli:balance='credit' xbrli:periodType='duration' />
+<xsd:element abstract='false' id='soi_InvestmentSoldNotYetPurchasedValueOfInvestmentsSoldShort' name='InvestmentSoldNotYetPurchasedValueOfInvestmentsSoldShort' nillable='true' substitutionGroup='xbrli:item' type='xbrli:monetaryItemType' xbrli:balance='credit' xbrli:periodType='duration' />
+<xsd:element abstract='true' id='soi_InvestmentSoldNotYetPurchasedNumberOfInvestmentsOfLargestShortPositionAbstract' name='InvestmentSoldNotYetPurchasedNumberOfInvestmentsOfLargestShortPositionAbstract' nillable='true' substitutionGroup='xbrli:item' type='xbrli:stringItemType' xbrli:periodType='duration' />
+<xsd:element abstract='false' id='soi_InvestmentSoldNotYetPurchasedNumberOfInvestmentsOfLargestShortPositionShares' name='InvestmentSoldNotYetPurchasedNumberOfInvestmentsOfLargestShortPositionShares' nillable='true' substitutionGroup='xbrli:item' type='xbrli:sharesItemType' xbrli:periodType='duration' />
+<xsd:element abstract='false' id='soi_InvestmentSoldNotYetPurchasedNumberOfInvestmentsOfLargestShortPositionPrincipalAmount' name='InvestmentSoldNotYetPurchasedNumberOfInvestmentsOfLargestShortPositionPrincipalAmount' nillable='true' substitutionGroup='xbrli:item' type='xbrli:monetaryItemType' xbrli:balance='credit' xbrli:periodType='duration' />
+<xsd:element abstract='false' id='soi_InvestmentSoldNotYetPurchasedNumberOfInvestmentsOfLargestShortPositionOtherMeasure' name='InvestmentSoldNotYetPurchasedNumberOfInvestmentsOfLargestShortPositionOtherMeasure' nillable='true' substitutionGroup='xbrli:item' type='xbrli:decimalItemType' xbrli:periodType='duration' />
+<xsd:element abstract='false' id='soi_InvestmentOwnedBalanceContracts' name='InvestmentOwnedBalanceContracts' nillable='true' substitutionGroup='xbrli:item' type='xbrli:decimalItemType' xbrli:periodType='instant' />
+<xsd:element abstract='false' id='soi_RestrictedInvestmentsAtFairValue' name='RestrictedInvestmentsAtFairValue' nillable='true' substitutionGroup='xbrli:item' type='xbrli:monetaryItemType' xbrli:balance='debit' xbrli:periodType='instant' />
+<xsd:element abstract='false' id='soi_RestrictedInvestmentsPercentOfNetAssets' name='RestrictedInvestmentsPercentOfNetAssets' nillable='true' substitutionGroup='xbrli:item' type='us-types:percentItemType' xbrli:periodType='instant' />
+<xsd:element abstract='true' id='soi_SummaryOfInvestmentHoldingsTable' name='SummaryOfInvestmentHoldingsTable' nillable='true' substitutionGroup='xbrldt:hypercubeItem' type='xbrli:stringItemType' xbrli:periodType='duration' />
+<xsd:element abstract='true' id='soi_SummaryOfInvestmentHoldingsLineItems' name='SummaryOfInvestmentHoldingsLineItems' nillable='true' substitutionGroup='xbrli:item' type='xbrli:stringItemType' xbrli:periodType='duration' />
+<xsd:element abstract='false' id='soi_SummaryOfInvestmentHoldingsAdditionalInformation' name='SummaryOfInvestmentHoldingsAdditionalInformation' nillable='true' substitutionGroup='xbrli:item' type='xbrli:stringItemType' xbrli:periodType='duration' />
+<xsd:element abstract='false' id='soi_InvestmentHoldingsAdditionalInformation' name='InvestmentHoldingsAdditionalInformation' nillable='true' substitutionGroup='xbrli:item' type='xbrli:stringItemType' xbrli:periodType='duration' />
+<xsd:element abstract='true' id='soi_InvestmentOptionsAbstract' name='InvestmentOptionsAbstract' nillable='true' substitutionGroup='xbrli:item' type='xbrli:stringItemType' xbrli:periodType='duration' />
+<xsd:element abstract='false' id='soi_InvestmentOptionsExpirationDate' name='InvestmentOptionsExpirationDate' nillable='true' substitutionGroup='xbrli:item' type='xbrli:dateItemType' xbrli:periodType='duration' />
+<xsd:element abstract='false' id='soi_InvestmentOptionsExercisePrice' name='InvestmentOptionsExercisePrice' nillable='true' substitutionGroup='xbrli:item' type='xbrli:decimalItemType' xbrli:periodType='duration' />
+<xsd:element abstract='false' id='soi_InvestmentOwnedAtCost' name='InvestmentOwnedAtCost' nillable='true' substitutionGroup='xbrli:item' type='xbrli:monetaryItemType' xbrli:balance='debit' xbrli:periodType='instant' />
+<xsd:element abstract='true' id='soi_InvestmentSupplementalFlagsAbstract' name='InvestmentSupplementalFlagsAbstract' nillable='true' substitutionGroup='xbrli:item' type='xbrli:stringItemType' xbrli:periodType='duration' />
+<xsd:element abstract='false' id='soi_InvestmentRestrictedCashFlag' name='InvestmentRestrictedCashFlag' nillable='true' substitutionGroup='xbrli:item' type='xbrli:booleanItemType' xbrli:periodType='duration' />
+<xsd:element abstract='false' id='soi_InvestmentDefaultedSecurityFlag' name='InvestmentDefaultedSecurityFlag' nillable='true' substitutionGroup='xbrli:item' type='xbrli:booleanItemType' xbrli:periodType='duration' />
+<xsd:element abstract='false' id='soi_InvestmentADRFlag' name='InvestmentADRFlag' nillable='true' substitutionGroup='xbrli:item' type='xbrli:booleanItemType' xbrli:periodType='duration' />
+<xsd:element abstract='false' id='soi_InvestmentWhenIssuedFlag' name='InvestmentWhenIssuedFlag' nillable='true' substitutionGroup='xbrli:item' type='xbrli:booleanItemType' xbrli:periodType='duration' />
+<xsd:element abstract='false' id='soi_PreferredNonConvertibleStockMember' name='PreferredNonConvertibleStockMember' nillable='true' substitutionGroup='xbrli:item' type='us-types:domainItemType' xbrli:periodType='duration' />
+<xsd:element abstract='false' id='soi_InvestmentSoldNotYetPurchasedNumberOfInvestmentsSoldShortOtherMeasure' name='InvestmentSoldNotYetPurchasedNumberOfInvestmentsSoldShortOtherMeasure' nillable='true' substitutionGroup='xbrli:item' type='xbrli:decimalItemType' xbrli:periodType='duration' />
+<xsd:element abstract='false' id='soi_InvestmentOwnedBalancePrincipalAmount' name='InvestmentOwnedBalancePrincipalAmount' nillable='true' substitutionGroup='xbrli:item' type='xbrli:monetaryItemType' xbrli:balance='debit' xbrli:periodType='instant' />
+<xsd:element abstract='true' id='soi_InvestmentTypeAxis' name='InvestmentTypeAxis' nillable='true' substitutionGroup='xbrldt:dimensionItem' type='xbrli:stringItemType' xbrli:periodType='duration' />
+<xsd:element abstract='true' id='soi_InvestmentSecondaryCategorizationAxis' name='InvestmentSecondaryCategorizationAxis' nillable='true' substitutionGroup='xbrldt:dimensionItem' type='xbrli:stringItemType' xbrli:periodType='duration' />
+<xsd:element abstract='false' id='soi_InvestmentInterestOnlyFlag' name='InvestmentInterestOnlyFlag' nillable='true' substitutionGroup='xbrli:item' type='xbrli:booleanItemType' xbrli:periodType='duration' />
+<xsd:element abstract='false' id='soi_InvestmentPrincipalOnlyFlag' name='InvestmentPrincipalOnlyFlag' nillable='true' substitutionGroup='xbrli:item' type='xbrli:booleanItemType' xbrli:periodType='duration' />
+<xsd:element abstract='false' id='soi_InvestmentMaturityDate' name='InvestmentMaturityDate' nillable='true' substitutionGroup='xbrli:item' type='us-types:dateStringItemType' xbrli:periodType='duration' />
+<xsd:element abstract='false' id='soi_InvestmentMaturityDateRangeStart' name='InvestmentMaturityDateRangeStart' nillable='true' substitutionGroup='xbrli:item' type='us-types:dateStringItemType' xbrli:periodType='duration' />
+<xsd:element abstract='false' id='soi_InvestmentMaturityDateRangeEnd' name='InvestmentMaturityDateRangeEnd' nillable='true' substitutionGroup='xbrli:item' type='us-types:dateStringItemType' xbrli:periodType='duration' />
+<xsd:element abstract='false' id='soi_InvestmentStepupBondInterestRateIsForFutureDateFlag' name='InvestmentStepupBondInterestRateIsForFutureDateFlag' nillable='true' substitutionGroup='xbrli:item' type='xbrli:booleanItemType' xbrli:periodType='duration' />
+<xsd:element abstract='false' id='soi_InvestmentInterestRateIsCurrentRateForVariableRateInvestmentFlag' name='InvestmentInterestRateIsCurrentRateForVariableRateInvestmentFlag' nillable='true' substitutionGroup='xbrli:item' type='xbrli:booleanItemType' xbrli:periodType='duration' />
+<xsd:element abstract='false' id='soi_InvestmentInterestRateIsDiscountRateAtPurchaseFlag' name='InvestmentInterestRateIsDiscountRateAtPurchaseFlag' nillable='true' substitutionGroup='xbrli:item' type='xbrli:booleanItemType' xbrli:periodType='duration' />
+<xsd:element abstract='true' id='soi_AssetsNetAbstract' name='AssetsNetAbstract' nillable='true' substitutionGroup='xbrli:item' type='xbrli:stringItemType' xbrli:periodType='duration' />
+<xsd:element abstract='false' id='soi_AssetsNet' name='AssetsNet' nillable='true' substitutionGroup='xbrli:item' type='xbrli:monetaryItemType' xbrli:balance='debit' xbrli:periodType='instant' />
+<xsd:element abstract='true' id='soi_RestrictedInvestmentsNoteAbstract' name='RestrictedInvestmentsNoteAbstract' nillable='true' substitutionGroup='xbrli:item' type='xbrli:stringItemType' xbrli:periodType='duration' />
+<xsd:element abstract='true' id='soi_RestrictedInvestmentsExemptFromRegistrationNoteAbstract' name='RestrictedInvestmentsExemptFromRegistrationNoteAbstract' nillable='true' substitutionGroup='xbrli:item' type='xbrli:stringItemType' xbrli:periodType='duration' />
+<xsd:element abstract='true' id='soi_RestrictedInvestmentsNotExemptFromRegistrationNoteAbstract' name='RestrictedInvestmentsNotExemptFromRegistrationNoteAbstract' nillable='true' substitutionGroup='xbrli:item' type='xbrli:stringItemType' xbrli:periodType='duration' />
+<xsd:element abstract='false' id='soi_RestrictedInvestmentsExemptFromRegistrationAtFairValue' name='RestrictedInvestmentsExemptFromRegistrationAtFairValue' nillable='true' substitutionGroup='xbrli:item' type='xbrli:monetaryItemType' xbrli:balance='debit' xbrli:periodType='instant' />
+<xsd:element abstract='false' id='soi_RestrictedInvestmentsNotExemptFromRegistrationPercentOfNetAssets' name='RestrictedInvestmentsNotExemptFromRegistrationPercentOfNetAssets' nillable='true' substitutionGroup='xbrli:item' type='xbrli:pureItemType' xbrli:periodType='instant' />
+<xsd:element abstract='false' id='soi_RestrictedInvestmentsNotExemptFromRegistrationAtFairValue' name='RestrictedInvestmentsNotExemptFromRegistrationAtFairValue' nillable='true' substitutionGroup='xbrli:item' type='xbrli:monetaryItemType' xbrli:balance='debit' xbrli:periodType='instant' />
+<xsd:element abstract='false' id='soi_RestrictedInvestmentsExemptFromRegistrationPercentOfNetAssets' name='RestrictedInvestmentsExemptFromRegistrationPercentOfNetAssets' nillable='true' substitutionGroup='xbrli:item' type='xbrli:pureItemType' xbrli:periodType='instant' />
+<xsd:element abstract='true' id='soi_InvestmentHoldingsSupplementalFlagsAbstract' name='InvestmentHoldingsSupplementalFlagsAbstract' nillable='true' substitutionGroup='xbrli:item' type='xbrli:stringItemType' xbrli:periodType='duration' />
+<xsd:element abstract='false' id='soi_InvestmentUnderlyingInvestmentIdentifier' name='InvestmentUnderlyingInvestmentIdentifier' nillable='true' substitutionGroup='xbrli:item' type='xbrli:stringItemType' xbrli:periodType='duration' />
+<xsd:element abstract='false' id='soi_InvestmentSoldNotYetPurchasedAdditionalInformation' name='InvestmentSoldNotYetPurchasedAdditionalInformation' nillable='true' substitutionGroup='xbrli:item' type='xbrli:stringItemType' xbrli:periodType='instant' />
+<xsd:element abstract='false' id='soi_InvestmentInterestRateReflectsCurrentYieldFlag' name='InvestmentInterestRateReflectsCurrentYieldFlag' nillable='true' substitutionGroup='xbrli:item' type='xbrli:booleanItemType' xbrli:periodType='duration' />
+<xsd:element abstract='false' id='soi_NonInvestmentAssetsLessNonInvestmentLiabilities' name='NonInvestmentAssetsLessNonInvestmentLiabilities' nillable='true' substitutionGroup='xbrli:item' type='xbrli:monetaryItemType' xbrli:balance='debit' xbrli:periodType='instant' />
+<xsd:element abstract='true' id='soi_InvestmentHoldingsTable' name='InvestmentHoldingsTable' nillable='true' substitutionGroup='xbrldt:hypercubeItem' type='xbrli:stringItemType' xbrli:periodType='duration' />
+<xsd:element abstract='false' id='soi_LoanParticipationsAndAssignmentsMember' name='LoanParticipationsAndAssignmentsMember' nillable='true' substitutionGroup='xbrli:item' type='us-types:domainItemType' xbrli:periodType='duration' />
+<xsd:element abstract='false' id='soi_InvestmentOwnedPercentOfNetAssets' name='InvestmentOwnedPercentOfNetAssets' nillable='true' substitutionGroup='xbrli:item' type='xbrli:pureItemType' xbrli:periodType='instant' />
+<xsd:element abstract='false' id='soi_TaxBasisOfInvestmentsCostForIncomeTaxPurposes' name='TaxBasisOfInvestmentsCostForIncomeTaxPurposes' nillable='true' substitutionGroup='xbrli:item' type='xbrli:monetaryItemType' xbrli:balance='debit' xbrli:periodType='instant' />
+<xsd:element abstract='false' id='soi_InvestmentSoldNotYetPurchasedBalancePrincipalAmount' name='InvestmentSoldNotYetPurchasedBalancePrincipalAmount' nillable='true' substitutionGroup='xbrli:item' type='xbrli:monetaryItemType' xbrli:balance='credit' xbrli:periodType='instant' />
+<xsd:element abstract='true' id='soi_InvestmentMaturityDateRangeAbstract' name='InvestmentMaturityDateRangeAbstract' nillable='true' substitutionGroup='xbrli:item' type='xbrli:stringItemType' xbrli:periodType='duration' />
+<xsd:element abstract='false' id='soi_NonInvestmentAssetsLessNonInvestmentLiabilitiesPercentOfNetAssets' name='NonInvestmentAssetsLessNonInvestmentLiabilitiesPercentOfNetAssets' nillable='true' substitutionGroup='xbrli:item' type='us-types:percentItemType' xbrli:periodType='instant' />
+<xsd:element abstract='false' id='soi_InvestmentOwnedOnLoanFlag' name='InvestmentOwnedOnLoanFlag' nillable='true' substitutionGroup='xbrli:item' type='soi:investmentOnLoanForShortSalesItemType' xbrli:periodType='duration' />
+<xsd:element abstract='false' id='soi_OtherAggregatedInvestmentsMember' name='OtherAggregatedInvestmentsMember' nillable='true' substitutionGroup='xbrli:item' type='us-types:domainItemType' xbrli:periodType='duration' />
+<xsd:element abstract='false' id='soi_InvestmentInterestRate' name='InvestmentInterestRate' nillable='true' substitutionGroup='xbrli:item' type='xbrli:pureItemType' xbrli:periodType='duration' />
+<xsd:element abstract='true' id='soi_InvestmentTable' name='InvestmentTable' nillable='true' substitutionGroup='xbrldt:hypercubeItem' type='xbrli:stringItemType' xbrli:periodType='duration' />
+<xsd:element abstract='false' id='soi_OpenOptionContractsWrittenNumberOfShares' name='OpenOptionContractsWrittenNumberOfShares' nillable='true' substitutionGroup='xbrli:item' type='xbrli:decimalItemType' xbrli:periodType='instant' />
+<xsd:element abstract='false' id='soi_InvestmentSoldNotYetPurchasedTimeOfLargestShortPosition' name='InvestmentSoldNotYetPurchasedTimeOfLargestShortPosition' nillable='true' substitutionGroup='xbrli:item' type='xbrli:dateTimeItemType' xbrli:periodType='duration' />
+<xsd:element abstract='true' id='soi_InvestmentsSoldNotYetPurchasedFormSHLineItems' name='InvestmentsSoldNotYetPurchasedFormSHLineItems' nillable='true' substitutionGroup='xbrli:item' type='xbrli:stringItemType' xbrli:periodType='duration' />
+<xsd:element abstract='true' id='soi_InvestmentSoldNotYetPurchasedFormSHOpeningBalanceAbstract' name='InvestmentSoldNotYetPurchasedFormSHOpeningBalanceAbstract' nillable='true' substitutionGroup='xbrli:item' type='xbrli:stringItemType' xbrli:periodType='duration' />
+<xsd:element abstract='true' id='soi_InvestmentSoldNotYetPurchasedFormSHClosingBalanceAbstract' name='InvestmentSoldNotYetPurchasedFormSHClosingBalanceAbstract' nillable='true' substitutionGroup='xbrli:item' type='xbrli:stringItemType' xbrli:periodType='duration' />
+<xsd:element abstract='true' id='soi_InvestmentHoldingsOtherThanSecuritiesTable' name='InvestmentHoldingsOtherThanSecuritiesTable' nillable='true' substitutionGroup='xbrldt:hypercubeItem' type='xbrli:stringItemType' xbrli:periodType='duration' />
+<xsd:element abstract='true' id='soi_InvestmentHoldingsOtherThanSecuritiesLineItems' name='InvestmentHoldingsOtherThanSecuritiesLineItems' nillable='true' substitutionGroup='xbrli:item' type='xbrli:stringItemType' xbrli:periodType='duration' />
+<xsd:element abstract='false' id='soi_InvestmentHoldingsOtherThanSecuritiesAdditionalInformation' name='InvestmentHoldingsOtherThanSecuritiesAdditionalInformation' nillable='true' substitutionGroup='xbrli:item' type='xbrli:stringItemType' xbrli:periodType='duration' />
+<xsd:element abstract='false' id='soi_OpenOptionContractsWrittenPremiums' name='OpenOptionContractsWrittenPremiums' nillable='true' substitutionGroup='xbrli:item' type='xbrli:monetaryItemType' xbrli:balance='credit' xbrli:periodType='instant' />
+<xsd:element abstract='false' id='soi_InvestmentOwnedPledgedFlag' name='InvestmentOwnedPledgedFlag' nillable='true' substitutionGroup='xbrli:item' type='soi:investmentPledgedItemType' xbrli:periodType='duration' />
+<xsd:element abstract='true' id='soi_FederalIncomeTaxNoteTable' name='FederalIncomeTaxNoteTable' nillable='true' substitutionGroup='xbrldt:hypercubeItem' type='xbrli:stringItemType' xbrli:periodType='duration' />
+<xsd:element abstract='true' id='soi_InvestmentsOwnedFederalIncomeTaxNoteLineItems' name='InvestmentsOwnedFederalIncomeTaxNoteLineItems' nillable='true' substitutionGroup='xbrli:item' type='xbrli:stringItemType' xbrli:periodType='duration' />
+<xsd:element abstract='true' id='soi_InvestmentOwnedUnrealizedAppreciationDepreciationNetAbstract' name='InvestmentOwnedUnrealizedAppreciationDepreciationNetAbstract' nillable='true' substitutionGroup='xbrli:item' type='xbrli:stringItemType' xbrli:periodType='duration' />
+<xsd:element abstract='false' id='soi_InvestmentOwnedUnrealizedAppreciation' name='InvestmentOwnedUnrealizedAppreciation' nillable='true' substitutionGroup='xbrli:item' type='xbrli:monetaryItemType' xbrli:balance='debit' xbrli:periodType='duration' />
+<xsd:element abstract='false' id='soi_InvestmentOwnedUnrealizedDepreciation' name='InvestmentOwnedUnrealizedDepreciation' nillable='true' substitutionGroup='xbrli:item' type='xbrli:monetaryItemType' xbrli:balance='credit' xbrli:periodType='duration' />
+<xsd:element abstract='false' id='soi_InvestmentOwnedUnrealizedAppreciationDepreciationNet' name='InvestmentOwnedUnrealizedAppreciationDepreciationNet' nillable='true' substitutionGroup='xbrli:item' type='xbrli:monetaryItemType' xbrli:balance='debit' xbrli:periodType='duration' />
+<xsd:element abstract='true' id='soi_InvestmentForeignCurrencyContractAbstract' name='InvestmentForeignCurrencyContractAbstract' nillable='true' substitutionGroup='xbrli:item' type='xbrli:stringItemType' xbrli:periodType='duration' />
+<xsd:element abstract='false' id='soi_InvestmentForeignCurrencyContractCurrency' name='InvestmentForeignCurrencyContractCurrency' nillable='true' substitutionGroup='xbrli:item' type='xbrli:stringItemType' xbrli:periodType='duration' />
+<xsd:element abstract='false' id='soi_InvestmentOwnedForeignCurrencyContractReportingCurrencyAmountCurrentValue' name='InvestmentOwnedForeignCurrencyContractReportingCurrencyAmountCurrentValue' nillable='true' substitutionGroup='xbrli:item' type='xbrli:monetaryItemType' xbrli:balance='debit' xbrli:periodType='instant' />
+<xsd:element abstract='false' id='soi_InvestmentOwnedUnderlyingFaceAmountAtMarketValue' name='InvestmentOwnedUnderlyingFaceAmountAtMarketValue' nillable='true' substitutionGroup='xbrli:item' type='xbrli:monetaryItemType' xbrli:balance='debit' xbrli:periodType='instant' />
+<xsd:element abstract='false' id='soi_SecuritiesInvestmentMember' name='SecuritiesInvestmentMember' nillable='true' substitutionGroup='xbrli:item' type='us-types:domainItemType' xbrli:periodType='duration' />
+<xsd:element abstract='false' id='soi_TaxBasisOfInvestmentsGrossUnrealizedDepreciation' name='TaxBasisOfInvestmentsGrossUnrealizedDepreciation' nillable='true' substitutionGroup='xbrli:item' type='xbrli:monetaryItemType' xbrli:balance='credit' xbrli:periodType='instant' />
+<xsd:element abstract='false' id='soi_TaxBasisOfInvestmentsGrossUnrealizedAppreciation' name='TaxBasisOfInvestmentsGrossUnrealizedAppreciation' nillable='true' substitutionGroup='xbrli:item' type='xbrli:monetaryItemType' xbrli:balance='debit' xbrli:periodType='instant' />
+<xsd:element abstract='false' id='soi_OtherThanSecuritiesInvestmentMember' name='OtherThanSecuritiesInvestmentMember' nillable='true' substitutionGroup='xbrli:item' type='us-types:domainItemType' xbrli:periodType='duration' />
+<xsd:element abstract='false' id='soi_InvestmentForeignCurrencyContractTransactionTypeFlag' name='InvestmentForeignCurrencyContractTransactionTypeFlag' nillable='true' substitutionGroup='xbrli:item' type='soi:foreignCurrencyContractTransactionItemType' xbrli:periodType='duration' />
+<xsd:element abstract='false' id='soi_InvestmentCFICode' name='InvestmentCFICode' nillable='true' substitutionGroup='xbrli:item' type='xbrli:stringItemType' xbrli:periodType='duration' />
+<xsd:element abstract='false' id='soi_InvestmentSoldNotYetPurchasedRestrictedInvestmentFlag' name='InvestmentSoldNotYetPurchasedRestrictedInvestmentFlag' nillable='true' substitutionGroup='xbrli:item' type='soi:restrictedInvestmentItemType' xbrli:periodType='duration' />
+<xsd:element abstract='false' id='soi_InvestmentSoldNotYetPurchasedRestrictedAcquisitionDate' name='InvestmentSoldNotYetPurchasedRestrictedAcquisitionDate' nillable='true' substitutionGroup='xbrli:item' type='xbrli:dateItemType' xbrli:periodType='duration' />
+<xsd:element abstract='false' id='soi_InvestmentSoldNotYetPurchasedRestrictedCarryingValuePerUnitAtDateOfBalanceSheet' name='InvestmentSoldNotYetPurchasedRestrictedCarryingValuePerUnitAtDateOfBalanceSheet' nillable='true' substitutionGroup='xbrli:item' type='xbrli:decimalItemType' xbrli:periodType='duration' />
+<xsd:element abstract='false' id='soi_InvestmentSoldNotYetPurchasedRestrictedCost' name='InvestmentSoldNotYetPurchasedRestrictedCost' nillable='true' substitutionGroup='xbrli:item' type='xbrli:monetaryItemType' xbrli:balance='credit' xbrli:periodType='instant' />
+<xsd:element abstract='false' id='soi_InvestmentSoldNotYetPurchasedUnrestrictedCarryingValuePerUnitAtDateOfPurchasePriceAgreement' name='InvestmentSoldNotYetPurchasedUnrestrictedCarryingValuePerUnitAtDateOfPurchasePriceAgreement' nillable='true' substitutionGroup='xbrli:item' type='xbrli:decimalItemType' xbrli:periodType='instant' />
+<xsd:element abstract='false' id='soi_InvestmentSoldNotYetPurchasedUnrestrictedCarryingValuePerUnitAtDateWhenEnforceableRightToAcquireWasObtained' name='InvestmentSoldNotYetPurchasedUnrestrictedCarryingValuePerUnitAtDateWhenEnforceableRightToAcquireWasObtained' nillable='true' substitutionGroup='xbrli:item' type='xbrli:decimalItemType' xbrli:periodType='instant' />
+<xsd:element abstract='true' id='soi_InvestmentsInAndAdvancesToAffiliatesBalanceAbstract' name='InvestmentsInAndAdvancesToAffiliatesBalanceAbstract' nillable='true' substitutionGroup='xbrli:item' type='xbrli:stringItemType' xbrli:periodType='duration' />
+<xsd:element abstract='false' id='soi_InvestmentsInAndAdvancesToAffiliatesBalanceShares' name='InvestmentsInAndAdvancesToAffiliatesBalanceShares' nillable='true' substitutionGroup='xbrli:item' type='xbrli:sharesItemType' xbrli:periodType='instant' />
+<xsd:element abstract='false' id='soi_InvestmentsInAndAdvancesToAffiliatesBalanceContracts' name='InvestmentsInAndAdvancesToAffiliatesBalanceContracts' nillable='true' substitutionGroup='xbrli:item' type='xbrli:decimalItemType' xbrli:periodType='instant' />
+<xsd:element abstract='false' id='soi_InvestmentsInAndAdvancesToAffiliatesBalancePrincipalAmount' name='InvestmentsInAndAdvancesToAffiliatesBalancePrincipalAmount' nillable='true' substitutionGroup='xbrli:item' type='xbrli:monetaryItemType' xbrli:balance='debit' xbrli:periodType='instant' />
+<xsd:element abstract='false' id='soi_InvestmentsInAndAdvancesToAffiliatesBalanceOtherMeasure' name='InvestmentsInAndAdvancesToAffiliatesBalanceOtherMeasure' nillable='true' substitutionGroup='xbrli:item' type='xbrli:decimalItemType' xbrli:periodType='instant' />
+<xsd:element abstract='true' id='soi_InvestmentsInAndAdvancesToAffiliatesAtFairValueRollForward' name='InvestmentsInAndAdvancesToAffiliatesAtFairValueRollForward' nillable='true' substitutionGroup='xbrli:item' type='xbrli:stringItemType' xbrli:periodType='duration' />
+<xsd:element abstract='false' id='soi_InvestmentsInAndAdvancesToAffiliatesAtFairValue' name='InvestmentsInAndAdvancesToAffiliatesAtFairValue' nillable='true' substitutionGroup='xbrli:item' type='xbrli:monetaryItemType' xbrli:balance='debit' xbrli:periodType='instant' />
+<xsd:element abstract='false' id='soi_InvestmentsInAndAdvancesToAffiliatesAtFairValuePeriodIncreaseDecrease' name='InvestmentsInAndAdvancesToAffiliatesAtFairValuePeriodIncreaseDecrease' nillable='true' substitutionGroup='xbrli:item' type='xbrli:monetaryItemType' xbrli:balance='debit' xbrli:periodType='duration' />
+<xsd:element abstract='false' id='soi_InvestmentSoldNotYetPurchasedSaleProceeds' name='InvestmentSoldNotYetPurchasedSaleProceeds' nillable='true' substitutionGroup='xbrli:item' type='xbrli:monetaryItemType' xbrli:balance='debit' xbrli:periodType='duration' />
+<xsd:element abstract='false' id='soi_InvestmentSoldNotYetPurchasedPercentOfNetAssets' name='InvestmentSoldNotYetPurchasedPercentOfNetAssets' nillable='true' substitutionGroup='xbrli:item' type='xbrli:pureItemType' xbrli:periodType='instant' />
+<xsd:element abstract='false' id='soi_InvestmentOwnedLoanedForShortSalesAtFairValue' name='InvestmentOwnedLoanedForShortSalesAtFairValue' nillable='true' substitutionGroup='xbrli:item' type='xbrli:monetaryItemType' xbrli:balance='debit' xbrli:periodType='instant' />
+<xsd:element abstract='false' id='soi_InvestmentOwnedOtherThanSecuritiesLoanedForShortSalesAtFairValue' name='InvestmentOwnedOtherThanSecuritiesLoanedForShortSalesAtFairValue' nillable='true' substitutionGroup='xbrli:item' type='xbrli:monetaryItemType' xbrli:balance='debit' xbrli:periodType='instant' />
+<xsd:element abstract='false' id='soi_InvestmentOwnedOtherThanSecuritiesInvestmentNotReadilyMarketableFlag' name='InvestmentOwnedOtherThanSecuritiesInvestmentNotReadilyMarketableFlag' nillable='true' substitutionGroup='xbrli:item' type='xbrli:booleanItemType' xbrli:periodType='duration' />
+<xsd:element abstract='true' id='soi_InvestmentDerivativeNotionalAmountAbstract' name='InvestmentDerivativeNotionalAmountAbstract' nillable='true' substitutionGroup='xbrli:item' type='xbrli:stringItemType' xbrli:periodType='duration' />
+<xsd:element abstract='false' id='soi_InvestmentForeignCurrencyContractForeignCurrencyAmount' name='InvestmentForeignCurrencyContractForeignCurrencyAmount' nillable='true' substitutionGroup='xbrli:item' type='xbrli:monetaryItemType' xbrli:periodType='instant' />
+<xsd:element abstract='false' id='soi_InvestmentForeignCurrencyContractReportingCurrencyAmountAtDateOfOrigin' name='InvestmentForeignCurrencyContractReportingCurrencyAmountAtDateOfOrigin' nillable='true' substitutionGroup='xbrli:item' type='xbrli:monetaryItemType' xbrli:periodType='instant' />
+<xsd:element abstract='false' id='soi_InvestmentOwnedRestrictedAcquisitionDate' name='InvestmentOwnedRestrictedAcquisitionDate' nillable='true' substitutionGroup='xbrli:item' type='xbrli:dateItemType' xbrli:periodType='duration' />
+<xsd:element abstract='false' id='soi_InvestmentOwnedRestrictedCarryingValuePerUnitAtDateOfBalanceSheet' name='InvestmentOwnedRestrictedCarryingValuePerUnitAtDateOfBalanceSheet' nillable='true' substitutionGroup='xbrli:item' type='us-types:perUnitItemType' xbrli:periodType='duration' />
+<xsd:element abstract='false' id='soi_InvestmentOwnedRestrictedInvestmentFlag' name='InvestmentOwnedRestrictedInvestmentFlag' nillable='true' substitutionGroup='xbrli:item' type='soi:restrictedInvestmentItemType' xbrli:periodType='duration' />
+<xsd:element abstract='false' id='soi_InvestmentOwnedRestrictedCost' name='InvestmentOwnedRestrictedCost' nillable='true' substitutionGroup='xbrli:item' type='xbrli:monetaryItemType' xbrli:balance='debit' xbrli:periodType='instant' />
+<xsd:element abstract='false' id='soi_InvestmentOwnedUnrestrictedCarryingValuePerUnitAtDateOfPurchasePriceAgreement' name='InvestmentOwnedUnrestrictedCarryingValuePerUnitAtDateOfPurchasePriceAgreement' nillable='true' substitutionGroup='xbrli:item' type='us-types:perUnitItemType' xbrli:periodType='instant' />
+<xsd:element abstract='false' id='soi_InvestmentOwnedUnrestrictedCarryingValuePerUnitAtDateWhenEnforceableRightToAcquireWasObtained' name='InvestmentOwnedUnrestrictedCarryingValuePerUnitAtDateWhenEnforceableRightToAcquireWasObtained' nillable='true' substitutionGroup='xbrli:item' type='us-types:perUnitItemType' xbrli:periodType='instant' />
+<xsd:element abstract='false' id='soi_InvestmentOwnedSubjectToOptionFlag' name='InvestmentOwnedSubjectToOptionFlag' nillable='true' substitutionGroup='xbrli:item' type='xbrli:booleanItemType' xbrli:periodType='duration' />
+<xsd:element abstract='false' id='soi_InvestmentOwnedSubjectToOptionBalanceOtherMeasure' name='InvestmentOwnedSubjectToOptionBalanceOtherMeasure' nillable='true' substitutionGroup='xbrli:item' type='xbrli:decimalItemType' xbrli:periodType='instant' />
+<xsd:element abstract='false' id='soi_InvestmentOwnedSubjectToOptionNatureOfContract' name='InvestmentOwnedSubjectToOptionNatureOfContract' nillable='true' substitutionGroup='xbrli:item' type='xbrli:stringItemType' xbrli:periodType='instant' />
+<xsd:element abstract='false' id='soi_InvestmentOwnedSubjectToOptionPrice' name='InvestmentOwnedSubjectToOptionPrice' nillable='true' substitutionGroup='xbrli:item' type='xbrli:decimalItemType' xbrli:periodType='instant' />
+<xsd:element abstract='false' id='soi_InvestmentOwnedSubjectToOptionExerciseDates' name='InvestmentOwnedSubjectToOptionExerciseDates' nillable='true' substitutionGroup='xbrli:item' type='xbrli:stringItemType' xbrli:periodType='instant' />
+<xsd:element abstract='false' id='soi_InvestmentOwnedFromCashCollateralReceivedFromInvestmentsOnLoanFlag' name='InvestmentOwnedFromCashCollateralReceivedFromInvestmentsOnLoanFlag' nillable='true' substitutionGroup='xbrli:item' type='xbrli:booleanItemType' xbrli:periodType='duration' />
+<xsd:element abstract='false' id='soi_InvestmentOwnedPaymentInKindFlag' name='InvestmentOwnedPaymentInKindFlag' nillable='true' substitutionGroup='xbrli:item' type='xbrli:booleanItemType' xbrli:periodType='duration' />
+<xsd:element abstract='false' id='soi_InvestmentOwnedValuedByTrusteesFlag' name='InvestmentOwnedValuedByTrusteesFlag' nillable='true' substitutionGroup='xbrli:item' type='xbrli:booleanItemType' xbrli:periodType='instant' />
+<xsd:element abstract='false' id='soi_InvestmentOwnedZeroBalanceMayReflectAmountRoundedToZeroFlag' name='InvestmentOwnedZeroBalanceMayReflectAmountRoundedToZeroFlag' nillable='true' substitutionGroup='xbrli:item' type='xbrli:booleanItemType' xbrli:periodType='instant' />
+<xsd:element abstract='false' id='soi_CorporateBondSecuritiesMember' name='CorporateBondSecuritiesMember' nillable='true' substitutionGroup='xbrli:item' type='us-types:domainItemType' xbrli:periodType='duration' />
+<xsd:element abstract='false' id='soi_CorporateNoteSecuritiesMember' name='CorporateNoteSecuritiesMember' nillable='true' substitutionGroup='xbrli:item' type='us-types:domainItemType' xbrli:periodType='duration' />
+<xsd:element abstract='false' id='soi_RightsMember' name='RightsMember' nillable='true' substitutionGroup='xbrli:item' type='us-types:domainItemType' xbrli:periodType='duration' />
+<xsd:element abstract='false' id='soi_BankLoanObligationsMember' name='BankLoanObligationsMember' nillable='true' substitutionGroup='xbrli:item' type='us-types:domainItemType' xbrli:periodType='duration' />
+<xsd:element abstract='false' id='soi_CommodityIndexLinkedNotesMember' name='CommodityIndexLinkedNotesMember' nillable='true' substitutionGroup='xbrli:item' type='us-types:domainItemType' xbrli:periodType='duration' />
+<xsd:element abstract='false' id='soi_EuroDollarCertificatesOfDepositMember' name='EuroDollarCertificatesOfDepositMember' nillable='true' substitutionGroup='xbrli:item' type='us-types:domainItemType' xbrli:periodType='duration' />
+<xsd:element abstract='false' id='soi_AdjustableRateLoansMember' name='AdjustableRateLoansMember' nillable='true' substitutionGroup='xbrli:item' type='us-types:domainItemType' xbrli:periodType='duration' />
+<xsd:element abstract='false' id='soi_ForeignGovernmentShorttermDebtSecuritiesMember' name='ForeignGovernmentShorttermDebtSecuritiesMember' nillable='true' substitutionGroup='xbrli:item' type='us-types:domainItemType' xbrli:periodType='duration' />
+<xsd:element abstract='false' id='soi_SovereignDebtSecuritiesMember' name='SovereignDebtSecuritiesMember' nillable='true' substitutionGroup='xbrli:item' type='us-types:domainItemType' xbrli:periodType='duration' />
+<xsd:element abstract='false' id='soi_MunicipalBondsMember' name='MunicipalBondsMember' nillable='true' substitutionGroup='xbrli:item' type='us-types:domainItemType' xbrli:periodType='duration' />
+<xsd:element abstract='false' id='soi_MunicipalNotesMember' name='MunicipalNotesMember' nillable='true' substitutionGroup='xbrli:item' type='us-types:domainItemType' xbrli:periodType='duration' />
+<xsd:element abstract='false' id='soi_USGovernmentAgenciesShorttermDebtSecuritiesMember' name='USGovernmentAgenciesShorttermDebtSecuritiesMember' nillable='true' substitutionGroup='xbrli:item' type='us-types:domainItemType' xbrli:periodType='duration' />
+<xsd:element abstract='false' id='soi_USTreasuryAndGovernmentShorttermDebtSecuritiesMember' name='USTreasuryAndGovernmentShorttermDebtSecuritiesMember' nillable='true' substitutionGroup='xbrli:item' type='us-types:domainItemType' xbrli:periodType='duration' />
+<xsd:element abstract='false' id='soi_TaxableMoneyMarketFundsMember' name='TaxableMoneyMarketFundsMember' nillable='true' substitutionGroup='xbrli:item' type='us-types:domainItemType' xbrli:periodType='duration' />
+<xsd:element abstract='false' id='soi_TaxexemptMoneyMarketFundsMember' name='TaxexemptMoneyMarketFundsMember' nillable='true' substitutionGroup='xbrli:item' type='us-types:domainItemType' xbrli:periodType='duration' />
+<xsd:element abstract='false' id='soi_USTreasuryNotesSecuritiesMember' name='USTreasuryNotesSecuritiesMember' nillable='true' substitutionGroup='xbrli:item' type='us-types:domainItemType' xbrli:periodType='duration' />
+<xsd:element abstract='false' id='soi_USTreasuryBondSecuritiesMember' name='USTreasuryBondSecuritiesMember' nillable='true' substitutionGroup='xbrli:item' type='us-types:domainItemType' xbrli:periodType='duration' />
+<xsd:element abstract='false' id='soi_USTreasuryBillSecuritiesMember' name='USTreasuryBillSecuritiesMember' nillable='true' substitutionGroup='xbrli:item' type='us-types:domainItemType' xbrli:periodType='duration' />
+<xsd:element abstract='false' id='soi_EquityFundsMember' name='EquityFundsMember' nillable='true' substitutionGroup='xbrli:item' type='us-types:domainItemType' xbrli:periodType='duration' />
+<xsd:element abstract='false' id='soi_OptionOnSecuritiesMember' name='OptionOnSecuritiesMember' nillable='true' substitutionGroup='xbrli:item' type='us-types:domainItemType' xbrli:periodType='duration' />
+<xsd:element abstract='false' id='soi_TotalReturnSwapMember' name='TotalReturnSwapMember' nillable='true' substitutionGroup='xbrli:item' type='us-types:domainItemType' xbrli:periodType='duration' />
+<xsd:element abstract='false' id='soi_VarianceSwapMember' name='VarianceSwapMember' nillable='true' substitutionGroup='xbrli:item' type='us-types:domainItemType' xbrli:periodType='duration' />
+<xsd:element abstract='false' id='soi_CreditDefaultSwaptionMember' name='CreditDefaultSwaptionMember' nillable='true' substitutionGroup='xbrli:item' type='us-types:domainItemType' xbrli:periodType='duration' />
+<xsd:element abstract='false' id='soi_InterestRateSwaptionMember' name='InterestRateSwaptionMember' nillable='true' substitutionGroup='xbrli:item' type='us-types:domainItemType' xbrli:periodType='duration' />
+<xsd:element abstract='false' id='soi_FixedIncomeFundsMember' name='FixedIncomeFundsMember' nillable='true' substitutionGroup='xbrli:item' type='us-types:domainItemType' xbrli:periodType='duration' />
+<xsd:element abstract='false' id='soi_ExchangeTradedFundsMember' name='ExchangeTradedFundsMember' nillable='true' substitutionGroup='xbrli:item' type='us-types:domainItemType' xbrli:periodType='duration' />
+<xsd:element abstract='false' id='soi_ForeignExchangeForwardMember' name='ForeignExchangeForwardMember' nillable='true' substitutionGroup='xbrli:item' type='us-types:domainItemType' xbrli:periodType='duration' />
+<xsd:element abstract='false' id='soi_InvestmentsInAndAdvancesToAffiliatesAtFairValueGrossAdditions' name='InvestmentsInAndAdvancesToAffiliatesAtFairValueGrossAdditions' nillable='true' substitutionGroup='xbrli:item' type='xbrli:monetaryItemType' xbrli:balance='debit' xbrli:periodType='duration' />
+<xsd:element abstract='false' id='soi_InvestmentsInAndAdvancesToAffiliatesAtFairValueGrossReductions' name='InvestmentsInAndAdvancesToAffiliatesAtFairValueGrossReductions' nillable='true' substitutionGroup='xbrli:item' type='xbrli:monetaryItemType' xbrli:balance='credit' xbrli:periodType='duration' />
+<xsd:element abstract='false' id='soi_FederalIncomeTaxNoteTextBlock' name='FederalIncomeTaxNoteTextBlock' nillable='true' substitutionGroup='xbrli:item' type='us-types:textBlockItemType' xbrli:periodType='duration' />
+<xsd:element abstract='false' id='soi_InvestmentHoldingsOtherThanSecuritiesTextBlock' name='InvestmentHoldingsOtherThanSecuritiesTextBlock' nillable='true' substitutionGroup='xbrli:item' type='us-types:textBlockItemType' xbrli:periodType='duration' />
+<xsd:element abstract='false' id='soi_InvestmentsSoldNotYetPurchasedFormSHTextBlock' name='InvestmentsSoldNotYetPurchasedFormSHTextBlock' nillable='true' substitutionGroup='xbrli:item' type='us-types:textBlockItemType' xbrli:periodType='duration' />
+<xsd:element abstract='false' id='soi_SummaryInvestmentHoldingsTextBlock' name='SummaryInvestmentHoldingsTextBlock' nillable='true' substitutionGroup='xbrli:item' type='us-types:textBlockItemType' xbrli:periodType='duration' />
+<xsd:element abstract='true' id='soi_InvestmentsSoldNotYetPurchasedFormSHTable' name='InvestmentsSoldNotYetPurchasedFormSHTable' nillable='true' substitutionGroup='xbrldt:hypercubeItem' type='xbrli:stringItemType' xbrli:periodType='duration' />
+<xsd:element abstract='true' id='soi_InvestmentOwnedRestrictedInvestmentsNoteAbstract' name='InvestmentOwnedRestrictedInvestmentsNoteAbstract' nillable='true' substitutionGroup='xbrli:item' type='xbrli:stringItemType' xbrli:periodType='duration' />
+<xsd:element abstract='false' id='soi_AuctionRatePreferredSecuritiesMember' name='AuctionRatePreferredSecuritiesMember' nillable='true' substitutionGroup='xbrli:item' type='us-types:domainItemType' xbrli:periodType='duration' />
+<xsd:element abstract='false' id='soi_FederalHomeLoanBankCertificatesAndObligationsFHLBMember' name='FederalHomeLoanBankCertificatesAndObligationsFHLBMember' nillable='true' substitutionGroup='xbrli:item' type='us-types:domainItemType' xbrli:periodType='duration' />
+<xsd:element abstract='false' id='soi_FederalHomeLoanMortgageCorporationCertificatesAndObligationsFHLMCMember' name='FederalHomeLoanMortgageCorporationCertificatesAndObligationsFHLMCMember' nillable='true' substitutionGroup='xbrli:item' type='us-types:domainItemType' xbrli:periodType='duration' />
+<xsd:element abstract='false' id='soi_FederalHousingAdministrationCertificatesAndObligationsFHAMember' name='FederalHousingAdministrationCertificatesAndObligationsFHAMember' nillable='true' substitutionGroup='xbrli:item' type='us-types:domainItemType' xbrli:periodType='duration' />
+<xsd:element abstract='false' id='soi_FederalNationalMortgageAssociationCertificatesAndObligationsFNMAMember' name='FederalNationalMortgageAssociationCertificatesAndObligationsFNMAMember' nillable='true' substitutionGroup='xbrli:item' type='us-types:domainItemType' xbrli:periodType='duration' />
+<xsd:element abstract='false' id='soi_GovernmentNationalMortgageAssociationCertificatesAndObligationsGNMAMember' name='GovernmentNationalMortgageAssociationCertificatesAndObligationsGNMAMember' nillable='true' substitutionGroup='xbrli:item' type='us-types:domainItemType' xbrli:periodType='duration' />
+<xsd:element abstract='false' id='soi_CapitalSupportAgreementMember' name='CapitalSupportAgreementMember' nillable='true' substitutionGroup='xbrli:item' type='us-types:domainItemType' xbrli:periodType='duration' />
+<xsd:element abstract='false' id='soi_PrivateEquityFundsMember' name='PrivateEquityFundsMember' nillable='true' substitutionGroup='xbrli:item' type='us-types:domainItemType' xbrli:periodType='duration' />
+<xsd:element abstract='false' id='soi_HedgeFundsMember' name='HedgeFundsMember' nillable='true' substitutionGroup='xbrli:item' type='us-types:domainItemType' xbrli:periodType='duration' />
+<xsd:element abstract='false' id='soi_PaymentInKindPIKNoteMember' name='PaymentInKindPIKNoteMember' nillable='true' substitutionGroup='xbrli:item' type='us-types:domainItemType' xbrli:periodType='duration' />
+<xsd:element abstract='false' id='soi_SeniorSubordinatedNotesMember' name='SeniorSubordinatedNotesMember' nillable='true' substitutionGroup='xbrli:item' type='us-types:domainItemType' xbrli:periodType='duration' />
+<xsd:element abstract='false' id='soi_UnitrancheDebtMember' name='UnitrancheDebtMember' nillable='true' substitutionGroup='xbrli:item' type='us-types:domainItemType' xbrli:periodType='duration' />
+<xsd:element abstract='false' id='soi_IncomeNotesMember' name='IncomeNotesMember' nillable='true' substitutionGroup='xbrli:item' type='us-types:domainItemType' xbrli:periodType='duration' />
+<xsd:element abstract='false' id='soi_SeniorLoansMember' name='SeniorLoansMember' nillable='true' substitutionGroup='xbrli:item' type='us-types:domainItemType' xbrli:periodType='duration' />
+<xsd:element abstract='false' id='soi_SeniorSubordinatedLoansMember' name='SeniorSubordinatedLoansMember' nillable='true' substitutionGroup='xbrli:item' type='us-types:domainItemType' xbrli:periodType='duration' />
+<xsd:element abstract='false' id='soi_DeferrableNotesMember' name='DeferrableNotesMember' nillable='true' substitutionGroup='xbrli:item' type='us-types:domainItemType' xbrli:periodType='duration' />
+<xsd:element abstract='false' id='soi_JuniorLoansMember' name='JuniorLoansMember' nillable='true' substitutionGroup='xbrli:item' type='us-types:domainItemType' xbrli:periodType='duration' />
+<xsd:element abstract='false' id='soi_JuniorNotesMember' name='JuniorNotesMember' nillable='true' substitutionGroup='xbrli:item' type='us-types:domainItemType' xbrli:periodType='duration' />
+<xsd:element abstract='false' id='soi_CallOptionsPurchasedMember' name='CallOptionsPurchasedMember' nillable='true' substitutionGroup='xbrli:item' type='us-types:domainItemType' xbrli:periodType='duration' />
+<xsd:element abstract='false' id='soi_PutOptionsPurchasedMember' name='PutOptionsPurchasedMember' nillable='true' substitutionGroup='xbrli:item' type='us-types:domainItemType' xbrli:periodType='duration' />
+<xsd:element abstract='false' id='soi_TaxableMunicipalNotesMember' name='TaxableMunicipalNotesMember' nillable='true' substitutionGroup='xbrli:item' type='us-types:domainItemType' xbrli:periodType='duration' />
+<xsd:element abstract='false' id='soi_NontaxableMunicipalNotesMember' name='NontaxableMunicipalNotesMember' nillable='true' substitutionGroup='xbrli:item' type='us-types:domainItemType' xbrli:periodType='duration' />
+<xsd:element abstract='false' id='soi_TaxableMunicipalBondsMember' name='TaxableMunicipalBondsMember' nillable='true' substitutionGroup='xbrli:item' type='us-types:domainItemType' xbrli:periodType='duration' />
+<xsd:element abstract='false' id='soi_NontaxableMunicipalBondsMember' name='NontaxableMunicipalBondsMember' nillable='true' substitutionGroup='xbrli:item' type='us-types:domainItemType' xbrli:periodType='duration' />
+<xsd:element abstract='false' id='soi_PutOptionsWrittenMember' name='PutOptionsWrittenMember' nillable='true' substitutionGroup='xbrli:item' type='us-types:domainItemType' xbrli:periodType='duration' />
+<xsd:element abstract='false' id='soi_CallOptionsWrittenMember' name='CallOptionsWrittenMember' nillable='true' substitutionGroup='xbrli:item' type='us-types:domainItemType' xbrli:periodType='duration' />
+</xsd:schema>

@@ -1,0 +1,865 @@
+<!DOCTYPE html>
+<!--49 queries in 0.110 seconds.-->
+<!--[if IE 7]>
+<html class="ie ie7" lang="en-US">
+<![endif]-->
+<!--[if IE 8]>
+<html class="ie ie8" lang="en-US">
+<![endif]-->
+<!--[if !(IE 7) | !(IE 8)  ]><!-->
+<html lang="en-US">
+<!--<![endif]-->
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=640">
+  
+  <title>XBRL US</title>
+  <!--DJT edit - added favicon for tab image-->
+  <link rel="shortcut icon" href="https://xbrl.us/wp-content/themes/xbrl-jurisdiction/images/favicon.ico" />
+  <!--
+  <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+  -->
+  <link href="//xbrl.us/wp-content/js/font-awesome-4.1.min.css" rel="stylesheet">
+
+  <link href='//fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
+  <link href='//fonts.googleapis.com/css?family=Roboto:300,300italic,400,500,500italic,700' rel='stylesheet' type='text/css'>
+  <link href='//fonts.googleapis.com/css?family=Oswald:400,700' rel='stylesheet' type='text/css'>
+  <link href='//fonts.googleapis.com/css?family=Molengo:400,700' rel='stylesheet' type='text/css'>
+  <link href='//fonts.googleapis.com/css?family=Arimo:400,700' rel='stylesheet' type='text/css'>
+
+<!--
+<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+-->
+<link href="//xbrl.us/wp-content/js/font-awesome-4.2.min.css" rel="stylesheet">
+
+
+  <!--
+  <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+  <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+  -->
+  <script src="//xbrl.us/wp-content/js/jquery-1.11.0.min.js"></script>
+  <script src="//xbrl.us/wp-content/js/jquery-migrate-1.2.1.min.js"></script>
+  
+
+  <script src="https://xbrl.us/wp-content/themes/xbrl-jurisdiction/bootstrap/js/bootstrap.min.js" ></script>
+  <link rel="stylesheet" href="https://xbrl.us/wp-content/themes/xbrl-jurisdiction/bootstrap/css/bootstrap.min.css" type="text/css" />
+
+  <script type="text/javascript" src="https://xbrl.us/wp-content/themes/xbrl-jurisdiction/js/list.min.js"></script>
+  <script type="text/javascript" src="https://xbrl.us/wp-content/themes/xbrl-jurisdiction/js/list.pagination.min.js"></script>
+
+  <link rel='dns-prefetch' href='//cdn.ckeditor.com' />
+<link rel='dns-prefetch' href='//s.w.org' />
+<link rel="alternate" type="application/rss+xml" title="XBRL US &raquo; Home Comments Feed" href="https://xbrl.us/home/feed/" />
+		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/2.4\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/2.4\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/xbrl.us\/wp-includes\/js\/wp-emoji-release.min.js?ver=4.9.7"}};
+			!function(a,b,c){function d(a,b){var c=String.fromCharCode;l.clearRect(0,0,k.width,k.height),l.fillText(c.apply(this,a),0,0);var d=k.toDataURL();l.clearRect(0,0,k.width,k.height),l.fillText(c.apply(this,b),0,0);var e=k.toDataURL();return d===e}function e(a){var b;if(!l||!l.fillText)return!1;switch(l.textBaseline="top",l.font="600 32px Arial",a){case"flag":return!(b=d([55356,56826,55356,56819],[55356,56826,8203,55356,56819]))&&(b=d([55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447],[55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447]),!b);case"emoji":return b=d([55357,56692,8205,9792,65039],[55357,56692,8203,9792,65039]),!b}return!1}function f(a){var c=b.createElement("script");c.src=a,c.defer=c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var g,h,i,j,k=b.createElement("canvas"),l=k.getContext&&k.getContext("2d");for(j=Array("flag","emoji"),c.supports={everything:!0,everythingExceptFlag:!0},i=0;i<j.length;i++)c.supports[j[i]]=e(j[i]),c.supports.everything=c.supports.everything&&c.supports[j[i]],"flag"!==j[i]&&(c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&c.supports[j[i]]);c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&!c.supports.flag,c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.everything||(h=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",h,!1),a.addEventListener("load",h,!1)):(a.attachEvent("onload",h),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),g=c.source||{},g.concatemoji?f(g.concatemoji):g.wpemoji&&g.twemoji&&(f(g.twemoji),f(g.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+<link rel='stylesheet' id='dashicons-css'  href='https://xbrl.us/wp-includes/css/dashicons.min.css?ver=4.9.7' type='text/css' media='all' />
+<link rel='stylesheet' id='thickbox-css'  href='https://xbrl.us/wp-includes/js/thickbox/thickbox.css?ver=4.9.7' type='text/css' media='all' />
+<link rel='stylesheet' id='cptch_stylesheet-css'  href='https://xbrl.us/wp-content/plugins/captcha/css/front_end_style.css?ver=4.4.5' type='text/css' media='all' />
+<link rel='stylesheet' id='cptch_desktop_style-css'  href='https://xbrl.us/wp-content/plugins/captcha/css/desktop_style.css?ver=4.4.5' type='text/css' media='all' />
+<link rel='stylesheet' id='contact-form-7-css'  href='https://xbrl.us/wp-content/plugins/contact-form-7/includes/css/styles.css?ver=4.9.2' type='text/css' media='all' />
+<link rel='stylesheet' id='cookie-consent-style-css'  href='https://xbrl.us/wp-content/plugins/uk-cookie-consent/assets/css/style.css?ver=4.9.7' type='text/css' media='all' />
+<link rel='stylesheet' id='woocommerce-layout-css'  href='https://xbrl.us/wp-content/plugins/woocommerce/assets/css/woocommerce-layout.css?ver=3.2.6' type='text/css' media='all' />
+<link rel='stylesheet' id='woocommerce-smallscreen-css'  href='https://xbrl.us/wp-content/plugins/woocommerce/assets/css/woocommerce-smallscreen.css?ver=3.2.6' type='text/css' media='only screen and (max-width: 768px)' />
+<link rel='stylesheet' id='woocommerce-general-css'  href='https://xbrl.us/wp-content/plugins/woocommerce/assets/css/woocommerce.css?ver=3.2.6' type='text/css' media='all' />
+<link rel='stylesheet' id='wpupg_style1-css'  href='https://xbrl.us/wp-content/plugins/wp-ultimate-post-grid-premium/core/css/filter.css?ver=2.3' type='text/css' media='all' />
+<link rel='stylesheet' id='wpupg_style2-css'  href='https://xbrl.us/wp-content/plugins/wp-ultimate-post-grid-premium/core/css/pagination.css?ver=2.3' type='text/css' media='all' />
+<link rel='stylesheet' id='wpupg_style3-css'  href='https://xbrl.us/wp-content/plugins/wp-ultimate-post-grid-premium/core/css/grid.css?ver=2.3' type='text/css' media='all' />
+<link rel='stylesheet' id='wpupg_style4-css'  href='https://xbrl.us/wp-content/plugins/wp-ultimate-post-grid-premium/core/css/layout_base.css?ver=2.3' type='text/css' media='all' />
+<link rel='stylesheet' id='wpupg_style5-css'  href='https://xbrl.us/wp-content/plugins/wp-ultimate-post-grid-premium/premium/addons/filter-dropdown/css/filter-dropdown.css?ver=2.3' type='text/css' media='all' />
+<link rel='stylesheet' id='wpupg_style6-css'  href='https://xbrl.us/wp-content/plugins/wp-ultimate-post-grid-premium/core/vendor/select2/css/select2.css?ver=2.3' type='text/css' media='all' />
+<link rel='stylesheet' id='badgeos-single-css'  href='https://xbrl.us/wp-content/plugins/badgeos/css/badgeos-single.css?ver=1.0.1' type='text/css' media='all' />
+<link rel='stylesheet' id='h5p-plugin-styles-css'  href='https://xbrl.us/wp-content/plugins/h5p/h5p-php-library/styles/h5p.css?ver=1.10.0' type='text/css' media='all' />
+<link rel='stylesheet' id='visitor_css-css'  href='https://xbrl.us/wp-content/themes/xbrl-jurisdiction/visitor.css?ver=1.0' type='text/css' media='all' />
+<link rel='stylesheet' id='upw_theme_standard-css'  href='https://xbrl.us/wp-content/plugins/ultimate-posts-widget/css/upw-theme-standard.min.css?ver=4.9.7' type='text/css' media='all' />
+<link rel='stylesheet' id='fancybox-css'  href='https://xbrl.us/wp-content/plugins/easy-fancybox/fancybox/jquery.fancybox-1.3.8.css?ver=1.6.2' type='text/css' media='screen' />
+<script type='text/javascript' src='https://xbrl.us/wp-includes/js/jquery/jquery.js?ver=1.12.4'></script>
+<script type='text/javascript' src='https://xbrl.us/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.4.1'></script>
+<script type='text/javascript' src='https://cdn.ckeditor.com/4.5.3/standard/ckeditor.js'></script>
+<link rel='https://api.w.org/' href='https://xbrl.us/wp-json/' />
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://xbrl.us/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://xbrl.us/wp-includes/wlwmanifest.xml" /> 
+<meta name="generator" content="WordPress 4.9.7" />
+<meta name="generator" content="WooCommerce 3.2.6" />
+<link rel="canonical" href="https://xbrl.us/" />
+<link rel='shortlink' href='https://xbrl.us/' />
+<link rel="alternate" type="application/json+oembed" href="https://xbrl.us/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fxbrl.us%2F" />
+<link rel="alternate" type="text/xml+oembed" href="https://xbrl.us/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fxbrl.us%2F&#038;format=xml" />
+<style id="ctcc-css" type="text/css" media="screen">
+				#catapult-cookie-bar {
+					box-sizing: border-box;
+					max-height: 0;
+					opacity: 0;
+					z-index: 99999;
+					overflow: hidden;
+					color: #e2e2e2;
+					position: fixed;
+					left: 0;
+					bottom: 0;
+					width: 100%;
+					background-color: #444444;
+				}
+				#catapult-cookie-bar a {
+					color: #ea632c;
+				}
+				#catapult-cookie-bar .x_close span {
+					background-color: #777777;
+				}
+				button#catapultCookie {
+					background:;
+					color: #777777;
+					border: 0; padding: 6px 9px; border-radius: 3px;
+				}
+				#catapult-cookie-bar h3 {
+					color: #e2e2e2;
+				}
+				.has-cookie-bar #catapult-cookie-bar {
+					opacity: 1;
+					max-height: 999px;
+					min-height: 30px;
+				}</style><style type="text/css">.wpupg-grid { transition: height 0.8s; }</style>	<noscript><style>.woocommerce-product-gallery{ opacity: 1 !important; }</style></noscript>
+	<style type="text/css" id="syntaxhighlighteranchor"></style>
+<style type="text/css">.select2wpupg-selection, .select2wpupg-dropdown { border-color: #e2e2e2!important; }.select2wpupg-selection__arrow b { border-top-color: #e2e2e2!important; }.select2wpupg-container--open .select2wpupg-selection__arrow b { border-bottom-color: #e2e2e2!important; }.select2wpupg-selection__placeholder, .select2wpupg-search__field, .select2wpupg-selection__rendered, .select2wpupg-results__option { color: #444444!important; }.select2wpupg-search__field::-webkit-input-placeholder { color: #444444!important; }.select2wpupg-search__field:-moz-placeholder { color: #444444!important; }.select2wpupg-search__field::-moz-placeholder { color: #444444!important; }.select2wpupg-search__field:-ms-input-placeholder { color: #444444!important; }.select2wpupg-results__option--highlighted { color: #FFFFFF!important; background-color: #ea632c!important; }</style><!-- BEGIN GADWP v5.1.2.5 Universal Analytics - https://deconf.com/google-analytics-dashboard-wordpress/ -->
+<script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+  ga('create', 'UA-1591771-1', 'auto');
+  ga('send', 'pageview');
+</script>
+<!-- END GADWP Universal Analytics -->
+<style type="text/css">div.nsl-container > a {
+    text-decoration: none !important;
+    box-shadow: none !important;
+    border: 0;
+    box-shadow: none;
+}
+
+div.nsl-container-block {
+    max-width: 280px;
+}
+
+div.nsl-container-block > a {
+    display: block;
+    margin: 10px 0;
+}
+
+div.nsl-container-inline {
+    margin: -5px;
+    text-align: left;
+}
+
+div.nsl-container-inline > a {
+    margin: 5px;
+    display: inline-block;
+}
+
+div.nsl-container .nsl-button {
+    cursor: pointer;
+    vertical-align: top;
+    border-radius: 4px;
+}
+
+div.nsl-container .nsl-button-default {
+    color: #fff;
+    display: flex;
+}
+
+div.nsl-container .nsl-button-icon {
+    display: inline-block;
+}
+
+div.nsl-container svg {
+    height: 24px;
+    width: 24px;
+    vertical-align: top;
+    margin: 8px;
+    flex: 0 0 auto;
+}
+
+div.nsl-container .nsl-button-default span {
+    margin: 0 24px 0 12px;
+    padding: 10px 0;
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: .25px;
+    overflow: hidden;
+    text-align: center;
+    text-overflow: clip;
+    white-space: nowrap;
+    flex: 1 1 auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}</style>
+<!-- Easy FancyBox 1.6.2 using FancyBox 1.3.8 - RavanH (http://status301.net/wordpress-plugins/easy-fancybox/) -->
+<script type="text/javascript">
+/* <![CDATA[ */
+var fb_timeout = null;
+var fb_opts = { 'overlayShow' : true, 'hideOnOverlayClick' : true, 'showCloseButton' : true, 'margin' : 20, 'centerOnScroll' : true, 'enableEscapeButton' : true, 'autoScale' : true };
+var easy_fancybox_handler = function(){
+	/* Inline */
+	jQuery('a.fancybox-inline, area.fancybox-inline, li.fancybox-inline a').fancybox( jQuery.extend({}, fb_opts, { 'type' : 'inline', 'autoDimensions' : false, 'scrolling' : 'auto', 'opacity' : false, 'hideOnContentClick' : false }) );
+}
+var easy_fancybox_auto = function(){
+	/* Auto-click */
+	setTimeout(function(){jQuery('#fancybox-auto').trigger('click')},1000);
+}
+/* ]]> */
+</script>
+  <link rel="stylesheet" type="text/css" media="all" href="https://xbrl.us/wp-content/themes/xbrl-jurisdiction/style.css" />
+  
+ 	 <script>
+	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+	  ga('create', 'UA-1591771-1', 'auto');
+	  ga('send', 'pageview');
+
+	</script>
+  <meta name="google-site-verification" content="UjKtMjy6i4u585M49GEsG51Rzh3njZ0Yi6b-4Gmt4qI" />
+</head>
+<body class="tab-home inline-title page-home" >
+ <div id="bar" >
+      <div class="contain">
+        <div id="search">
+
+                
+<form role="search" method="get" id="searchform" class="searchform" action="/">
+  <div>
+    <input type="text" placeholder="Search" value="" name="s" id="s" />
+  </div>
+</form>
+
+       </div> <!-- search -->
+        <div id="sections" class="menu-nav-menu-container"><ul id="menu-nav-menu" class="nav-menu"><li id="menu-item-478" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-354 current_page_item menu-item-has-children menu-item-478"><a href="https://xbrl.us/">Home</a></li>
+<li id="menu-item-4902" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-4902"><a href="https://xbrl.us/data-quality/">Data Quality</a></li>
+<li id="menu-item-22937" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-22937"><a href="https://xbrl.us/xusevents/">Events</a></li>
+<li id="menu-item-1365" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-1365"><a href="https://xbrl.us/xusnews/">Media</a></li>
+<li id="menu-item-498" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-498"><a href="https://xbrl.us/membership/">Membership</a></li>
+</ul></div>				<br class="clear">
+      </div> <!-- contain -->
+    </div> <!-- bar -->
+
+  		<div id="navigation">
+			<div class="contain">
+				<div id="logo"><a href="https://xbrl.us/"><img src="https://xbrl.us/wp-content/themes/xbrl-jurisdiction/images/logoHeader-US.png" alt="XBRL US"></a></div>
+        <div id="menu" class="menu-nav-menu-container"><ul id="menu-nav-menu-1" class="nav-menu"><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-354 current_page_item menu-item-has-children menu-item-478"><a href="https://xbrl.us/">Home</a>
+<ul class="sub-menu">
+	<li id="menu-item-10489" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-10489"><a href="https://xbrl.us/home/filers/">Filers</a><ul><li><a href="https://xbrl.us/home/filers/sec-reporting/">SEC Reporting</a></li><li><a href="https://xbrl.us/home/filers/fdic-reporting/">FDIC Reporting</a></li><li><a href="https://xbrl.us/home/filers/updates/">Updates</a></li></ul></li>
+	<li id="menu-item-10485" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-10485"><a href="https://xbrl.us/home/industries/">Industries</a><ul><li><a href="https://xbrl.us/home/industries/corporate-actions/">Corporate Actions</a></li><li><a href="https://xbrl.us/home/industries/fintech/">FinTech</a></li><li><a href="https://xbrl.us/home/industries/solar/">Solar</a></li><li><a href="https://xbrl.us/home/industries/surety/">Surety</a></li><li><a href="https://xbrl.us/home/industries/updates/">Updates</a></li></ul></li>
+	<li id="menu-item-517" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-517"><a href="https://xbrl.us/home/government/">Governments</a><ul><li><a href="https://xbrl.us/home/government/state-and-local-government/">State and Local Government</a></li><li><a href="https://xbrl.us/home/government/the-data-act/">The DATA Act</a></li><li><a href="https://xbrl.us/home/government/updates/">Updates</a></li></ul></li>
+	<li id="menu-item-2139" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2139"><a href="https://xbrl.us/home/use/">Data</a><ul><li><a href="https://xbrl.us/home/use/data-analysis-toolkit/">Data Analysis Toolkit (APIs)</a></li><li><a href="https://xbrl.us/home/use/xbrl-api/">Join the XBRL API Beta Test Group</a></li><li><a href="https://xbrl.us/home/use/filings-database/">Database of Public Filings</a></li><li><a href="https://xbrl.us/home/use/howto/">Demos &#038; Tools</a></li><li><a href="https://xbrl.us/home/use/updates/">Updates</a></li></ul></li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-4902"><a href="https://xbrl.us/data-quality/">Data Quality</a>
+<ul class="sub-menu">
+	<li id="menu-item-10470" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-10470"><a href="https://xbrl.us/data-quality/center/">Center</a><ul><li><a href="https://xbrl.us/data-quality/center/join-cdq/">Join the Center for Data Quality</a></li></ul></li>
+	<li id="menu-item-10471" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-10471"><a href="https://xbrl.us/data-quality/committee/">Committee</a><ul><li><a href="https://xbrl.us/data-quality/committee/principles/">Guiding Principles for Element Selection</a></li><li><a href="https://xbrl.us/data-quality/committee/dqc-archive/">DQC News &#038; Meeting Archive</a></li><li><a href="https://xbrl.us/data-quality/committee/dqc-results/">Aggregated Real-time Filing Errors</a></li></ul></li>
+	<li id="menu-item-10472" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-10472"><a href="https://xbrl.us/data-quality/rules-guidance/">Guidance/Rules</a><ul><li><a href="https://xbrl.us/data-quality/rules-guidance/public-review/">Public Exposure of Guidance &#038; Validation Rules</a></li><li><a href="https://xbrl.us/data-quality/rules-guidance/check-filing/">Check Your Filing with Data Quality Rules</a></li></ul></li>
+	<li id="menu-item-10473" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-10473"><a href="https://xbrl.us/data-quality/certification/">Certification</a><ul><li><a href="https://xbrl.us/data-quality/certification/process/">Application Certification Process</a></li></ul></li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-22937"><a href="https://xbrl.us/xusevents/">Events</a>
+<ul class="sub-menu">
+	<li id="menu-item-22938" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-22938"><a href="https://xbrl.us/xusevents/archive/">Archive</a><ul><li><a href="https://xbrl.us/xusevents/archive/f2f/">Face to Face (2009-15)</a></li></ul></li>
+	<li id="menu-item-22939" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-22939"><a href="https://xbrl.us/xusevents/policies/">Policies</a><ul><li><a href="https://xbrl.us/xusevents/policies/member-cpe-options/">CPE Options for XBRL US Members</a></li></ul></li>
+	<li id="menu-item-22940" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-22940"><a href="https://xbrl.us/xusevents/quotes/">Testimonials</a><ul></ul></li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-1365"><a href="https://xbrl.us/xusnews/">Media</a>
+<ul class="sub-menu">
+	<li id="menu-item-10474" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-10474"><a href="https://xbrl.us/xusnews/members-making-news/">Member News</a><ul></ul></li>
+	<li id="menu-item-10477" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-10477"><a href="https://xbrl.us/xusnews/newsletter/">Newsletter</a><ul><li><a href="https://xbrl.us/xusnews/newsletter/archive/">Archive</a></li></ul></li>
+	<li id="menu-item-13614" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-13614"><a href="https://xbrl.us/xusnews/pov/">Point of View</a><ul><li><a href="https://xbrl.us/xusnews/pov/archive/">PoV Archive</a></li><li><a href="https://xbrl.us/xusnews/pov/advocacy/">Advocacy</a></li></ul></li>
+	<li id="menu-item-42759" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-42759"><a href="https://xbrl.us/xusnews/publications/">Publications</a><ul><li><a href="https://xbrl.us/xusnews/publications/research/">Research Library</a></li><li><a href="https://xbrl.us/xusnews/publications/podcasts/">Podcasts</a></li><li><a href="https://xbrl.us/xusnews/publications/infographics/">Infographics by Topic</a></li></ul></li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-498"><a href="https://xbrl.us/membership/">Membership</a>
+<ul class="sub-menu">
+	<li id="menu-item-15430" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-15430"><a href="https://xbrl.us/membership/benefits/">Benefits</a><ul></ul></li>
+	<li id="menu-item-12878" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-12878"><a href="https://xbrl.us/membership/join/">Join</a><ul><li><a href="https://xbrl.us/membership/join/companies/">Corporate Membership</a></li><li><a href="https://xbrl.us/membership/join/institutions/">Institutional Membership</a></li><li><a href="https://xbrl.us/membership/join/individual/">Individual Membership</a></li></ul></li>
+	<li id="menu-item-12877" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-12877"><a href="https://xbrl.us/membership/governance/">Governance</a><ul><li><a href="https://xbrl.us/membership/governance/board/">Board of Directors</a></li><li><a href="https://xbrl.us/membership/governance/committees/">Committees</a></li><li><a href="https://xbrl.us/membership/governance/working-groups/">Working Groups</a></li></ul></li>
+	<li id="menu-item-10484" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-10484"><a href="https://xbrl.us/membership/xusmembers/">Our Members</a><ul></ul></li>
+</ul>
+</li>
+</ul></div>	 	
+				<br class="clear">
+			</div> <!-- contain -->
+		</div> <!-- navigation -->
+     
+    <div id="content">
+           <div class="contain"> 
+          <div id="login" > 
+                          <a href="https://xbrl.us/wp-login.php?redirect_to=https%3A%2F%2Fxbrl.us%2F" >Login</a>
+                      </div>
+       </div>
+    
+<div id="header" class="bg">
+  <div class="contain">
+      <div class="tagline">
+              The business reporting <a href="https://www.xbrl.org/the-standard/what/the-standard-for-reporting/" target=_blank">standard</a> <br />The <a href="/xusmembers">non-profit community</a> improving U. S. reporting through a <a href="/home/learn/free-open-standards/">free, open standard</a></div>
+
+
+
+				<div id="carousel" class="carousel slide" data-ride="carousel" data-interval="10000" >
+          <div class="carousel-inner">
+
+   
+            <div class="item active">
+              <div class="title">Wednesday, August 8</div>
+              <div class="slide-item">
+                <div class="featured-image">
+	                <img width="600" height="278" src="https://xbrl.us/wp-content/uploads/2016/06/EV-question-marks-600x278.jpg" class="attachment-carousel-image size-carousel-image" alt="" />                </div>
+                <div class="mask">
+                  <div class="content">
+                    <div class="slant" ></div>
+                    <div class="slant" ></div>
+                    <div class="slant" ></div>
+                    <div class="slant" ></div>
+                    <div class="slant" ></div>
+                    <div class="slant" ></div>
+                    <div class="slant" ></div>
+                    <div class="slant" ></div>
+                    <div class="slant" ></div>
+                    <div class="slant" ></div>
+                      <h2><a href="https://xbrl.us/events/20180808/">Inline XBRL: Understanding the Final SEC Rule</a></h2>
+                      <p>Attend this free, one-hour webinar to hear from the Securities and Exchange Commission about the new SEC rule on Inline XBRL for operating companies and funds. </p>
+                      
+                      <div class="tags"><span><a href="https://xbrl.us/home/tag/analysts/" rel="tag">analysts</a></span> <span><a href="https://xbrl.us/home/tag/analytics/" rel="tag">analytics</a></span> <span><a href="https://xbrl.us/home/tag/cpe/" rel="tag">CPE</a></span> <span><a href="https://xbrl.us/home/tag/inline-xbrl/" rel="tag">Inline XBRL</a></span> <span><a href="https://xbrl.us/home/tag/sec-filers/" rel="tag">SEC filers</a></span> <span><a href="https://xbrl.us/home/tag/training/" rel="tag">training</a></span></div>                  </div>
+                </div>
+              </div>
+            </div> <!-- item -->
+                                <div class="item ">
+              <div class="title">&nbsp;</div>
+              <div class="slide-item">
+                <div class="featured-image">
+	                <img width="600" height="278" src="https://xbrl.us/wp-content/uploads/2018/03/DataQuality-600x278.png" class="attachment-carousel-image size-carousel-image" alt="" />                </div>
+                <div class="mask">
+                  <div class="content">
+                    <div class="slant" ></div>
+                    <div class="slant" ></div>
+                    <div class="slant" ></div>
+                    <div class="slant" ></div>
+                    <div class="slant" ></div>
+                    <div class="slant" ></div>
+                    <div class="slant" ></div>
+                    <div class="slant" ></div>
+                    <div class="slant" ></div>
+                    <div class="slant" ></div>
+                      <h2><a href="https://xbrl.us/data-quality/rules-guidance/">Approved Guidance &#038; Validation Rules</a></h2>
+                      <p>In May, 2018, the <a href="/dqc" class="carousel-excerpt">Data Quality Committee</a> &#8211; a collaborative of public companies, providers and data users working to improve standardized financial reporting &#8211; approved <span class="carousel-excerpt"><em>freely-available rules and guidance</em> to help filers using US GAAP and IFRS Taxonomies supported by the US Securities and Exchange Commission</span> detect and resolve inconsistencies or errors in XBRL-formatted financial data. Several tools are <a href="/data-quality/certification" class="carousel-excerpt">certified for implementation of the approved rules</a>.</p>
+                      
+                      <div class="tags"><span><a href="https://xbrl.us/home/tag/data-quality/" rel="tag">data quality</a></span> <span><a href="https://xbrl.us/home/tag/guidance/" rel="tag">guidance</a></span> <span><a href="https://xbrl.us/home/tag/rules/" rel="tag">rules</a></span> <span><a href="https://xbrl.us/home/tag/sec-filers/" rel="tag">SEC filers</a></span> <span><a href="https://xbrl.us/home/tag/transparency/" rel="tag">transparency</a></span></div>                  </div>
+                </div>
+              </div>
+            </div> <!-- item -->
+                                <div class="item ">
+              <div class="title">&nbsp;</div>
+              <div class="slide-item">
+                <div class="featured-image">
+	                <img width="600" height="278" src="https://xbrl.us/wp-content/uploads/2018/06/Copy-of-Question-marks-illustration-600x278.png" class="attachment-carousel-image size-carousel-image" alt="" />                </div>
+                <div class="mask">
+                  <div class="content">
+                    <div class="slant" ></div>
+                    <div class="slant" ></div>
+                    <div class="slant" ></div>
+                    <div class="slant" ></div>
+                    <div class="slant" ></div>
+                    <div class="slant" ></div>
+                    <div class="slant" ></div>
+                    <div class="slant" ></div>
+                    <div class="slant" ></div>
+                    <div class="slant" ></div>
+                      <h2><a href="https://xbrl.us/xusnews/pov/">Point of View</a></h2>
+                      <h3><a href="/pov" style="color:#000000">Fact or Fiction? Let&#8217;s Set the Record Straight</a></h3>
+<p><span class="carousel-excerpt"><strong>Al Berkeley</strong>, Chairman, Princeton Capital</span><br />
+H.R. 5054 aims to reduce the burden on small filers, through an XBRL exemption. While the intent is good, the repercussions of the passage of an exemption like this, are anything but. <span class="carousel-excerpt">Read on for the real facts.</p>
+                      
+                      <div class="tags"><span><a href="https://xbrl.us/home/tag/education/" rel="tag">education</a></span> <span><a href="https://xbrl.us/home/tag/government/" rel="tag">government</a></span> <span><a href="https://xbrl.us/home/tag/legislation/" rel="tag">legislation</a></span> <span><a href="https://xbrl.us/home/tag/sec-filers/" rel="tag">SEC filers</a></span></div>                  </div>
+                </div>
+              </div>
+            </div> <!-- item -->
+                                <div class="item ">
+              <div class="title">&nbsp;</div>
+              <div class="slide-item">
+                <div class="featured-image">
+	                <img width="600" height="278" src="https://xbrl.us/wp-content/uploads/2018/04/api-image-600x278.png" class="attachment-carousel-image size-carousel-image" alt="" />                </div>
+                <div class="mask">
+                  <div class="content">
+                    <div class="slant" ></div>
+                    <div class="slant" ></div>
+                    <div class="slant" ></div>
+                    <div class="slant" ></div>
+                    <div class="slant" ></div>
+                    <div class="slant" ></div>
+                    <div class="slant" ></div>
+                    <div class="slant" ></div>
+                    <div class="slant" ></div>
+                    <div class="slant" ></div>
+                      <h2><a href="https://xbrl.us/home/use/xbrl-api/">Join the XBRL API Beta Test Group</a></h2>
+                      <p>Be the first to test the XBRL application programming interface (API) with enhanced capabilities &#8211; including the use of any XBRL data set. <span class="carousel-excerpt">Share feedback</span> on functionality, efficiency and usability of this protocol. <a href="/xbrl-api-sample" class="carousel-excerpt">Check out a browser-based code sample and result set.</a></p>
+                      
+                      <div class="tags"><span><a href="https://xbrl.us/home/tag/analysts/" rel="tag">analysts</a></span> <span><a href="https://xbrl.us/home/tag/free-tool/" rel="tag">free tool</a></span> <span><a href="https://xbrl.us/home/tag/software-development/" rel="tag">software development</a></span></div>                  </div>
+                </div>
+              </div>
+            </div> <!-- item -->
+                                <div class="item ">
+              <div class="title">&nbsp;</div>
+              <div class="slide-item">
+                <div class="featured-image">
+	                <img width="600" height="278" src="https://xbrl.us/wp-content/uploads/2017/05/Climbing-Silhouette-600x278.jpg" class="attachment-carousel-image size-carousel-image" alt="" />                </div>
+                <div class="mask">
+                  <div class="content">
+                    <div class="slant" ></div>
+                    <div class="slant" ></div>
+                    <div class="slant" ></div>
+                    <div class="slant" ></div>
+                    <div class="slant" ></div>
+                    <div class="slant" ></div>
+                    <div class="slant" ></div>
+                    <div class="slant" ></div>
+                    <div class="slant" ></div>
+                    <div class="slant" ></div>
+                      <h2><a href="https://xbrl.us/home/learn/leaders/"><i class="fa fa-trophy" aria-hidden="true"></i> Achievement Leaders</a></h2>
+                      <p>Experience gained through education, data processing and analysis, committee involvement and specification development is recognized through <a href="/achievements" class="carousel-excerpt">XBRL Achievements</a>. Find out more about <a href="/membership" class="carousel-excerpt">XBRL US Members</a> who help establish, maintain and implement the business reporting standard.</p>
+                      
+                      <div class="tags"><span><a href="https://xbrl.us/home/tag/committee/" rel="tag">committee</a></span> <span><a href="https://xbrl.us/home/tag/education/" rel="tag">education</a></span> <span><a href="https://xbrl.us/home/tag/guidance/" rel="tag">guidance</a></span> <span><a href="https://xbrl.us/home/tag/specification/" rel="tag">specification</a></span></div>                  </div>
+                </div>
+              </div>
+            </div> <!-- item -->
+                    
+
+          </div> <!-- carousel-inner -->
+          <a class="carousel-left-arrow" href="#carousel" role="button" data-slide="prev">
+            <span class="fa fa-angle-left"></span>
+          </a>
+          <a class="carousel-right-arrow" href="#carousel" role="button" data-slide="next">
+            <span class="fa fa-angle-right"></span>
+          </a>
+            <ol class="carousel-indicators">
+                <li data-target="#carousel" data-slide-to="0" class="active"></li><li data-target="#carousel" data-slide-to="1"></li><li data-target="#carousel" data-slide-to="2"></li><li data-target="#carousel" data-slide-to="3"></li><li data-target="#carousel" data-slide-to="4"></li>            </ol>
+      </div>
+  </div>
+</div>
+
+		
+						
+        
+        <div id="columns" class="contain"><div class="col3"><a href="https://xbrl.us/home/learn/"><div class="learn about xbrl icon">Learn About XBRL</div></a><ul><li><a href="https://xbrl.us/home/learn/leaders/"><i class="fa fa-trophy" aria-hidden="true"></i> Achievement Leaders</a></li><li><a href="https://xbrl.us/home/learn/free-open-standards/"><i class="fa fa-file-text-o" aria-hidden="true"> </i> Free, Open Reporting Standards</a></li><li><a href="https://xbrl.us/home/learn/reference-guide/"><i class="fa fa-book" aria-hidden="true"></i> Reference Guide</a></li><li><a href="https://xbrl.us/home/learn/tools-and-services/"><i class="fa fa-cogs" aria-hidden="true"></i> Tools &#038; Services</a></li><li><a href="https://xbrl.us/home/learn/us-taxonomies/"><i class="fa fa-code" aria-hidden="true"></i> US Taxonomies</a></li></ul></div>
+<div class="col3">
+<div class="ts-feature"><a href="https://xbrl.us/tools-and-services/tagnifi-datasets/"><img width="140" height="46" src="https://xbrl.us/wp-content/uploads/2018/05/tagnifi-logo-140x46.png" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" /></a><br clear="all" /><div class="ts-feature-title"><a href="https://xbrl.us/tools-and-services/tagnifi-datasets/">TagniFi Datasets</div></a>
+<div class="ts-feature-company"><br clear="all" /><em>from <a href="https://xbrl.us/home/category/member/tagnifi/">TagniFi</a></em></div><br clear="all" /><a href="/home/learn/tools-and-services" style="font-weight:400; color:#000000;">Browse All Member Tools &amp; Services</a>
+</div></div>
+<div class="col3">  
+      <a href="/xusevents"><div class="events icon">Upcoming Events</div></a>
+<ul>   
+                      
+      <li><a href="https://xbrl.us/events/sec-20180725/">
+      <!--<div class="image" style="float:left !important;padding-right:8px !important"><img width="46" height="46" src="https://xbrl.us/wp-content/uploads/2018/06/stratplan-46x46.png" class="attachment-sidebar-thumb size-sidebar-thumb wp-post-image" alt="" srcset="https://xbrl.us/wp-content/uploads/2018/06/stratplan-46x46.png 46w, https://xbrl.us/wp-content/uploads/2018/06/stratplan-90x90.png 90w" sizes="(max-width: 46px) 100vw, 46px" /></div>-->
+		Request for Comments: Draft 2018-2022 SEC Strategic Plan - 
+Wednesday, July 25	  </a></li>
+                         
+      <li><a href="https://xbrl.us/events/dsc-20180802/">
+      <!--<div class="image" style="float:left !important;padding-right:8px !important"><img width="46" height="34" src="https://xbrl.us/wp-content/uploads/2014/10/XBRLUSfooter.png" class="attachment-sidebar-thumb size-sidebar-thumb wp-post-image" alt="" /></div>-->
+		Domain Steering Committee Meeting - 
+Thursday, August 2	  </a></li>
+                         
+      <li><a href="https://xbrl.us/events/20180808/">
+      <!--<div class="image" style="float:left !important;padding-right:8px !important"><img width="46" height="46" src="https://xbrl.us/wp-content/uploads/2016/06/EV-question-marks-46x46.jpg" class="attachment-sidebar-thumb size-sidebar-thumb wp-post-image" alt="" srcset="https://xbrl.us/wp-content/uploads/2016/06/EV-question-marks-46x46.jpg 46w, https://xbrl.us/wp-content/uploads/2016/06/EV-question-marks-90x90.jpg 90w" sizes="(max-width: 46px) 100vw, 46px" /></div>-->
+		Inline XBRL: Understanding the Final SEC Rule - 
+Wednesday, August 8	  </a></li>
+          </ul>
+  </div>
+<p><br class="clear" style="font-size:0px !important;line-height:0px !important;" /><!--
+
+<h3 style="padding-top:-80px !important;margin-top:-80px !important">Supported by <a href="/membership/xusmembers/" style="color:#000000;text-decoration:underline;">Members</a> Including:</h3>
+
+[wpupg-grid id="members-home-page"]--></div>
+
+      
+		
+    </div> <!-- #content -->
+
+    <div id="footer">
+      <div class="contain">
+        <div id="infomenu">
+          <div id="about"><p class="slogan"><a href="/"><img src="https://xbrl.us/wp-content/themes/xbrl-jurisdiction/images/logoFooter.png" class="footerlogo" alt="XBRL US" ></a>The national consortium for <br />the business reporting standard</p>
+	  XBRL US is a not-for-profit organization supporting the implementation of digital business reporting standards through the development of taxonomies for use by U.S. public and private sectors, with a goal of interoperability between sectors, and by promoting XBRL adoption through marketplace collaboration.
+<!-- social -->
+		<div id="social">
+          <a href="http://www.facebook.com/XBRLUS" target="_blank"><img src="https://xbrl.us/wp-content/themes/xbrl-jurisdiction/images/social/facebook.png" alt="facebook"></a>
+          <a href="https://twitter.com/xbrlus" target="_blank"><img src="https://xbrl.us/wp-content/themes/xbrl-jurisdiction/images/social/twitter.png" alt="twitter"></a>
+          <a href="http://www.linkedin.com/groups?gid=980987" target="_blank"><img src="https://xbrl.us/wp-content/themes/xbrl-jurisdiction/images/social/linkedin.png" alt="linkedin"></a>
+         <a href="/news/feed"><img src="https://xbrl.us/wp-content/themes/xbrl-jurisdiction/images/social/rss.png" alt="rss"></a>
+        	</div>
+	</div>
+          <div id="submenu">
+             <ul>
+              <li class="title"><a href="https://xbrl.us/">Home</li>
+              <li><a href="https://xbrl.us/data-quality/">Data Quality</a></li>
+              <li><a href="https://xbrl.us/xusevents/">Events</a></li>
+              <li><a href="https://xbrl.us/xusnews/">Media</a></li>
+              <li><a href="https://xbrl.us/membership/">Membership</a></li>
+              <li><a href="https://xbrl.us/home/filers/">Filers</a></li>
+              <li><a href="https://xbrl.us/home/industries/">Industries</a></li>
+              <li><a href="https://xbrl.us/home/government/">Government</a></li>
+              <li><a href="https://xbrl.us/home/use/">Data</a></li>
+              <li><a href="https://xbrl.us/home/learn/">Learn About XBRL</a></li></ul><ul>
+              <li class="title"><a href="https://xbrl.us/home/about/">About XBRL US</a></li>
+              <li><a href="https://xbrl.us/home/about/contact/">Contact Us</a></li>
+              <li><a href="https://xbrl.us/home/about/legal/">Legal</a></li>
+              <li><a href="https://xbrl.us/home/about/sitemap/">Site Map</a></li>
+            </ul><ul>
+              <li class="title"><a href="https://xbrl.org" target="_blank">Global Standard</a></li>
+              <li><a href="https://www.xbrl.org/the-standard/what/" target="_blank">What is XBRL</a></li><li><a href="https://www.xbrl.org/the-standard/how/" target="_blank">Getting Started</a></li>
+              <li><a href="https://www.xbrl.org/the-standard/why/who-else-uses-xbrl/" target="_blank">Who's Using XBRL</a></li>
+            </ul>
+          </div>
+        </div>
+          <br class="clear">
+        <div id="copyright">&copy; 2007-2018 XBRL US, Inc. All rights reserved.
+               <br />XBRL US Inc. <a href="https://maps.google.com/maps?q=1455+Pennsylvania+Avenue,+NW+washington+20004" target="_blank">1455 Pennsylvania Avenue, NW</a> 10th Floor · Washington, DC 20004 · ph: 202-448-1985 · fx: 866-516-6923</div>
+      </div> <!-- contain -->
+    </div>
+    
+    <link rel='stylesheet' id='badgeos-front-css'  href='https://xbrl.us/wp-content/plugins/badgeos/css/badgeos-front.css?ver=1.0.1' type='text/css' media='all' />
+<script type='text/javascript'>
+/* <![CDATA[ */
+var myapi = {"ajax_url":"https:\/\/xbrl.us\/wp-admin\/admin-ajax.php"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://xbrl.us/wp-content/plugins/xbrlus_api_generate/js/api-ajax.js?ver=1.0'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var thickboxL10n = {"next":"Next >","prev":"< Prev","image":"Image","of":"of","close":"Close","noiframes":"This feature requires inline frames. You have iframes disabled or your browser does not support them.","loadingAnimation":"https:\/\/xbrl.us\/wp-includes\/js\/thickbox\/loadingAnimation.gif"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://xbrl.us/wp-includes/js/thickbox/thickbox.js?ver=3.1-20121105'></script>
+<script type='text/javascript' src='https://xbrl.us/wp-content/plugins/badgeos/js/credly-badge-builder.js?ver=1.3.0'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var badgeos_feedback_buttons = {"ajax_url":"\/wp-admin\/admin-ajax.php","user_id":"0"};
+var badgeos_feedback_buttons = {"ajax_url":"\/wp-admin\/admin-ajax.php","user_id":"0"};
+var BadgeosCredlyData = {"ajax_url":"\/wp-admin\/admin-ajax.php","message":"Would you like to display this badge on social networks and add it to your lifelong badge collection?","confirm":"Yes, send to Credly","cancel":"Cancel","share":"Share on Credly!","localized_error":"Error:","errormessage":"Error: Timed out"};
+var BadgeosCredlyData = {"ajax_url":"\/wp-admin\/admin-ajax.php","message":"Would you like to display this badge on social networks and add it to your lifelong badge collection?","confirm":"Yes, send to Credly","cancel":"Cancel","share":"Share on Credly!","localized_error":"Error:","errormessage":"Error: Timed out"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://xbrl.us/wp-content/plugins/badgeos/js/badgeos-achievements.js?ver=1.1.0'></script>
+<script type='text/javascript' src='https://xbrl.us/wp-content/plugins/badgeos/js/ckeditor.js'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var wpcf7 = {"apiSettings":{"root":"https:\/\/xbrl.us\/wp-json\/contact-form-7\/v1","namespace":"contact-form-7\/v1"},"recaptcha":{"messages":{"empty":"Please verify that you are not a robot."}},"cached":"1"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://xbrl.us/wp-content/plugins/contact-form-7/includes/js/scripts.js?ver=4.9.2'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var ctcc_vars = {"expiry":"30","method":"1","version":"1"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://xbrl.us/wp-content/plugins/uk-cookie-consent/assets/js/uk-cookie-consent-js.js?ver=2.3.0'></script>
+<script type='text/javascript' src='https://xbrl.us/wp-content/plugins/woocommerce/assets/js/jquery-blockui/jquery.blockUI.min.js?ver=2.70'></script>
+<script type='text/javascript' src='https://xbrl.us/wp-content/plugins/woocommerce/assets/js/js-cookie/js.cookie.min.js?ver=2.1.4'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var woocommerce_params = {"ajax_url":"\/wp-admin\/admin-ajax.php","wc_ajax_url":"https:\/\/xbrl.us\/?wc-ajax=%%endpoint%%"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://xbrl.us/wp-content/plugins/woocommerce/assets/js/frontend/woocommerce.min.js?ver=3.2.6'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var wc_cart_fragments_params = {"ajax_url":"\/wp-admin\/admin-ajax.php","wc_ajax_url":"https:\/\/xbrl.us\/?wc-ajax=%%endpoint%%","fragment_name":"wc_fragments_73d495aa5530a1adb7c0e6fc8595494f"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://xbrl.us/wp-content/plugins/woocommerce/assets/js/frontend/cart-fragments.min.js?ver=3.2.6'></script>
+<script type='text/javascript' src='https://xbrl.us/wp-content/plugins/wp-ultimate-post-grid-premium/core/vendor/isotope/isotope.pkgd.min.js?ver=2.3'></script>
+<script type='text/javascript' src='https://xbrl.us/wp-includes/js/imagesloaded.min.js?ver=3.2.0'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var wpupg_public = {"ajax_url":"https:\/\/xbrl.us\/wp-admin\/admin-ajax.php?wpupg_ajax=1","animationSpeed":"0.8s","animationShow":{"opacity":"1"},"animationHide":{"opacity":"0"},"nonce":"9552a3743d","rtl":"","dropdown_hide_search":"","link_class":""};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://xbrl.us/wp-content/plugins/wp-ultimate-post-grid-premium/core/js/grid.js?ver=2.3'></script>
+<script type='text/javascript' src='https://xbrl.us/wp-content/plugins/wp-ultimate-post-grid-premium/core/vendor/select2/js/select2.js?ver=2.3'></script>
+<script type='text/javascript' src='https://xbrl.us/wp-content/plugins/wp-ultimate-post-grid-premium/premium/addons/filter-dropdown/js/filter-dropdown.js?ver=2.3'></script>
+<script type='text/javascript' src='https://xbrl.us/wp-content/plugins/wp-ultimate-post-grid-premium/premium/addons/filter-text/js/filter-text.js?ver=2.3'></script>
+<script type='text/javascript' src='https://xbrl.us/wp-content/plugins/wp-ultimate-post-grid-premium/premium/addons/pagination-infinite-load/js/pagination-infinite-load.js?ver=2.3'></script>
+<script type='text/javascript' src='https://xbrl.us/wp-content/plugins/wp-ultimate-post-grid-premium/premium/addons/pagination-load-filter/js/pagination-load-filter.js?ver=2.3'></script>
+<script type='text/javascript' src='https://xbrl.us/wp-content/plugins/wp-ultimate-post-grid-premium/premium/addons/pagination-load-more/js/pagination-load-more.js?ver=2.3'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var myapiV1 = {"ajax_url":"https:\/\/xbrl.us\/wp-admin\/admin-ajax.php","ajax_nonce":"6313ba3f29"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://xbrl.us/wp-content/plugins/xbrlusauthentication/includes/v1_api_code/js/api-ajax.js?ver=1.0'></script>
+<script type='text/javascript' src='https://xbrl.us/wp-includes/js/wp-embed.min.js?ver=4.9.7'></script>
+<script type='text/javascript' src='https://xbrl.us/wp-content/plugins/easy-fancybox/fancybox/jquery.fancybox-1.3.8.js?ver=1.6.2'></script>
+<script type='text/javascript' src='https://xbrl.us/wp-content/plugins/easy-fancybox/js/jquery.easing.min.js?ver=1.4.0'></script>
+<script type='text/javascript' src='https://xbrl.us/wp-content/plugins/easy-fancybox/js/jquery.mousewheel.min.js?ver=3.1.13'></script>
+<script type="text/javascript">(function (undefined) {var targetWindow ="prefer-popup";
+window.NSLPopupCenter = function (url, title, w, h) {
+    var userAgent = navigator.userAgent,
+        mobile = function () {
+            return /\b(iPhone|iP[ao]d)/.test(userAgent) ||
+                /\b(iP[ao]d)/.test(userAgent) ||
+                /Android/i.test(userAgent) ||
+                /Mobile/i.test(userAgent);
+        },
+        screenX = window.screenX !== undefined ? window.screenX : window.screenLeft,
+        screenY = window.screenY !== undefined ? window.screenY : window.screenTop,
+        outerWidth = window.outerWidth !== undefined ? window.outerWidth : document.documentElement.clientWidth,
+        outerHeight = window.outerHeight !== undefined ? window.outerHeight : document.documentElement.clientHeight - 22,
+        targetWidth = mobile() ? null : w,
+        targetHeight = mobile() ? null : h,
+        V = screenX < 0 ? window.screen.width + screenX : screenX,
+        left = parseInt(V + (outerWidth - targetWidth) / 2, 10),
+        right = parseInt(screenY + (outerHeight - targetHeight) / 2.5, 10),
+        features = [];
+    if (targetWidth !== null) {
+        features.push('width=' + targetWidth);
+    }
+    if (targetHeight !== null) {
+        features.push('height=' + targetHeight);
+    }
+    features.push('left=' + left);
+    features.push('top=' + right);
+    features.push('scrollbars=1');
+
+    var newWindow = window.open(url, title, features.join(','));
+
+    if (window.focus) {
+        newWindow.focus();
+    }
+
+    return newWindow;
+};
+
+var isWebView = null;
+
+function checkWebView() {
+    if (isWebView === null) {
+        function _detectOS(ua) {
+            switch (true) {
+                case /Android/.test(ua):
+                    return "Android";
+                case /iPhone|iPad|iPod/.test(ua):
+                    return "iOS";
+                case /Windows/.test(ua):
+                    return "Windows";
+                case /Mac OS X/.test(ua):
+                    return "Mac";
+                case /CrOS/.test(ua):
+                    return "Chrome OS";
+                case /Firefox/.test(ua):
+                    return "Firefox OS";
+            }
+            return "";
+        }
+
+        function _detectBrowser(ua) {
+            var android = /Android/.test(ua);
+
+            switch (true) {
+                case /CriOS/.test(ua):
+                    return "Chrome for iOS";
+                case /Edge/.test(ua):
+                    return "Edge";
+                case android && /Silk\//.test(ua):
+                    return "Silk";
+                case /Chrome/.test(ua):
+                    return "Chrome";
+                case /Firefox/.test(ua):
+                    return "Firefox";
+                case android:
+                    return "AOSP";
+                case /MSIE|Trident/.test(ua):
+                    return "IE";
+                case /Safari\//.test(ua):
+                    return "Safari";
+                case /AppleWebKit/.test(ua):
+                    return "WebKit";
+            }
+            return "";
+        }
+
+        function _detectBrowserVersion(ua, browser) {
+            switch (browser) {
+                case "Chrome for iOS":
+                    return _getVersion(ua, "CriOS/");
+                case "Edge":
+                    return _getVersion(ua, "Edge/");
+                case "Chrome":
+                    return _getVersion(ua, "Chrome/");
+                case "Firefox":
+                    return _getVersion(ua, "Firefox/");
+                case "Silk":
+                    return _getVersion(ua, "Silk/");
+                case "AOSP":
+                    return _getVersion(ua, "Version/");
+                case "IE":
+                    return /IEMobile/.test(ua) ? _getVersion(ua, "IEMobile/") :
+                        /MSIE/.test(ua) ? _getVersion(ua, "MSIE ")
+                            :
+                            _getVersion(ua, "rv:");
+                case "Safari":
+                    return _getVersion(ua, "Version/");
+                case "WebKit":
+                    return _getVersion(ua, "WebKit/");
+            }
+            return "0.0.0";
+        }
+
+        function _getVersion(ua, token) {
+            try {
+                return _normalizeSemverString(ua.split(token)[1].trim().split(/[^\w\.]/)[0]);
+            } catch (o_O) {
+            }
+            return "0.0.0";
+        }
+
+        function _normalizeSemverString(version) {
+            var ary = version.split(/[\._]/);
+            return (parseInt(ary[0], 10) || 0) + "." +
+                (parseInt(ary[1], 10) || 0) + "." +
+                (parseInt(ary[2], 10) || 0);
+        }
+
+        function _isWebView(ua, os, browser, version, options) {
+            switch (os + browser) {
+                case "iOSSafari":
+                    return false;
+                case "iOSWebKit":
+                    return _isWebView_iOS(options);
+                case "AndroidAOSP":
+                    return false;
+                case "AndroidChrome":
+                    return parseFloat(version) >= 42 ? /; wv/.test(ua) : /\d{2}\.0\.0/.test(version) ? true : _isWebView_Android(options);
+            }
+            return false;
+        }
+
+        function _isWebView_iOS(options) {
+            var document = (window["document"] || {});
+
+            if ("WEB_VIEW" in options) {
+                return options["WEB_VIEW"];
+            }
+            return !("fullscreenEnabled" in document || "webkitFullscreenEnabled" in document || false);
+        }
+
+        function _isWebView_Android(options) {
+            if ("WEB_VIEW" in options) {
+                return options["WEB_VIEW"];
+            }
+            return !("requestFileSystem" in window || "webkitRequestFileSystem" in window || false);
+        }
+
+        var options = {};
+        var nav = window.navigator || {};
+        var ua = nav.userAgent || "";
+        var os = _detectOS(ua);
+        var browser = _detectBrowser(ua);
+        var browserVersion = _detectBrowserVersion(ua, browser);
+
+        isWebView = _isWebView(ua, os, browser, browserVersion, options);
+    }
+
+    return isWebView;
+}
+
+if (typeof jQuery !== 'undefined') {
+    var targetWindow = targetWindow || 'prefer-popup';
+    (function ($) {
+        $('a[data-plugin="nsl"][data-action="connect"],a[data-plugin="nsl"][data-action="link"]').on('click', function (e) {
+            var $target = $(this),
+                href = $target.attr('href'),
+                success = false;
+            if (href.indexOf('?') !== -1) {
+                href += '&';
+            } else {
+                href += '?';
+            }
+            var redirectTo = $target.data('redirect');
+            if (redirectTo === 'current') {
+                href += 'redirect=' + encodeURIComponent(window.location.href) + '&';
+            } else if (redirectTo && redirectTo !== '') {
+                href += 'redirect=' + encodeURIComponent(redirectTo) + '&';
+            }
+
+            if (targetWindow !== 'prefer-same-window' && checkWebView()) {
+                targetWindow = 'prefer-same-window';
+            }
+
+            if (targetWindow === 'prefer-popup') {
+                if (NSLPopupCenter(href + 'display=popup', 'nsl-social-connect', $target.data('popupwidth'), $target.data('popupheight'))) {
+                    success = true;
+                    e.preventDefault();
+                }
+            } else if (targetWindow === 'prefer-new-tab') {
+                var newTab = window.open(href + 'display=popup', '_blank');
+                if (newTab) {
+                    if (window.focus) {
+                        newTab.focus();
+                    }
+                    success = true;
+                    e.preventDefault();
+                }
+            }
+
+            if (!success) {
+                window.location = href;
+                e.preventDefault();
+            }
+        });
+
+        var googleLoginButton = $('a[data-plugin="nsl"][data-provider="google"]');
+        if (googleLoginButton.length && checkWebView()) {
+            googleLoginButton.remove();
+        }
+
+    })(jQuery);
+}})();</script><script type="text/javascript">
+jQuery(document).on('ready post-load', function(){ jQuery('.nofancybox,a.pin-it-button,a[href*="pinterest.com/pin/create"]').addClass('nolightbox'); });
+jQuery(document).on('ready post-load',easy_fancybox_handler);
+jQuery(document).on('ready',easy_fancybox_auto);</script>
+			
+				<script type="text/javascript">
+					jQuery(document).ready(function($){
+												if(!catapultReadCookie("catAccCookies")){ // If the cookie has not been set then show the bar
+							$("html").addClass("has-cookie-bar");
+							$("html").addClass("cookie-bar-bottom-bar");
+							$("html").addClass("cookie-bar-bar");
+													}
+																	});
+				</script>
+			
+			<div id="catapult-cookie-bar" class=""><div class="ctcc-inner "><span class="ctcc-left-side">This site uses cookies -  <a class="ctcc-more-info-link" tabindex=0 target="_blank" href="https://xbrl.us/home/about/legal/cookie-policy/">read our policy.</a></span><span class="ctcc-right-side"><button id="catapultCookie" tabindex=0 onclick="catapultAcceptCookies();">OK</button></span></div><!-- custom wrapper class --></div><!-- #catapult-cookie-bar -->
+    	  <div id="fb-root"></div>
+	  <script>(function(d, s, id) {
+	    var js, fjs = d.getElementsByTagName(s)[0];
+	    if (d.getElementById(id)) return;
+	    js = d.createElement(s); js.id = id;
+	    js.src = "//connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v2.0";
+	    fjs.parentNode.insertBefore(js, fjs);
+	  }(document, 'script', 'facebook-jssdk'));</script>
+    </body>
+</html>

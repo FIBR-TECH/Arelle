@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema targetNamespace="http://xbrl.sec.gov/rr-cal/2010-02-28" elementFormDefault="qualified" xmlns:rr-cal="http://xbrl.sec.gov/rr-cal/2010-02-28"
+  xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:link="http://www.xbrl.org/2003/linkbase" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <xs:annotation>
+    <xs:appinfo>
+      <link:linkbaseRef xlink:type="simple" xlink:href="rr-cal-2010-02-28.xml"
+        xlink:role="http://www.xbrl.org/2003/role/calculationLinkbaseRef" xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase"/>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:import namespace="http://www.xbrl.org/2003/instance" schemaLocation="http://www.xbrl.org/2003/xbrl-instance-2003-12-31.xsd"/>
+  <xs:import namespace="http://xbrl.sec.gov/rr/2010-02-28" schemaLocation="rr-2010-02-28.xsd"/>
+  <xs:import namespace="http://xbrl.us/dei/2009-01-31" schemaLocation="http://taxonomies.xbrl.us/us-gaap/2009/non-gaap/dei-2009-01-31.xsd"/>
+</xs:schema>

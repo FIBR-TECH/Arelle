@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- This file is part of the Nederlandse taxonomy (NT, Dutch Taxonomy)    -->
+<!-- Intellectual Property State of the Netherlands                        -->
+<!-- Version 5.0                                                          -->
+<!-- Released by the Dutch SBR Programme                                   -->
+<!-- Release date Tue Nov 30 19:36:39 2010   -->
+ 
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:link="http://www.xbrl.org/2003/linkbase" xmlns:nl-cd="http://www.nltaxonomie.nl/5.0/basis/sbr/items/nl-common-data" xmlns:nl-codes="http://www.nltaxonomie.nl/5.0/basis/sbr/types/nl-codes" xmlns:nl-types="http://www.nltaxonomie.nl/5.0/basis/sbr/types/nl-types" xmlns:xbrli="http://www.xbrl.org/2003/instance" xmlns:xlink="http://www.w3.org/1999/xlink" attributeFormDefault="unqualified" elementFormDefault="qualified" targetNamespace="http://www.nltaxonomie.nl/5.0/basis/sbr/items/nl-common-data">
+   <xs:annotation>
+      <xs:appinfo>
+      <link:linkbaseRef xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase" xlink:href="nl-common-data-lab-nl.xml" xlink:role="http://www.xbrl.org/2003/role/labelLinkbaseRef" xlink:type="simple"/>
+      <link:linkbaseRef xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase" xlink:href="nl-common-data-lab-en.xml" xlink:role="http://www.xbrl.org/2003/role/labelLinkbaseRef" xlink:type="simple"/>
+      <link:linkbaseRef xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase" xlink:href="nl-common-data-ref.xml" xlink:role="http://www.xbrl.org/2003/role/referenceLinkbaseRef" xlink:type="simple"/>
+    </xs:appinfo>
+   </xs:annotation>
+   <xs:import namespace="http://www.xbrl.org/2003/instance" schemaLocation="http://www.xbrl.org/2003/xbrl-instance-2003-12-31.xsd"/>
+   <xs:import namespace="http://www.xbrl.org/2003/linkbase" schemaLocation="http://www.xbrl.org/2003/xbrl-linkbase-2003-12-31.xsd"/>
+   <xs:import namespace="http://www.nltaxonomie.nl/5.0/basis/sbr/types/nl-types" schemaLocation="../types/nl-types.xsd"/>
+   <xs:import namespace="http://www.nltaxonomie.nl/5.0/basis/sbr/types/nl-codes" schemaLocation="../types/nl-codes.xsd"/>
+   <xs:element abstract="false" id="nl-cd_CountryCodeISO" name="CountryCodeISO" nillable="false" substitutionGroup="xbrli:item" type="nl-codes:cd_ISOcountrycode3166_3ItemType" xbrli:periodType="duration"/>
+   <xs:element abstract="false" id="nl-cd_CountryNameISO" name="CountryNameISO" nillable="false" substitutionGroup="xbrli:item" type="nl-codes:cd_ISOcountryname3166ItemType" xbrli:periodType="duration"/>
+   <xs:element abstract="false" id="nl-cd_DateOfBirth" name="DateOfBirth" nillable="false" substitutionGroup="xbrli:item" type="xbrli:dateItemType" xbrli:periodType="duration"/>
+   <xs:element abstract="false" id="nl-cd_DescriptionLocationAbroad" name="DescriptionLocationAbroad" nillable="false" substitutionGroup="xbrli:item" type="xbrli:stringItemType" xbrli:periodType="duration"/>
+   <xs:element abstract="false" id="nl-cd_DescriptionLocationNL" name="DescriptionLocationNL" nillable="false" substitutionGroup="xbrli:item" type="xbrli:stringItemType" xbrli:periodType="duration"/>
+   <xs:element abstract="false" id="nl-cd_DocumentCreationDate" name="DocumentCreationDate" nillable="false" substitutionGroup="xbrli:item" type="xbrli:dateItemType" xbrli:periodType="duration"/>
+   <xs:element abstract="false" id="nl-cd_EmailAddressDescription" name="EmailAddressDescription" nillable="false" substitutionGroup="xbrli:item" type="xbrli:stringItemType" xbrli:periodType="duration"/>
+   <xs:element abstract="false" id="nl-cd_EmailAddressFull" name="EmailAddressFull" nillable="false" substitutionGroup="xbrli:item" type="nl-types:emailAddressItemType" xbrli:periodType="duration"/>
+   <xs:element abstract="false" id="nl-cd_EmailAddressOwner" name="EmailAddressOwner" nillable="false" substitutionGroup="xbrli:item" type="nl-codes:personRoleItemType" xbrli:periodType="duration"/>
+   <xs:element abstract="false" id="nl-cd_EndDateForFinancialPeriod" name="EndDateForFinancialPeriod" nillable="false" substitutionGroup="xbrli:item" type="xbrli:dateItemType" xbrli:periodType="duration"/>
+   <xs:element abstract="false" id="nl-cd_HouseNumberAbroad" name="HouseNumberAbroad" nillable="false" substitutionGroup="xbrli:item" type="xbrli:stringItemType" xbrli:periodType="duration"/>
+   <xs:element abstract="false" id="nl-cd_HouseNumberAddition" name="HouseNumberAddition" nillable="false" substitutionGroup="xbrli:item" type="xbrli:stringItemType" xbrli:periodType="duration"/>
+   <xs:element abstract="false" id="nl-cd_HouseNumberNL" name="HouseNumberNL" nillable="false" substitutionGroup="xbrli:item" type="xbrli:nonNegativeIntegerItemType" xbrli:periodType="duration"/>
+   <xs:element abstract="false" id="nl-cd_Initials" name="Initials" nillable="false" substitutionGroup="xbrli:item" type="xbrli:stringItemType" xbrli:periodType="duration"/>
+   <xs:element abstract="false" id="nl-cd_LegalForm" name="LegalForm" nillable="false" substitutionGroup="xbrli:item" type="nl-codes:cd_legalItemType" xbrli:periodType="duration"/>
+   <xs:element abstract="false" id="nl-cd_Namebusiness" name="Namebusiness" substitutionGroup="xbrli:item" type="xbrli:stringItemType" xbrli:periodType="duration"/>
+   <xs:element abstract="false" id="nl-cd_NameRegion" name="NameRegion" nillable="false" substitutionGroup="xbrli:item" type="xbrli:stringItemType" xbrli:periodType="duration"/>
+   <xs:element abstract="false" id="nl-cd_NameShareholder" name="NameShareholder" nillable="false" substitutionGroup="xbrli:item" type="xbrli:stringItemType" xbrli:periodType="duration"/>
+   <xs:element abstract="false" id="nl-cd_Nationality" name="Nationality" nillable="false" substitutionGroup="xbrli:item" type="nl-codes:cd_ISOcountryname3166ItemType" xbrli:periodType="duration"/>
+   <xs:element abstract="false" id="nl-cd_NationalityCode" name="NationalityCode" nillable="false" substitutionGroup="xbrli:item" type="nl-codes:cd_ISOcountrycode3166_3ItemType" xbrli:periodType="duration"/>
+   <xs:element abstract="false" id="nl-cd_POBoxNumber" name="POBoxNumber" nillable="false" substitutionGroup="xbrli:item" type="xbrli:nonNegativeIntegerItemType" xbrli:periodType="duration"/>
+   <xs:element abstract="false" id="nl-cd_PlaceOfResidenceAbroad" name="PlaceOfResidenceAbroad" nillable="false" substitutionGroup="xbrli:item" type="xbrli:stringItemType" xbrli:periodType="duration"/>
+   <xs:element abstract="false" id="nl-cd_PlaceOfResidenceNL" name="PlaceOfResidenceNL" nillable="false" substitutionGroup="xbrli:item" type="xbrli:stringItemType" xbrli:periodType="duration"/>
+   <xs:element abstract="false" id="nl-cd_PostalCodeAbroad" name="PostalCodeAbroad" nillable="false" substitutionGroup="xbrli:item" type="xbrli:stringItemType" xbrli:periodType="duration"/>
+   <xs:element abstract="false" id="nl-cd_PostalCodeNL" name="PostalCodeNL" nillable="false" substitutionGroup="xbrli:item" type="nl-types:nlzipItemType" xbrli:periodType="duration"/>
+   <xs:element abstract="false" id="nl-cd_Prefix" name="Prefix" nillable="false" substitutionGroup="xbrli:item" type="xbrli:stringItemType" xbrli:periodType="duration"/>
+   <xs:element abstract="false" id="nl-cd_SexCode" name="SexCode" nillable="false" substitutionGroup="xbrli:item" type="nl-codes:cd_sexItemType" xbrli:periodType="duration"/>
+   <xs:element abstract="false" id="nl-cd_SignificantPartOfTheSurname" name="SignificantPartOfTheSurname" nillable="false" substitutionGroup="xbrli:item" type="xbrli:stringItemType" xbrli:periodType="duration"/>
+   <xs:element abstract="false" id="nl-cd_StartDateForFinancialPeriod" name="StartDateForFinancialPeriod" nillable="false" substitutionGroup="xbrli:item" type="xbrli:dateItemType" xbrli:periodType="duration"/>
+   <xs:element abstract="false" id="nl-cd_StatutoryNameEntity" name="StatutoryNameEntity" nillable="false" substitutionGroup="xbrli:item" type="xbrli:stringItemType" xbrli:periodType="duration"/>
+   <xs:element abstract="false" id="nl-cd_StreetNameAbroad" name="StreetNameAbroad" nillable="false" substitutionGroup="xbrli:item" type="xbrli:stringItemType" xbrli:periodType="duration"/>
+   <xs:element abstract="false" id="nl-cd_StreetNameNL" name="StreetNameNL" nillable="false" substitutionGroup="xbrli:item" type="xbrli:stringItemType" xbrli:periodType="duration"/>
+   <xs:element abstract="false" id="nl-cd_TaxReferenceNumber" name="TaxReferenceNumber" nillable="false" substitutionGroup="xbrli:item" type="xbrli:stringItemType" xbrli:periodType="duration"/>
+   <xs:element abstract="false" id="nl-cd_TelephoneNumber" name="TelephoneNumber" nillable="false" substitutionGroup="xbrli:item" type="xbrli:stringItemType" xbrli:periodType="duration"/>
+   <xs:element abstract="false" id="nl-cd_UsagePhoneNumberItemHead" name="UsagePhoneNumberItemHead" nillable="false" substitutionGroup="xbrli:item" type="xbrli:stringItemType" xbrli:periodType="duration"/>
+   <xs:element abstract="false" id="nl-cd_DocumentInformation" name="DocumentInformation" nillable="false" substitutionGroup="xbrli:item" type="xbrli:stringItemType" xbrli:periodType="duration"/>
+   <xs:element abstract="false" id="nl-cd_TelephoneNumberUsage" name="TelephoneNumberUsage" nillable="false" substitutionGroup="xbrli:item" type="xbrli:stringItemType" xbrli:periodType="duration"/>
+</xs:schema>

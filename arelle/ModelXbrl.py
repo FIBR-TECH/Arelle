@@ -65,8 +65,9 @@ def load(modelManager, url, nextaction=None, base=None, useFileSource=None, erro
         
         modelXbrl.fileSource = FileSource.FileSource(url, modelManager.cntlr)
         modelXbrl.closeFileSource= True
+       
     modelXbrl.modelDocument = ModelDocument.load(modelXbrl, url, base, isEntry=True, **kwargs)
-#    
+      
 #    print('Model Document' + str(modelXbrl.modelDocument))
     
     if supplementalUrls:
@@ -80,6 +81,7 @@ def load(modelManager, url, nextaction=None, base=None, useFileSource=None, erro
     #XmlValidate.xmlValidate(modelXbrl.modelDocument)
     modelManager.cntlr.webCache.saveUrlCheckTimes()
     modelManager.showStatus(_("xbrl loading finished, {0}...").format(nextaction))
+     
     return modelXbrl
 
 def create(modelManager, newDocumentType=None, url=None, schemaRefs=None, createModelDocument=True, isEntry=False, errorCaptureLevel=None, initialXml=None, initialComment=None, base=None, discover=True):

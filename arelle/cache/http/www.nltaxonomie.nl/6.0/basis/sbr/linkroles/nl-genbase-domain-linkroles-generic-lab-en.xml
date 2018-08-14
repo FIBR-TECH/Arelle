@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  This file is part of the Nederlandse taxonomy (NT, Dutch Taxonomy) 
+  Intellectual Property State of the Netherlands 
+  Version 6.0 
+  Released by the Dutch SBR Programme 
+  Release date Tue October 4 7:30:00 2011
+-->
+<link:linkbase xmlns:gen="http://xbrl.org/2008/generic" xmlns:label="http://xbrl.org/2008/label" xmlns:link="http://www.xbrl.org/2003/linkbase" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xbrl.org/2008/label http://www.xbrl.org/2008/generic-label.xsd http://xbrl.org/2008/generic http://www.xbrl.org/2008/generic-link.xsd">
+  <link:arcroleRef xlink:type="simple" arcroleURI="http://xbrl.org/arcrole/2008/element-label" xlink:href="http://www.xbrl.org/2008/generic-label.xsd#element-label"/>
+  <link:roleRef xlink:type="simple" xlink:href="http://www.xbrl.org/2008/generic-link.xsd#standard-link-role" roleURI="http://www.xbrl.org/2008/role/link"/>
+  <link:roleRef xlink:type="simple" xlink:href="http://www.xbrl.org/2008/generic-label.xsd#standard-label" roleURI="http://www.xbrl.org/2008/role/label"/>
+  <gen:link xlink:type="extended" xlink:role="http://www.xbrl.org/2008/role/link">
+	<gen:arc xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2008/element-label" xlink:from="nl-lr_domain-FinancialStatement_loc" xlink:to="nl-lr_domain-FinancialStatement_label_en"/>
+	<gen:arc xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2008/element-label" xlink:from="nl-lr_domain-ValuationMethod_loc" xlink:to="nl-lr_domain-ValuationMethod_label_en"/>
+	<label:label xlink:type="resource" xlink:label="nl-lr_domain-FinancialStatement_label_en" xlink:role="http://www.xbrl.org/2008/role/label" xml:lang="en">Financial statement</label:label>
+	<label:label xlink:type="resource" xlink:label="nl-lr_domain-ValuationMethod_label_en" xlink:role="http://www.xbrl.org/2008/role/label" xml:lang="en">Valuation method</label:label>
+	<link:loc xlink:type="locator" xlink:href="nl-genbase-domain-linkroles.xsd#nl-lr_domain-FinancialStatement" xlink:label="nl-lr_domain-FinancialStatement_loc"/>
+	<link:loc xlink:type="locator" xlink:href="nl-genbase-domain-linkroles.xsd#nl-lr_domain-ValuationMethod" xlink:label="nl-lr_domain-ValuationMethod_loc"/>
+  </gen:link>
+</link:linkbase>

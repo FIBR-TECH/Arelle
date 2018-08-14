@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- This file is part of the Nederlandse taxonomy (NT, Dutch Taxonomy)    -->
+<!-- Intellectual Property State of the Netherlands                        -->
+<!-- Version 5.0                                                          -->
+<!-- Released by the Dutch SBR Programme                                   -->
+<!-- Release date Tue Nov 30 19:36:39 2010   -->
+ 
+<link:linkbase xmlns:link="http://www.xbrl.org/2003/linkbase"  xmlns:ref="http://www.xbrl.org/2006/ref" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.xbrl.org/2006/ref http://www.xbrl.org/2006/ref-2006-02-27.xsd">
+   <link:referenceLink xlink:role="http://www.xbrl.org/2003/role/link" xlink:type="extended">
+      <link:loc xlink:href="nl-common-data.xsd#nl-cd_CountryCodeISO" xlink:label="nl-cd_CountryCodeISO" xlink:type="locator"/>
+      <link:loc xlink:href="nl-common-data.xsd#nl-cd_CountryNameISO" xlink:label="nl-cd_CountryNameISO" xlink:type="locator"/>
+      <link:loc xlink:href="nl-common-data.xsd#nl-cd_DateOfBirth" xlink:label="nl-cd_DateOfBirth" xlink:type="locator"/>
+      <link:loc xlink:href="nl-common-data.xsd#nl-cd_DescriptionLocationAbroad" xlink:label="nl-cd_DescriptionLocationAbroad" xlink:type="locator"/>
+      <link:loc xlink:href="nl-common-data.xsd#nl-cd_DescriptionLocationNL" xlink:label="nl-cd_DescriptionLocationNL" xlink:type="locator"/>
+      <link:loc xlink:href="nl-common-data.xsd#nl-cd_DocumentCreationDate" xlink:label="nl-cd_DocumentCreationDate" xlink:type="locator"/>
+      <link:loc xlink:href="nl-common-data.xsd#nl-cd_HouseNumberAbroad" xlink:label="nl-cd_HouseNumberAbroad" xlink:type="locator"/>
+      <link:loc xlink:href="nl-common-data.xsd#nl-cd_HouseNumberAddition" xlink:label="nl-cd_HouseNumberAddition" xlink:type="locator"/>
+      <link:loc xlink:href="nl-common-data.xsd#nl-cd_HouseNumberNL" xlink:label="nl-cd_HouseNumberNL" xlink:type="locator"/>
+      <link:loc xlink:href="nl-common-data.xsd#nl-cd_Initials" xlink:label="nl-cd_Initials" xlink:type="locator"/>
+      <link:loc xlink:href="nl-common-data.xsd#nl-cd_LegalForm" xlink:label="nl-cd_LegalForm" xlink:type="locator"/>
+      <link:loc xlink:href="nl-common-data.xsd#nl-cd_Namebusiness" xlink:label="nl-cd_Namebusiness" xlink:type="locator"/>
+      <link:loc xlink:href="nl-common-data.xsd#nl-cd_NameRegion" xlink:label="nl-cd_NameRegion" xlink:type="locator"/>
+      <link:loc xlink:href="nl-common-data.xsd#nl-cd_Nationality" xlink:label="nl-cd_Nationality" xlink:type="locator"/>
+      <link:loc xlink:href="nl-common-data.xsd#nl-cd_POBoxNumber" xlink:label="nl-cd_POBoxNumber" xlink:type="locator"/>
+      <link:loc xlink:href="nl-common-data.xsd#nl-cd_PlaceOfResidenceAbroad" xlink:label="nl-cd_PlaceOfResidenceAbroad" xlink:type="locator"/>
+      <link:loc xlink:href="nl-common-data.xsd#nl-cd_PlaceOfResidenceNL" xlink:label="nl-cd_PlaceOfResidenceNL" xlink:type="locator"/>
+      <link:loc xlink:href="nl-common-data.xsd#nl-cd_PostalCodeAbroad" xlink:label="nl-cd_PostalCodeAbroad" xlink:type="locator"/>
+      <link:loc xlink:href="nl-common-data.xsd#nl-cd_PostalCodeNL" xlink:label="nl-cd_PostalCodeNL" xlink:type="locator"/>
+      <link:loc xlink:href="nl-common-data.xsd#nl-cd_Prefix" xlink:label="nl-cd_Prefix" xlink:type="locator"/>
+      <link:loc xlink:href="nl-common-data.xsd#nl-cd_SexCode" xlink:label="nl-cd_SexCode" xlink:type="locator"/>
+      <link:loc xlink:href="nl-common-data.xsd#nl-cd_SignificantPartOfTheSurname" xlink:label="nl-cd_SignificantPartOfTheSurname" xlink:type="locator"/>
+      <link:loc xlink:href="nl-common-data.xsd#nl-cd_StatutoryNameEntity" xlink:label="nl-cd_StatutoryNameEntity" xlink:type="locator"/>
+      <link:loc xlink:href="nl-common-data.xsd#nl-cd_StreetNameAbroad" xlink:label="nl-cd_StreetNameAbroad" xlink:type="locator"/>
+      <link:loc xlink:href="nl-common-data.xsd#nl-cd_StreetNameNL" xlink:label="nl-cd_StreetNameNL" xlink:type="locator"/>
+      <link:loc xlink:href="nl-common-data.xsd#nl-cd_TaxReferenceNumber" xlink:label="nl-cd_TaxReferenceNumber" xlink:type="locator"/>
+      <link:loc xlink:href="nl-common-data.xsd#nl-cd_TelephoneNumber" xlink:label="nl-cd_TelephoneNumber" xlink:type="locator"/>
+      <link:referenceArc order="1.0" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="nl-cd_CountryCodeISO" xlink:to="nl-cd_BesluitIntSpaarrenterichtlijn_ref" xlink:type="arc"/>
+      <link:referenceArc order="1.0" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="nl-cd_CountryNameISO" xlink:to="nl-cd_RJ_300_105_a_ref" xlink:type="arc"/>
+      <link:referenceArc order="1.0" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="nl-cd_DateOfBirth" xlink:to="nl-cd_WetIB2001_63_1_ref" xlink:type="arc"/>
+      <link:referenceArc order="1.0" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="nl-cd_DocumentCreationDate" xlink:to="nl-cd_WetIB2001_ref" xlink:type="arc"/>
+      <link:referenceArc order="1.0" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="nl-cd_HouseNumberAddition" xlink:to="nl-cd_RJ_300_105_a_ref" xlink:type="arc"/>
+      <link:referenceArc order="1.0" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="nl-cd_HouseNumberNL" xlink:to="nl-cd_RJ_300_105_a_ref" xlink:type="arc"/>
+      <link:referenceArc order="1.0" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="nl-cd_Initials" xlink:to="nl-cd_WetIB2001_ref" xlink:type="arc"/>
+      <link:referenceArc order="1.0" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="nl-cd_LegalForm" xlink:to="nl-cd_WetIB2001_38_ref" xlink:type="arc"/>
+      <link:referenceArc order="1.0" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="nl-cd_Namebusiness" xlink:to="nl-cd_RJ_110_103_a_ref" xlink:type="arc"/>
+      <link:referenceArc order="1.0" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="nl-cd_NameRegion" xlink:to="nl-cd_RJ_300_105_a_ref" xlink:type="arc"/>
+      <link:referenceArc order="1.0" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="nl-cd_Nationality" xlink:to="nl-cd_WetIB2001_ref" xlink:type="arc"/>
+      <link:referenceArc order="1.0" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="nl-cd_PlaceOfResidenceNL" xlink:to="nl-cd_WetIB2001_63_1_ref" xlink:type="arc"/>
+      <link:referenceArc order="1.0" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="nl-cd_PostalCodeNL" xlink:to="nl-cd_RJ_300_105_a_ref" xlink:type="arc"/>
+      <link:referenceArc order="1.0" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="nl-cd_SignificantPartOfTheSurname" xlink:to="nl-cd_WetIB2001_63_1_ref" xlink:type="arc"/>
+      <link:referenceArc order="1.0" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="nl-cd_StatutoryNameEntity" xlink:to="nl-cd_RJ_300_105_a_ref" xlink:type="arc"/>
+      <link:referenceArc order="1.0" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="nl-cd_StreetNameNL" xlink:to="nl-cd_WetIB2001_63_1_ref" xlink:type="arc"/>
+      <link:referenceArc order="1.0" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="nl-cd_TelephoneNumber" xlink:to="nl-cd_WetIB2001_ref" xlink:type="arc"/>
+      <link:referenceArc order="2.0" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="nl-cd_CountryCodeISO" xlink:to="nl-cd_WetIB2001_63_1_ref" xlink:type="arc"/>
+      <link:referenceArc order="2.0" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="nl-cd_CountryNameISO" xlink:to="nl-cd_RJk_B18_104_ref" xlink:type="arc"/>
+      <link:referenceArc order="2.0" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="nl-cd_DocumentCreationDate" xlink:to="nl-cd_RJk_B4_110_ref" xlink:type="arc"/>
+      <link:referenceArc order="2.0" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="nl-cd_HouseNumberAddition" xlink:to="nl-cd_RJk_B18_104_ref" xlink:type="arc"/>
+      <link:referenceArc order="2.0" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="nl-cd_HouseNumberNL" xlink:to="nl-cd_RJk_B18_104_ref" xlink:type="arc"/>
+      <link:referenceArc order="2.0" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="nl-cd_NameRegion" xlink:to="nl-cd_RJk_B18_104_ref" xlink:type="arc"/>
+      <link:referenceArc order="2.0" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="nl-cd_PlaceOfResidenceNL" xlink:to="nl-cd_RJk_B18_104_ref" xlink:type="arc"/>
+      <link:referenceArc order="2.0" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="nl-cd_PostalCodeNL" xlink:to="nl-cd_RJk_B18_104_ref" xlink:type="arc"/>
+      <link:referenceArc order="2.0" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="nl-cd_StatutoryNameEntity" xlink:to="nl-cd_RJk_B18_104_ref" xlink:type="arc"/>
+      <link:referenceArc order="2.0" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="nl-cd_StreetNameNL" xlink:to="nl-cd_RJk_B18_104_ref" xlink:type="arc"/>
+      <link:referenceArc order="3.0" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="nl-cd_DocumentCreationDate" xlink:to="nl-cd_RJ_160_401_ref" xlink:type="arc"/>
+      <link:referenceArc order="4.0" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="nl-cd_PlaceOfResidenceNL" xlink:to="nl-cd_RJ_300_105_a_ref" xlink:type="arc"/>
+      <link:referenceArc order="3.0" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="nl-cd_PlaceOfResidenceNL" xlink:to="nl-cd_WetOB1968_37_A_ref" xlink:type="arc"/>
+      <link:referenceArc order="3.0" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="nl-cd_PostalCodeNL" xlink:to="nl-cd_WetOB1968_37_A_ref" xlink:type="arc"/>
+      <link:referenceArc order="3.0" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="nl-cd_SignificantPartOfTheSurname" xlink:to="nl-cd_WetOB1968_37_A_ref" xlink:type="arc"/>
+      <link:referenceArc order="3.0" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="nl-cd_StatutoryNameEntity" xlink:to="nl-cd_RJk_A1_306_ref" xlink:type="arc"/>
+      <link:referenceArc order="3.0" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="nl-cd_StreetNameNL" xlink:to="nl-cd_RJ_300_105_a_ref" xlink:type="arc"/>
+      <link:referenceArc order="3.0" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="nl-cd_TelephoneNumber" xlink:to="nl-cd_WetOB1968_37_A_ref" xlink:type="arc"/>
+      <link:referenceArc order="4.0" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="nl-cd_StatutoryNameEntity" xlink:to="nl-cd_RJ_110_103_a_ref" xlink:type="arc"/>
+      <link:reference id="nl-cd_BesluitIntSpaarrenterichtlijn_ref" xlink:label="nl-cd_BesluitIntSpaarrenterichtlijn_ref" xlink:role="http://www.xbrl.org/2003/role/reference" xlink:type="resource">
+         <ref:Name>Besluit Int. Spaarrenterichtlijn</ref:Name>
+      </link:reference>
+      <link:reference id="nl-cd_WetIB2001_63_1_ref" xlink:label="nl-cd_WetIB2001_63_1_ref" xlink:role="http://www.xbrl.org/2003/role/reference" xlink:type="resource">
+         <ref:Name>Wet IB2001</ref:Name>
+         <ref:Article>6.3</ref:Article>
+         <ref:Paragraph>1</ref:Paragraph>
+      </link:reference>
+      <link:reference id="nl-cd_WetIB2001_ref" xlink:label="nl-cd_WetIB2001_ref" xlink:role="http://www.xbrl.org/2003/role/reference" xlink:type="resource">
+         <ref:Name>Wet IB2001</ref:Name>
+      </link:reference>
+      <link:reference id="nl-cd_WetOB1968_37_A_ref" xlink:label="nl-cd_WetOB1968_37_A_ref" xlink:role="http://www.xbrl.org/2003/role/reference" xlink:type="resource">
+         <ref:Name>Wet OB1968</ref:Name>
+         <ref:Article>37</ref:Article>
+         <ref:Paragraph>A</ref:Paragraph>
+      </link:reference>
+      <link:reference id="nl-cd_WetIB2001_38_ref" xlink:label="nl-cd_WetIB2001_38_ref" xlink:role="http://www.xbrl.org/2003/role/reference" xlink:type="resource">
+         <ref:Name>Wet IB2001</ref:Name>
+         <ref:Article>3.8</ref:Article>
+      </link:reference>
+      <link:reference id="nl-cd_RJ_300_105_a_ref" xlink:label="nl-cd_RJ_300_105_a_ref" xlink:role="http://www.xbrl.org/2003/role/reference" xlink:type="resource">
+         <ref:Name>RJ</ref:Name>
+         <ref:Article>300</ref:Article>
+         <ref:Paragraph>105</ref:Paragraph>
+         <ref:Subparagraph>a</ref:Subparagraph>
+      </link:reference>
+      <link:reference id="nl-cd_RJk_B18_104_ref" xlink:label="nl-cd_RJk_B18_104_ref" xlink:role="http://www.xbrl.org/2003/role/reference" xlink:type="resource">
+         <ref:Name>RJk</ref:Name>
+         <ref:Article>B18</ref:Article>
+         <ref:Paragraph>104</ref:Paragraph>
+      </link:reference>
+      <link:reference id="nl-cd_RJ_160_401_ref" xlink:label="nl-cd_RJ_160_401_ref" xlink:role="http://www.xbrl.org/2003/role/reference" xlink:type="resource">
+         <ref:Name>RJ</ref:Name>
+         <ref:Article>160</ref:Article>
+         <ref:Paragraph>401</ref:Paragraph>
+      </link:reference>
+      <link:reference id="nl-cd_RJk_B4_110_ref" xlink:label="nl-cd_RJk_B4_110_ref" xlink:role="http://www.xbrl.org/2003/role/reference" xlink:type="resource">
+         <ref:Name>RJk</ref:Name>
+         <ref:Article>B4</ref:Article>
+         <ref:Paragraph>110</ref:Paragraph>
+      </link:reference>
+      <link:reference id="nl-cd_RJ_110_103_a_ref" xlink:label="nl-cd_RJ_110_103_a_ref" xlink:role="http://www.xbrl.org/2003/role/reference" xlink:type="resource">
+         <ref:Name>RJ</ref:Name>
+         <ref:Section>110</ref:Section>
+         <ref:Paragraph>103</ref:Paragraph>
+         <ref:Subparagraph>a</ref:Subparagraph>
+      </link:reference>
+      <link:reference id="nl-cd_RJk_A1_306_ref" xlink:label="nl-cd_RJk_A1_306_ref" xlink:role="http://www.xbrl.org/2003/role/reference" xlink:type="resource">
+         <ref:Name>RJk</ref:Name>
+         <ref:Article>A1</ref:Article>
+         <ref:Paragraph>306</ref:Paragraph>
+      </link:reference>
+   </link:referenceLink>
+</link:linkbase>

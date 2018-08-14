@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+Notice: Authorized Uses are Set Forth at http://taxonomies.xbrl.us/terms/rr_legal.html
+Copyright (C) 2008 XBRL US, Inc. All Rights Reserved.
+  -->
+<xs:schema attributeFormDefault='unqualified' elementFormDefault='qualified' targetNamespace='http://xbrl.us/rr/2008-12-31' xmlns:link='http://www.xbrl.org/2003/linkbase' xmlns:rr='http://xbrl.us/rr/2008-12-31' xmlns:us-types='http://xbrl.us/us-types/2008-03-31' xmlns:xbrldt='http://xbrl.org/2005/xbrldt' xmlns:xbrli='http://www.xbrl.org/2003/instance' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:xs='http://www.w3.org/2001/XMLSchema'>
+<xs:annotation>
+<xs:appinfo>
+<link:roleType id='N1A' roleURI='http://xbrl.us/rr/role/document/n1a'>
+<link:definition>994300 - Document - Form N-1A</link:definition>
+<link:usedOn>link:presentationLink</link:usedOn>
+<link:usedOn>link:calculationLink</link:usedOn>
+<link:usedOn>link:definitionLink</link:usedOn>
+<link:usedOn>link:referenceLink</link:usedOn>
+</link:roleType>
+</xs:appinfo>
+</xs:annotation>
+<xs:import namespace='http://www.xbrl.org/2003/instance' schemaLocation='http://www.xbrl.org/2003/xbrl-instance-2003-12-31.xsd' />
+<xs:import namespace='http://xbrl.org/2005/xbrldt' schemaLocation='http://www.xbrl.org/2005/xbrldt-2005.xsd' />
+<xs:import namespace='http://xbrl.org/2006/xbrldi' schemaLocation='http://www.xbrl.org/2006/xbrldi-2006.xsd' />
+<xs:import namespace='http://www.xbrl.org/2006/ref' schemaLocation='http://www.xbrl.org/2006/ref-2006-02-27.xsd' />
+<xs:import namespace='http://xbrl.us/us-types/2008-03-31' schemaLocation='http://xbrl.us/us-gaap/1.0/elts/us-types-2008-03-31.xsd' />
+<xs:element id='rr_RiskReturnHeading' name='RiskReturnHeading' nillable='true' substitutionGroup='xbrli:item' type='xbrli:stringItemType' xbrli:periodType='duration' />
+<xs:element abstract='true' id='rr_ObjectiveSectionAbstract' name='ObjectiveSectionAbstract' nillable='true' substitutionGroup='xbrli:item' type='xbrli:stringItemType' xbrli:periodType='duration' />
+<xs:element id='rr_ObjectiveHeading' name='ObjectiveHeading' nillable='true' substitutionGroup='xbrli:item' type='xbrli:stringItemType' xbrli:periodType='duration' />
+<xs:element id='rr_ObjectivePrimaryTextBlock' name='ObjectivePrimaryTextBlock' nillable='true' substitutionGroup='xbrli:item' type='us-types:textBlockItemType' xbrli:periodType='duration' />
+<xs:element id='rr_ObjectiveSecondaryTextBlock' name='ObjectiveSecondaryTextBlock' nillable='true' substitutionGroup='xbrli:item' type='us-types:textBlockItemType' xbrli:periodType='duration' />
+<xs:element abstract='true' id='rr_StrategySectionAbstract' name='StrategySectionAbstract' nillable='true' substitutionGroup='xbrli:item' type='xbrli:stringItemType' xbrli:periodType='duration' />
+<xs:element id='rr_StrategyHeading' name='StrategyHeading' nillable='true' substitutionGroup='xbrli:item' type='xbrli:stringItemType' xbrli:periodType='duration' />
+<xs:element id='rr_StrategyNarrativeTextBlock' name='StrategyNarrativeTextBlock' nillable='true' substitutionGroup='xbrli:item' type='us-types:textBlockItemType' xbrli:periodType='duration' />
+<xs:element id='rr_StrategyPortfolioConcentration' name='StrategyPortfolioConcentration' nillable='true' substitutionGroup='xbrli:item' type='xbrli:stringItemType' xbrli:periodType='duration' />
+<xs:element id='rr_BarChartAndPerformanceTableHeading' name='BarChartAndPerformanceTableHeading' nillable='true' substitutionGroup='xbrli:item' type='xbrli:stringItemType' xbrli:periodType='duration' />
+<xs:element id='rr_PerformanceNarrativeTextBlock' name='PerformanceNarrativeTextBlock' nillable='true' substitutionGroup='xbrli:item' type='us-types:textBlockItemType' xbrli:periodType='duration' />
+<xs:element id='rr_PerformancePastDoesNotIndicateFuture' name='PerformancePastDoesNotIndicateFuture' nillable='true' substitutionGroup='xbrli:item' type='xbrli:stringItemType' xbrli:periodType='duration' />
+<xs:element id='rr_PerformanceInformationIllustratesVariabilityOfReturns' name='PerformanceInformationIllustratesVariabilityOfReturns' nillable='true' substitutionGroup='xbrli:item' type='xbrli:stringItemType' xbrli:periodType='duration' />
+<xs:element id='rr_PerformanceOneYearOrLess' name='PerformanceOneYearOrLess' nillable='true' substitutionGroup='xbrli:item' type='xbrli:stringItemType' xbrli:periodType='duration' />
+<xs:element id='rr_PerformanceAdditionalMarketIndex' name='PerformanceAdditionalMarketIndex' nillable='true' substitutionGroup='xbrli:item' type='xbrli:stringItemType' xbrli:periodType='duration' />
+<xs:element id='rr_BarChartHeading' name='BarChartHeading' nillable='true' substitutionGroup='xbrli:item' type='xbrli:stringItemType' xbrli:periodType='duration' />
+<xs:element id='rr_BarChartNarrativeTextBlock' name='BarChartNarrativeTextBlock' nillable='true' substitutionGroup='xbrli:item' type='us-types:textBlockItemType' xbrli:periodType='duration' />
+<xs:element id='rr_BarChartDoesNotReflectSalesLoads' name='BarChartDoesNotReflectSalesLoads' nillable='true' substitutionGroup='xbrli:item' type='xbrli:stringItemType' xbrli:periodType='duration' />
+<xs:element id='rr_BarChartReturnsForClassNotOfferedInProspectus' name='BarChartReturnsForClassNotOfferedInProspectus' nillable='true' substitutionGroup='xbrli:item' type='xbrli:stringItemType' xbrli:periodType='duration' />
+<xs:element id='rr_BarChartReasonSelectedClassDifferentFromImmediatelyPrecedingPeriod' name='BarChartReasonSelectedClassDifferentFromImmediatelyPrecedingPeriod' nillable='true' substitutionGroup='xbrli:item' type='xbrli:stringItemType' xbrli:periodType='duration' />
+<xs:element id='rr_AnnualReturnCaption' name='AnnualReturnCaption' nillable='true' substitutionGroup='xbrli:item' type='xbrli:stringItemType' xbrli:periodType='duration' />
+<xs:element id='rr_AnnualReturnColumnName' name='AnnualReturnColumnName' nillable='true' substitutionGroup='xbrli:item' type='us-types:textBlockItemType' xbrli:periodType='duration' />
+<xs:element id='rr_AnnualReturnInceptionDate' name='AnnualReturnInceptionDate' nillable='true' substitutionGroup='xbrli:item' type='xbrli:dateItemType' xbrli:periodType='duration' />
+<xs:element id='rr_AnnualReturn1990' name='AnnualReturn1990' nillable='true' substitutionGroup='xbrli:item' type='xbrli:pureItemType' xbrli:periodType='duration' />
+<xs:element id='rr_AnnualReturn1991' name='AnnualReturn1991' nillable='true' substitutionGroup='xbrli:item' type='xbrli:pureItemType' xbrli:periodType='duration' />
+<xs:element id='rr_AnnualReturn1992' name='AnnualReturn1992' nillable='true' substitutionGroup='xbrli:item' type='xbrli:pureItemType' xbrli:periodType='duration' />
+<xs:element id='rr_AnnualReturn1993' name='AnnualReturn1993' nillable='true' substitutionGroup='xbrli:item' type='xbrli:pureItemType' xbrli:periodType='duration' />
+<xs:element id='rr_AnnualReturn1994' name='AnnualReturn1994' nillable='true' substitutionGroup='xbrli:item' type='xbrli:pureItemType' xbrli:periodType='duration' />
+<xs:element id='rr_AnnualReturn1995' name='AnnualReturn1995' nillable='true' substitutionGroup='xbrli:item' type='xbrli:pureItemType' xbrli:periodType='duration' />
+<xs:element id='rr_AnnualReturn1996' name='AnnualReturn1996' nillable='true' substitutionGroup='xbrli:item' type='xbrli:pureItemType' xbrli:periodType='duration' />
+<xs:element id='rr_AnnualReturn1997' name='AnnualReturn1997' nillable='true' substitutionGroup='xbrli:item' type='xbrli:pureItemType' xbrli:periodType='duration' />
+<xs:element id='rr_AnnualReturn1998' name='AnnualReturn1998' nillable='true' substitutionGroup='xbrli:item' type='xbrli:pureItemType' xbrli:periodType='duration' />
+<xs:element id='rr_AnnualReturn1999' name='AnnualReturn1999' nillable='true' substitutionGroup='xbrli:item' type='xbrli:pureItemType' xbrli:periodType='duration' />
+<xs:element id='rr_AnnualReturn2000' name='AnnualReturn2000' nillable='true' substitutionGroup='xbrli:item' type='xbrli:pureItemType' xbrli:periodType='duration' />
+<xs:element id='rr_AnnualReturn2001' name='AnnualReturn2001' nillable='true' substitutionGroup='xbrli:item' type='xbrli:pureItemType' xbrli:periodType='duration' />
+<xs:element id='rr_AnnualReturn2002' name='AnnualReturn2002' nillable='true' substitutionGroup='xbrli:item' type='xbrli:pureItemType' xbrli:periodType='duration' />
+<xs:element id='rr_AnnualReturn2003' name='AnnualReturn2003' nillable='true' substitutionGroup='xbrli:item' type='xbrli:pureItemType' xbrli:periodType='duration' />
+<xs:element id='rr_AnnualReturn2004' name='AnnualReturn2004' nillable='true' substitutionGroup='xbrli:item' type='xbrli:pureItemType' xbrli:periodType='duration' />
+<xs:element id='rr_AnnualReturn2005' name='AnnualReturn2005' nillable='true' substitutionGroup='xbrli:item' type='xbrli:pureItemType' xbrli:periodType='duration' />
+<xs:element id='rr_AnnualReturn2006' name='AnnualReturn2006' nillable='true' substitutionGroup='xbrli:item' type='xbrli:pureItemType' xbrli:periodType='duration' />
+<xs:element id='rr_AnnualReturn2007' name='AnnualReturn2007' nillable='true' substitutionGroup='xbrli:item' type='xbrli:pureItemType' xbrli:periodType='duration' />
+<xs:element id='rr_AnnualReturn2008' name='AnnualReturn2008' nillable='true' substitutionGroup='xbrli:item' type='xbrli:pureItemType' xbrli:periodType='duration' />
+<xs:element id='rr_AnnualReturn2009' name='AnnualReturn2009' nillable='true' substitutionGroup='xbrli:item' type='xbrli:pureItemType' xbrli:periodType='duration' />
+<xs:element id='rr_AnnualReturn2010' name='AnnualReturn2010' nillable='true' substitutionGroup='xbrli:item' type='xbrli:pureItemType' xbrli:periodType='duration' />
+<xs:element id='rr_AnnualReturn2011' name='AnnualReturn2011' nillable='true' substitutionGroup='xbrli:item' type='xbrli:pureItemType' xbrli:periodType='duration' />
+<xs:element id='rr_AnnualReturn2012' name='AnnualReturn2012' nillable='true' substitutionGroup='xbrli:item' type='xbrli:pureItemType' xbrli:periodType='duration' />
+<xs:element id='rr_YearToDateReturnLabel' name='YearToDateReturnLabel' nillable='true' substitutionGroup='xbrli:item' type='xbrli:stringItemType' xbrli:periodType='duration' />
+<xs:element id='rr_BarChartYearToDateReturn' name='BarChartYearToDateReturn' nillable='true' substitutionGroup='xbrli:item' type='xbrli:pureItemType' xbrli:periodType='duration' />
+<xs:element id='rr_BarChartYearToDateReturnDate' name='BarChartYearToDateReturnDate' nillable='true' substitutionGroup='xbrli:item' type='xbrli:dateItemType' xbrli:periodType='duration' />
+<xs:element id='rr_HighestQuarterlyReturnLabel' name='HighestQuarterlyReturnLabel' nillable='true' substitutionGroup='xbrli:item' type='xbrli:stringItemType' xbrli:periodType='duration' />
+<xs:element id='rr_BarChartHighestQuarterlyReturn' name='BarChartHighestQuarterlyReturn' nillable='true' substitutionGroup='xbrli:item' type='xbrli:pureItemType' xbrli:periodType='duration' />
+<xs:element id='rr_BarChartHighestQuarterlyReturnDate' name='BarChartHighestQuarterlyReturnDate' nillable='true' substitutionGroup='xbrli:item' type='xbrli:dateItemType' xbrli:periodType='duration' />
+<xs:element id='rr_LowestQuarterlyReturnLabel' name='LowestQuarterlyReturnLabel' nillable='true' substitutionGroup='xbrli:item' type='xbrli:stringItemType' xbrli:periodType='duration' />
+<xs:element id='rr_BarChartLowestQuarterlyReturn' name='BarChartLowestQuarterlyReturn' nillable='true' substitutionGroup='xbrli:item' type='xbrli:pureItemType' xbrli:periodType='duration' />
+<xs:element id='rr_BarChartLowestQuarterlyReturnDate' name='BarChartLowestQuarterlyReturnDate' nillable='true' substitutionGroup='xbrli:item' type='xbrli:dateItemType' xbrli:periodType='duration' />
+<xs:element id='rr_BarChartClosingTextBlock' name='BarChartClosingTextBlock' nillable='true' substitutionGroup='xbrli:item' type='us-types:textBlockItemType' xbrli:periodType='duration' />
+<xs:element id='rr_PerformanceTableHeading' name='PerformanceTableHeading' nillable='true' substitutionGroup='xbrli:item' type='xbrli:stringItemType' xbrli:periodType='duration' />
+<xs:element id='rr_PerformanceTableNarrativeTextBlock' name='PerformanceTableNarrativeTextBlock' nillable='true' substitutionGroup='xbrli:item' type='us-types:textBlockItemType' xbrli:periodType='duration' />
+<xs:element id='rr_PerformanceTableDoesReflectSalesLoads' name='PerformanceTableDoesReflectSalesLoads' nillable='true' substitutionGroup='xbrli:item' type='xbrli:stringItemType' xbrli:periodType='duration' />
+<xs:element id='rr_PerformanceTableMarketIndexChanged' name='PerformanceTableMarketIndexChanged' nillable='true' substitutionGroup='xbrli:item' type='xbrli:stringItemType' xbrli:periodType='duration' />
+<xs:element id='rr_PerformanceTableUsesHighestFederalRate' name='PerformanceTableUsesHighestFederalRate' nillable='true' substitutionGroup='xbrli:item' type='xbrli:stringItemType' xbrli:periodType='duration' />
+<xs:element id='rr_PerformanceTableNotRelevantToTaxDeferred' name='PerformanceTableNotRelevantToTaxDeferred' nillable='true' substitutionGroup='xbrli:item' type='xbrli:stringItemType' xbrli:periodType='duration' />
+<xs:element id='rr_PerformanceTableExplanationAfterTaxHigher' name='PerformanceTableExplanationAfterTaxHigher' nillable='true' substitutionGroup='xbrli:item' type='xbrli:stringItemType' xbrli:periodType='duration' />
+<xs:element id='rr_AverageAnnualReturnCaption' name='AverageAnnualReturnCaption' nillable='true' substitutionGroup='xbrli:item' type='xbrli:stringItemType' xbrli:periodType='duration' />
+<xs:element id='rr_AverageAnnualReturnColumnName' name='AverageAnnualReturnColumnName' nillable='true' substitutionGroup='xbrli:item' type='us-types:textBlockItemType' xbrli:periodType='duration' />
+<xs:element id='rr_AverageAnnualReturnLabel' name='AverageAnnualReturnLabel' nillable='true' substitutionGroup='xbrli:item' type='xbrli:stringItemType' xbrli:periodType='duration' />
+<xs:element id='rr_AverageAnnualReturnYear01' name='AverageAnnualReturnYear01' nillable='true' substitutionGroup='xbrli:item' type='xbrli:pureItemType' xbrli:periodType='duration' />
+<xs:element id='rr_AverageAnnualReturnYear05' name='AverageAnnualReturnYear05' nillable='true' substitutionGroup='xbrli:item' type='xbrli:pureItemType' xbrli:periodType='duration' />
+<xs:element id='rr_AverageAnnualReturnYear10' name='AverageAnnualReturnYear10' nillable='true' substitutionGroup='xbrli:item' type='xbrli:pureItemType' xbrli:periodType='duration' />
+<xs:element id='rr_AverageAnnualReturnSinceInception' name='AverageAnnualReturnSinceInception' nillable='true' substitutionGroup='xbrli:item' type='xbrli:pureItemType' xbrli:periodType='duration' />
+<xs:element id='rr_AverageAnnualReturnInceptionDate' name='AverageAnnualReturnInceptionDate' nillable='true' substitutionGroup='xbrli:item' type='xbrli:dateItemType' xbrli:periodType='duration' />
+<xs:element id='rr_AverageAnnualReturnAfterTaxesOnDistributionsLabel' name='AverageAnnualReturnAfterTaxesOnDistributionsLabel' nillable='true' substitutionGroup='xbrli:item' type='xbrli:stringItemType' xbrli:periodType='duration' />
+<xs:element id='rr_AverageAnnualReturnAfterTaxesOnDistributionsYear01' name='AverageAnnualReturnAfterTaxesOnDistributionsYear01' nillable='true' substitutionGroup='xbrli:item' type='xbrli:pureItemType' xbrli:periodType='duration' />
+<xs:element id='rr_AverageAnnualReturnAfterTaxesOnDistributionsYear05' name='AverageAnnualReturnAfterTaxesOnDistributionsYear05' nillable='true' substitutionGroup='xbrli:item' type='xbrli:pureItemType' xbrli:periodType='duration' />
+<xs:element id='rr_AverageAnnualReturnAfterTaxesOnDistributionsYear10' name='AverageAnnualReturnAfterTaxesOnDistributionsYear10' nillable='true' substitutionGroup='xbrli:item' type='xbrli:pureItemType' xbrli:periodType='duration' />
+<xs:element id='rr_AverageAnnualReturnAfterTaxesOnDistributionsSinceInception' name='AverageAnnualReturnAfterTaxesOnDistributionsSinceInception' nillable='true' substitutionGroup='xbrli:item' type='xbrli:pureItemType' xbrli:periodType='duration' />
+<xs:element id='rr_AverageAnnualReturnAfterTaxesOnDistributionsInceptionDate' name='AverageAnnualReturnAfterTaxesOnDistributionsInceptionDate' nillable='true' substitutionGroup='xbrli:item' type='xbrli:dateItemType' xbrli:periodType='duration' />
+<xs:element id='rr_AverageAnnualReturnAfterTaxesOnDistributionsAndSalesLabel' name='AverageAnnualReturnAfterTaxesOnDistributionsAndSalesLabel' nillable='true' substitutionGroup='xbrli:item' type='xbrli:stringItemType' xbrli:periodType='duration' />
+<xs:element id='rr_AverageAnnualReturnAfterTaxesOnDistributionsAndSalesYear01' name='AverageAnnualReturnAfterTaxesOnDistributionsAndSalesYear01' nillable='true' substitutionGroup='xbrli:item' type='xbrli:pureItemType' xbrli:periodType='duration' />
+<xs:element id='rr_AverageAnnualReturnAfterTaxesOnDistributionsAndSalesYear05' name='AverageAnnualReturnAfterTaxesOnDistributionsAndSalesYear05' nillable='true' substitutionGroup='xbrli:item' type='xbrli:pureItemType' xbrli:periodType='duration' />
+<xs:element id='rr_AverageAnnualReturnAfterTaxesOnDistributionsAndSalesYear10' name='AverageAnnualReturnAfterTaxesOnDistributionsAndSalesYear10' nillable='true' substitutionGroup='xbrli:item' type='xbrli:pureItemType' xbrli:periodType='duration' />
+<xs:element id='rr_AverageAnnualReturnAfterTaxesOnDistributionsAndSalesSinceInception' name='AverageAnnualReturnAfterTaxesOnDistributionsAndSalesSinceInception' nillable='true' substitutionGroup='xbrli:item' type='xbrli:pureItemType' xbrli:periodType='duration' />
+<xs:element id='rr_AverageAnnualReturnAfterTaxesOnDistributionsAndSalesInceptionDate' name='AverageAnnualReturnAfterTaxesOnDistributionsAndSalesInceptionDate' nillable='true' substitutionGroup='xbrli:item' type='xbrli:dateItemType' xbrli:periodType='duration' />
+<xs:element id='rr_MoneyMarketSevenDayYieldCaption' name='MoneyMarketSevenDayYieldCaption' nillable='true' substitutionGroup='xbrli:item' type='xbrli:stringItemType' xbrli:periodType='duration' />
+<xs:element id='rr_MoneyMarketSevenDayYieldColumnName' name='MoneyMarketSevenDayYieldColumnName' nillable='true' substitutionGroup='xbrli:item' type='us-types:textBlockItemType' xbrli:periodType='duration' />
+<xs:element id='rr_MoneyMarketSevenDayYieldPhone' name='MoneyMarketSevenDayYieldPhone' nillable='true' substitutionGroup='xbrli:item' type='xbrli:stringItemType' xbrli:periodType='duration' />
+<xs:element id='rr_MoneyMarketSevenDayYield' name='MoneyMarketSevenDayYield' nillable='true' substitutionGroup='xbrli:item' type='xbrli:pureItemType' xbrli:periodType='duration' />
+<xs:element id='rr_MoneyMarketSevenDayTaxEquivalentYield' name='MoneyMarketSevenDayTaxEquivalentYield' nillable='true' substitutionGroup='xbrli:item' type='xbrli:pureItemType' xbrli:periodType='duration' />
+<xs:element id='rr_ThirtyDayYieldCaption' name='ThirtyDayYieldCaption' nillable='true' substitutionGroup='xbrli:item' type='xbrli:stringItemType' xbrli:periodType='duration' />
+<xs:element id='rr_ThirtyDayYieldColumnName' name='ThirtyDayYieldColumnName' nillable='true' substitutionGroup='xbrli:item' type='us-types:textBlockItemType' xbrli:periodType='duration' />
+<xs:element id='rr_ThirtyDayYieldPhone' name='ThirtyDayYieldPhone' nillable='true' substitutionGroup='xbrli:item' type='xbrli:stringItemType' xbrli:periodType='duration' />
+<xs:element id='rr_ThirtyDayYield' name='ThirtyDayYield' nillable='true' substitutionGroup='xbrli:item' type='xbrli:pureItemType' xbrli:periodType='duration' />
+<xs:element id='rr_ThirtyDayTaxEquivalentYield' name='ThirtyDayTaxEquivalentYield' nillable='true' substitutionGroup='xbrli:item' type='xbrli:pureItemType' xbrli:periodType='duration' />
+<xs:element id='rr_MarketIndexReturnLabel' name='MarketIndexReturnLabel' nillable='true' substitutionGroup='xbrli:item' type='xbrli:stringItemType' xbrli:periodType='duration' />
+<xs:element id='rr_MarketIndexReturnYear01' name='MarketIndexReturnYear01' nillable='true' substitutionGroup='xbrli:item' type='xbrli:pureItemType' xbrli:periodType='duration' />
+<xs:element id='rr_MarketIndexReturnYear05' name='MarketIndexReturnYear05' nillable='true' substitutionGroup='xbrli:item' type='xbrli:pureItemType' xbrli:periodType='duration' />
+<xs:element id='rr_MarketIndexReturnYear10' name='MarketIndexReturnYear10' nillable='true' substitutionGroup='xbrli:item' type='xbrli:pureItemType' xbrli:periodType='duration' />
+<xs:element id='rr_MarketIndexReturnSinceInception' name='MarketIndexReturnSinceInception' nillable='true' substitutionGroup='xbrli:item' type='xbrli:pureItemType' xbrli:periodType='duration' />
+<xs:element id='rr_MarketIndexReturnInceptionDate' name='MarketIndexReturnInceptionDate' nillable='true' substitutionGroup='xbrli:item' type='xbrli:dateItemType' xbrli:periodType='duration' />
+<xs:element id='rr_PerformanceTableFootnotesTextBlock' name='PerformanceTableFootnotesTextBlock' nillable='true' substitutionGroup='xbrli:item' type='us-types:textBlockItemType' xbrli:periodType='duration' />
+<xs:element id='rr_PerformanceTableClosingTextBlock' name='PerformanceTableClosingTextBlock' nillable='true' substitutionGroup='xbrli:item' type='us-types:textBlockItemType' xbrli:periodType='duration' />
+<xs:element abstract='true' id='rr_RiskSectionAbstract' name='RiskSectionAbstract' nillable='true' substitutionGroup='xbrli:item' type='xbrli:stringItemType' xbrli:periodType='duration' />
+<xs:element id='rr_RiskHeading' name='RiskHeading' nillable='true' substitutionGroup='xbrli:item' type='xbrli:stringItemType' xbrli:periodType='duration' />
+<xs:element id='rr_RiskNarrativeTextBlock' name='RiskNarrativeTextBlock' nillable='true' substitutionGroup='xbrli:item' type='us-types:textBlockItemType' xbrli:periodType='duration' />
+<xs:element id='rr_RiskNondiversifiedStatus' name='RiskNondiversifiedStatus' nillable='true' substitutionGroup='xbrli:item' type='xbrli:stringItemType' xbrli:periodType='duration' />
+<xs:element id='rr_RiskLoseMoney' name='RiskLoseMoney' nillable='true' substitutionGroup='xbrli:item' type='xbrli:stringItemType' xbrli:periodType='duration' />
+<xs:element id='rr_RiskMoneyMarketFund' name='RiskMoneyMarketFund' nillable='true' substitutionGroup='xbrli:item' type='xbrli:stringItemType' xbrli:periodType='duration' />
+<xs:element id='rr_RiskNotInsuredDepositoryInstitution' name='RiskNotInsuredDepositoryInstitution' nillable='true' substitutionGroup='xbrli:item' type='xbrli:stringItemType' xbrli:periodType='duration' />
+<xs:element id='rr_RiskCaption' name='RiskCaption' nillable='true' substitutionGroup='xbrli:item' type='xbrli:stringItemType' xbrli:periodType='duration' />
+<xs:element id='rr_RiskColumnName' name='RiskColumnName' nillable='true' substitutionGroup='xbrli:item' type='us-types:textBlockItemType' xbrli:periodType='duration' />
+<xs:element id='rr_Risk' name='Risk' nillable='true' substitutionGroup='xbrli:item' type='xbrli:stringItemType' xbrli:periodType='duration' />
+<xs:element id='rr_RiskFootnotesTextBlock' name='RiskFootnotesTextBlock' nillable='true' substitutionGroup='xbrli:item' type='us-types:textBlockItemType' xbrli:periodType='duration' />
+<xs:element id='rr_RiskClosingTextBlock' name='RiskClosingTextBlock' nillable='true' substitutionGroup='xbrli:item' type='us-types:textBlockItemType' xbrli:periodType='duration' />
+<xs:element id='rr_ExpenseHeading' name='ExpenseHeading' nillable='true' substitutionGroup='xbrli:item' type='xbrli:stringItemType' xbrli:periodType='duration' />
+<xs:element id='rr_ExpenseNarrativeTextBlock' name='ExpenseNarrativeTextBlock' nillable='true' substitutionGroup='xbrli:item' type='us-types:textBlockItemType' xbrli:periodType='duration' />
+<xs:element id='rr_ExpenseBreakpointDiscounts' name='ExpenseBreakpointDiscounts' nillable='true' substitutionGroup='xbrli:item' type='xbrli:stringItemType' xbrli:periodType='duration' />
+<xs:element id='rr_ExpenseExchangeTradedFundCommissions' name='ExpenseExchangeTradedFundCommissions' nillable='true' substitutionGroup='xbrli:item' type='xbrli:stringItemType' xbrli:periodType='duration' />
+<xs:element id='rr_ShareholderFeesCaption' name='ShareholderFeesCaption' nillable='true' substitutionGroup='xbrli:item' type='xbrli:stringItemType' xbrli:periodType='duration' />
+<xs:element id='rr_ShareholderFeesColumnName' name='ShareholderFeesColumnName' nillable='true' substitutionGroup='xbrli:item' type='us-types:textBlockItemType' xbrli:periodType='duration' />
+<xs:element id='rr_MaximumCumulativeSalesChargeOverOfferingPrice' name='MaximumCumulativeSalesChargeOverOfferingPrice' nillable='true' substitutionGroup='xbrli:item' type='rr:NonNegativePure4Type' xbrli:periodType='duration' />
+<xs:element id='rr_MaximumCumulativeSalesChargeOverOther' name='MaximumCumulativeSalesChargeOverOther' nillable='true' substitutionGroup='xbrli:item' type='rr:NonNegativePure4Type' xbrli:periodType='duration' />
+<xs:element id='rr_MaximumSalesChargeImposedOnPurchasesOverOfferingPrice' name='MaximumSalesChargeImposedOnPurchasesOverOfferingPrice' nillable='true' substitutionGroup='xbrli:item' type='rr:NonNegativePure4Type' xbrli:periodType='duration' />
+<xs:element id='rr_MaximumDeferredSalesChargeOverOther' name='MaximumDeferredSalesChargeOverOther' nillable='true' substitutionGroup='xbrli:item' type='rr:NonNegativePure4Type' xbrli:periodType='duration' />
+<xs:element id='rr_MaximumDeferredSalesChargeOverOfferingPrice' name='MaximumDeferredSalesChargeOverOfferingPrice' nillable='true' substitutionGroup='xbrli:item' type='rr:NonNegativePure4Type' xbrli:periodType='duration' />
+<xs:element id='rr_MaximumSalesChargeOnReinvestedDividendsAndDistributionsOverOther' name='MaximumSalesChargeOnReinvestedDividendsAndDistributionsOverOther' nillable='true' substitutionGroup='xbrli:item' type='rr:NonNegativePure4Type' xbrli:periodType='duration' />
+<xs:element id='rr_RedemptionFeeOverRedemption' name='RedemptionFeeOverRedemption' nillable='true' substitutionGroup='xbrli:item' type='rr:NonPositivePure4Type' xbrli:periodType='duration' />
+<xs:element id='rr_RedemptionFee' name='RedemptionFee' nillable='true' substitutionGroup='xbrli:item' type='rr:NonPositiveMonetaryType' xbrli:periodType='duration' />
+<xs:element id='rr_ExchangeFeeOverRedemption' name='ExchangeFeeOverRedemption' nillable='true' substitutionGroup='xbrli:item' type='rr:NonNegativePure4Type' xbrli:periodType='duration' />
+<xs:element id='rr_ExchangeFee' name='ExchangeFee' nillable='true' substitutionGroup='xbrli:item' type='rr:NonNegativeMonetaryType' xbrli:periodType='duration' />
+<xs:element id='rr_MaximumAccountFeeOverAssets' name='MaximumAccountFeeOverAssets' nillable='true' substitutionGroup='xbrli:item' type='rr:NonNegativePure4Type' xbrli:periodType='duration' />
+<xs:element id='rr_MaximumAccountFee' name='MaximumAccountFee' nillable='true' substitutionGroup='xbrli:item' type='rr:NonNegativeMonetaryType' xbrli:periodType='duration' />
+<xs:element id='rr_ShareholderFeeOther' name='ShareholderFeeOther' nillable='true' substitutionGroup='xbrli:item' type='rr:NonNegativeMonetaryType' xbrli:periodType='duration' />
+<xs:element id='rr_OperatingExpensesCaption' name='OperatingExpensesCaption' nillable='true' substitutionGroup='xbrli:item' type='xbrli:stringItemType' xbrli:periodType='duration' />
+<xs:element id='rr_OperatingExpensesColumnName' name='OperatingExpensesColumnName' nillable='true' substitutionGroup='xbrli:item' type='us-types:textBlockItemType' xbrli:periodType='duration' />
+<xs:element id='rr_ManagementFeesOverAssets' name='ManagementFeesOverAssets' nillable='true' substitutionGroup='xbrli:item' type='rr:NonNegativePure4Type' xbrli:periodType='duration' />
+<xs:element id='rr_DistributionAndService12b1FeesOverAssets' name='DistributionAndService12b1FeesOverAssets' nillable='true' substitutionGroup='xbrli:item' type='rr:NonNegativePure4Type' xbrli:periodType='duration' />
+<xs:element id='rr_DistributionOrSimilarNon12b1FeesOverAssets' name='DistributionOrSimilarNon12b1FeesOverAssets' nillable='true' substitutionGroup='xbrli:item' type='rr:NonNegativePure4Type' xbrli:periodType='duration' />
+<xs:element id='rr_OtherExpensesOverAssets' name='OtherExpensesOverAssets' nillable='true' substitutionGroup='xbrli:item' type='rr:NonNegativePure4Type' xbrli:periodType='duration' />
+<xs:element id='rr_Component1OtherExpensesOverAssets' name='Component1OtherExpensesOverAssets' nillable='true' substitutionGroup='xbrli:item' type='rr:NonNegativePure4Type' xbrli:periodType='duration' />
+<xs:element id='rr_Component2OtherExpensesOverAssets' name='Component2OtherExpensesOverAssets' nillable='true' substitutionGroup='xbrli:item' type='rr:NonNegativePure4Type' xbrli:periodType='duration' />
+<xs:element id='rr_Component3OtherExpensesOverAssets' name='Component3OtherExpensesOverAssets' nillable='true' substitutionGroup='xbrli:item' type='rr:NonNegativePure4Type' xbrli:periodType='duration' />
+<xs:element id='rr_AcquiredFundFeesAndExpensesOverAssets' name='AcquiredFundFeesAndExpensesOverAssets' nillable='true' substitutionGroup='xbrli:item' type='rr:NonNegativePure4Type' xbrli:periodType='duration' />
+<xs:element id='rr_ExpensesOverAssets' name='ExpensesOverAssets' nillable='true' substitutionGroup='xbrli:item' type='rr:NonNegativePure4Type' xbrli:periodType='duration' />
+<xs:element id='rr_FeeWaiverOrReimbursementOverAssets' name='FeeWaiverOrReimbursementOverAssets' nillable='true' substitutionGroup='xbrli:item' type='rr:NonPositivePure4Type' xbrli:periodType='duration' />
+<xs:element id='rr_NetExpensesOverAssets' name='NetExpensesOverAssets' nillable='true' substitutionGroup='xbrli:item' type='rr:NonNegativePure4Type' xbrli:periodType='duration' />
+<xs:element id='rr_ExpensesRepresentBothMasterAndFeeder' name='ExpensesRepresentBothMasterAndFeeder' nillable='true' substitutionGroup='xbrli:item' type='xbrli:stringItemType' xbrli:periodType='duration' />
+<xs:element id='rr_ExpensesOtherExpensesHadExtraordinaryExpensesBeenIncluded' name='ExpensesOtherExpensesHadExtraordinaryExpensesBeenIncluded' nillable='true' substitutionGroup='xbrli:item' type='xbrli:stringItemType' xbrli:periodType='duration' />
+<xs:element id='rr_ExpensesRestatedToReflectCurrent' name='ExpensesRestatedToReflectCurrent' nillable='true' substitutionGroup='xbrli:item' type='xbrli:stringItemType' xbrli:periodType='duration' />
+<xs:element id='rr_ExpenseExampleHeading' name='ExpenseExampleHeading' nillable='true' substitutionGroup='xbrli:item' type='xbrli:stringItemType' xbrli:periodType='duration' />
+<xs:element id='rr_ExpenseExampleNarrativeTextBlock' name='ExpenseExampleNarrativeTextBlock' nillable='true' substitutionGroup='xbrli:item' type='us-types:textBlockItemType' xbrli:periodType='duration' />
+<xs:element id='rr_ExpenseExampleByYearHeading' name='ExpenseExampleByYearHeading' nillable='true' substitutionGroup='xbrli:item' type='xbrli:stringItemType' xbrli:periodType='duration' />
+<xs:element id='rr_ExpenseExampleByYearCaption' name='ExpenseExampleByYearCaption' nillable='true' substitutionGroup='xbrli:item' type='xbrli:stringItemType' xbrli:periodType='duration' />
+<xs:element id='rr_ExpenseExampleByYearColumnName' name='ExpenseExampleByYearColumnName' nillable='true' substitutionGroup='xbrli:item' type='us-types:textBlockItemType' xbrli:periodType='duration' />
+<xs:element id='rr_ExpenseExampleYear01' name='ExpenseExampleYear01' nillable='true' substitutionGroup='xbrli:item' type='rr:NonNegativeMonetaryType' xbrli:periodType='duration' />
+<xs:element id='rr_ExpenseExampleYear03' name='ExpenseExampleYear03' nillable='true' substitutionGroup='xbrli:item' type='rr:NonNegativeMonetaryType' xbrli:periodType='duration' />
+<xs:element id='rr_ExpenseExampleYear05' name='ExpenseExampleYear05' nillable='true' substitutionGroup='xbrli:item' type='rr:NonNegativeMonetaryType' xbrli:periodType='duration' />
+<xs:element id='rr_ExpenseExampleYear10' name='ExpenseExampleYear10' nillable='true' substitutionGroup='xbrli:item' type='rr:NonNegativeMonetaryType' xbrli:periodType='duration' />
+<xs:element id='rr_ExpenseExampleNoRedemptionByYearCaption' name='ExpenseExampleNoRedemptionByYearCaption' nillable='true' substitutionGroup='xbrli:item' type='xbrli:stringItemType' xbrli:periodType='duration' />
+<xs:element id='rr_ExpenseExampleNoRedemptionByYearColumnName' name='ExpenseExampleNoRedemptionByYearColumnName' nillable='true' substitutionGroup='xbrli:item' type='us-types:textBlockItemType' xbrli:periodType='duration' />
+<xs:element id='rr_ExpenseExampleNoRedemptionYear01' name='ExpenseExampleNoRedemptionYear01' nillable='true' substitutionGroup='xbrli:item' type='rr:NonNegativeMonetaryType' xbrli:periodType='duration' />
+<xs:element id='rr_ExpenseExampleNoRedemptionYear03' name='ExpenseExampleNoRedemptionYear03' nillable='true' substitutionGroup='xbrli:item' type='rr:NonNegativeMonetaryType' xbrli:periodType='duration' />
+<xs:element id='rr_ExpenseExampleNoRedemptionYear05' name='ExpenseExampleNoRedemptionYear05' nillable='true' substitutionGroup='xbrli:item' type='rr:NonNegativeMonetaryType' xbrli:periodType='duration' />
+<xs:element id='rr_ExpenseExampleNoRedemptionYear10' name='ExpenseExampleNoRedemptionYear10' nillable='true' substitutionGroup='xbrli:item' type='rr:NonNegativeMonetaryType' xbrli:periodType='duration' />
+<xs:element id='rr_ExpenseExampleClosingTextBlock' name='ExpenseExampleClosingTextBlock' nillable='true' substitutionGroup='xbrli:item' type='us-types:textBlockItemType' xbrli:periodType='duration' />
+<xs:element abstract='false' id='rr_ProspectusDate' name='ProspectusDate' nillable='true' substitutionGroup='xbrli:item' type='xbrli:dateItemType' xbrli:periodType='duration' />
+<xs:element abstract='true' id='rr_ProspectusTable' name='ProspectusTable' nillable='true' substitutionGroup='xbrldt:hypercubeItem' type='xbrli:stringItemType' xbrli:periodType='duration' />
+<xs:element abstract='true' id='rr_ProspectusShareClassAxis' name='ProspectusShareClassAxis' nillable='true' substitutionGroup='xbrldt:dimensionItem' type='xbrli:stringItemType' xbrli:periodType='duration' />
+<xs:element abstract='false' id='rr_ShareClassDomain' name='ShareClassDomain' nillable='true' substitutionGroup='xbrli:item' type='us-types:domainItemType' xbrli:periodType='duration' />
+<xs:element abstract='true' id='rr_ProspectusLineItems' name='ProspectusLineItems' nillable='true' substitutionGroup='xbrli:item' type='xbrli:stringItemType' xbrli:periodType='duration' />
+<xs:element abstract='true' id='rr_FormN1aAbstract' name='FormN1aAbstract' nillable='true' substitutionGroup='xbrli:item' type='xbrli:stringItemType' xbrli:periodType='duration' />
+<xs:element abstract='true' id='rr_RiskReturnAbstract' name='RiskReturnAbstract' nillable='true' substitutionGroup='xbrli:item' type='xbrli:stringItemType' xbrli:periodType='duration' />
+<xs:element abstract='false' id='rr_PortfolioTurnoverHeading' name='PortfolioTurnoverHeading' nillable='true' substitutionGroup='xbrli:item' type='xbrli:stringItemType' xbrli:periodType='duration' />
+<xs:element abstract='false' id='rr_PortfolioTurnoverTextBlock' name='PortfolioTurnoverTextBlock' nillable='true' substitutionGroup='xbrli:item' type='us-types:textBlockItemType' xbrli:periodType='duration' />
+<xs:element abstract='true' id='rr_BarChartAndPerformanceTableSectionAbstract' name='BarChartAndPerformanceTableSectionAbstract' nillable='true' substitutionGroup='xbrli:item' type='xbrli:stringItemType' xbrli:periodType='duration' />
+<xs:element abstract='true' id='rr_BarChartNarrativeAbstract' name='BarChartNarrativeAbstract' nillable='true' substitutionGroup='xbrli:item' type='xbrli:stringItemType' xbrli:periodType='duration' />
+<xs:element abstract='true' id='rr_BarChartTableAbstract' name='BarChartTableAbstract' nillable='true' substitutionGroup='xbrli:item' type='xbrli:stringItemType' xbrli:periodType='duration' />
+<xs:element abstract='true' id='rr_BarChartClosingAbstract' name='BarChartClosingAbstract' nillable='true' substitutionGroup='xbrli:item' type='xbrli:stringItemType' xbrli:periodType='duration' />
+<xs:element abstract='true' id='rr_AverageAnnualReturnAbstract' name='AverageAnnualReturnAbstract' nillable='true' substitutionGroup='xbrli:item' type='xbrli:stringItemType' xbrli:periodType='duration' />
+<xs:element abstract='true' id='rr_AverageAnnualReturnAfterTaxesOnDistributionsAbstract' name='AverageAnnualReturnAfterTaxesOnDistributionsAbstract' nillable='true' substitutionGroup='xbrli:item' type='xbrli:stringItemType' xbrli:periodType='duration' />
+<xs:element abstract='true' id='rr_AverageAnnualReturnAfterTaxesOnDistributionsAndSalesAbstract' name='AverageAnnualReturnAfterTaxesOnDistributionsAndSalesAbstract' nillable='true' substitutionGroup='xbrli:item' type='xbrli:stringItemType' xbrli:periodType='duration' />
+<xs:element abstract='true' id='rr_MarketIndexReturnAbstract' name='MarketIndexReturnAbstract' nillable='true' substitutionGroup='xbrli:item' type='xbrli:stringItemType' xbrli:periodType='duration' />
+<xs:element abstract='true' id='rr_PerformanceNarrativeAbstract' name='PerformanceNarrativeAbstract' nillable='true' substitutionGroup='xbrli:item' type='xbrli:stringItemType' xbrli:periodType='duration' />
+<xs:element abstract='true' id='rr_PerformanceTableSectionAbstract' name='PerformanceTableSectionAbstract' nillable='true' substitutionGroup='xbrli:item' type='xbrli:stringItemType' xbrli:periodType='duration' />
+<xs:element abstract='true' id='rr_PerformanceTableClosingAbstract' name='PerformanceTableClosingAbstract' nillable='true' substitutionGroup='xbrli:item' type='xbrli:stringItemType' xbrli:periodType='duration' />
+<xs:element abstract='true' id='rr_ExpensesAbstract' name='ExpensesAbstract' nillable='true' substitutionGroup='xbrli:item' type='xbrli:stringItemType' xbrli:periodType='duration' />
+<xs:element abstract='true' id='rr_ShareholderFeesAbstract' name='ShareholderFeesAbstract' nillable='true' substitutionGroup='xbrli:item' type='xbrli:stringItemType' xbrli:periodType='duration' />
+<xs:element abstract='true' id='rr_OperatingExpensesAbstract' name='OperatingExpensesAbstract' nillable='true' substitutionGroup='xbrli:item' type='xbrli:stringItemType' xbrli:periodType='duration' />
+<xs:element abstract='true' id='rr_NetExpensesOverAssetsAbstract' name='NetExpensesOverAssetsAbstract' nillable='true' substitutionGroup='xbrli:item' type='xbrli:stringItemType' xbrli:periodType='duration' />
+<xs:element abstract='true' id='rr_ExpensesOverAssetsAbstract' name='ExpensesOverAssetsAbstract' nillable='true' substitutionGroup='xbrli:item' type='xbrli:stringItemType' xbrli:periodType='duration' />
+<xs:element abstract='true' id='rr_OtherExpensesOverAssetsAbstract' name='OtherExpensesOverAssetsAbstract' nillable='true' substitutionGroup='xbrli:item' type='xbrli:stringItemType' xbrli:periodType='duration' />
+<xs:element abstract='true' id='rr_ExpenseFootnotesAbstract' name='ExpenseFootnotesAbstract' nillable='true' substitutionGroup='xbrli:item' type='xbrli:stringItemType' xbrli:periodType='duration' />
+<xs:element abstract='false' id='rr_ExpenseFootnotesTextBlock' name='ExpenseFootnotesTextBlock' nillable='true' substitutionGroup='xbrli:item' type='us-types:textBlockItemType' xbrli:periodType='duration' />
+<xs:element abstract='true' id='rr_ExpenseExampleNarrativeAbstract' name='ExpenseExampleNarrativeAbstract' nillable='true' substitutionGroup='xbrli:item' type='xbrli:stringItemType' xbrli:periodType='duration' />
+<xs:element abstract='true' id='rr_ExpenseExampleAbstract' name='ExpenseExampleAbstract' nillable='true' substitutionGroup='xbrli:item' type='xbrli:stringItemType' xbrli:periodType='duration' />
+<xs:element abstract='true' id='rr_ExpenseExampleClosingAbstract' name='ExpenseExampleClosingAbstract' nillable='true' substitutionGroup='xbrli:item' type='xbrli:stringItemType' xbrli:periodType='duration' />
+<xs:element id='rr_ExpenseExampleFootnotesTextBlock' name='ExpenseExampleFootnotesTextBlock' nillable='true' substitutionGroup='xbrli:item' type='us-types:textBlockItemType' xbrli:periodType='duration' />
+<xs:element abstract='true' id='rr_PortfolioTurnoverAbstract' name='PortfolioTurnoverAbstract' nillable='true' substitutionGroup='xbrli:item' type='xbrli:stringItemType' xbrli:periodType='duration' />
+<xs:element abstract='false' id='rr_FeeWaiverOrReimbursementOverAssetsDateOfTermination' name='FeeWaiverOrReimbursementOverAssetsDateOfTermination' nillable='true' substitutionGroup='xbrli:item' type='us-types:dateStringItemType' xbrli:periodType='duration' />
+<xs:element abstract='false' id='rr_PortfolioTurnoverRate' name='PortfolioTurnoverRate' nillable='true' substitutionGroup='xbrli:item' type='xbrli:pureItemType' xbrli:periodType='duration' />
+<xs:element abstract='false' id='rr_ExpenseBreakpointMinimumInvestmentRequiredAmount' name='ExpenseBreakpointMinimumInvestmentRequiredAmount' nillable='true' substitutionGroup='xbrli:item' type='xbrli:monetaryItemType' xbrli:balance='credit' xbrli:periodType='instant' />
+<xs:element abstract='false' id='rr_PerformanceTableFootnotesReasonPerformanceInformationForClassDifferentFromImmediatelyPrecedingPeriod' name='PerformanceTableFootnotesReasonPerformanceInformationForClassDifferentFromImmediatelyPrecedingPeriod' nillable='true' substitutionGroup='xbrli:item' type='xbrli:stringItemType' xbrli:periodType='duration' />
+<xs:element abstract='false' id='rr_BarChartFootnotesTextBlock' name='BarChartFootnotesTextBlock' nillable='true' substitutionGroup='xbrli:item' type='us-types:textBlockItemType' xbrli:periodType='duration' />
+<xs:complexType name='NonNegativePure4Type'>
+<xs:simpleContent>
+<xs:restriction base='xbrli:pureItemType'>
+<xs:minInclusive value='0' />
+<xs:attribute name='id' type='xs:ID' use='optional' />
+<xs:attribute name='contextRef' type='xs:IDREF' use='required' />
+</xs:restriction>
+</xs:simpleContent>
+</xs:complexType>
+<xs:complexType name='NonPositivePure4Type'>
+<xs:simpleContent>
+<xs:restriction base='xbrli:pureItemType'>
+<xs:maxInclusive value='0' />
+<xs:attribute name='id' type='xs:ID' use='optional' />
+<xs:attribute name='contextRef' type='xs:IDREF' use='required' />
+</xs:restriction>
+</xs:simpleContent>
+</xs:complexType>
+<xs:complexType name='NonNegativeMonetaryType'>
+<xs:simpleContent>
+<xs:restriction base='xbrli:monetaryItemType'>
+<xs:minInclusive value='0' />
+<xs:attribute name='id' type='xs:ID' use='optional' />
+<xs:attribute name='contextRef' type='xs:IDREF' use='required' />
+</xs:restriction>
+</xs:simpleContent>
+</xs:complexType>
+<xs:complexType name='NonPositiveMonetaryType'>
+<xs:simpleContent>
+<xs:restriction base='xbrli:monetaryItemType'>
+<xs:maxInclusive value='0' />
+<xs:attribute name='id' type='xs:ID' use='optional' />
+<xs:attribute name='contextRef' type='xs:IDREF' use='required' />
+</xs:restriction>
+</xs:simpleContent>
+</xs:complexType>
+<xs:element abstract='false' id='rr_PerformanceTableOneClassOfAfterTaxShown' name='PerformanceTableOneClassOfAfterTaxShown' nillable='true' substitutionGroup='xbrli:item' type='xbrli:stringItemType' xbrli:periodType='duration' />
+<xs:element abstract='false' id='rr_OtherExpensesNewFundBasedOnEstimates' name='OtherExpensesNewFundBasedOnEstimates' nillable='true' substitutionGroup='xbrli:item' type='xbrli:stringItemType' xbrli:periodType='duration' />
+<xs:element abstract='false' id='rr_AcquiredFundFeesAndExpensesBasedOnEstimates' name='AcquiredFundFeesAndExpensesBasedOnEstimates' nillable='true' substitutionGroup='xbrli:item' type='xbrli:stringItemType' xbrli:periodType='duration' />
+<xs:element abstract='false' id='rr_ExpensesDeferredChargesTextBlock' name='ExpensesDeferredChargesTextBlock' nillable='true' substitutionGroup='xbrli:item' type='us-types:textBlockItemType' xbrli:periodType='duration' />
+<xs:element abstract='false' id='rr_ExpensesRangeOfExchangeFeesTextBlock' name='ExpensesRangeOfExchangeFeesTextBlock' nillable='true' substitutionGroup='xbrli:item' type='us-types:textBlockItemType' xbrli:periodType='duration' />
+<xs:element abstract='false' id='rr_ExpensesNotCorrelatedToRatioDueToAcquiredFundFees' name='ExpensesNotCorrelatedToRatioDueToAcquiredFundFees' nillable='true' substitutionGroup='xbrli:item' type='xbrli:stringItemType' xbrli:periodType='duration' />
+<xs:element abstract='false' id='rr_ExpensesExplanationOfNonrecurringAccountFee' name='ExpensesExplanationOfNonrecurringAccountFee' nillable='true' substitutionGroup='xbrli:item' type='xbrli:stringItemType' xbrli:periodType='duration' />
+<xs:element id='rr_IndexNoDeductionForFeesExpensesTaxes' name='IndexNoDeductionForFeesExpensesTaxes' nillable='true' substitutionGroup='xbrli:item' type='xbrli:stringItemType' xbrli:periodType='duration' />
+<xs:element id='rr_AnnualReturn2013' name='AnnualReturn2013' nillable='true' substitutionGroup='xbrli:item' type='xbrli:pureItemType' xbrli:periodType='duration' />
+<xs:element id='rr_AnnualReturn2014' name='AnnualReturn2014' nillable='true' substitutionGroup='xbrli:item' type='xbrli:pureItemType' xbrli:periodType='duration' />
+<xs:element abstract='false' id='rr_PerformanceAvailbilityWebSiteAddress' name='PerformanceAvailbilityWebSiteAddress' nillable='true' substitutionGroup='xbrli:item' type='xbrli:stringItemType' xbrli:periodType='duration' />
+<xs:element abstract='false' id='rr_PerformanceAvailbilityPhone' name='PerformanceAvailbilityPhone' nillable='true' substitutionGroup='xbrli:item' type='xbrli:stringItemType' xbrli:periodType='duration' />
+</xs:schema>

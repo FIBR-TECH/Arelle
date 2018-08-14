@@ -1,0 +1,675 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+Notice: Authorized Uses are Set Forth at http://taxonomies.xbrl.us/terms/rr_legal.html
+Copyright (C) 2008 XBRL US, Inc. All Rights Reserved.
+  -->
+<link:linkbase xmlns:link='http://www.xbrl.org/2003/linkbase' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xsi:schemaLocation='http://www.xbrl.org/2003/linkbase http://www.xbrl.org/2003/xbrl-linkbase-2003-12-31.xsd'>
+<link:labelLink xlink:role='http://www.xbrl.org/2003/role/link' xlink:type='extended'>
+<link:loc xlink:href='http://xbrl.us/us-gaap/1.0/non-gaap/dei-2008-03-31.xsd#dei_DocumentCreationDate' xlink:label='dei_DocumentCreationDate' xlink:type='locator' />
+<link:loc xlink:href='http://xbrl.us/us-gaap/1.0/non-gaap/dei-lab-2008-03-31.xml#lab_DocumentCreationDate_label_en-US' xlink:label='lab_DocumentCreationDate' xlink:role='http://www.xbrl.org/2003/role/label' xlink:type='locator' />
+<link:labelArc order='1.0' priority='1' use='prohibited' xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='dei_DocumentCreationDate' xlink:to='lab_DocumentCreationDate' xlink:type='arc' />
+<link:label id='rr_DocumentCreationDate_en_lab' xlink:label='rr_DocumentCreationDate_en_lab' xlink:role='http://www.xbrl.org/2003/role/label' xlink:type='resource' xml:lang='en-US'>Registration Statement Filing Date</link:label>
+<link:labelArc order='1.0' priority='1' use='optional' xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='dei_DocumentCreationDate' xlink:to='rr_DocumentCreationDate_en_lab' xlink:type='arc' />
+<link:loc xlink:href='http://xbrl.us/us-gaap/1.0/non-gaap/dei-2008-03-31.xsd#dei_DocumentEffectiveDate' xlink:label='dei_DocumentEffectiveDate' xlink:type='locator' />
+<link:loc xlink:href='http://xbrl.us/us-gaap/1.0/non-gaap/dei-lab-2008-03-31.xml#lab_DocumentEffectiveDate_label_en-US' xlink:label='lab_DocumentEffectiveDate' xlink:role='http://www.xbrl.org/2003/role/label' xlink:type='locator' />
+<link:labelArc order='1.0' priority='1' use='prohibited' xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='dei_DocumentEffectiveDate' xlink:to='lab_DocumentEffectiveDate' xlink:type='arc' />
+<link:label id='rr_DocumentEffectiveDate_en_lab' xlink:label='rr_DocumentEffectiveDate_en_lab' xlink:role='http://www.xbrl.org/2003/role/label' xlink:type='resource' xml:lang='en-US'>Registration Statement Effective Date</link:label>
+<link:labelArc order='1.0' priority='1' use='optional' xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='dei_DocumentEffectiveDate' xlink:to='rr_DocumentEffectiveDate_en_lab' xlink:type='arc' />
+<link:loc xlink:href='http://xbrl.us/us-gaap/1.0/non-gaap/dei-2008-03-31.xsd#dei_EntityDomain' xlink:label='dei_EntityDomain' xlink:type='locator' />
+<link:loc xlink:href='http://xbrl.us/us-gaap/1.0/non-gaap/dei-lab-2008-03-31.xml#lab_EntityDomain_label_en-US' xlink:label='lab_EntityDomain' xlink:role='http://www.xbrl.org/2003/role/label' xlink:type='locator' />
+<link:labelArc order='1.0' priority='1' use='prohibited' xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='dei_EntityDomain' xlink:to='lab_EntityDomain' xlink:type='arc' />
+<link:label id='rr_EntityDomain_en_lab' xlink:label='rr_EntityDomain_en_lab' xlink:role='http://www.xbrl.org/2003/role/label' xlink:type='resource' xml:lang='en-US'>Series and Index [Domain]</link:label>
+<link:labelArc order='1.0' priority='1' use='optional' xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='dei_EntityDomain' xlink:to='rr_EntityDomain_en_lab' xlink:type='arc' />
+<link:loc xlink:href='http://xbrl.us/us-gaap/1.0/non-gaap/dei-2008-03-31.xsd#dei_LegalEntityAxis' xlink:label='dei_LegalEntityAxis' xlink:type='locator' />
+<link:loc xlink:href='http://xbrl.us/us-gaap/1.0/non-gaap/dei-lab-2008-03-31.xml#lab_LegalEntityAxis_label_en-US' xlink:label='lab_LegalEntityAxis' xlink:role='http://www.xbrl.org/2003/role/label' xlink:type='locator' />
+<link:labelArc order='1.0' priority='1' use='prohibited' xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='dei_LegalEntityAxis' xlink:to='lab_LegalEntityAxis' xlink:type='arc' />
+<link:label id='rr_LegalEntityAxis_en_lab' xlink:label='rr_LegalEntityAxis_en_lab' xlink:role='http://www.xbrl.org/2003/role/label' xlink:type='resource' xml:lang='en-US'>Series and Index [Axis]</link:label>
+<link:labelArc order='1.0' priority='1' use='optional' xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='dei_LegalEntityAxis' xlink:to='rr_LegalEntityAxis_en_lab' xlink:type='arc' />
+<link:loc xlink:href='rr-2008-12-31.xsd#rr_RiskReturnHeading' xlink:label='rr_RiskReturnHeading' xlink:type='locator' />
+<link:label id='rr_RiskReturnHeading_en_lab' xlink:label='rr_RiskReturnHeading_en_lab' xlink:role='http://www.xbrl.org/2003/role/label' xlink:type='resource' xml:lang='en-US'>Risk Return [Heading]</link:label>
+<link:labelArc xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='rr_RiskReturnHeading' xlink:to='rr_RiskReturnHeading_en_lab' xlink:type='arc' />
+<link:loc xlink:href='rr-2008-12-31.xsd#rr_ObjectiveSectionAbstract' xlink:label='rr_ObjectiveSectionAbstract' xlink:type='locator' />
+<link:label id='rr_ObjectiveSectionAbstract_en_lab' xlink:label='rr_ObjectiveSectionAbstract_en_lab' xlink:role='http://www.xbrl.org/2003/role/label' xlink:type='resource' xml:lang='en-US'>Objective Section [Abstract]</link:label>
+<link:labelArc xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='rr_ObjectiveSectionAbstract' xlink:to='rr_ObjectiveSectionAbstract_en_lab' xlink:type='arc' />
+<link:loc xlink:href='rr-2008-12-31.xsd#rr_ObjectiveHeading' xlink:label='rr_ObjectiveHeading' xlink:type='locator' />
+<link:label id='rr_ObjectiveHeading_en_lab' xlink:label='rr_ObjectiveHeading_en_lab' xlink:role='http://www.xbrl.org/2003/role/label' xlink:type='resource' xml:lang='en-US'>Objective [Heading]</link:label>
+<link:labelArc xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='rr_ObjectiveHeading' xlink:to='rr_ObjectiveHeading_en_lab' xlink:type='arc' />
+<link:loc xlink:href='rr-2008-12-31.xsd#rr_ObjectivePrimaryTextBlock' xlink:label='rr_ObjectivePrimaryTextBlock' xlink:type='locator' />
+<link:label id='rr_ObjectivePrimaryTextBlock_en_lab' xlink:label='rr_ObjectivePrimaryTextBlock_en_lab' xlink:role='http://www.xbrl.org/2003/role/label' xlink:type='resource' xml:lang='en-US'>Objective Primary [Text Block]</link:label>
+<link:labelArc xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='rr_ObjectivePrimaryTextBlock' xlink:to='rr_ObjectivePrimaryTextBlock_en_lab' xlink:type='arc' />
+<link:loc xlink:href='rr-2008-12-31.xsd#rr_ObjectiveSecondaryTextBlock' xlink:label='rr_ObjectiveSecondaryTextBlock' xlink:type='locator' />
+<link:label id='rr_ObjectiveSecondaryTextBlock_en_lab' xlink:label='rr_ObjectiveSecondaryTextBlock_en_lab' xlink:role='http://www.xbrl.org/2003/role/label' xlink:type='resource' xml:lang='en-US'>Objective Secondary [Text Block]</link:label>
+<link:labelArc xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='rr_ObjectiveSecondaryTextBlock' xlink:to='rr_ObjectiveSecondaryTextBlock_en_lab' xlink:type='arc' />
+<link:loc xlink:href='rr-2008-12-31.xsd#rr_StrategySectionAbstract' xlink:label='rr_StrategySectionAbstract' xlink:type='locator' />
+<link:label id='rr_StrategySectionAbstract_en_lab' xlink:label='rr_StrategySectionAbstract_en_lab' xlink:role='http://www.xbrl.org/2003/role/label' xlink:type='resource' xml:lang='en-US'>Strategy Section [Abstract]</link:label>
+<link:labelArc xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='rr_StrategySectionAbstract' xlink:to='rr_StrategySectionAbstract_en_lab' xlink:type='arc' />
+<link:loc xlink:href='rr-2008-12-31.xsd#rr_StrategyHeading' xlink:label='rr_StrategyHeading' xlink:type='locator' />
+<link:label id='rr_StrategyHeading_en_lab' xlink:label='rr_StrategyHeading_en_lab' xlink:role='http://www.xbrl.org/2003/role/label' xlink:type='resource' xml:lang='en-US'>Strategy [Heading]</link:label>
+<link:labelArc xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='rr_StrategyHeading' xlink:to='rr_StrategyHeading_en_lab' xlink:type='arc' />
+<link:loc xlink:href='rr-2008-12-31.xsd#rr_StrategyNarrativeTextBlock' xlink:label='rr_StrategyNarrativeTextBlock' xlink:type='locator' />
+<link:label id='rr_StrategyNarrativeTextBlock_en_lab' xlink:label='rr_StrategyNarrativeTextBlock_en_lab' xlink:role='http://www.xbrl.org/2003/role/label' xlink:type='resource' xml:lang='en-US'>Strategy Narrative [Text Block]</link:label>
+<link:labelArc xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='rr_StrategyNarrativeTextBlock' xlink:to='rr_StrategyNarrativeTextBlock_en_lab' xlink:type='arc' />
+<link:loc xlink:href='rr-2008-12-31.xsd#rr_StrategyPortfolioConcentration' xlink:label='rr_StrategyPortfolioConcentration' xlink:type='locator' />
+<link:label id='rr_StrategyPortfolioConcentration_en_lab' xlink:label='rr_StrategyPortfolioConcentration_en_lab' xlink:role='http://www.xbrl.org/2003/role/label' xlink:type='resource' xml:lang='en-US'>Strategy Portfolio Concentration</link:label>
+<link:labelArc xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='rr_StrategyPortfolioConcentration' xlink:to='rr_StrategyPortfolioConcentration_en_lab' xlink:type='arc' />
+<link:loc xlink:href='rr-2008-12-31.xsd#rr_BarChartAndPerformanceTableHeading' xlink:label='rr_BarChartAndPerformanceTableHeading' xlink:type='locator' />
+<link:label id='rr_BarChartAndPerformanceTableHeading_en_lab' xlink:label='rr_BarChartAndPerformanceTableHeading_en_lab' xlink:role='http://www.xbrl.org/2003/role/label' xlink:type='resource' xml:lang='en-US'>Bar Chart and Performance Table [Heading]</link:label>
+<link:labelArc xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='rr_BarChartAndPerformanceTableHeading' xlink:to='rr_BarChartAndPerformanceTableHeading_en_lab' xlink:type='arc' />
+<link:loc xlink:href='rr-2008-12-31.xsd#rr_PerformanceNarrativeTextBlock' xlink:label='rr_PerformanceNarrativeTextBlock' xlink:type='locator' />
+<link:label id='rr_PerformanceNarrativeTextBlock_en_lab' xlink:label='rr_PerformanceNarrativeTextBlock_en_lab' xlink:role='http://www.xbrl.org/2003/role/label' xlink:type='resource' xml:lang='en-US'>Performance Narrative [Text Block]</link:label>
+<link:labelArc xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='rr_PerformanceNarrativeTextBlock' xlink:to='rr_PerformanceNarrativeTextBlock_en_lab' xlink:type='arc' />
+<link:loc xlink:href='rr-2008-12-31.xsd#rr_PerformancePastDoesNotIndicateFuture' xlink:label='rr_PerformancePastDoesNotIndicateFuture' xlink:type='locator' />
+<link:label id='rr_PerformancePastDoesNotIndicateFuture_en_lab' xlink:label='rr_PerformancePastDoesNotIndicateFuture_en_lab' xlink:role='http://www.xbrl.org/2003/role/label' xlink:type='resource' xml:lang='en-US'>Performance Past Does Not Indicate Future</link:label>
+<link:labelArc xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='rr_PerformancePastDoesNotIndicateFuture' xlink:to='rr_PerformancePastDoesNotIndicateFuture_en_lab' xlink:type='arc' />
+<link:loc xlink:href='rr-2008-12-31.xsd#rr_PerformanceInformationIllustratesVariabilityOfReturns' xlink:label='rr_PerformanceInformationIllustratesVariabilityOfReturns' xlink:type='locator' />
+<link:label id='rr_PerformanceInformationIllustratesVariabilityOfReturns_en_lab' xlink:label='rr_PerformanceInformationIllustratesVariabilityOfReturns_en_lab' xlink:role='http://www.xbrl.org/2003/role/label' xlink:type='resource' xml:lang='en-US'>Performance Information Illustrates Variability of Returns</link:label>
+<link:labelArc xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='rr_PerformanceInformationIllustratesVariabilityOfReturns' xlink:to='rr_PerformanceInformationIllustratesVariabilityOfReturns_en_lab' xlink:type='arc' />
+<link:loc xlink:href='rr-2008-12-31.xsd#rr_PerformanceOneYearOrLess' xlink:label='rr_PerformanceOneYearOrLess' xlink:type='locator' />
+<link:label id='rr_PerformanceOneYearOrLess_en_lab' xlink:label='rr_PerformanceOneYearOrLess_en_lab' xlink:role='http://www.xbrl.org/2003/role/label' xlink:type='resource' xml:lang='en-US'>Performance One Year or Less</link:label>
+<link:labelArc xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='rr_PerformanceOneYearOrLess' xlink:to='rr_PerformanceOneYearOrLess_en_lab' xlink:type='arc' />
+<link:loc xlink:href='rr-2008-12-31.xsd#rr_PerformanceAdditionalMarketIndex' xlink:label='rr_PerformanceAdditionalMarketIndex' xlink:type='locator' />
+<link:label id='rr_PerformanceAdditionalMarketIndex_en_lab' xlink:label='rr_PerformanceAdditionalMarketIndex_en_lab' xlink:role='http://www.xbrl.org/2003/role/label' xlink:type='resource' xml:lang='en-US'>Performance Additional Market Index</link:label>
+<link:labelArc xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='rr_PerformanceAdditionalMarketIndex' xlink:to='rr_PerformanceAdditionalMarketIndex_en_lab' xlink:type='arc' />
+<link:loc xlink:href='rr-2008-12-31.xsd#rr_BarChartHeading' xlink:label='rr_BarChartHeading' xlink:type='locator' />
+<link:label id='rr_BarChartHeading_en_lab' xlink:label='rr_BarChartHeading_en_lab' xlink:role='http://www.xbrl.org/2003/role/label' xlink:type='resource' xml:lang='en-US'>Bar Chart [Heading]</link:label>
+<link:labelArc xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='rr_BarChartHeading' xlink:to='rr_BarChartHeading_en_lab' xlink:type='arc' />
+<link:loc xlink:href='rr-2008-12-31.xsd#rr_BarChartNarrativeTextBlock' xlink:label='rr_BarChartNarrativeTextBlock' xlink:type='locator' />
+<link:label id='rr_BarChartNarrativeTextBlock_en_lab' xlink:label='rr_BarChartNarrativeTextBlock_en_lab' xlink:role='http://www.xbrl.org/2003/role/label' xlink:type='resource' xml:lang='en-US'>Bar Chart Narrative [Text Block]</link:label>
+<link:labelArc xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='rr_BarChartNarrativeTextBlock' xlink:to='rr_BarChartNarrativeTextBlock_en_lab' xlink:type='arc' />
+<link:loc xlink:href='rr-2008-12-31.xsd#rr_BarChartDoesNotReflectSalesLoads' xlink:label='rr_BarChartDoesNotReflectSalesLoads' xlink:type='locator' />
+<link:label id='rr_BarChartDoesNotReflectSalesLoads_en_lab' xlink:label='rr_BarChartDoesNotReflectSalesLoads_en_lab' xlink:role='http://www.xbrl.org/2003/role/label' xlink:type='resource' xml:lang='en-US'>Bar Chart Does Not Reflect Sales Loads</link:label>
+<link:labelArc xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='rr_BarChartDoesNotReflectSalesLoads' xlink:to='rr_BarChartDoesNotReflectSalesLoads_en_lab' xlink:type='arc' />
+<link:loc xlink:href='rr-2008-12-31.xsd#rr_BarChartReturnsForClassNotOfferedInProspectus' xlink:label='rr_BarChartReturnsForClassNotOfferedInProspectus' xlink:type='locator' />
+<link:label id='rr_BarChartReturnsForClassNotOfferedInProspectus_en_lab' xlink:label='rr_BarChartReturnsForClassNotOfferedInProspectus_en_lab' xlink:role='http://www.xbrl.org/2003/role/label' xlink:type='resource' xml:lang='en-US'>Bar Chart Returns for Class Not Offered in Prospectus</link:label>
+<link:labelArc xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='rr_BarChartReturnsForClassNotOfferedInProspectus' xlink:to='rr_BarChartReturnsForClassNotOfferedInProspectus_en_lab' xlink:type='arc' />
+<link:loc xlink:href='rr-2008-12-31.xsd#rr_BarChartReasonSelectedClassDifferentFromImmediatelyPrecedingPeriod' xlink:label='rr_BarChartReasonSelectedClassDifferentFromImmediatelyPrecedingPeriod' xlink:type='locator' />
+<link:label id='rr_BarChartReasonSelectedClassDifferentFromImmediatelyPrecedingPeriod_en_lab' xlink:label='rr_BarChartReasonSelectedClassDifferentFromImmediatelyPrecedingPeriod_en_lab' xlink:role='http://www.xbrl.org/2003/role/label' xlink:type='resource' xml:lang='en-US'>Bar Chart Reason Selected Class Different from Immediately Preceding Period</link:label>
+<link:labelArc xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='rr_BarChartReasonSelectedClassDifferentFromImmediatelyPrecedingPeriod' xlink:to='rr_BarChartReasonSelectedClassDifferentFromImmediatelyPrecedingPeriod_en_lab' xlink:type='arc' />
+<link:loc xlink:href='rr-2008-12-31.xsd#rr_AnnualReturnCaption' xlink:label='rr_AnnualReturnCaption' xlink:type='locator' />
+<link:label id='rr_AnnualReturnCaption_en_lab' xlink:label='rr_AnnualReturnCaption_en_lab' xlink:role='http://www.xbrl.org/2003/role/label' xlink:type='resource' xml:lang='en-US'>Annual Return Caption</link:label>
+<link:labelArc xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='rr_AnnualReturnCaption' xlink:to='rr_AnnualReturnCaption_en_lab' xlink:type='arc' />
+<link:loc xlink:href='rr-2008-12-31.xsd#rr_AnnualReturnColumnName' xlink:label='rr_AnnualReturnColumnName' xlink:type='locator' />
+<link:label id='rr_AnnualReturnColumnName_en_lab' xlink:label='rr_AnnualReturnColumnName_en_lab' xlink:role='http://www.xbrl.org/2003/role/label' xlink:type='resource' xml:lang='en-US'>Annual Return Column Name</link:label>
+<link:labelArc xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='rr_AnnualReturnColumnName' xlink:to='rr_AnnualReturnColumnName_en_lab' xlink:type='arc' />
+<link:loc xlink:href='rr-2008-12-31.xsd#rr_AnnualReturnInceptionDate' xlink:label='rr_AnnualReturnInceptionDate' xlink:type='locator' />
+<link:label id='rr_AnnualReturnInceptionDate_en_lab' xlink:label='rr_AnnualReturnInceptionDate_en_lab' xlink:role='http://www.xbrl.org/2003/role/label' xlink:type='resource' xml:lang='en-US'>Annual Return Inception Date</link:label>
+<link:labelArc xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='rr_AnnualReturnInceptionDate' xlink:to='rr_AnnualReturnInceptionDate_en_lab' xlink:type='arc' />
+<link:loc xlink:href='rr-2008-12-31.xsd#rr_AnnualReturn1990' xlink:label='rr_AnnualReturn1990' xlink:type='locator' />
+<link:label id='rr_AnnualReturn1990_en_lab' xlink:label='rr_AnnualReturn1990_en_lab' xlink:role='http://www.xbrl.org/2003/role/label' xlink:type='resource' xml:lang='en-US'>Annual Return 1990</link:label>
+<link:labelArc xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='rr_AnnualReturn1990' xlink:to='rr_AnnualReturn1990_en_lab' xlink:type='arc' />
+<link:loc xlink:href='rr-2008-12-31.xsd#rr_AnnualReturn1991' xlink:label='rr_AnnualReturn1991' xlink:type='locator' />
+<link:label id='rr_AnnualReturn1991_en_lab' xlink:label='rr_AnnualReturn1991_en_lab' xlink:role='http://www.xbrl.org/2003/role/label' xlink:type='resource' xml:lang='en-US'>Annual Return 1991</link:label>
+<link:labelArc xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='rr_AnnualReturn1991' xlink:to='rr_AnnualReturn1991_en_lab' xlink:type='arc' />
+<link:loc xlink:href='rr-2008-12-31.xsd#rr_AnnualReturn1992' xlink:label='rr_AnnualReturn1992' xlink:type='locator' />
+<link:label id='rr_AnnualReturn1992_en_lab' xlink:label='rr_AnnualReturn1992_en_lab' xlink:role='http://www.xbrl.org/2003/role/label' xlink:type='resource' xml:lang='en-US'>Annual Return 1992</link:label>
+<link:labelArc xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='rr_AnnualReturn1992' xlink:to='rr_AnnualReturn1992_en_lab' xlink:type='arc' />
+<link:loc xlink:href='rr-2008-12-31.xsd#rr_AnnualReturn1993' xlink:label='rr_AnnualReturn1993' xlink:type='locator' />
+<link:label id='rr_AnnualReturn1993_en_lab' xlink:label='rr_AnnualReturn1993_en_lab' xlink:role='http://www.xbrl.org/2003/role/label' xlink:type='resource' xml:lang='en-US'>Annual Return 1993</link:label>
+<link:labelArc xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='rr_AnnualReturn1993' xlink:to='rr_AnnualReturn1993_en_lab' xlink:type='arc' />
+<link:loc xlink:href='rr-2008-12-31.xsd#rr_AnnualReturn1994' xlink:label='rr_AnnualReturn1994' xlink:type='locator' />
+<link:label id='rr_AnnualReturn1994_en_lab' xlink:label='rr_AnnualReturn1994_en_lab' xlink:role='http://www.xbrl.org/2003/role/label' xlink:type='resource' xml:lang='en-US'>Annual Return 1994</link:label>
+<link:labelArc xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='rr_AnnualReturn1994' xlink:to='rr_AnnualReturn1994_en_lab' xlink:type='arc' />
+<link:loc xlink:href='rr-2008-12-31.xsd#rr_AnnualReturn1995' xlink:label='rr_AnnualReturn1995' xlink:type='locator' />
+<link:label id='rr_AnnualReturn1995_en_lab' xlink:label='rr_AnnualReturn1995_en_lab' xlink:role='http://www.xbrl.org/2003/role/label' xlink:type='resource' xml:lang='en-US'>Annual Return 1995</link:label>
+<link:labelArc xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='rr_AnnualReturn1995' xlink:to='rr_AnnualReturn1995_en_lab' xlink:type='arc' />
+<link:loc xlink:href='rr-2008-12-31.xsd#rr_AnnualReturn1996' xlink:label='rr_AnnualReturn1996' xlink:type='locator' />
+<link:label id='rr_AnnualReturn1996_en_lab' xlink:label='rr_AnnualReturn1996_en_lab' xlink:role='http://www.xbrl.org/2003/role/label' xlink:type='resource' xml:lang='en-US'>Annual Return 1996</link:label>
+<link:labelArc xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='rr_AnnualReturn1996' xlink:to='rr_AnnualReturn1996_en_lab' xlink:type='arc' />
+<link:loc xlink:href='rr-2008-12-31.xsd#rr_AnnualReturn1997' xlink:label='rr_AnnualReturn1997' xlink:type='locator' />
+<link:label id='rr_AnnualReturn1997_en_lab' xlink:label='rr_AnnualReturn1997_en_lab' xlink:role='http://www.xbrl.org/2003/role/label' xlink:type='resource' xml:lang='en-US'>Annual Return 1997</link:label>
+<link:labelArc xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='rr_AnnualReturn1997' xlink:to='rr_AnnualReturn1997_en_lab' xlink:type='arc' />
+<link:loc xlink:href='rr-2008-12-31.xsd#rr_AnnualReturn1998' xlink:label='rr_AnnualReturn1998' xlink:type='locator' />
+<link:label id='rr_AnnualReturn1998_en_lab' xlink:label='rr_AnnualReturn1998_en_lab' xlink:role='http://www.xbrl.org/2003/role/label' xlink:type='resource' xml:lang='en-US'>Annual Return 1998</link:label>
+<link:labelArc xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='rr_AnnualReturn1998' xlink:to='rr_AnnualReturn1998_en_lab' xlink:type='arc' />
+<link:loc xlink:href='rr-2008-12-31.xsd#rr_AnnualReturn1999' xlink:label='rr_AnnualReturn1999' xlink:type='locator' />
+<link:label id='rr_AnnualReturn1999_en_lab' xlink:label='rr_AnnualReturn1999_en_lab' xlink:role='http://www.xbrl.org/2003/role/label' xlink:type='resource' xml:lang='en-US'>Annual Return 1999</link:label>
+<link:labelArc xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='rr_AnnualReturn1999' xlink:to='rr_AnnualReturn1999_en_lab' xlink:type='arc' />
+<link:loc xlink:href='rr-2008-12-31.xsd#rr_AnnualReturn2000' xlink:label='rr_AnnualReturn2000' xlink:type='locator' />
+<link:label id='rr_AnnualReturn2000_en_lab' xlink:label='rr_AnnualReturn2000_en_lab' xlink:role='http://www.xbrl.org/2003/role/label' xlink:type='resource' xml:lang='en-US'>Annual Return 2000</link:label>
+<link:labelArc xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='rr_AnnualReturn2000' xlink:to='rr_AnnualReturn2000_en_lab' xlink:type='arc' />
+<link:loc xlink:href='rr-2008-12-31.xsd#rr_AnnualReturn2001' xlink:label='rr_AnnualReturn2001' xlink:type='locator' />
+<link:label id='rr_AnnualReturn2001_en_lab' xlink:label='rr_AnnualReturn2001_en_lab' xlink:role='http://www.xbrl.org/2003/role/label' xlink:type='resource' xml:lang='en-US'>Annual Return 2001</link:label>
+<link:labelArc xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='rr_AnnualReturn2001' xlink:to='rr_AnnualReturn2001_en_lab' xlink:type='arc' />
+<link:loc xlink:href='rr-2008-12-31.xsd#rr_AnnualReturn2002' xlink:label='rr_AnnualReturn2002' xlink:type='locator' />
+<link:label id='rr_AnnualReturn2002_en_lab' xlink:label='rr_AnnualReturn2002_en_lab' xlink:role='http://www.xbrl.org/2003/role/label' xlink:type='resource' xml:lang='en-US'>Annual Return 2002</link:label>
+<link:labelArc xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='rr_AnnualReturn2002' xlink:to='rr_AnnualReturn2002_en_lab' xlink:type='arc' />
+<link:loc xlink:href='rr-2008-12-31.xsd#rr_AnnualReturn2003' xlink:label='rr_AnnualReturn2003' xlink:type='locator' />
+<link:label id='rr_AnnualReturn2003_en_lab' xlink:label='rr_AnnualReturn2003_en_lab' xlink:role='http://www.xbrl.org/2003/role/label' xlink:type='resource' xml:lang='en-US'>Annual Return 2003</link:label>
+<link:labelArc xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='rr_AnnualReturn2003' xlink:to='rr_AnnualReturn2003_en_lab' xlink:type='arc' />
+<link:loc xlink:href='rr-2008-12-31.xsd#rr_AnnualReturn2004' xlink:label='rr_AnnualReturn2004' xlink:type='locator' />
+<link:label id='rr_AnnualReturn2004_en_lab' xlink:label='rr_AnnualReturn2004_en_lab' xlink:role='http://www.xbrl.org/2003/role/label' xlink:type='resource' xml:lang='en-US'>Annual Return 2004</link:label>
+<link:labelArc xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='rr_AnnualReturn2004' xlink:to='rr_AnnualReturn2004_en_lab' xlink:type='arc' />
+<link:loc xlink:href='rr-2008-12-31.xsd#rr_AnnualReturn2005' xlink:label='rr_AnnualReturn2005' xlink:type='locator' />
+<link:label id='rr_AnnualReturn2005_en_lab' xlink:label='rr_AnnualReturn2005_en_lab' xlink:role='http://www.xbrl.org/2003/role/label' xlink:type='resource' xml:lang='en-US'>Annual Return 2005</link:label>
+<link:labelArc xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='rr_AnnualReturn2005' xlink:to='rr_AnnualReturn2005_en_lab' xlink:type='arc' />
+<link:loc xlink:href='rr-2008-12-31.xsd#rr_AnnualReturn2006' xlink:label='rr_AnnualReturn2006' xlink:type='locator' />
+<link:label id='rr_AnnualReturn2006_en_lab' xlink:label='rr_AnnualReturn2006_en_lab' xlink:role='http://www.xbrl.org/2003/role/label' xlink:type='resource' xml:lang='en-US'>Annual Return 2006</link:label>
+<link:labelArc xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='rr_AnnualReturn2006' xlink:to='rr_AnnualReturn2006_en_lab' xlink:type='arc' />
+<link:loc xlink:href='rr-2008-12-31.xsd#rr_AnnualReturn2007' xlink:label='rr_AnnualReturn2007' xlink:type='locator' />
+<link:label id='rr_AnnualReturn2007_en_lab' xlink:label='rr_AnnualReturn2007_en_lab' xlink:role='http://www.xbrl.org/2003/role/label' xlink:type='resource' xml:lang='en-US'>Annual Return 2007</link:label>
+<link:labelArc xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='rr_AnnualReturn2007' xlink:to='rr_AnnualReturn2007_en_lab' xlink:type='arc' />
+<link:loc xlink:href='rr-2008-12-31.xsd#rr_AnnualReturn2008' xlink:label='rr_AnnualReturn2008' xlink:type='locator' />
+<link:label id='rr_AnnualReturn2008_en_lab' xlink:label='rr_AnnualReturn2008_en_lab' xlink:role='http://www.xbrl.org/2003/role/label' xlink:type='resource' xml:lang='en-US'>Annual Return 2008</link:label>
+<link:labelArc xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='rr_AnnualReturn2008' xlink:to='rr_AnnualReturn2008_en_lab' xlink:type='arc' />
+<link:loc xlink:href='rr-2008-12-31.xsd#rr_AnnualReturn2009' xlink:label='rr_AnnualReturn2009' xlink:type='locator' />
+<link:label id='rr_AnnualReturn2009_en_lab' xlink:label='rr_AnnualReturn2009_en_lab' xlink:role='http://www.xbrl.org/2003/role/label' xlink:type='resource' xml:lang='en-US'>Annual Return 2009</link:label>
+<link:labelArc xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='rr_AnnualReturn2009' xlink:to='rr_AnnualReturn2009_en_lab' xlink:type='arc' />
+<link:loc xlink:href='rr-2008-12-31.xsd#rr_AnnualReturn2010' xlink:label='rr_AnnualReturn2010' xlink:type='locator' />
+<link:label id='rr_AnnualReturn2010_en_lab' xlink:label='rr_AnnualReturn2010_en_lab' xlink:role='http://www.xbrl.org/2003/role/label' xlink:type='resource' xml:lang='en-US'>Annual Return 2010</link:label>
+<link:labelArc xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='rr_AnnualReturn2010' xlink:to='rr_AnnualReturn2010_en_lab' xlink:type='arc' />
+<link:loc xlink:href='rr-2008-12-31.xsd#rr_AnnualReturn2011' xlink:label='rr_AnnualReturn2011' xlink:type='locator' />
+<link:label id='rr_AnnualReturn2011_en_lab' xlink:label='rr_AnnualReturn2011_en_lab' xlink:role='http://www.xbrl.org/2003/role/label' xlink:type='resource' xml:lang='en-US'>Annual Return 2011</link:label>
+<link:labelArc xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='rr_AnnualReturn2011' xlink:to='rr_AnnualReturn2011_en_lab' xlink:type='arc' />
+<link:loc xlink:href='rr-2008-12-31.xsd#rr_AnnualReturn2012' xlink:label='rr_AnnualReturn2012' xlink:type='locator' />
+<link:label id='rr_AnnualReturn2012_en_lab' xlink:label='rr_AnnualReturn2012_en_lab' xlink:role='http://www.xbrl.org/2003/role/label' xlink:type='resource' xml:lang='en-US'>Annual Return 2012</link:label>
+<link:labelArc xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='rr_AnnualReturn2012' xlink:to='rr_AnnualReturn2012_en_lab' xlink:type='arc' />
+<link:loc xlink:href='rr-2008-12-31.xsd#rr_YearToDateReturnLabel' xlink:label='rr_YearToDateReturnLabel' xlink:type='locator' />
+<link:label id='rr_YearToDateReturnLabel_en_lab' xlink:label='rr_YearToDateReturnLabel_en_lab' xlink:role='http://www.xbrl.org/2003/role/label' xlink:type='resource' xml:lang='en-US'>Year to Date Return Label</link:label>
+<link:labelArc xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='rr_YearToDateReturnLabel' xlink:to='rr_YearToDateReturnLabel_en_lab' xlink:type='arc' />
+<link:loc xlink:href='rr-2008-12-31.xsd#rr_BarChartYearToDateReturn' xlink:label='rr_BarChartYearToDateReturn' xlink:type='locator' />
+<link:label id='rr_BarChartYearToDateReturn_en_lab' xlink:label='rr_BarChartYearToDateReturn_en_lab' xlink:role='http://www.xbrl.org/2003/role/label' xlink:type='resource' xml:lang='en-US'>Bar Chart Year to Date Return</link:label>
+<link:labelArc xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='rr_BarChartYearToDateReturn' xlink:to='rr_BarChartYearToDateReturn_en_lab' xlink:type='arc' />
+<link:loc xlink:href='rr-2008-12-31.xsd#rr_BarChartYearToDateReturnDate' xlink:label='rr_BarChartYearToDateReturnDate' xlink:type='locator' />
+<link:label id='rr_BarChartYearToDateReturnDate_en_lab' xlink:label='rr_BarChartYearToDateReturnDate_en_lab' xlink:role='http://www.xbrl.org/2003/role/label' xlink:type='resource' xml:lang='en-US'>Bar Chart Year to Date Return Date</link:label>
+<link:labelArc xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='rr_BarChartYearToDateReturnDate' xlink:to='rr_BarChartYearToDateReturnDate_en_lab' xlink:type='arc' />
+<link:loc xlink:href='rr-2008-12-31.xsd#rr_HighestQuarterlyReturnLabel' xlink:label='rr_HighestQuarterlyReturnLabel' xlink:type='locator' />
+<link:label id='rr_HighestQuarterlyReturnLabel_en_lab' xlink:label='rr_HighestQuarterlyReturnLabel_en_lab' xlink:role='http://www.xbrl.org/2003/role/label' xlink:type='resource' xml:lang='en-US'>Highest Quarterly Return Label</link:label>
+<link:labelArc xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='rr_HighestQuarterlyReturnLabel' xlink:to='rr_HighestQuarterlyReturnLabel_en_lab' xlink:type='arc' />
+<link:loc xlink:href='rr-2008-12-31.xsd#rr_BarChartHighestQuarterlyReturn' xlink:label='rr_BarChartHighestQuarterlyReturn' xlink:type='locator' />
+<link:label id='rr_BarChartHighestQuarterlyReturn_en_lab' xlink:label='rr_BarChartHighestQuarterlyReturn_en_lab' xlink:role='http://www.xbrl.org/2003/role/label' xlink:type='resource' xml:lang='en-US'>Bar Chart Highest Quarterly Return</link:label>
+<link:labelArc xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='rr_BarChartHighestQuarterlyReturn' xlink:to='rr_BarChartHighestQuarterlyReturn_en_lab' xlink:type='arc' />
+<link:loc xlink:href='rr-2008-12-31.xsd#rr_BarChartHighestQuarterlyReturnDate' xlink:label='rr_BarChartHighestQuarterlyReturnDate' xlink:type='locator' />
+<link:label id='rr_BarChartHighestQuarterlyReturnDate_en_lab' xlink:label='rr_BarChartHighestQuarterlyReturnDate_en_lab' xlink:role='http://www.xbrl.org/2003/role/label' xlink:type='resource' xml:lang='en-US'>Bar Chart Highest Quarterly Return Date</link:label>
+<link:labelArc xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='rr_BarChartHighestQuarterlyReturnDate' xlink:to='rr_BarChartHighestQuarterlyReturnDate_en_lab' xlink:type='arc' />
+<link:loc xlink:href='rr-2008-12-31.xsd#rr_LowestQuarterlyReturnLabel' xlink:label='rr_LowestQuarterlyReturnLabel' xlink:type='locator' />
+<link:label id='rr_LowestQuarterlyReturnLabel_en_lab' xlink:label='rr_LowestQuarterlyReturnLabel_en_lab' xlink:role='http://www.xbrl.org/2003/role/label' xlink:type='resource' xml:lang='en-US'>Lowest Quarterly Return Label</link:label>
+<link:labelArc xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='rr_LowestQuarterlyReturnLabel' xlink:to='rr_LowestQuarterlyReturnLabel_en_lab' xlink:type='arc' />
+<link:loc xlink:href='rr-2008-12-31.xsd#rr_BarChartLowestQuarterlyReturn' xlink:label='rr_BarChartLowestQuarterlyReturn' xlink:type='locator' />
+<link:label id='rr_BarChartLowestQuarterlyReturn_en_lab' xlink:label='rr_BarChartLowestQuarterlyReturn_en_lab' xlink:role='http://www.xbrl.org/2003/role/label' xlink:type='resource' xml:lang='en-US'>Bar Chart Lowest Quarterly Return</link:label>
+<link:labelArc xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='rr_BarChartLowestQuarterlyReturn' xlink:to='rr_BarChartLowestQuarterlyReturn_en_lab' xlink:type='arc' />
+<link:loc xlink:href='rr-2008-12-31.xsd#rr_BarChartLowestQuarterlyReturnDate' xlink:label='rr_BarChartLowestQuarterlyReturnDate' xlink:type='locator' />
+<link:label id='rr_BarChartLowestQuarterlyReturnDate_en_lab' xlink:label='rr_BarChartLowestQuarterlyReturnDate_en_lab' xlink:role='http://www.xbrl.org/2003/role/label' xlink:type='resource' xml:lang='en-US'>Bar Chart Lowest Quarterly Return Date</link:label>
+<link:labelArc xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='rr_BarChartLowestQuarterlyReturnDate' xlink:to='rr_BarChartLowestQuarterlyReturnDate_en_lab' xlink:type='arc' />
+<link:loc xlink:href='rr-2008-12-31.xsd#rr_BarChartClosingTextBlock' xlink:label='rr_BarChartClosingTextBlock' xlink:type='locator' />
+<link:label id='rr_BarChartClosingTextBlock_en_lab' xlink:label='rr_BarChartClosingTextBlock_en_lab' xlink:role='http://www.xbrl.org/2003/role/label' xlink:type='resource' xml:lang='en-US'>Bar Chart Closing [Text Block]</link:label>
+<link:labelArc xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='rr_BarChartClosingTextBlock' xlink:to='rr_BarChartClosingTextBlock_en_lab' xlink:type='arc' />
+<link:loc xlink:href='rr-2008-12-31.xsd#rr_PerformanceTableHeading' xlink:label='rr_PerformanceTableHeading' xlink:type='locator' />
+<link:label id='rr_PerformanceTableHeading_en_lab' xlink:label='rr_PerformanceTableHeading_en_lab' xlink:role='http://www.xbrl.org/2003/role/label' xlink:type='resource' xml:lang='en-US'>Performance Table [Heading]</link:label>
+<link:labelArc xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='rr_PerformanceTableHeading' xlink:to='rr_PerformanceTableHeading_en_lab' xlink:type='arc' />
+<link:loc xlink:href='rr-2008-12-31.xsd#rr_PerformanceTableNarrativeTextBlock' xlink:label='rr_PerformanceTableNarrativeTextBlock' xlink:type='locator' />
+<link:label id='rr_PerformanceTableNarrativeTextBlock_en_lab' xlink:label='rr_PerformanceTableNarrativeTextBlock_en_lab' xlink:role='http://www.xbrl.org/2003/role/label' xlink:type='resource' xml:lang='en-US'>Performance Table Narrative [Text Block]</link:label>
+<link:labelArc xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='rr_PerformanceTableNarrativeTextBlock' xlink:to='rr_PerformanceTableNarrativeTextBlock_en_lab' xlink:type='arc' />
+<link:loc xlink:href='rr-2008-12-31.xsd#rr_PerformanceTableDoesReflectSalesLoads' xlink:label='rr_PerformanceTableDoesReflectSalesLoads' xlink:type='locator' />
+<link:label id='rr_PerformanceTableDoesReflectSalesLoads_en_lab' xlink:label='rr_PerformanceTableDoesReflectSalesLoads_en_lab' xlink:role='http://www.xbrl.org/2003/role/label' xlink:type='resource' xml:lang='en-US'>Performance Table Does Reflect Sales Loads</link:label>
+<link:labelArc xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='rr_PerformanceTableDoesReflectSalesLoads' xlink:to='rr_PerformanceTableDoesReflectSalesLoads_en_lab' xlink:type='arc' />
+<link:loc xlink:href='rr-2008-12-31.xsd#rr_PerformanceTableMarketIndexChanged' xlink:label='rr_PerformanceTableMarketIndexChanged' xlink:type='locator' />
+<link:label id='rr_PerformanceTableMarketIndexChanged_en_lab' xlink:label='rr_PerformanceTableMarketIndexChanged_en_lab' xlink:role='http://www.xbrl.org/2003/role/label' xlink:type='resource' xml:lang='en-US'>Performance Table Market Index Changed</link:label>
+<link:labelArc xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='rr_PerformanceTableMarketIndexChanged' xlink:to='rr_PerformanceTableMarketIndexChanged_en_lab' xlink:type='arc' />
+<link:label id='rr_PerformanceTableOneClassOfMulticlassFund_en_lab' xlink:label='rr_PerformanceTableOneClassOfMulticlassFund_en_lab' xlink:role='http://www.xbrl.org/2003/role/label' xlink:type='resource' xml:lang='en-US'>Performance Table One Class of after Tax Shown</link:label>
+<link:loc xlink:href='rr-2008-12-31.xsd#rr_PerformanceTableUsesHighestFederalRate' xlink:label='rr_PerformanceTableUsesHighestFederalRate' xlink:type='locator' />
+<link:label id='rr_PerformanceTableUsesHighestFederalRate_en_lab' xlink:label='rr_PerformanceTableUsesHighestFederalRate_en_lab' xlink:role='http://www.xbrl.org/2003/role/label' xlink:type='resource' xml:lang='en-US'>Performance Table Uses Highest Federal Rate</link:label>
+<link:labelArc xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='rr_PerformanceTableUsesHighestFederalRate' xlink:to='rr_PerformanceTableUsesHighestFederalRate_en_lab' xlink:type='arc' />
+<link:loc xlink:href='rr-2008-12-31.xsd#rr_PerformanceTableNotRelevantToTaxDeferred' xlink:label='rr_PerformanceTableNotRelevantToTaxDeferred' xlink:type='locator' />
+<link:label id='rr_PerformanceTableNotRelevantToTaxDeferred_en_lab' xlink:label='rr_PerformanceTableNotRelevantToTaxDeferred_en_lab' xlink:role='http://www.xbrl.org/2003/role/label' xlink:type='resource' xml:lang='en-US'>Performance Table Not Relevant to Tax Deferred</link:label>
+<link:labelArc xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='rr_PerformanceTableNotRelevantToTaxDeferred' xlink:to='rr_PerformanceTableNotRelevantToTaxDeferred_en_lab' xlink:type='arc' />
+<link:loc xlink:href='rr-2008-12-31.xsd#rr_PerformanceTableExplanationAfterTaxHigher' xlink:label='rr_PerformanceTableExplanationAfterTaxHigher' xlink:type='locator' />
+<link:label id='rr_PerformanceTableExplanationAfterTaxHigher_en_lab' xlink:label='rr_PerformanceTableExplanationAfterTaxHigher_en_lab' xlink:role='http://www.xbrl.org/2003/role/label' xlink:type='resource' xml:lang='en-US'>Performance Table Explanation after Tax Higher</link:label>
+<link:labelArc xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='rr_PerformanceTableExplanationAfterTaxHigher' xlink:to='rr_PerformanceTableExplanationAfterTaxHigher_en_lab' xlink:type='arc' />
+<link:loc xlink:href='rr-2008-12-31.xsd#rr_AverageAnnualReturnCaption' xlink:label='rr_AverageAnnualReturnCaption' xlink:type='locator' />
+<link:label id='rr_AverageAnnualReturnCaption_en_lab' xlink:label='rr_AverageAnnualReturnCaption_en_lab' xlink:role='http://www.xbrl.org/2003/role/label' xlink:type='resource' xml:lang='en-US'>Average Annual Return Caption</link:label>
+<link:labelArc xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='rr_AverageAnnualReturnCaption' xlink:to='rr_AverageAnnualReturnCaption_en_lab' xlink:type='arc' />
+<link:loc xlink:href='rr-2008-12-31.xsd#rr_AverageAnnualReturnColumnName' xlink:label='rr_AverageAnnualReturnColumnName' xlink:type='locator' />
+<link:label id='rr_AverageAnnualReturnColumnName_en_lab' xlink:label='rr_AverageAnnualReturnColumnName_en_lab' xlink:role='http://www.xbrl.org/2003/role/label' xlink:type='resource' xml:lang='en-US'>Average Annual Return Column Name</link:label>
+<link:labelArc xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='rr_AverageAnnualReturnColumnName' xlink:to='rr_AverageAnnualReturnColumnName_en_lab' xlink:type='arc' />
+<link:loc xlink:href='rr-2008-12-31.xsd#rr_AverageAnnualReturnLabel' xlink:label='rr_AverageAnnualReturnLabel' xlink:type='locator' />
+<link:label id='rr_AverageAnnualReturnLabel_en_lab' xlink:label='rr_AverageAnnualReturnLabel_en_lab' xlink:role='http://www.xbrl.org/2003/role/label' xlink:type='resource' xml:lang='en-US'>Average Annual Return Label</link:label>
+<link:labelArc xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='rr_AverageAnnualReturnLabel' xlink:to='rr_AverageAnnualReturnLabel_en_lab' xlink:type='arc' />
+<link:loc xlink:href='rr-2008-12-31.xsd#rr_AverageAnnualReturnYear01' xlink:label='rr_AverageAnnualReturnYear01' xlink:type='locator' />
+<link:label id='rr_AverageAnnualReturnYear01_en_lab' xlink:label='rr_AverageAnnualReturnYear01_en_lab' xlink:role='http://www.xbrl.org/2003/role/label' xlink:type='resource' xml:lang='en-US'>Average Annual Return Year 01</link:label>
+<link:labelArc xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='rr_AverageAnnualReturnYear01' xlink:to='rr_AverageAnnualReturnYear01_en_lab' xlink:type='arc' />
+<link:loc xlink:href='rr-2008-12-31.xsd#rr_AverageAnnualReturnYear05' xlink:label='rr_AverageAnnualReturnYear05' xlink:type='locator' />
+<link:label id='rr_AverageAnnualReturnYear05_en_lab' xlink:label='rr_AverageAnnualReturnYear05_en_lab' xlink:role='http://www.xbrl.org/2003/role/label' xlink:type='resource' xml:lang='en-US'>Average Annual Return Year 05</link:label>
+<link:labelArc xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='rr_AverageAnnualReturnYear05' xlink:to='rr_AverageAnnualReturnYear05_en_lab' xlink:type='arc' />
+<link:loc xlink:href='rr-2008-12-31.xsd#rr_AverageAnnualReturnYear10' xlink:label='rr_AverageAnnualReturnYear10' xlink:type='locator' />
+<link:label id='rr_AverageAnnualReturnYear10_en_lab' xlink:label='rr_AverageAnnualReturnYear10_en_lab' xlink:role='http://www.xbrl.org/2003/role/label' xlink:type='resource' xml:lang='en-US'>Average Annual Return Year 10</link:label>
+<link:labelArc xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='rr_AverageAnnualReturnYear10' xlink:to='rr_AverageAnnualReturnYear10_en_lab' xlink:type='arc' />
+<link:loc xlink:href='rr-2008-12-31.xsd#rr_AverageAnnualReturnSinceInception' xlink:label='rr_AverageAnnualReturnSinceInception' xlink:type='locator' />
+<link:label id='rr_AverageAnnualReturnSinceInception_en_lab' xlink:label='rr_AverageAnnualReturnSinceInception_en_lab' xlink:role='http://www.xbrl.org/2003/role/label' xlink:type='resource' xml:lang='en-US'>Average Annual Return Since Inception</link:label>
+<link:labelArc xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='rr_AverageAnnualReturnSinceInception' xlink:to='rr_AverageAnnualReturnSinceInception_en_lab' xlink:type='arc' />
+<link:loc xlink:href='rr-2008-12-31.xsd#rr_AverageAnnualReturnInceptionDate' xlink:label='rr_AverageAnnualReturnInceptionDate' xlink:type='locator' />
+<link:label id='rr_AverageAnnualReturnInceptionDate_en_lab' xlink:label='rr_AverageAnnualReturnInceptionDate_en_lab' xlink:role='http://www.xbrl.org/2003/role/label' xlink:type='resource' xml:lang='en-US'>Average Annual Return Inception Date</link:label>
+<link:labelArc xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='rr_AverageAnnualReturnInceptionDate' xlink:to='rr_AverageAnnualReturnInceptionDate_en_lab' xlink:type='arc' />
+<link:loc xlink:href='rr-2008-12-31.xsd#rr_AverageAnnualReturnAfterTaxesOnDistributionsLabel' xlink:label='rr_AverageAnnualReturnAfterTaxesOnDistributionsLabel' xlink:type='locator' />
+<link:label id='rr_AverageAnnualReturnAfterTaxesOnDistributionsLabel_en_lab' xlink:label='rr_AverageAnnualReturnAfterTaxesOnDistributionsLabel_en_lab' xlink:role='http://www.xbrl.org/2003/role/label' xlink:type='resource' xml:lang='en-US'>Average Annual Return after Taxes on Distributions Label</link:label>
+<link:labelArc xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='rr_AverageAnnualReturnAfterTaxesOnDistributionsLabel' xlink:to='rr_AverageAnnualReturnAfterTaxesOnDistributionsLabel_en_lab' xlink:type='arc' />
+<link:loc xlink:href='rr-2008-12-31.xsd#rr_AverageAnnualReturnAfterTaxesOnDistributionsYear01' xlink:label='rr_AverageAnnualReturnAfterTaxesOnDistributionsYear01' xlink:type='locator' />
+<link:label id='rr_AverageAnnualReturnAfterTaxesOnDistributionsYear01_en_lab' xlink:label='rr_AverageAnnualReturnAfterTaxesOnDistributionsYear01_en_lab' xlink:role='http://www.xbrl.org/2003/role/label' xlink:type='resource' xml:lang='en-US'>Average Annual Return after Taxes on Distributions Year 01</link:label>
+<link:labelArc xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='rr_AverageAnnualReturnAfterTaxesOnDistributionsYear01' xlink:to='rr_AverageAnnualReturnAfterTaxesOnDistributionsYear01_en_lab' xlink:type='arc' />
+<link:loc xlink:href='rr-2008-12-31.xsd#rr_AverageAnnualReturnAfterTaxesOnDistributionsYear05' xlink:label='rr_AverageAnnualReturnAfterTaxesOnDistributionsYear05' xlink:type='locator' />
+<link:label id='rr_AverageAnnualReturnAfterTaxesOnDistributionsYear05_en_lab' xlink:label='rr_AverageAnnualReturnAfterTaxesOnDistributionsYear05_en_lab' xlink:role='http://www.xbrl.org/2003/role/label' xlink:type='resource' xml:lang='en-US'>Average Annual Return after Taxes on Distributions Year 05</link:label>
+<link:labelArc xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='rr_AverageAnnualReturnAfterTaxesOnDistributionsYear05' xlink:to='rr_AverageAnnualReturnAfterTaxesOnDistributionsYear05_en_lab' xlink:type='arc' />
+<link:loc xlink:href='rr-2008-12-31.xsd#rr_AverageAnnualReturnAfterTaxesOnDistributionsYear10' xlink:label='rr_AverageAnnualReturnAfterTaxesOnDistributionsYear10' xlink:type='locator' />
+<link:label id='rr_AverageAnnualReturnAfterTaxesOnDistributionsYear10_en_lab' xlink:label='rr_AverageAnnualReturnAfterTaxesOnDistributionsYear10_en_lab' xlink:role='http://www.xbrl.org/2003/role/label' xlink:type='resource' xml:lang='en-US'>Average Annual Return after Taxes on Distributions Year 10</link:label>
+<link:labelArc xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='rr_AverageAnnualReturnAfterTaxesOnDistributionsYear10' xlink:to='rr_AverageAnnualReturnAfterTaxesOnDistributionsYear10_en_lab' xlink:type='arc' />
+<link:loc xlink:href='rr-2008-12-31.xsd#rr_AverageAnnualReturnAfterTaxesOnDistributionsSinceInception' xlink:label='rr_AverageAnnualReturnAfterTaxesOnDistributionsSinceInception' xlink:type='locator' />
+<link:label id='rr_AverageAnnualReturnAfterTaxesOnDistributionsSinceInception_en_lab' xlink:label='rr_AverageAnnualReturnAfterTaxesOnDistributionsSinceInception_en_lab' xlink:role='http://www.xbrl.org/2003/role/label' xlink:type='resource' xml:lang='en-US'>Average Annual Return after Taxes on Distributions Since Inception</link:label>
+<link:labelArc xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='rr_AverageAnnualReturnAfterTaxesOnDistributionsSinceInception' xlink:to='rr_AverageAnnualReturnAfterTaxesOnDistributionsSinceInception_en_lab' xlink:type='arc' />
+<link:loc xlink:href='rr-2008-12-31.xsd#rr_AverageAnnualReturnAfterTaxesOnDistributionsInceptionDate' xlink:label='rr_AverageAnnualReturnAfterTaxesOnDistributionsInceptionDate' xlink:type='locator' />
+<link:label id='rr_AverageAnnualReturnAfterTaxesOnDistributionsInceptionDate_en_lab' xlink:label='rr_AverageAnnualReturnAfterTaxesOnDistributionsInceptionDate_en_lab' xlink:role='http://www.xbrl.org/2003/role/label' xlink:type='resource' xml:lang='en-US'>Average Annual Return after Taxes on Distributions Inception Date</link:label>
+<link:labelArc xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='rr_AverageAnnualReturnAfterTaxesOnDistributionsInceptionDate' xlink:to='rr_AverageAnnualReturnAfterTaxesOnDistributionsInceptionDate_en_lab' xlink:type='arc' />
+<link:loc xlink:href='rr-2008-12-31.xsd#rr_AverageAnnualReturnAfterTaxesOnDistributionsAndSalesLabel' xlink:label='rr_AverageAnnualReturnAfterTaxesOnDistributionsAndSalesLabel' xlink:type='locator' />
+<link:label id='rr_AverageAnnualReturnAfterTaxesOnDistributionsAndSalesLabel_en_lab' xlink:label='rr_AverageAnnualReturnAfterTaxesOnDistributionsAndSalesLabel_en_lab' xlink:role='http://www.xbrl.org/2003/role/label' xlink:type='resource' xml:lang='en-US'>Average Annual Return after Taxes on Distributions and Sales Label</link:label>
+<link:labelArc xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='rr_AverageAnnualReturnAfterTaxesOnDistributionsAndSalesLabel' xlink:to='rr_AverageAnnualReturnAfterTaxesOnDistributionsAndSalesLabel_en_lab' xlink:type='arc' />
+<link:loc xlink:href='rr-2008-12-31.xsd#rr_AverageAnnualReturnAfterTaxesOnDistributionsAndSalesYear01' xlink:label='rr_AverageAnnualReturnAfterTaxesOnDistributionsAndSalesYear01' xlink:type='locator' />
+<link:label id='rr_AverageAnnualReturnAfterTaxesOnDistributionsAndSalesYear01_en_lab' xlink:label='rr_AverageAnnualReturnAfterTaxesOnDistributionsAndSalesYear01_en_lab' xlink:role='http://www.xbrl.org/2003/role/label' xlink:type='resource' xml:lang='en-US'>Average Annual Return after Taxes on Distributions and Sales Year 01</link:label>
+<link:labelArc xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='rr_AverageAnnualReturnAfterTaxesOnDistributionsAndSalesYear01' xlink:to='rr_AverageAnnualReturnAfterTaxesOnDistributionsAndSalesYear01_en_lab' xlink:type='arc' />
+<link:loc xlink:href='rr-2008-12-31.xsd#rr_AverageAnnualReturnAfterTaxesOnDistributionsAndSalesYear05' xlink:label='rr_AverageAnnualReturnAfterTaxesOnDistributionsAndSalesYear05' xlink:type='locator' />
+<link:label id='rr_AverageAnnualReturnAfterTaxesOnDistributionsAndSalesYear05_en_lab' xlink:label='rr_AverageAnnualReturnAfterTaxesOnDistributionsAndSalesYear05_en_lab' xlink:role='http://www.xbrl.org/2003/role/label' xlink:type='resource' xml:lang='en-US'>Average Annual Return after Taxes on Distributions and Sales Year 05</link:label>
+<link:labelArc xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='rr_AverageAnnualReturnAfterTaxesOnDistributionsAndSalesYear05' xlink:to='rr_AverageAnnualReturnAfterTaxesOnDistributionsAndSalesYear05_en_lab' xlink:type='arc' />
+<link:loc xlink:href='rr-2008-12-31.xsd#rr_AverageAnnualReturnAfterTaxesOnDistributionsAndSalesYear10' xlink:label='rr_AverageAnnualReturnAfterTaxesOnDistributionsAndSalesYear10' xlink:type='locator' />
+<link:label id='rr_AverageAnnualReturnAfterTaxesOnDistributionsAndSalesYear10_en_lab' xlink:label='rr_AverageAnnualReturnAfterTaxesOnDistributionsAndSalesYear10_en_lab' xlink:role='http://www.xbrl.org/2003/role/label' xlink:type='resource' xml:lang='en-US'>Average Annual Return after Taxes on Distributions and Sales Year 10</link:label>
+<link:labelArc xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='rr_AverageAnnualReturnAfterTaxesOnDistributionsAndSalesYear10' xlink:to='rr_AverageAnnualReturnAfterTaxesOnDistributionsAndSalesYear10_en_lab' xlink:type='arc' />
+<link:loc xlink:href='rr-2008-12-31.xsd#rr_AverageAnnualReturnAfterTaxesOnDistributionsAndSalesSinceInception' xlink:label='rr_AverageAnnualReturnAfterTaxesOnDistributionsAndSalesSinceInception' xlink:type='locator' />
+<link:label id='rr_AverageAnnualReturnAfterTaxesOnDistributionsAndSalesSinceInception_en_lab' xlink:label='rr_AverageAnnualReturnAfterTaxesOnDistributionsAndSalesSinceInception_en_lab' xlink:role='http://www.xbrl.org/2003/role/label' xlink:type='resource' xml:lang='en-US'>Average Annual Return after Taxes on Distributions and Sales Since Inception</link:label>
+<link:labelArc xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='rr_AverageAnnualReturnAfterTaxesOnDistributionsAndSalesSinceInception' xlink:to='rr_AverageAnnualReturnAfterTaxesOnDistributionsAndSalesSinceInception_en_lab' xlink:type='arc' />
+<link:loc xlink:href='rr-2008-12-31.xsd#rr_AverageAnnualReturnAfterTaxesOnDistributionsAndSalesInceptionDate' xlink:label='rr_AverageAnnualReturnAfterTaxesOnDistributionsAndSalesInceptionDate' xlink:type='locator' />
+<link:label id='rr_AverageAnnualReturnAfterTaxesOnDistributionsAndSalesInceptionDate_en_lab' xlink:label='rr_AverageAnnualReturnAfterTaxesOnDistributionsAndSalesInceptionDate_en_lab' xlink:role='http://www.xbrl.org/2003/role/label' xlink:type='resource' xml:lang='en-US'>Average Annual Return after Taxes on Distributions and Sales Inception Date</link:label>
+<link:labelArc xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='rr_AverageAnnualReturnAfterTaxesOnDistributionsAndSalesInceptionDate' xlink:to='rr_AverageAnnualReturnAfterTaxesOnDistributionsAndSalesInceptionDate_en_lab' xlink:type='arc' />
+<link:loc xlink:href='rr-2008-12-31.xsd#rr_MoneyMarketSevenDayYieldCaption' xlink:label='rr_MoneyMarketSevenDayYieldCaption' xlink:type='locator' />
+<link:label id='rr_MoneyMarketSevenDayYieldCaption_en_lab' xlink:label='rr_MoneyMarketSevenDayYieldCaption_en_lab' xlink:role='http://www.xbrl.org/2003/role/label' xlink:type='resource' xml:lang='en-US'>Money Market Seven Day Yield Caption</link:label>
+<link:labelArc xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='rr_MoneyMarketSevenDayYieldCaption' xlink:to='rr_MoneyMarketSevenDayYieldCaption_en_lab' xlink:type='arc' />
+<link:loc xlink:href='rr-2008-12-31.xsd#rr_MoneyMarketSevenDayYieldColumnName' xlink:label='rr_MoneyMarketSevenDayYieldColumnName' xlink:type='locator' />
+<link:label id='rr_MoneyMarketSevenDayYieldColumnName_en_lab' xlink:label='rr_MoneyMarketSevenDayYieldColumnName_en_lab' xlink:role='http://www.xbrl.org/2003/role/label' xlink:type='resource' xml:lang='en-US'>Money Market Seven Day Yield Column Name</link:label>
+<link:labelArc xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='rr_MoneyMarketSevenDayYieldColumnName' xlink:to='rr_MoneyMarketSevenDayYieldColumnName_en_lab' xlink:type='arc' />
+<link:loc xlink:href='rr-2008-12-31.xsd#rr_MoneyMarketSevenDayYieldPhone' xlink:label='rr_MoneyMarketSevenDayYieldPhone' xlink:type='locator' />
+<link:label id='rr_MoneyMarketSevenDayYieldPhone_en_lab' xlink:label='rr_MoneyMarketSevenDayYieldPhone_en_lab' xlink:role='http://www.xbrl.org/2003/role/label' xlink:type='resource' xml:lang='en-US'>Money Market Seven Day Yield Phone</link:label>
+<link:labelArc xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='rr_MoneyMarketSevenDayYieldPhone' xlink:to='rr_MoneyMarketSevenDayYieldPhone_en_lab' xlink:type='arc' />
+<link:loc xlink:href='rr-2008-12-31.xsd#rr_MoneyMarketSevenDayYield' xlink:label='rr_MoneyMarketSevenDayYield' xlink:type='locator' />
+<link:label id='rr_MoneyMarketSevenDayYield_en_lab' xlink:label='rr_MoneyMarketSevenDayYield_en_lab' xlink:role='http://www.xbrl.org/2003/role/label' xlink:type='resource' xml:lang='en-US'>Money Market Seven Day Yield</link:label>
+<link:labelArc xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='rr_MoneyMarketSevenDayYield' xlink:to='rr_MoneyMarketSevenDayYield_en_lab' xlink:type='arc' />
+<link:loc xlink:href='rr-2008-12-31.xsd#rr_MoneyMarketSevenDayTaxEquivalentYield' xlink:label='rr_MoneyMarketSevenDayTaxEquivalentYield' xlink:type='locator' />
+<link:label id='rr_MoneyMarketSevenDayTaxEquivalentYield_en_lab' xlink:label='rr_MoneyMarketSevenDayTaxEquivalentYield_en_lab' xlink:role='http://www.xbrl.org/2003/role/label' xlink:type='resource' xml:lang='en-US'>Money Market Seven Day Tax Equivalent Yield</link:label>
+<link:labelArc xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='rr_MoneyMarketSevenDayTaxEquivalentYield' xlink:to='rr_MoneyMarketSevenDayTaxEquivalentYield_en_lab' xlink:type='arc' />
+<link:loc xlink:href='rr-2008-12-31.xsd#rr_ThirtyDayYieldCaption' xlink:label='rr_ThirtyDayYieldCaption' xlink:type='locator' />
+<link:label id='rr_ThirtyDayYieldCaption_en_lab' xlink:label='rr_ThirtyDayYieldCaption_en_lab' xlink:role='http://www.xbrl.org/2003/role/label' xlink:type='resource' xml:lang='en-US'>Thirty Day Yield Caption</link:label>
+<link:labelArc xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='rr_ThirtyDayYieldCaption' xlink:to='rr_ThirtyDayYieldCaption_en_lab' xlink:type='arc' />
+<link:loc xlink:href='rr-2008-12-31.xsd#rr_ThirtyDayYieldColumnName' xlink:label='rr_ThirtyDayYieldColumnName' xlink:type='locator' />
+<link:label id='rr_ThirtyDayYieldColumnName_en_lab' xlink:label='rr_ThirtyDayYieldColumnName_en_lab' xlink:role='http://www.xbrl.org/2003/role/label' xlink:type='resource' xml:lang='en-US'>Thirty Day Yield Column Name</link:label>
+<link:labelArc xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='rr_ThirtyDayYieldColumnName' xlink:to='rr_ThirtyDayYieldColumnName_en_lab' xlink:type='arc' />
+<link:loc xlink:href='rr-2008-12-31.xsd#rr_ThirtyDayYieldPhone' xlink:label='rr_ThirtyDayYieldPhone' xlink:type='locator' />
+<link:label id='rr_ThirtyDayYieldPhone_en_lab' xlink:label='rr_ThirtyDayYieldPhone_en_lab' xlink:role='http://www.xbrl.org/2003/role/label' xlink:type='resource' xml:lang='en-US'>Thirty Day Yield Phone</link:label>
+<link:labelArc xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='rr_ThirtyDayYieldPhone' xlink:to='rr_ThirtyDayYieldPhone_en_lab' xlink:type='arc' />
+<link:loc xlink:href='rr-2008-12-31.xsd#rr_ThirtyDayYield' xlink:label='rr_ThirtyDayYield' xlink:type='locator' />
+<link:label id='rr_ThirtyDayYield_en_lab' xlink:label='rr_ThirtyDayYield_en_lab' xlink:role='http://www.xbrl.org/2003/role/label' xlink:type='resource' xml:lang='en-US'>Thirty Day Yield</link:label>
+<link:labelArc xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='rr_ThirtyDayYield' xlink:to='rr_ThirtyDayYield_en_lab' xlink:type='arc' />
+<link:loc xlink:href='rr-2008-12-31.xsd#rr_ThirtyDayTaxEquivalentYield' xlink:label='rr_ThirtyDayTaxEquivalentYield' xlink:type='locator' />
+<link:label id='rr_ThirtyDayTaxEquivalentYield_en_lab' xlink:label='rr_ThirtyDayTaxEquivalentYield_en_lab' xlink:role='http://www.xbrl.org/2003/role/label' xlink:type='resource' xml:lang='en-US'>Thirty Day Tax Equivalent Yield</link:label>
+<link:labelArc xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='rr_ThirtyDayTaxEquivalentYield' xlink:to='rr_ThirtyDayTaxEquivalentYield_en_lab' xlink:type='arc' />
+<link:loc xlink:href='rr-2008-12-31.xsd#rr_MarketIndexReturnLabel' xlink:label='rr_MarketIndexReturnLabel' xlink:type='locator' />
+<link:label id='rr_MarketIndexReturnLabel_en_lab' xlink:label='rr_MarketIndexReturnLabel_en_lab' xlink:role='http://www.xbrl.org/2003/role/label' xlink:type='resource' xml:lang='en-US'>Market Index Return Label</link:label>
+<link:labelArc xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='rr_MarketIndexReturnLabel' xlink:to='rr_MarketIndexReturnLabel_en_lab' xlink:type='arc' />
+<link:loc xlink:href='rr-2008-12-31.xsd#rr_MarketIndexReturnYear01' xlink:label='rr_MarketIndexReturnYear01' xlink:type='locator' />
+<link:label id='rr_MarketIndexReturnYear01_en_lab' xlink:label='rr_MarketIndexReturnYear01_en_lab' xlink:role='http://www.xbrl.org/2003/role/label' xlink:type='resource' xml:lang='en-US'>Market Index Return Year 01</link:label>
+<link:labelArc xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='rr_MarketIndexReturnYear01' xlink:to='rr_MarketIndexReturnYear01_en_lab' xlink:type='arc' />
+<link:loc xlink:href='rr-2008-12-31.xsd#rr_MarketIndexReturnYear05' xlink:label='rr_MarketIndexReturnYear05' xlink:type='locator' />
+<link:label id='rr_MarketIndexReturnYear05_en_lab' xlink:label='rr_MarketIndexReturnYear05_en_lab' xlink:role='http://www.xbrl.org/2003/role/label' xlink:type='resource' xml:lang='en-US'>Market Index Return Year 05</link:label>
+<link:labelArc xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='rr_MarketIndexReturnYear05' xlink:to='rr_MarketIndexReturnYear05_en_lab' xlink:type='arc' />
+<link:loc xlink:href='rr-2008-12-31.xsd#rr_MarketIndexReturnYear10' xlink:label='rr_MarketIndexReturnYear10' xlink:type='locator' />
+<link:label id='rr_MarketIndexReturnYear10_en_lab' xlink:label='rr_MarketIndexReturnYear10_en_lab' xlink:role='http://www.xbrl.org/2003/role/label' xlink:type='resource' xml:lang='en-US'>Market Index Return Year 10</link:label>
+<link:labelArc xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='rr_MarketIndexReturnYear10' xlink:to='rr_MarketIndexReturnYear10_en_lab' xlink:type='arc' />
+<link:loc xlink:href='rr-2008-12-31.xsd#rr_MarketIndexReturnSinceInception' xlink:label='rr_MarketIndexReturnSinceInception' xlink:type='locator' />
+<link:label id='rr_MarketIndexReturnSinceInception_en_lab' xlink:label='rr_MarketIndexReturnSinceInception_en_lab' xlink:role='http://www.xbrl.org/2003/role/label' xlink:type='resource' xml:lang='en-US'>Market Index Return Since Inception</link:label>
+<link:labelArc xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='rr_MarketIndexReturnSinceInception' xlink:to='rr_MarketIndexReturnSinceInception_en_lab' xlink:type='arc' />
+<link:loc xlink:href='rr-2008-12-31.xsd#rr_MarketIndexReturnInceptionDate' xlink:label='rr_MarketIndexReturnInceptionDate' xlink:type='locator' />
+<link:label id='rr_MarketIndexReturnInceptionDate_en_lab' xlink:label='rr_MarketIndexReturnInceptionDate_en_lab' xlink:role='http://www.xbrl.org/2003/role/label' xlink:type='resource' xml:lang='en-US'>Market Index Return Inception Date</link:label>
+<link:labelArc xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='rr_MarketIndexReturnInceptionDate' xlink:to='rr_MarketIndexReturnInceptionDate_en_lab' xlink:type='arc' />
+<link:loc xlink:href='rr-2008-12-31.xsd#rr_PerformanceTableFootnotesTextBlock' xlink:label='rr_PerformanceTableFootnotesTextBlock' xlink:type='locator' />
+<link:label id='rr_PerformanceTableFootnotesTextBlock_en_lab' xlink:label='rr_PerformanceTableFootnotesTextBlock_en_lab' xlink:role='http://www.xbrl.org/2003/role/label' xlink:type='resource' xml:lang='en-US'>Performance Table Footnotes [Text Block]</link:label>
+<link:labelArc xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='rr_PerformanceTableFootnotesTextBlock' xlink:to='rr_PerformanceTableFootnotesTextBlock_en_lab' xlink:type='arc' />
+<link:loc xlink:href='rr-2008-12-31.xsd#rr_PerformanceTableClosingTextBlock' xlink:label='rr_PerformanceTableClosingTextBlock' xlink:type='locator' />
+<link:label id='rr_PerformanceTableClosingTextBlock_en_lab' xlink:label='rr_PerformanceTableClosingTextBlock_en_lab' xlink:role='http://www.xbrl.org/2003/role/label' xlink:type='resource' xml:lang='en-US'>Performance Table Closing [Text Block]</link:label>
+<link:labelArc xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='rr_PerformanceTableClosingTextBlock' xlink:to='rr_PerformanceTableClosingTextBlock_en_lab' xlink:type='arc' />
+<link:loc xlink:href='rr-2008-12-31.xsd#rr_RiskSectionAbstract' xlink:label='rr_RiskSectionAbstract' xlink:type='locator' />
+<link:label id='rr_RiskSectionAbstract_en_lab' xlink:label='rr_RiskSectionAbstract_en_lab' xlink:role='http://www.xbrl.org/2003/role/label' xlink:type='resource' xml:lang='en-US'>Risk Section [Abstract]</link:label>
+<link:labelArc xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='rr_RiskSectionAbstract' xlink:to='rr_RiskSectionAbstract_en_lab' xlink:type='arc' />
+<link:loc xlink:href='rr-2008-12-31.xsd#rr_RiskHeading' xlink:label='rr_RiskHeading' xlink:type='locator' />
+<link:label id='rr_RiskHeading_en_lab' xlink:label='rr_RiskHeading_en_lab' xlink:role='http://www.xbrl.org/2003/role/label' xlink:type='resource' xml:lang='en-US'>Risk [Heading]</link:label>
+<link:labelArc xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='rr_RiskHeading' xlink:to='rr_RiskHeading_en_lab' xlink:type='arc' />
+<link:loc xlink:href='rr-2008-12-31.xsd#rr_RiskNarrativeTextBlock' xlink:label='rr_RiskNarrativeTextBlock' xlink:type='locator' />
+<link:label id='rr_RiskNarrativeTextBlock_en_lab' xlink:label='rr_RiskNarrativeTextBlock_en_lab' xlink:role='http://www.xbrl.org/2003/role/label' xlink:type='resource' xml:lang='en-US'>Risk Narrative [Text Block]</link:label>
+<link:labelArc xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='rr_RiskNarrativeTextBlock' xlink:to='rr_RiskNarrativeTextBlock_en_lab' xlink:type='arc' />
+<link:loc xlink:href='rr-2008-12-31.xsd#rr_RiskNondiversifiedStatus' xlink:label='rr_RiskNondiversifiedStatus' xlink:type='locator' />
+<link:label id='rr_RiskNondiversifiedStatus_en_lab' xlink:label='rr_RiskNondiversifiedStatus_en_lab' xlink:role='http://www.xbrl.org/2003/role/label' xlink:type='resource' xml:lang='en-US'>Risk Nondiversified Status</link:label>
+<link:labelArc xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='rr_RiskNondiversifiedStatus' xlink:to='rr_RiskNondiversifiedStatus_en_lab' xlink:type='arc' />
+<link:loc xlink:href='rr-2008-12-31.xsd#rr_RiskLoseMoney' xlink:label='rr_RiskLoseMoney' xlink:type='locator' />
+<link:label id='rr_RiskLoseMoney_en_lab' xlink:label='rr_RiskLoseMoney_en_lab' xlink:role='http://www.xbrl.org/2003/role/label' xlink:type='resource' xml:lang='en-US'>Risk Lose Money</link:label>
+<link:labelArc xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='rr_RiskLoseMoney' xlink:to='rr_RiskLoseMoney_en_lab' xlink:type='arc' />
+<link:loc xlink:href='rr-2008-12-31.xsd#rr_RiskMoneyMarketFund' xlink:label='rr_RiskMoneyMarketFund' xlink:type='locator' />
+<link:label id='rr_RiskMoneyMarketFund_en_lab' xlink:label='rr_RiskMoneyMarketFund_en_lab' xlink:role='http://www.xbrl.org/2003/role/label' xlink:type='resource' xml:lang='en-US'>Risk Money Market Fund</link:label>
+<link:labelArc xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='rr_RiskMoneyMarketFund' xlink:to='rr_RiskMoneyMarketFund_en_lab' xlink:type='arc' />
+<link:loc xlink:href='rr-2008-12-31.xsd#rr_RiskNotInsuredDepositoryInstitution' xlink:label='rr_RiskNotInsuredDepositoryInstitution' xlink:type='locator' />
+<link:label id='rr_RiskNotInsuredDepositoryInstitution_en_lab' xlink:label='rr_RiskNotInsuredDepositoryInstitution_en_lab' xlink:role='http://www.xbrl.org/2003/role/label' xlink:type='resource' xml:lang='en-US'>Risk Not Insured Depository Institution</link:label>
+<link:labelArc xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='rr_RiskNotInsuredDepositoryInstitution' xlink:to='rr_RiskNotInsuredDepositoryInstitution_en_lab' xlink:type='arc' />
+<link:loc xlink:href='rr-2008-12-31.xsd#rr_RiskCaption' xlink:label='rr_RiskCaption' xlink:type='locator' />
+<link:label id='rr_RiskCaption_en_lab' xlink:label='rr_RiskCaption_en_lab' xlink:role='http://www.xbrl.org/2003/role/label' xlink:type='resource' xml:lang='en-US'>Risk Caption</link:label>
+<link:labelArc xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='rr_RiskCaption' xlink:to='rr_RiskCaption_en_lab' xlink:type='arc' />
+<link:loc xlink:href='rr-2008-12-31.xsd#rr_RiskColumnName' xlink:label='rr_RiskColumnName' xlink:type='locator' />
+<link:label id='rr_RiskColumnName_en_lab' xlink:label='rr_RiskColumnName_en_lab' xlink:role='http://www.xbrl.org/2003/role/label' xlink:type='resource' xml:lang='en-US'>Risk Column Name</link:label>
+<link:labelArc xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='rr_RiskColumnName' xlink:to='rr_RiskColumnName_en_lab' xlink:type='arc' />
+<link:loc xlink:href='rr-2008-12-31.xsd#rr_Risk' xlink:label='rr_Risk' xlink:type='locator' />
+<link:label id='rr_Risk_en_lab' xlink:label='rr_Risk_en_lab' xlink:role='http://www.xbrl.org/2003/role/label' xlink:type='resource' xml:lang='en-US'>Risk</link:label>
+<link:labelArc xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='rr_Risk' xlink:to='rr_Risk_en_lab' xlink:type='arc' />
+<link:loc xlink:href='rr-2008-12-31.xsd#rr_RiskFootnotesTextBlock' xlink:label='rr_RiskFootnotesTextBlock' xlink:type='locator' />
+<link:label id='rr_RiskFootnotesTextBlock_en_lab' xlink:label='rr_RiskFootnotesTextBlock_en_lab' xlink:role='http://www.xbrl.org/2003/role/label' xlink:type='resource' xml:lang='en-US'>Risk Footnotes [Text Block]</link:label>
+<link:labelArc xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='rr_RiskFootnotesTextBlock' xlink:to='rr_RiskFootnotesTextBlock_en_lab' xlink:type='arc' />
+<link:loc xlink:href='rr-2008-12-31.xsd#rr_RiskClosingTextBlock' xlink:label='rr_RiskClosingTextBlock' xlink:type='locator' />
+<link:label id='rr_RiskClosingTextBlock_en_lab' xlink:label='rr_RiskClosingTextBlock_en_lab' xlink:role='http://www.xbrl.org/2003/role/label' xlink:type='resource' xml:lang='en-US'>Risk Closing [Text Block]</link:label>
+<link:labelArc xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='rr_RiskClosingTextBlock' xlink:to='rr_RiskClosingTextBlock_en_lab' xlink:type='arc' />
+<link:loc xlink:href='rr-2008-12-31.xsd#rr_ExpenseHeading' xlink:label='rr_ExpenseHeading' xlink:type='locator' />
+<link:label id='rr_ExpenseHeading_en_lab' xlink:label='rr_ExpenseHeading_en_lab' xlink:role='http://www.xbrl.org/2003/role/label' xlink:type='resource' xml:lang='en-US'>Expense [Heading]</link:label>
+<link:labelArc xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='rr_ExpenseHeading' xlink:to='rr_ExpenseHeading_en_lab' xlink:type='arc' />
+<link:loc xlink:href='rr-2008-12-31.xsd#rr_ExpenseNarrativeTextBlock' xlink:label='rr_ExpenseNarrativeTextBlock' xlink:type='locator' />
+<link:label id='rr_ExpenseNarrativeTextBlock_en_lab' xlink:label='rr_ExpenseNarrativeTextBlock_en_lab' xlink:role='http://www.xbrl.org/2003/role/label' xlink:type='resource' xml:lang='en-US'>Expense Narrative [Text Block]</link:label>
+<link:labelArc xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='rr_ExpenseNarrativeTextBlock' xlink:to='rr_ExpenseNarrativeTextBlock_en_lab' xlink:type='arc' />
+<link:loc xlink:href='rr-2008-12-31.xsd#rr_ExpenseBreakpointDiscounts' xlink:label='rr_ExpenseBreakpointDiscounts' xlink:type='locator' />
+<link:label id='rr_ExpenseBreakpointDiscounts_en_lab' xlink:label='rr_ExpenseBreakpointDiscounts_en_lab' xlink:role='http://www.xbrl.org/2003/role/label' xlink:type='resource' xml:lang='en-US'>Expense Breakpoint Discounts</link:label>
+<link:labelArc xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='rr_ExpenseBreakpointDiscounts' xlink:to='rr_ExpenseBreakpointDiscounts_en_lab' xlink:type='arc' />
+<link:loc xlink:href='rr-2008-12-31.xsd#rr_ExpenseExchangeTradedFundCommissions' xlink:label='rr_ExpenseExchangeTradedFundCommissions' xlink:type='locator' />
+<link:label id='rr_ExpenseExchangeTradedFundCommissions_en_lab' xlink:label='rr_ExpenseExchangeTradedFundCommissions_en_lab' xlink:role='http://www.xbrl.org/2003/role/label' xlink:type='resource' xml:lang='en-US'>Expense Exchange Traded Fund Commissions</link:label>
+<link:labelArc xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='rr_ExpenseExchangeTradedFundCommissions' xlink:to='rr_ExpenseExchangeTradedFundCommissions_en_lab' xlink:type='arc' />
+<link:loc xlink:href='rr-2008-12-31.xsd#rr_ShareholderFeesCaption' xlink:label='rr_ShareholderFeesCaption' xlink:type='locator' />
+<link:label id='rr_ShareholderFeesCaption_en_lab' xlink:label='rr_ShareholderFeesCaption_en_lab' xlink:role='http://www.xbrl.org/2003/role/label' xlink:type='resource' xml:lang='en-US'>Shareholder Fees Caption</link:label>
+<link:labelArc xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='rr_ShareholderFeesCaption' xlink:to='rr_ShareholderFeesCaption_en_lab' xlink:type='arc' />
+<link:loc xlink:href='rr-2008-12-31.xsd#rr_ShareholderFeesColumnName' xlink:label='rr_ShareholderFeesColumnName' xlink:type='locator' />
+<link:label id='rr_ShareholderFeesColumnName_en_lab' xlink:label='rr_ShareholderFeesColumnName_en_lab' xlink:role='http://www.xbrl.org/2003/role/label' xlink:type='resource' xml:lang='en-US'>Shareholder Fees Column Name</link:label>
+<link:labelArc xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='rr_ShareholderFeesColumnName' xlink:to='rr_ShareholderFeesColumnName_en_lab' xlink:type='arc' />
+<link:loc xlink:href='rr-2008-12-31.xsd#rr_MaximumCumulativeSalesChargeOverOfferingPrice' xlink:label='rr_MaximumCumulativeSalesChargeOverOfferingPrice' xlink:type='locator' />
+<link:label id='rr_MaximumCumulativeSalesChargeOverOfferingPrice_en_lab' xlink:label='rr_MaximumCumulativeSalesChargeOverOfferingPrice_en_lab' xlink:role='http://www.xbrl.org/2003/role/label' xlink:type='resource' xml:lang='en-US'>Maximum Cumulative Sales Charge over Offering Price</link:label>
+<link:labelArc xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='rr_MaximumCumulativeSalesChargeOverOfferingPrice' xlink:to='rr_MaximumCumulativeSalesChargeOverOfferingPrice_en_lab' xlink:type='arc' />
+<link:loc xlink:href='rr-2008-12-31.xsd#rr_MaximumCumulativeSalesChargeOverOther' xlink:label='rr_MaximumCumulativeSalesChargeOverOther' xlink:type='locator' />
+<link:label id='rr_MaximumCumulativeSalesChargeOverOther_en_lab' xlink:label='rr_MaximumCumulativeSalesChargeOverOther_en_lab' xlink:role='http://www.xbrl.org/2003/role/label' xlink:type='resource' xml:lang='en-US'>Maximum Cumulative Sales Charge over Other</link:label>
+<link:labelArc xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='rr_MaximumCumulativeSalesChargeOverOther' xlink:to='rr_MaximumCumulativeSalesChargeOverOther_en_lab' xlink:type='arc' />
+<link:loc xlink:href='rr-2008-12-31.xsd#rr_MaximumSalesChargeImposedOnPurchasesOverOfferingPrice' xlink:label='rr_MaximumSalesChargeImposedOnPurchasesOverOfferingPrice' xlink:type='locator' />
+<link:label id='rr_MaximumSalesChargeImposedOnPurchasesOverOfferingPrice_en_lab' xlink:label='rr_MaximumSalesChargeImposedOnPurchasesOverOfferingPrice_en_lab' xlink:role='http://www.xbrl.org/2003/role/label' xlink:type='resource' xml:lang='en-US'>Maximum Sales Charge Imposed on Purchases over Offering Price</link:label>
+<link:labelArc xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='rr_MaximumSalesChargeImposedOnPurchasesOverOfferingPrice' xlink:to='rr_MaximumSalesChargeImposedOnPurchasesOverOfferingPrice_en_lab' xlink:type='arc' />
+<link:loc xlink:href='rr-2008-12-31.xsd#rr_MaximumDeferredSalesChargeOverOther' xlink:label='rr_MaximumDeferredSalesChargeOverOther' xlink:type='locator' />
+<link:label id='rr_MaximumDeferredSalesChargeOverOther_en_lab' xlink:label='rr_MaximumDeferredSalesChargeOverOther_en_lab' xlink:role='http://www.xbrl.org/2003/role/label' xlink:type='resource' xml:lang='en-US'>Maximum Deferred Sales Charge over Other</link:label>
+<link:labelArc xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='rr_MaximumDeferredSalesChargeOverOther' xlink:to='rr_MaximumDeferredSalesChargeOverOther_en_lab' xlink:type='arc' />
+<link:loc xlink:href='rr-2008-12-31.xsd#rr_MaximumDeferredSalesChargeOverOfferingPrice' xlink:label='rr_MaximumDeferredSalesChargeOverOfferingPrice' xlink:type='locator' />
+<link:label id='rr_MaximumDeferredSalesChargeOverOfferingPrice_en_lab' xlink:label='rr_MaximumDeferredSalesChargeOverOfferingPrice_en_lab' xlink:role='http://www.xbrl.org/2003/role/label' xlink:type='resource' xml:lang='en-US'>Maximum Deferred Sales Charge over Offering Price</link:label>
+<link:labelArc xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='rr_MaximumDeferredSalesChargeOverOfferingPrice' xlink:to='rr_MaximumDeferredSalesChargeOverOfferingPrice_en_lab' xlink:type='arc' />
+<link:loc xlink:href='rr-2008-12-31.xsd#rr_MaximumSalesChargeOnReinvestedDividendsAndDistributionsOverOther' xlink:label='rr_MaximumSalesChargeOnReinvestedDividendsAndDistributionsOverOther' xlink:type='locator' />
+<link:label id='rr_MaximumSalesChargeOnReinvestedDividendsAndDistributionsOverOther_en_lab' xlink:label='rr_MaximumSalesChargeOnReinvestedDividendsAndDistributionsOverOther_en_lab' xlink:role='http://www.xbrl.org/2003/role/label' xlink:type='resource' xml:lang='en-US'>Maximum Sales Charge on Reinvested Dividends and Distributions over Other</link:label>
+<link:labelArc xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='rr_MaximumSalesChargeOnReinvestedDividendsAndDistributionsOverOther' xlink:to='rr_MaximumSalesChargeOnReinvestedDividendsAndDistributionsOverOther_en_lab' xlink:type='arc' />
+<link:loc xlink:href='rr-2008-12-31.xsd#rr_RedemptionFeeOverRedemption' xlink:label='rr_RedemptionFeeOverRedemption' xlink:type='locator' />
+<link:label id='rr_RedemptionFeeOverRedemption_en_lab' xlink:label='rr_RedemptionFeeOverRedemption_en_lab' xlink:role='http://www.xbrl.org/2003/role/label' xlink:type='resource' xml:lang='en-US'>Redemption Fee over Redemption</link:label>
+<link:labelArc xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='rr_RedemptionFeeOverRedemption' xlink:to='rr_RedemptionFeeOverRedemption_en_lab' xlink:type='arc' />
+<link:loc xlink:href='rr-2008-12-31.xsd#rr_RedemptionFee' xlink:label='rr_RedemptionFee' xlink:type='locator' />
+<link:label id='rr_RedemptionFee_en_lab' xlink:label='rr_RedemptionFee_en_lab' xlink:role='http://www.xbrl.org/2003/role/label' xlink:type='resource' xml:lang='en-US'>Redemption Fee</link:label>
+<link:labelArc xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='rr_RedemptionFee' xlink:to='rr_RedemptionFee_en_lab' xlink:type='arc' />
+<link:loc xlink:href='rr-2008-12-31.xsd#rr_ExchangeFeeOverRedemption' xlink:label='rr_ExchangeFeeOverRedemption' xlink:type='locator' />
+<link:label id='rr_ExchangeFeeOverRedemption_en_lab' xlink:label='rr_ExchangeFeeOverRedemption_en_lab' xlink:role='http://www.xbrl.org/2003/role/label' xlink:type='resource' xml:lang='en-US'>Exchange Fee over Redemption</link:label>
+<link:labelArc xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='rr_ExchangeFeeOverRedemption' xlink:to='rr_ExchangeFeeOverRedemption_en_lab' xlink:type='arc' />
+<link:loc xlink:href='rr-2008-12-31.xsd#rr_ExchangeFee' xlink:label='rr_ExchangeFee' xlink:type='locator' />
+<link:label id='rr_ExchangeFee_en_lab' xlink:label='rr_ExchangeFee_en_lab' xlink:role='http://www.xbrl.org/2003/role/label' xlink:type='resource' xml:lang='en-US'>Exchange Fee</link:label>
+<link:labelArc xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='rr_ExchangeFee' xlink:to='rr_ExchangeFee_en_lab' xlink:type='arc' />
+<link:loc xlink:href='rr-2008-12-31.xsd#rr_MaximumAccountFeeOverAssets' xlink:label='rr_MaximumAccountFeeOverAssets' xlink:type='locator' />
+<link:label id='rr_MaximumAccountFeeOverAssets_en_lab' xlink:label='rr_MaximumAccountFeeOverAssets_en_lab' xlink:role='http://www.xbrl.org/2003/role/label' xlink:type='resource' xml:lang='en-US'>Maximum Account Fee over Assets</link:label>
+<link:labelArc xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='rr_MaximumAccountFeeOverAssets' xlink:to='rr_MaximumAccountFeeOverAssets_en_lab' xlink:type='arc' />
+<link:loc xlink:href='rr-2008-12-31.xsd#rr_MaximumAccountFee' xlink:label='rr_MaximumAccountFee' xlink:type='locator' />
+<link:label id='rr_MaximumAccountFee_en_lab' xlink:label='rr_MaximumAccountFee_en_lab' xlink:role='http://www.xbrl.org/2003/role/label' xlink:type='resource' xml:lang='en-US'>Maximum Account Fee</link:label>
+<link:labelArc xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='rr_MaximumAccountFee' xlink:to='rr_MaximumAccountFee_en_lab' xlink:type='arc' />
+<link:loc xlink:href='rr-2008-12-31.xsd#rr_ShareholderFeeOther' xlink:label='rr_ShareholderFeeOther' xlink:type='locator' />
+<link:label id='rr_ShareholderFeeOther_en_lab' xlink:label='rr_ShareholderFeeOther_en_lab' xlink:role='http://www.xbrl.org/2003/role/label' xlink:type='resource' xml:lang='en-US'>Shareholder Fee Other</link:label>
+<link:labelArc xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='rr_ShareholderFeeOther' xlink:to='rr_ShareholderFeeOther_en_lab' xlink:type='arc' />
+<link:loc xlink:href='rr-2008-12-31.xsd#rr_OperatingExpensesCaption' xlink:label='rr_OperatingExpensesCaption' xlink:type='locator' />
+<link:label id='rr_OperatingExpensesCaption_en_lab' xlink:label='rr_OperatingExpensesCaption_en_lab' xlink:role='http://www.xbrl.org/2003/role/label' xlink:type='resource' xml:lang='en-US'>Operating Expenses Caption</link:label>
+<link:labelArc xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='rr_OperatingExpensesCaption' xlink:to='rr_OperatingExpensesCaption_en_lab' xlink:type='arc' />
+<link:loc xlink:href='rr-2008-12-31.xsd#rr_OperatingExpensesColumnName' xlink:label='rr_OperatingExpensesColumnName' xlink:type='locator' />
+<link:label id='rr_OperatingExpensesColumnName_en_lab' xlink:label='rr_OperatingExpensesColumnName_en_lab' xlink:role='http://www.xbrl.org/2003/role/label' xlink:type='resource' xml:lang='en-US'>Operating Expenses Column Name</link:label>
+<link:labelArc xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='rr_OperatingExpensesColumnName' xlink:to='rr_OperatingExpensesColumnName_en_lab' xlink:type='arc' />
+<link:loc xlink:href='rr-2008-12-31.xsd#rr_ManagementFeesOverAssets' xlink:label='rr_ManagementFeesOverAssets' xlink:type='locator' />
+<link:label id='rr_ManagementFeesOverAssets_en_lab' xlink:label='rr_ManagementFeesOverAssets_en_lab' xlink:role='http://www.xbrl.org/2003/role/label' xlink:type='resource' xml:lang='en-US'>Management Fees over Assets</link:label>
+<link:labelArc xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='rr_ManagementFeesOverAssets' xlink:to='rr_ManagementFeesOverAssets_en_lab' xlink:type='arc' />
+<link:loc xlink:href='rr-2008-12-31.xsd#rr_DistributionAndService12b1FeesOverAssets' xlink:label='rr_DistributionAndService12b1FeesOverAssets' xlink:type='locator' />
+<link:label id='rr_DistributionAndService12b1FeesOverAssets_en_lab' xlink:label='rr_DistributionAndService12b1FeesOverAssets_en_lab' xlink:role='http://www.xbrl.org/2003/role/label' xlink:type='resource' xml:lang='en-US'>Distribution and Service (12b-1) Fees over Assets</link:label>
+<link:labelArc xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='rr_DistributionAndService12b1FeesOverAssets' xlink:to='rr_DistributionAndService12b1FeesOverAssets_en_lab' xlink:type='arc' />
+<link:loc xlink:href='rr-2008-12-31.xsd#rr_DistributionOrSimilarNon12b1FeesOverAssets' xlink:label='rr_DistributionOrSimilarNon12b1FeesOverAssets' xlink:type='locator' />
+<link:label id='rr_DistributionOrSimilarNon12b1FeesOverAssets_en_lab' xlink:label='rr_DistributionOrSimilarNon12b1FeesOverAssets_en_lab' xlink:role='http://www.xbrl.org/2003/role/label' xlink:type='resource' xml:lang='en-US'>Distribution or Similar (Non 12b-1) Fees over Assets</link:label>
+<link:labelArc xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='rr_DistributionOrSimilarNon12b1FeesOverAssets' xlink:to='rr_DistributionOrSimilarNon12b1FeesOverAssets_en_lab' xlink:type='arc' />
+<link:loc xlink:href='rr-2008-12-31.xsd#rr_OtherExpensesOverAssets' xlink:label='rr_OtherExpensesOverAssets' xlink:type='locator' />
+<link:label id='rr_OtherExpensesOverAssets_en_lab' xlink:label='rr_OtherExpensesOverAssets_en_lab' xlink:role='http://www.xbrl.org/2003/role/label' xlink:type='resource' xml:lang='en-US'>Other Expenses over Assets</link:label>
+<link:labelArc xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='rr_OtherExpensesOverAssets' xlink:to='rr_OtherExpensesOverAssets_en_lab' xlink:type='arc' />
+<link:label id='rr_OtherExpensesOverAssets_en_labTot' xlink:label='rr_OtherExpensesOverAssets_en_lab' xlink:role='http://www.xbrl.org/2003/role/totalLabel' xlink:type='resource' xml:lang='en-US'>Other Expenses over Assets, Total</link:label>
+<link:loc xlink:href='rr-2008-12-31.xsd#rr_Component1OtherExpensesOverAssets' xlink:label='rr_Component1OtherExpensesOverAssets' xlink:type='locator' />
+<link:label id='rr_Component1OtherExpensesOverAssets_en_lab' xlink:label='rr_Component1OtherExpensesOverAssets_en_lab' xlink:role='http://www.xbrl.org/2003/role/label' xlink:type='resource' xml:lang='en-US'>Component1 Other Expenses over Assets</link:label>
+<link:labelArc xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='rr_Component1OtherExpensesOverAssets' xlink:to='rr_Component1OtherExpensesOverAssets_en_lab' xlink:type='arc' />
+<link:loc xlink:href='rr-2008-12-31.xsd#rr_Component2OtherExpensesOverAssets' xlink:label='rr_Component2OtherExpensesOverAssets' xlink:type='locator' />
+<link:label id='rr_Component2OtherExpensesOverAssets_en_lab' xlink:label='rr_Component2OtherExpensesOverAssets_en_lab' xlink:role='http://www.xbrl.org/2003/role/label' xlink:type='resource' xml:lang='en-US'>Component2 Other Expenses over Assets</link:label>
+<link:labelArc xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='rr_Component2OtherExpensesOverAssets' xlink:to='rr_Component2OtherExpensesOverAssets_en_lab' xlink:type='arc' />
+<link:loc xlink:href='rr-2008-12-31.xsd#rr_Component3OtherExpensesOverAssets' xlink:label='rr_Component3OtherExpensesOverAssets' xlink:type='locator' />
+<link:label id='rr_Component3OtherExpensesOverAssets_en_lab' xlink:label='rr_Component3OtherExpensesOverAssets_en_lab' xlink:role='http://www.xbrl.org/2003/role/label' xlink:type='resource' xml:lang='en-US'>Component3 Other Expenses over Assets</link:label>
+<link:labelArc xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='rr_Component3OtherExpensesOverAssets' xlink:to='rr_Component3OtherExpensesOverAssets_en_lab' xlink:type='arc' />
+<link:loc xlink:href='rr-2008-12-31.xsd#rr_AcquiredFundFeesAndExpensesOverAssets' xlink:label='rr_AcquiredFundFeesAndExpensesOverAssets' xlink:type='locator' />
+<link:label id='rr_AcquiredFundFeesAndExpensesOverAssets_en_lab' xlink:label='rr_AcquiredFundFeesAndExpensesOverAssets_en_lab' xlink:role='http://www.xbrl.org/2003/role/label' xlink:type='resource' xml:lang='en-US'>Acquired Fund Fees and Expenses over Assets</link:label>
+<link:labelArc xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='rr_AcquiredFundFeesAndExpensesOverAssets' xlink:to='rr_AcquiredFundFeesAndExpensesOverAssets_en_lab' xlink:type='arc' />
+<link:loc xlink:href='rr-2008-12-31.xsd#rr_ExpensesOverAssets' xlink:label='rr_ExpensesOverAssets' xlink:type='locator' />
+<link:label id='rr_ExpensesOverAssets_en_lab' xlink:label='rr_ExpensesOverAssets_en_lab' xlink:role='http://www.xbrl.org/2003/role/label' xlink:type='resource' xml:lang='en-US'>Expenses over Assets</link:label>
+<link:labelArc xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='rr_ExpensesOverAssets' xlink:to='rr_ExpensesOverAssets_en_lab' xlink:type='arc' />
+<link:label id='rr_ExpensesOverAssets_en_labTot' xlink:label='rr_ExpensesOverAssets_en_lab' xlink:role='http://www.xbrl.org/2003/role/totalLabel' xlink:type='resource' xml:lang='en-US'>Expenses over Assets, Total</link:label>
+<link:loc xlink:href='rr-2008-12-31.xsd#rr_FeeWaiverOrReimbursementOverAssets' xlink:label='rr_FeeWaiverOrReimbursementOverAssets' xlink:type='locator' />
+<link:label id='rr_FeeWaiverOrReimbursementOverAssets_en_lab' xlink:label='rr_FeeWaiverOrReimbursementOverAssets_en_lab' xlink:role='http://www.xbrl.org/2003/role/label' xlink:type='resource' xml:lang='en-US'>Fee Waiver or Reimbursement over Assets</link:label>
+<link:labelArc xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='rr_FeeWaiverOrReimbursementOverAssets' xlink:to='rr_FeeWaiverOrReimbursementOverAssets_en_lab' xlink:type='arc' />
+<link:loc xlink:href='rr-2008-12-31.xsd#rr_NetExpensesOverAssets' xlink:label='rr_NetExpensesOverAssets' xlink:type='locator' />
+<link:label id='rr_NetExpensesOverAssets_en_lab' xlink:label='rr_NetExpensesOverAssets_en_lab' xlink:role='http://www.xbrl.org/2003/role/label' xlink:type='resource' xml:lang='en-US'>Net Expenses over Assets</link:label>
+<link:labelArc xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='rr_NetExpensesOverAssets' xlink:to='rr_NetExpensesOverAssets_en_lab' xlink:type='arc' />
+<link:label id='rr_NetExpensesOverAssets_en_labTot' xlink:label='rr_NetExpensesOverAssets_en_lab' xlink:role='http://www.xbrl.org/2003/role/totalLabel' xlink:type='resource' xml:lang='en-US'>Net Expenses over Assets, Total</link:label>
+<link:loc xlink:href='rr-2008-12-31.xsd#rr_ExpensesRepresentBothMasterAndFeeder' xlink:label='rr_ExpensesRepresentBothMasterAndFeeder' xlink:type='locator' />
+<link:label id='rr_ExpensesRepresentBothMasterAndFeeder_en_lab' xlink:label='rr_ExpensesRepresentBothMasterAndFeeder_en_lab' xlink:role='http://www.xbrl.org/2003/role/label' xlink:type='resource' xml:lang='en-US'>Expenses Represent Both Master and Feeder</link:label>
+<link:labelArc xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='rr_ExpensesRepresentBothMasterAndFeeder' xlink:to='rr_ExpensesRepresentBothMasterAndFeeder_en_lab' xlink:type='arc' />
+<link:label id='rr_ExpensesExplanationOfNonrecurring_en_lab' xlink:label='rr_ExpensesExplanationOfNonrecurring_en_lab' xlink:role='http://www.xbrl.org/2003/role/label' xlink:type='resource' xml:lang='en-US'>Expenses Explanation of Nonrecurring Account Fee</link:label>
+<link:loc xlink:href='rr-2008-12-31.xsd#rr_ExpensesOtherExpensesHadExtraordinaryExpensesBeenIncluded' xlink:label='rr_ExpensesOtherExpensesHadExtraordinaryExpensesBeenIncluded' xlink:type='locator' />
+<link:label id='rr_ExpensesOtherExpensesHadExtraordinaryExpensesBeenIncluded_en_lab' xlink:label='rr_ExpensesOtherExpensesHadExtraordinaryExpensesBeenIncluded_en_lab' xlink:role='http://www.xbrl.org/2003/role/label' xlink:type='resource' xml:lang='en-US'>Expenses Other Expenses Had Extraordinary Expenses Been Included</link:label>
+<link:labelArc xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='rr_ExpensesOtherExpensesHadExtraordinaryExpensesBeenIncluded' xlink:to='rr_ExpensesOtherExpensesHadExtraordinaryExpensesBeenIncluded_en_lab' xlink:type='arc' />
+<link:loc xlink:href='rr-2008-12-31.xsd#rr_ExpensesRestatedToReflectCurrent' xlink:label='rr_ExpensesRestatedToReflectCurrent' xlink:type='locator' />
+<link:label id='rr_ExpensesRestatedToReflectCurrent_en_lab' xlink:label='rr_ExpensesRestatedToReflectCurrent_en_lab' xlink:role='http://www.xbrl.org/2003/role/label' xlink:type='resource' xml:lang='en-US'>Expenses Restated to Reflect Current</link:label>
+<link:labelArc xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='rr_ExpensesRestatedToReflectCurrent' xlink:to='rr_ExpensesRestatedToReflectCurrent_en_lab' xlink:type='arc' />
+<link:label id='rr_ExpensesTotalNotCorrelatedDueToAcquisition_en_lab' xlink:label='rr_ExpensesTotalNotCorrelatedDueToAcquisition_en_lab' xlink:role='http://www.xbrl.org/2003/role/label' xlink:type='resource' xml:lang='en-US'>Expenses Not Correlated to Ratio Due to Acquired Fund Fees</link:label>
+<link:loc xlink:href='rr-2008-12-31.xsd#rr_ExpenseExampleHeading' xlink:label='rr_ExpenseExampleHeading' xlink:type='locator' />
+<link:label id='rr_ExpenseExampleHeading_en_lab' xlink:label='rr_ExpenseExampleHeading_en_lab' xlink:role='http://www.xbrl.org/2003/role/label' xlink:type='resource' xml:lang='en-US'>Expense Example [Heading]</link:label>
+<link:labelArc xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='rr_ExpenseExampleHeading' xlink:to='rr_ExpenseExampleHeading_en_lab' xlink:type='arc' />
+<link:loc xlink:href='rr-2008-12-31.xsd#rr_ExpenseExampleNarrativeTextBlock' xlink:label='rr_ExpenseExampleNarrativeTextBlock' xlink:type='locator' />
+<link:label id='rr_ExpenseExampleNarrativeTextBlock_en_lab' xlink:label='rr_ExpenseExampleNarrativeTextBlock_en_lab' xlink:role='http://www.xbrl.org/2003/role/label' xlink:type='resource' xml:lang='en-US'>Expense Example Narrative [Text Block]</link:label>
+<link:labelArc xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='rr_ExpenseExampleNarrativeTextBlock' xlink:to='rr_ExpenseExampleNarrativeTextBlock_en_lab' xlink:type='arc' />
+<link:loc xlink:href='rr-2008-12-31.xsd#rr_ExpenseExampleByYearHeading' xlink:label='rr_ExpenseExampleByYearHeading' xlink:type='locator' />
+<link:label id='rr_ExpenseExampleByYearHeading_en_lab' xlink:label='rr_ExpenseExampleByYearHeading_en_lab' xlink:role='http://www.xbrl.org/2003/role/label' xlink:type='resource' xml:lang='en-US'>Expense Example by Year [Heading]</link:label>
+<link:labelArc xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='rr_ExpenseExampleByYearHeading' xlink:to='rr_ExpenseExampleByYearHeading_en_lab' xlink:type='arc' />
+<link:loc xlink:href='rr-2008-12-31.xsd#rr_ExpenseExampleByYearCaption' xlink:label='rr_ExpenseExampleByYearCaption' xlink:type='locator' />
+<link:label id='rr_ExpenseExampleByYearCaption_en_lab' xlink:label='rr_ExpenseExampleByYearCaption_en_lab' xlink:role='http://www.xbrl.org/2003/role/label' xlink:type='resource' xml:lang='en-US'>Expense Example by Year Caption</link:label>
+<link:labelArc xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='rr_ExpenseExampleByYearCaption' xlink:to='rr_ExpenseExampleByYearCaption_en_lab' xlink:type='arc' />
+<link:loc xlink:href='rr-2008-12-31.xsd#rr_ExpenseExampleByYearColumnName' xlink:label='rr_ExpenseExampleByYearColumnName' xlink:type='locator' />
+<link:label id='rr_ExpenseExampleByYearColumnName_en_lab' xlink:label='rr_ExpenseExampleByYearColumnName_en_lab' xlink:role='http://www.xbrl.org/2003/role/label' xlink:type='resource' xml:lang='en-US'>Expense Example by Year Column Name</link:label>
+<link:labelArc xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='rr_ExpenseExampleByYearColumnName' xlink:to='rr_ExpenseExampleByYearColumnName_en_lab' xlink:type='arc' />
+<link:loc xlink:href='rr-2008-12-31.xsd#rr_ExpenseExampleYear01' xlink:label='rr_ExpenseExampleYear01' xlink:type='locator' />
+<link:label id='rr_ExpenseExampleYear01_en_lab' xlink:label='rr_ExpenseExampleYear01_en_lab' xlink:role='http://www.xbrl.org/2003/role/label' xlink:type='resource' xml:lang='en-US'>Expense Example Year 01</link:label>
+<link:labelArc xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='rr_ExpenseExampleYear01' xlink:to='rr_ExpenseExampleYear01_en_lab' xlink:type='arc' />
+<link:loc xlink:href='rr-2008-12-31.xsd#rr_ExpenseExampleYear03' xlink:label='rr_ExpenseExampleYear03' xlink:type='locator' />
+<link:label id='rr_ExpenseExampleYear03_en_lab' xlink:label='rr_ExpenseExampleYear03_en_lab' xlink:role='http://www.xbrl.org/2003/role/label' xlink:type='resource' xml:lang='en-US'>Expense Example Year 03</link:label>
+<link:labelArc xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='rr_ExpenseExampleYear03' xlink:to='rr_ExpenseExampleYear03_en_lab' xlink:type='arc' />
+<link:loc xlink:href='rr-2008-12-31.xsd#rr_ExpenseExampleYear05' xlink:label='rr_ExpenseExampleYear05' xlink:type='locator' />
+<link:label id='rr_ExpenseExampleYear05_en_lab' xlink:label='rr_ExpenseExampleYear05_en_lab' xlink:role='http://www.xbrl.org/2003/role/label' xlink:type='resource' xml:lang='en-US'>Expense Example Year 05</link:label>
+<link:labelArc xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='rr_ExpenseExampleYear05' xlink:to='rr_ExpenseExampleYear05_en_lab' xlink:type='arc' />
+<link:loc xlink:href='rr-2008-12-31.xsd#rr_ExpenseExampleYear10' xlink:label='rr_ExpenseExampleYear10' xlink:type='locator' />
+<link:label id='rr_ExpenseExampleYear10_en_lab' xlink:label='rr_ExpenseExampleYear10_en_lab' xlink:role='http://www.xbrl.org/2003/role/label' xlink:type='resource' xml:lang='en-US'>Expense Example Year 10</link:label>
+<link:labelArc xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='rr_ExpenseExampleYear10' xlink:to='rr_ExpenseExampleYear10_en_lab' xlink:type='arc' />
+<link:loc xlink:href='rr-2008-12-31.xsd#rr_ExpenseExampleNoRedemptionByYearCaption' xlink:label='rr_ExpenseExampleNoRedemptionByYearCaption' xlink:type='locator' />
+<link:label id='rr_ExpenseExampleNoRedemptionByYearCaption_en_lab' xlink:label='rr_ExpenseExampleNoRedemptionByYearCaption_en_lab' xlink:role='http://www.xbrl.org/2003/role/label' xlink:type='resource' xml:lang='en-US'>Expense Example No Redemption by Year Caption</link:label>
+<link:labelArc xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='rr_ExpenseExampleNoRedemptionByYearCaption' xlink:to='rr_ExpenseExampleNoRedemptionByYearCaption_en_lab' xlink:type='arc' />
+<link:loc xlink:href='rr-2008-12-31.xsd#rr_ExpenseExampleNoRedemptionByYearColumnName' xlink:label='rr_ExpenseExampleNoRedemptionByYearColumnName' xlink:type='locator' />
+<link:label id='rr_ExpenseExampleNoRedemptionByYearColumnName_en_lab' xlink:label='rr_ExpenseExampleNoRedemptionByYearColumnName_en_lab' xlink:role='http://www.xbrl.org/2003/role/label' xlink:type='resource' xml:lang='en-US'>Expense Example No Redemption by Year Column Name</link:label>
+<link:labelArc xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='rr_ExpenseExampleNoRedemptionByYearColumnName' xlink:to='rr_ExpenseExampleNoRedemptionByYearColumnName_en_lab' xlink:type='arc' />
+<link:loc xlink:href='rr-2008-12-31.xsd#rr_ExpenseExampleNoRedemptionYear01' xlink:label='rr_ExpenseExampleNoRedemptionYear01' xlink:type='locator' />
+<link:label id='rr_ExpenseExampleNoRedemptionYear01_en_lab' xlink:label='rr_ExpenseExampleNoRedemptionYear01_en_lab' xlink:role='http://www.xbrl.org/2003/role/label' xlink:type='resource' xml:lang='en-US'>Expense Example No Redemption Year 01</link:label>
+<link:labelArc xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='rr_ExpenseExampleNoRedemptionYear01' xlink:to='rr_ExpenseExampleNoRedemptionYear01_en_lab' xlink:type='arc' />
+<link:loc xlink:href='rr-2008-12-31.xsd#rr_ExpenseExampleNoRedemptionYear03' xlink:label='rr_ExpenseExampleNoRedemptionYear03' xlink:type='locator' />
+<link:label id='rr_ExpenseExampleNoRedemptionYear03_en_lab' xlink:label='rr_ExpenseExampleNoRedemptionYear03_en_lab' xlink:role='http://www.xbrl.org/2003/role/label' xlink:type='resource' xml:lang='en-US'>Expense Example No Redemption Year 03</link:label>
+<link:labelArc xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='rr_ExpenseExampleNoRedemptionYear03' xlink:to='rr_ExpenseExampleNoRedemptionYear03_en_lab' xlink:type='arc' />
+<link:loc xlink:href='rr-2008-12-31.xsd#rr_ExpenseExampleNoRedemptionYear05' xlink:label='rr_ExpenseExampleNoRedemptionYear05' xlink:type='locator' />
+<link:label id='rr_ExpenseExampleNoRedemptionYear05_en_lab' xlink:label='rr_ExpenseExampleNoRedemptionYear05_en_lab' xlink:role='http://www.xbrl.org/2003/role/label' xlink:type='resource' xml:lang='en-US'>Expense Example No Redemption Year 05</link:label>
+<link:labelArc xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='rr_ExpenseExampleNoRedemptionYear05' xlink:to='rr_ExpenseExampleNoRedemptionYear05_en_lab' xlink:type='arc' />
+<link:loc xlink:href='rr-2008-12-31.xsd#rr_ExpenseExampleNoRedemptionYear10' xlink:label='rr_ExpenseExampleNoRedemptionYear10' xlink:type='locator' />
+<link:label id='rr_ExpenseExampleNoRedemptionYear10_en_lab' xlink:label='rr_ExpenseExampleNoRedemptionYear10_en_lab' xlink:role='http://www.xbrl.org/2003/role/label' xlink:type='resource' xml:lang='en-US'>Expense Example No Redemption Year 10</link:label>
+<link:labelArc xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='rr_ExpenseExampleNoRedemptionYear10' xlink:to='rr_ExpenseExampleNoRedemptionYear10_en_lab' xlink:type='arc' />
+<link:loc xlink:href='rr-2008-12-31.xsd#rr_ExpenseExampleClosingTextBlock' xlink:label='rr_ExpenseExampleClosingTextBlock' xlink:type='locator' />
+<link:label id='rr_ExpenseExampleClosingTextBlock_en_lab' xlink:label='rr_ExpenseExampleClosingTextBlock_en_lab' xlink:role='http://www.xbrl.org/2003/role/label' xlink:type='resource' xml:lang='en-US'>Expense Example Closing [Text Block]</link:label>
+<link:labelArc xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='rr_ExpenseExampleClosingTextBlock' xlink:to='rr_ExpenseExampleClosingTextBlock_en_lab' xlink:type='arc' />
+<link:loc xlink:href='rr-2008-12-31.xsd#rr_ProspectusDate' xlink:label='rr_ProspectusDate' xlink:type='locator' />
+<link:label id='rr_ProspectusDate_en_lab' xlink:label='rr_ProspectusDate_en_lab' xlink:role='http://www.xbrl.org/2003/role/label' xlink:type='resource' xml:lang='en-US'>Prospectus Date</link:label>
+<link:labelArc xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='rr_ProspectusDate' xlink:to='rr_ProspectusDate_en_lab' xlink:type='arc' />
+<link:loc xlink:href='rr-2008-12-31.xsd#rr_ProspectusTable' xlink:label='rr_ProspectusTable' xlink:type='locator' />
+<link:label id='rr_ProspectusTable_en_lab' xlink:label='rr_ProspectusTable_en_lab' xlink:role='http://www.xbrl.org/2003/role/label' xlink:type='resource' xml:lang='en-US'>Prospectus [Table]</link:label>
+<link:labelArc xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='rr_ProspectusTable' xlink:to='rr_ProspectusTable_en_lab' xlink:type='arc' />
+<link:loc xlink:href='rr-2008-12-31.xsd#rr_ProspectusShareClassAxis' xlink:label='rr_ProspectusShareClassAxis' xlink:type='locator' />
+<link:label id='rr_ProspectusShareClassAxis_en_lab' xlink:label='rr_ProspectusShareClassAxis_en_lab' xlink:role='http://www.xbrl.org/2003/role/label' xlink:type='resource' xml:lang='en-US'>Prospectus Share Class [Axis]</link:label>
+<link:labelArc xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='rr_ProspectusShareClassAxis' xlink:to='rr_ProspectusShareClassAxis_en_lab' xlink:type='arc' />
+<link:loc xlink:href='rr-2008-12-31.xsd#rr_ShareClassDomain' xlink:label='rr_ShareClassDomain' xlink:type='locator' />
+<link:label id='rr_ShareClassDomain_en_lab' xlink:label='rr_ShareClassDomain_en_lab' xlink:role='http://www.xbrl.org/2003/role/label' xlink:type='resource' xml:lang='en-US'>Share Class [Domain]</link:label>
+<link:labelArc xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='rr_ShareClassDomain' xlink:to='rr_ShareClassDomain_en_lab' xlink:type='arc' />
+<link:loc xlink:href='rr-2008-12-31.xsd#rr_ProspectusLineItems' xlink:label='rr_ProspectusLineItems' xlink:type='locator' />
+<link:label id='rr_ProspectusLineItems_en_lab' xlink:label='rr_ProspectusLineItems_en_lab' xlink:role='http://www.xbrl.org/2003/role/label' xlink:type='resource' xml:lang='en-US'>Prospectus [Line Items]</link:label>
+<link:labelArc xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='rr_ProspectusLineItems' xlink:to='rr_ProspectusLineItems_en_lab' xlink:type='arc' />
+<link:loc xlink:href='rr-2008-12-31.xsd#rr_FormN1aAbstract' xlink:label='rr_FormN1aAbstract' xlink:type='locator' />
+<link:label id='rr_FormN1aAbstract_en_lab' xlink:label='rr_FormN1aAbstract_en_lab' xlink:role='http://www.xbrl.org/2003/role/label' xlink:type='resource' xml:lang='en-US'>Form N-1A [Abstract]</link:label>
+<link:labelArc xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='rr_FormN1aAbstract' xlink:to='rr_FormN1aAbstract_en_lab' xlink:type='arc' />
+<link:loc xlink:href='rr-2008-12-31.xsd#rr_RiskReturnAbstract' xlink:label='rr_RiskReturnAbstract' xlink:type='locator' />
+<link:label id='rr_RiskReturnAbstract_en_lab' xlink:label='rr_RiskReturnAbstract_en_lab' xlink:role='http://www.xbrl.org/2003/role/label' xlink:type='resource' xml:lang='en-US'>Risk Return [Abstract]</link:label>
+<link:labelArc xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='rr_RiskReturnAbstract' xlink:to='rr_RiskReturnAbstract_en_lab' xlink:type='arc' />
+<link:loc xlink:href='rr-2008-12-31.xsd#rr_PortfolioTurnoverHeading' xlink:label='rr_PortfolioTurnoverHeading' xlink:type='locator' />
+<link:label id='rr_PortfolioTurnoverHeading_en_lab' xlink:label='rr_PortfolioTurnoverHeading_en_lab' xlink:role='http://www.xbrl.org/2003/role/label' xlink:type='resource' xml:lang='en-US'>Portfolio Turnover [Heading]</link:label>
+<link:labelArc xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='rr_PortfolioTurnoverHeading' xlink:to='rr_PortfolioTurnoverHeading_en_lab' xlink:type='arc' />
+<link:loc xlink:href='rr-2008-12-31.xsd#rr_PortfolioTurnoverTextBlock' xlink:label='rr_PortfolioTurnoverTextBlock' xlink:type='locator' />
+<link:label id='rr_PortfolioTurnoverTextBlock_en_lab' xlink:label='rr_PortfolioTurnoverTextBlock_en_lab' xlink:role='http://www.xbrl.org/2003/role/label' xlink:type='resource' xml:lang='en-US'>Portfolio Turnover [Text Block]</link:label>
+<link:labelArc xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='rr_PortfolioTurnoverTextBlock' xlink:to='rr_PortfolioTurnoverTextBlock_en_lab' xlink:type='arc' />
+<link:loc xlink:href='rr-2008-12-31.xsd#rr_BarChartAndPerformanceTableSectionAbstract' xlink:label='rr_BarChartAndPerformanceTableSectionAbstract' xlink:type='locator' />
+<link:label id='rr_BarChartAndPerformanceTableSectionAbstract_en_lab' xlink:label='rr_BarChartAndPerformanceTableSectionAbstract_en_lab' xlink:role='http://www.xbrl.org/2003/role/label' xlink:type='resource' xml:lang='en-US'>Bar Chart and Performance Table Section [Abstract]</link:label>
+<link:labelArc xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='rr_BarChartAndPerformanceTableSectionAbstract' xlink:to='rr_BarChartAndPerformanceTableSectionAbstract_en_lab' xlink:type='arc' />
+<link:loc xlink:href='rr-2008-12-31.xsd#rr_BarChartNarrativeAbstract' xlink:label='rr_BarChartNarrativeAbstract' xlink:type='locator' />
+<link:label id='rr_BarChartNarrativeAbstract_en_lab' xlink:label='rr_BarChartNarrativeAbstract_en_lab' xlink:role='http://www.xbrl.org/2003/role/label' xlink:type='resource' xml:lang='en-US'>Bar Chart Narrative [Abstract]</link:label>
+<link:labelArc xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='rr_BarChartNarrativeAbstract' xlink:to='rr_BarChartNarrativeAbstract_en_lab' xlink:type='arc' />
+<link:loc xlink:href='rr-2008-12-31.xsd#rr_BarChartTableAbstract' xlink:label='rr_BarChartTableAbstract' xlink:type='locator' />
+<link:label id='rr_BarChartTableAbstract_en_lab' xlink:label='rr_BarChartTableAbstract_en_lab' xlink:role='http://www.xbrl.org/2003/role/label' xlink:type='resource' xml:lang='en-US'>Bar Chart Table [Abstract]</link:label>
+<link:labelArc xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='rr_BarChartTableAbstract' xlink:to='rr_BarChartTableAbstract_en_lab' xlink:type='arc' />
+<link:loc xlink:href='rr-2008-12-31.xsd#rr_BarChartClosingAbstract' xlink:label='rr_BarChartClosingAbstract' xlink:type='locator' />
+<link:label id='rr_BarChartClosingAbstract_en_lab' xlink:label='rr_BarChartClosingAbstract_en_lab' xlink:role='http://www.xbrl.org/2003/role/label' xlink:type='resource' xml:lang='en-US'>Bar Chart Closing [Abstract]</link:label>
+<link:labelArc xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='rr_BarChartClosingAbstract' xlink:to='rr_BarChartClosingAbstract_en_lab' xlink:type='arc' />
+<link:loc xlink:href='rr-2008-12-31.xsd#rr_AverageAnnualReturnAbstract' xlink:label='rr_AverageAnnualReturnAbstract' xlink:type='locator' />
+<link:label id='rr_AverageAnnualReturnAbstract_en_lab' xlink:label='rr_AverageAnnualReturnAbstract_en_lab' xlink:role='http://www.xbrl.org/2003/role/label' xlink:type='resource' xml:lang='en-US'>Average Annual Return [Abstract]</link:label>
+<link:labelArc xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='rr_AverageAnnualReturnAbstract' xlink:to='rr_AverageAnnualReturnAbstract_en_lab' xlink:type='arc' />
+<link:loc xlink:href='rr-2008-12-31.xsd#rr_AverageAnnualReturnAfterTaxesOnDistributionsAbstract' xlink:label='rr_AverageAnnualReturnAfterTaxesOnDistributionsAbstract' xlink:type='locator' />
+<link:label id='rr_AverageAnnualReturnAfterTaxesOnDistributionsAbstract_en_lab' xlink:label='rr_AverageAnnualReturnAfterTaxesOnDistributionsAbstract_en_lab' xlink:role='http://www.xbrl.org/2003/role/label' xlink:type='resource' xml:lang='en-US'>Average Annual Return after Taxes on Distributions [Abstract]</link:label>
+<link:labelArc xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='rr_AverageAnnualReturnAfterTaxesOnDistributionsAbstract' xlink:to='rr_AverageAnnualReturnAfterTaxesOnDistributionsAbstract_en_lab' xlink:type='arc' />
+<link:loc xlink:href='rr-2008-12-31.xsd#rr_AverageAnnualReturnAfterTaxesOnDistributionsAndSalesAbstract' xlink:label='rr_AverageAnnualReturnAfterTaxesOnDistributionsAndSalesAbstract' xlink:type='locator' />
+<link:label id='rr_AverageAnnualReturnAfterTaxesOnDistributionsAndSalesAbstract_en_lab' xlink:label='rr_AverageAnnualReturnAfterTaxesOnDistributionsAndSalesAbstract_en_lab' xlink:role='http://www.xbrl.org/2003/role/label' xlink:type='resource' xml:lang='en-US'>Average Annual Return after Taxes on Distributions and Sales [Abstract]</link:label>
+<link:labelArc xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='rr_AverageAnnualReturnAfterTaxesOnDistributionsAndSalesAbstract' xlink:to='rr_AverageAnnualReturnAfterTaxesOnDistributionsAndSalesAbstract_en_lab' xlink:type='arc' />
+<link:loc xlink:href='rr-2008-12-31.xsd#rr_MarketIndexReturnAbstract' xlink:label='rr_MarketIndexReturnAbstract' xlink:type='locator' />
+<link:label id='rr_MarketIndexReturnAbstract_en_lab' xlink:label='rr_MarketIndexReturnAbstract_en_lab' xlink:role='http://www.xbrl.org/2003/role/label' xlink:type='resource' xml:lang='en-US'>Market Index Return [Abstract]</link:label>
+<link:labelArc xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='rr_MarketIndexReturnAbstract' xlink:to='rr_MarketIndexReturnAbstract_en_lab' xlink:type='arc' />
+<link:label id='rr_PerformanceYieldPhone_en_lab' xlink:label='rr_PerformanceYieldPhone_en_lab' xlink:role='http://www.xbrl.org/2003/role/label' xlink:type='resource' xml:lang='en-US'>Performance Availbility Phone</link:label>
+<link:loc xlink:href='rr-2008-12-31.xsd#rr_PerformanceNarrativeAbstract' xlink:label='rr_PerformanceNarrativeAbstract' xlink:type='locator' />
+<link:label id='rr_PerformanceNarrativeAbstract_en_lab' xlink:label='rr_PerformanceNarrativeAbstract_en_lab' xlink:role='http://www.xbrl.org/2003/role/label' xlink:type='resource' xml:lang='en-US'>Performance Narrative [Abstract]</link:label>
+<link:labelArc xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='rr_PerformanceNarrativeAbstract' xlink:to='rr_PerformanceNarrativeAbstract_en_lab' xlink:type='arc' />
+<link:loc xlink:href='rr-2008-12-31.xsd#rr_PerformanceTableSectionAbstract' xlink:label='rr_PerformanceTableSectionAbstract' xlink:type='locator' />
+<link:label id='rr_PerformanceTableSectionAbstract_en_lab' xlink:label='rr_PerformanceTableSectionAbstract_en_lab' xlink:role='http://www.xbrl.org/2003/role/label' xlink:type='resource' xml:lang='en-US'>Performance Table Section [Abstract]</link:label>
+<link:labelArc xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='rr_PerformanceTableSectionAbstract' xlink:to='rr_PerformanceTableSectionAbstract_en_lab' xlink:type='arc' />
+<link:loc xlink:href='rr-2008-12-31.xsd#rr_PerformanceTableClosingAbstract' xlink:label='rr_PerformanceTableClosingAbstract' xlink:type='locator' />
+<link:label id='rr_PerformanceTableClosingAbstract_en_lab' xlink:label='rr_PerformanceTableClosingAbstract_en_lab' xlink:role='http://www.xbrl.org/2003/role/label' xlink:type='resource' xml:lang='en-US'>Performance Table Closing [Abstract]</link:label>
+<link:labelArc xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='rr_PerformanceTableClosingAbstract' xlink:to='rr_PerformanceTableClosingAbstract_en_lab' xlink:type='arc' />
+<link:loc xlink:href='rr-2008-12-31.xsd#rr_ExpensesAbstract' xlink:label='rr_ExpensesAbstract' xlink:type='locator' />
+<link:label id='rr_ExpensesAbstract_en_lab' xlink:label='rr_ExpensesAbstract_en_lab' xlink:role='http://www.xbrl.org/2003/role/label' xlink:type='resource' xml:lang='en-US'>Expenses [Abstract]</link:label>
+<link:labelArc xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='rr_ExpensesAbstract' xlink:to='rr_ExpensesAbstract_en_lab' xlink:type='arc' />
+<link:loc xlink:href='rr-2008-12-31.xsd#rr_ShareholderFeesAbstract' xlink:label='rr_ShareholderFeesAbstract' xlink:type='locator' />
+<link:label id='rr_ShareholderFeesAbstract_en_lab' xlink:label='rr_ShareholderFeesAbstract_en_lab' xlink:role='http://www.xbrl.org/2003/role/label' xlink:type='resource' xml:lang='en-US'>Shareholder Fees [Abstract]</link:label>
+<link:labelArc xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='rr_ShareholderFeesAbstract' xlink:to='rr_ShareholderFeesAbstract_en_lab' xlink:type='arc' />
+<link:loc xlink:href='rr-2008-12-31.xsd#rr_OperatingExpensesAbstract' xlink:label='rr_OperatingExpensesAbstract' xlink:type='locator' />
+<link:label id='rr_OperatingExpensesAbstract_en_lab' xlink:label='rr_OperatingExpensesAbstract_en_lab' xlink:role='http://www.xbrl.org/2003/role/label' xlink:type='resource' xml:lang='en-US'>Operating Expenses [Abstract]</link:label>
+<link:labelArc xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='rr_OperatingExpensesAbstract' xlink:to='rr_OperatingExpensesAbstract_en_lab' xlink:type='arc' />
+<link:loc xlink:href='rr-2008-12-31.xsd#rr_NetExpensesOverAssetsAbstract' xlink:label='rr_NetExpensesOverAssetsAbstract' xlink:type='locator' />
+<link:label id='rr_NetExpensesOverAssetsAbstract_en_lab' xlink:label='rr_NetExpensesOverAssetsAbstract_en_lab' xlink:role='http://www.xbrl.org/2003/role/label' xlink:type='resource' xml:lang='en-US'>Net Expenses over Assets [Abstract]</link:label>
+<link:labelArc xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='rr_NetExpensesOverAssetsAbstract' xlink:to='rr_NetExpensesOverAssetsAbstract_en_lab' xlink:type='arc' />
+<link:loc xlink:href='rr-2008-12-31.xsd#rr_ExpensesOverAssetsAbstract' xlink:label='rr_ExpensesOverAssetsAbstract' xlink:type='locator' />
+<link:label id='rr_ExpensesOverAssetsAbstract_en_lab' xlink:label='rr_ExpensesOverAssetsAbstract_en_lab' xlink:role='http://www.xbrl.org/2003/role/label' xlink:type='resource' xml:lang='en-US'>Expenses over Assets [Abstract]</link:label>
+<link:labelArc xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='rr_ExpensesOverAssetsAbstract' xlink:to='rr_ExpensesOverAssetsAbstract_en_lab' xlink:type='arc' />
+<link:loc xlink:href='rr-2008-12-31.xsd#rr_OtherExpensesOverAssetsAbstract' xlink:label='rr_OtherExpensesOverAssetsAbstract' xlink:type='locator' />
+<link:label id='rr_OtherExpensesOverAssetsAbstract_en_lab' xlink:label='rr_OtherExpensesOverAssetsAbstract_en_lab' xlink:role='http://www.xbrl.org/2003/role/label' xlink:type='resource' xml:lang='en-US'>Other Expenses over Assets [Abstract]</link:label>
+<link:labelArc xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='rr_OtherExpensesOverAssetsAbstract' xlink:to='rr_OtherExpensesOverAssetsAbstract_en_lab' xlink:type='arc' />
+<link:loc xlink:href='rr-2008-12-31.xsd#rr_ExpenseFootnotesAbstract' xlink:label='rr_ExpenseFootnotesAbstract' xlink:type='locator' />
+<link:label id='rr_ExpenseFootnotesAbstract_en_lab' xlink:label='rr_ExpenseFootnotesAbstract_en_lab' xlink:role='http://www.xbrl.org/2003/role/label' xlink:type='resource' xml:lang='en-US'>Expense Footnotes [Abstract]</link:label>
+<link:labelArc xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='rr_ExpenseFootnotesAbstract' xlink:to='rr_ExpenseFootnotesAbstract_en_lab' xlink:type='arc' />
+<link:loc xlink:href='rr-2008-12-31.xsd#rr_ExpenseFootnotesTextBlock' xlink:label='rr_ExpenseFootnotesTextBlock' xlink:type='locator' />
+<link:label id='rr_ExpenseFootnotesTextBlock_en_lab' xlink:label='rr_ExpenseFootnotesTextBlock_en_lab' xlink:role='http://www.xbrl.org/2003/role/label' xlink:type='resource' xml:lang='en-US'>Expense Footnotes [Text Block]</link:label>
+<link:labelArc xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='rr_ExpenseFootnotesTextBlock' xlink:to='rr_ExpenseFootnotesTextBlock_en_lab' xlink:type='arc' />
+<link:label id='rr_ExpenseDeferredChargesTextBlock_en_lab' xlink:label='rr_ExpenseDeferredChargesTextBlock_en_lab' xlink:role='http://www.xbrl.org/2003/role/label' xlink:type='resource' xml:lang='en-US'>Expenses Deferred Charges [Text Block]</link:label>
+<link:label id='rr_ExpenseRangeOfExchangeFeesTextBlock_en_lab' xlink:label='rr_ExpenseRangeOfExchangeFeesTextBlock_en_lab' xlink:role='http://www.xbrl.org/2003/role/label' xlink:type='resource' xml:lang='en-US'>Expenses Range of Exchange Fees [Text Block]</link:label>
+<link:loc xlink:href='rr-2008-12-31.xsd#rr_ExpenseExampleNarrativeAbstract' xlink:label='rr_ExpenseExampleNarrativeAbstract' xlink:type='locator' />
+<link:label id='rr_ExpenseExampleNarrativeAbstract_en_lab' xlink:label='rr_ExpenseExampleNarrativeAbstract_en_lab' xlink:role='http://www.xbrl.org/2003/role/label' xlink:type='resource' xml:lang='en-US'>Expense Example Narrative [Abstract]</link:label>
+<link:labelArc xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='rr_ExpenseExampleNarrativeAbstract' xlink:to='rr_ExpenseExampleNarrativeAbstract_en_lab' xlink:type='arc' />
+<link:loc xlink:href='rr-2008-12-31.xsd#rr_ExpenseExampleAbstract' xlink:label='rr_ExpenseExampleAbstract' xlink:type='locator' />
+<link:label id='rr_ExpenseExampleAbstract_en_lab' xlink:label='rr_ExpenseExampleAbstract_en_lab' xlink:role='http://www.xbrl.org/2003/role/label' xlink:type='resource' xml:lang='en-US'>Expense Example [Abstract]</link:label>
+<link:labelArc xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='rr_ExpenseExampleAbstract' xlink:to='rr_ExpenseExampleAbstract_en_lab' xlink:type='arc' />
+<link:loc xlink:href='rr-2008-12-31.xsd#rr_ExpenseExampleClosingAbstract' xlink:label='rr_ExpenseExampleClosingAbstract' xlink:type='locator' />
+<link:label id='rr_ExpenseExampleClosingAbstract_en_lab' xlink:label='rr_ExpenseExampleClosingAbstract_en_lab' xlink:role='http://www.xbrl.org/2003/role/label' xlink:type='resource' xml:lang='en-US'>Expense Example Closing [Abstract]</link:label>
+<link:labelArc xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='rr_ExpenseExampleClosingAbstract' xlink:to='rr_ExpenseExampleClosingAbstract_en_lab' xlink:type='arc' />
+<link:loc xlink:href='rr-2008-12-31.xsd#rr_ExpenseExampleFootnotesTextBlock' xlink:label='rr_ExpenseExampleFootnotesTextBlock' xlink:type='locator' />
+<link:label id='rr_ExpenseExampleFootnotesTextBlock_en_lab' xlink:label='rr_ExpenseExampleFootnotesTextBlock_en_lab' xlink:role='http://www.xbrl.org/2003/role/label' xlink:type='resource' xml:lang='en-US'>Expense Example Footnotes [Text Block]</link:label>
+<link:labelArc xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='rr_ExpenseExampleFootnotesTextBlock' xlink:to='rr_ExpenseExampleFootnotesTextBlock_en_lab' xlink:type='arc' />
+<link:loc xlink:href='rr-2008-12-31.xsd#rr_PortfolioTurnoverAbstract' xlink:label='rr_PortfolioTurnoverAbstract' xlink:type='locator' />
+<link:label id='rr_PortfolioTurnoverAbstract_en_lab' xlink:label='rr_PortfolioTurnoverAbstract_en_lab' xlink:role='http://www.xbrl.org/2003/role/label' xlink:type='resource' xml:lang='en-US'>Portfolio Turnover [Abstract]</link:label>
+<link:labelArc xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='rr_PortfolioTurnoverAbstract' xlink:to='rr_PortfolioTurnoverAbstract_en_lab' xlink:type='arc' />
+<link:loc xlink:href='rr-2008-12-31.xsd#rr_FeeWaiverOrReimbursementOverAssetsDateOfTermination' xlink:label='lbl_FeeWaiverOrReimbursementOverAssetsDateOfTermination' xlink:type='locator' />
+<link:label id='id' xlink:label='lbl_label60469554' xlink:role='http://www.xbrl.org/2003/role/label' xlink:type='resource' xml:lang='en-US'>Fee Waiver or Reimbursement over Assets, Date of Termination</link:label>
+<link:labelArc order='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='lbl_FeeWaiverOrReimbursementOverAssetsDateOfTermination' xlink:to='lbl_label60469554' xlink:type='arc' />
+<link:loc xlink:href='rr-2008-12-31.xsd#rr_PortfolioTurnoverRate' xlink:label='lbl_PortfolioTurnoverRate' xlink:type='locator' />
+<link:label id='id_94a83c' xlink:label='lbl_label61109507' xlink:role='http://www.xbrl.org/2003/role/label' xlink:type='resource' xml:lang='en-US'>Portfolio Turnover, Rate</link:label>
+<link:labelArc order='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='lbl_PortfolioTurnoverRate' xlink:to='lbl_label61109507' xlink:type='arc' />
+<link:loc xlink:href='rr-2008-12-31.xsd#rr_ExpenseBreakpointMinimumInvestmentRequiredAmount' xlink:label='lbl_ExpenseBreakpointMinimumInvestmentRequiredAmount' xlink:type='locator' />
+<link:label id='id_186846f' xlink:label='lbl_label61746412' xlink:role='http://www.xbrl.org/2003/role/label' xlink:type='resource' xml:lang='en-US'>Expense Breakpoint, Minimum Investment Required, Amount</link:label>
+<link:labelArc order='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='lbl_ExpenseBreakpointMinimumInvestmentRequiredAmount' xlink:to='lbl_label61746412' xlink:type='arc' />
+<link:loc xlink:href='rr-2008-12-31.xsd#rr_PerformanceTableFootnotesReasonPerformanceInformationForClassDifferentFromImmediatelyPrecedingPeriod' xlink:label='lbl_PerformanceTableFootnotesReasonPerformanceInformationForClassDifferentFromImmediatelyPrecedingPeriod' xlink:type='locator' />
+<link:label id='id_e695dc' xlink:label='lbl_label62385857' xlink:role='http://www.xbrl.org/2003/role/label' xlink:type='resource' xml:lang='en-US'>Performance Table Footnotes, Reason Performance Information for Class Different from Immediately Preceding Period</link:label>
+<link:labelArc order='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='lbl_PerformanceTableFootnotesReasonPerformanceInformationForClassDifferentFromImmediatelyPrecedingPeriod' xlink:to='lbl_label62385857' xlink:type='arc' />
+<link:label id='rr_ExpensesForNewFundBasedOnEstimates_en_lab' xlink:label='rr_ExpensesForNewFundBasedOnEstimates_en_lab' xlink:role='http://www.xbrl.org/2003/role/label' xlink:type='resource' xml:lang='en-US'>Other Expenses, New Fund, Based on Estimates</link:label>
+<link:label id='id_7af56d' xlink:label='lbl_label21297313' xlink:role='http://www.xbrl.org/2003/role/label' xlink:type='resource' xml:lang='en-US'>Acquired Fund Fees and Expenses, Based on Estimates</link:label>
+<link:loc xlink:href='rr-2008-12-31.xsd#rr_BarChartFootnotesTextBlock' xlink:label='lbl_BarChartFootnotesTextBlock' xlink:type='locator' />
+<link:label id='rr_AnnualReturnFootnotesTextBlock_en_lab' xlink:label='rr_AnnualReturnFootnotesTextBlock_en_lab' xlink:role='http://www.xbrl.org/2003/role/label' xlink:type='resource' xml:lang='en-US'>Bar Chart Footnotes [Text Block]</link:label>
+<link:labelArc order='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='lbl_BarChartFootnotesTextBlock' xlink:to='rr_AnnualReturnFootnotesTextBlock_en_lab' xlink:type='arc' />
+<link:loc xlink:href='rr-2008-12-31.xsd#rr_PerformanceTableOneClassOfAfterTaxShown' xlink:label='lbl_PerformanceTableOneClassOfAfterTaxShown' xlink:type='locator' />
+<link:labelArc order='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='lbl_PerformanceTableOneClassOfAfterTaxShown' xlink:to='rr_PerformanceTableOneClassOfMulticlassFund_en_lab' xlink:type='arc' />
+<link:loc xlink:href='rr-2008-12-31.xsd#rr_OtherExpensesNewFundBasedOnEstimates' xlink:label='lbl_OtherExpensesNewFundBasedOnEstimates' xlink:type='locator' />
+<link:labelArc order='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='lbl_OtherExpensesNewFundBasedOnEstimates' xlink:to='rr_ExpensesForNewFundBasedOnEstimates_en_lab' xlink:type='arc' />
+<link:loc xlink:href='rr-2008-12-31.xsd#rr_AcquiredFundFeesAndExpensesBasedOnEstimates' xlink:label='lbl_AcquiredFundFeesAndExpensesBasedOnEstimates' xlink:type='locator' />
+<link:labelArc order='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='lbl_AcquiredFundFeesAndExpensesBasedOnEstimates' xlink:to='lbl_label21297313' xlink:type='arc' />
+<link:loc xlink:href='rr-2008-12-31.xsd#rr_ExpensesDeferredChargesTextBlock' xlink:label='lbl_ExpensesDeferredChargesTextBlock' xlink:type='locator' />
+<link:labelArc order='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='lbl_ExpensesDeferredChargesTextBlock' xlink:to='rr_ExpenseDeferredChargesTextBlock_en_lab' xlink:type='arc' />
+<link:loc xlink:href='rr-2008-12-31.xsd#rr_ExpensesRangeOfExchangeFeesTextBlock' xlink:label='lbl_ExpensesRangeOfExchangeFeesTextBlock' xlink:type='locator' />
+<link:labelArc order='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='lbl_ExpensesRangeOfExchangeFeesTextBlock' xlink:to='rr_ExpenseRangeOfExchangeFeesTextBlock_en_lab' xlink:type='arc' />
+<link:loc xlink:href='rr-2008-12-31.xsd#rr_ExpensesNotCorrelatedToRatioDueToAcquiredFundFees' xlink:label='lbl_ExpensesNotCorrelatedToRatioDueToAcquiredFundFees' xlink:type='locator' />
+<link:labelArc order='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='lbl_ExpensesNotCorrelatedToRatioDueToAcquiredFundFees' xlink:to='rr_ExpensesTotalNotCorrelatedDueToAcquisition_en_lab' xlink:type='arc' />
+<link:loc xlink:href='rr-2008-12-31.xsd#rr_ExpensesExplanationOfNonrecurringAccountFee' xlink:label='lbl_ExpensesExplanationOfNonrecurringAccountFee' xlink:type='locator' />
+<link:labelArc order='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='lbl_ExpensesExplanationOfNonrecurringAccountFee' xlink:to='rr_ExpensesExplanationOfNonrecurring_en_lab' xlink:type='arc' />
+<link:label xlink:label='lbl_label42189135' xlink:role='http://www.xbrl.org/2003/role/label' xlink:type='resource' xml:lang='en-US'>Index No Deduction for Fees, Expenses, Taxes</link:label>
+<link:loc xlink:href='rr-2008-12-31.xsd#rr_IndexNoDeductionForFeesExpensesTaxes' xlink:label='lbl_IndexNoDeductionForFeesExpensesTaxes' xlink:type='locator' />
+<link:labelArc order='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='lbl_IndexNoDeductionForFeesExpensesTaxes' xlink:to='lbl_label42189135' xlink:type='arc' />
+<link:label xlink:label='lbl_label43520984' xlink:role='http://www.xbrl.org/2003/role/label' xlink:type='resource' xml:lang='en-US'>Annual Return 2013</link:label>
+<link:loc xlink:href='rr-2008-12-31.xsd#rr_AnnualReturn2013' xlink:label='lbl_AnnualReturn2013' xlink:type='locator' />
+<link:labelArc order='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='lbl_AnnualReturn2013' xlink:to='lbl_label43520984' xlink:type='arc' />
+<link:label xlink:label='lbl_label43717961' xlink:role='http://www.xbrl.org/2003/role/label' xlink:type='resource' xml:lang='en-US'>Annual Return 2014</link:label>
+<link:loc xlink:href='rr-2008-12-31.xsd#rr_AnnualReturn2014' xlink:label='lbl_AnnualReturn2014' xlink:type='locator' />
+<link:labelArc order='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='lbl_AnnualReturn2014' xlink:to='lbl_label43717961' xlink:type='arc' />
+<link:label xlink:label='lbl_label45600355' xlink:role='http://www.xbrl.org/2003/role/label' xlink:type='resource' xml:lang='en-US'>Performance Availbility Website Address</link:label>
+<link:loc xlink:href='rr-2008-12-31.xsd#rr_PerformanceAvailbilityWebSiteAddress' xlink:label='lbl_PerformanceAvailbilityWebSiteAddress' xlink:type='locator' />
+<link:labelArc order='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='lbl_PerformanceAvailbilityWebSiteAddress' xlink:to='lbl_label45600355' xlink:type='arc' />
+<link:loc xlink:href='rr-2008-12-31.xsd#rr_PerformanceAvailbilityPhone' xlink:label='lbl_PerformanceAvailbilityPhone' xlink:type='locator' />
+<link:labelArc order='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='lbl_PerformanceAvailbilityPhone' xlink:to='rr_PerformanceYieldPhone_en_lab' xlink:type='arc' />
+</link:labelLink>
+</link:linkbase>

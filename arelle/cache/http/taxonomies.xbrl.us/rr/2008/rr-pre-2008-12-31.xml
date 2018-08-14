@@ -1,0 +1,456 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+Notice: Authorized Uses are Set Forth at http://taxonomies.xbrl.us/terms/rr_legal.html
+Copyright (C) 2008 XBRL US, Inc. All Rights Reserved.
+  -->
+<link:linkbase xmlns:link='http://www.xbrl.org/2003/linkbase' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'>
+<link:roleRef roleURI='http://xbrl.us/rr/role/document/n1a' xlink:href='rr-2008-12-31.xsd#N1A' xlink:type='simple' />
+<link:roleRef roleURI='http://xbrl.us/us-gaap/role/document/EntityInformation' xlink:href='http://xbrl.us/us-gaap/1.0/elts/us-roles-2008-03-31.xsd#ent' xlink:type='simple' />
+<link:presentationLink xlink:role='http://xbrl.us/rr/role/document/n1a' xlink:type='extended'>
+<link:loc xlink:href='rr-2008-12-31.xsd#rr_ProspectusLineItems' xlink:label='lab_ProspectusLineItems' xlink:type='locator' />
+<link:loc xlink:href='http://xbrl.us/us-gaap/1.0/non-gaap/dei-2008-03-31.xsd#dei_TradingSymbol' xlink:label='lab_TradingSymbol' xlink:type='locator' />
+<link:loc xlink:href='rr-2008-12-31.xsd#rr_ObjectiveSectionAbstract' xlink:label='lab_ObjectiveSectionAbstract' xlink:type='locator' />
+<link:loc xlink:href='rr-2008-12-31.xsd#rr_ObjectiveHeading' xlink:label='lab_ObjectiveHeading' xlink:type='locator' />
+<link:loc xlink:href='rr-2008-12-31.xsd#rr_ExpenseBreakpointDiscounts' xlink:label='lab_ExpenseBreakpointDiscounts' xlink:type='locator' />
+<link:loc xlink:href='rr-2008-12-31.xsd#rr_ExpenseBreakpointMinimumInvestmentRequiredAmount' xlink:label='lab_ExpenseBreakpointMinimumInvestmentRequiredAmount' xlink:type='locator' />
+<link:loc xlink:href='rr-2008-12-31.xsd#rr_FeeWaiverOrReimbursementOverAssets' xlink:label='lab_FeeWaiverOrReimbursementOverAssets' xlink:type='locator' />
+<link:loc xlink:href='rr-2008-12-31.xsd#rr_FeeWaiverOrReimbursementOverAssetsDateOfTermination' xlink:label='lab_FeeWaiverOrReimbursementOverAssetsDateOfTermination' xlink:type='locator' />
+<link:loc xlink:href='rr-2008-12-31.xsd#rr_PortfolioTurnoverAbstract' xlink:label='lab_PortfolioTurnoverAbstract' xlink:type='locator' />
+<link:loc xlink:href='rr-2008-12-31.xsd#rr_PortfolioTurnoverRate' xlink:label='lab_PortfolioTurnoverRate' xlink:type='locator' />
+<link:loc xlink:href='rr-2008-12-31.xsd#rr_PerformanceNarrativeTextBlock' xlink:label='lab_PerformanceNarrativeTextBlock' xlink:type='locator' />
+<link:loc xlink:href='rr-2008-12-31.xsd#rr_PerformancePastDoesNotIndicateFuture' xlink:label='lab_PerformancePastDoesNotIndicateFuture' xlink:type='locator' />
+<link:loc xlink:href='rr-2008-12-31.xsd#rr_BarChartClosingAbstract' xlink:label='lab_BarChartClosingAbstract' xlink:type='locator' />
+<link:loc xlink:href='rr-2008-12-31.xsd#rr_BarChartFootnotesTextBlock' xlink:label='lab_BarChartFootnotesTextBlock' xlink:type='locator' />
+<link:loc xlink:href='rr-2008-12-31.xsd#rr_BarChartReasonSelectedClassDifferentFromImmediatelyPrecedingPeriod' xlink:label='lab_BarChartReasonSelectedClassDifferentFromImmediatelyPrecedingPeriod' xlink:type='locator' />
+<link:loc xlink:href='rr-2008-12-31.xsd#rr_BarChartReturnsForClassNotOfferedInProspectus' xlink:label='lab_BarChartReturnsForClassNotOfferedInProspectus' xlink:type='locator' />
+<link:loc xlink:href='rr-2008-12-31.xsd#rr_PerformanceTableNarrativeTextBlock' xlink:label='lab_PerformanceTableNarrativeTextBlock' xlink:type='locator' />
+<link:loc xlink:href='rr-2008-12-31.xsd#rr_PerformanceTableExplanationAfterTaxHigher' xlink:label='lab_PerformanceTableExplanationAfterTaxHigher' xlink:type='locator' />
+<link:loc xlink:href='rr-2008-12-31.xsd#rr_PerformanceTableFootnotesTextBlock' xlink:label='lab_PerformanceTableFootnotesTextBlock' xlink:type='locator' />
+<link:loc xlink:href='rr-2008-12-31.xsd#rr_PerformanceTableFootnotesReasonPerformanceInformationForClassDifferentFromImmediatelyPrecedingPeriod' xlink:label='lab_PerformanceTableFootnotesReasonPerformanceInformationForClassDifferentFromImmediatelyPrecedingPeriod' xlink:type='locator' />
+<link:loc xlink:href='rr-2008-12-31.xsd#rr_PerformanceTableClosingTextBlock' xlink:label='lab_PerformanceTableClosingTextBlock' xlink:type='locator' />
+<link:loc xlink:href='rr-2008-12-31.xsd#rr_PerformanceTableDoesReflectSalesLoads' xlink:label='lab_PerformanceTableDoesReflectSalesLoads' xlink:type='locator' />
+<link:loc xlink:href='rr-2008-12-31.xsd#rr_PerformanceTableMarketIndexChanged' xlink:label='lab_PerformanceTableMarketIndexChanged' xlink:type='locator' />
+<link:loc xlink:href='rr-2008-12-31.xsd#rr_PerformanceTableUsesHighestFederalRate' xlink:label='lab_PerformanceTableUsesHighestFederalRate' xlink:type='locator' />
+<link:loc xlink:href='rr-2008-12-31.xsd#rr_PerformanceTableNotRelevantToTaxDeferred' xlink:label='lab_PerformanceTableNotRelevantToTaxDeferred' xlink:type='locator' />
+<link:loc xlink:href='rr-2008-12-31.xsd#rr_PerformanceTableOneClassOfAfterTaxShown' xlink:label='lab_PerformanceTableOneClassOfAfterTaxShown' xlink:type='locator' />
+<link:loc xlink:href='rr-2008-12-31.xsd#rr_ExpenseFootnotesTextBlock' xlink:label='lab_ExpenseFootnotesTextBlock' xlink:type='locator' />
+<link:loc xlink:href='rr-2008-12-31.xsd#rr_AcquiredFundFeesAndExpensesBasedOnEstimates' xlink:label='lab_AcquiredFundFeesAndExpensesBasedOnEstimates' xlink:type='locator' />
+<link:loc xlink:href='rr-2008-12-31.xsd#rr_OtherExpensesNewFundBasedOnEstimates' xlink:label='lab_OtherExpensesNewFundBasedOnEstimates' xlink:type='locator' />
+<link:loc xlink:href='rr-2008-12-31.xsd#rr_ExpensesDeferredChargesTextBlock' xlink:label='lab_ExpensesDeferredChargesTextBlock' xlink:type='locator' />
+<link:loc xlink:href='rr-2008-12-31.xsd#rr_ExpensesRangeOfExchangeFeesTextBlock' xlink:label='lab_ExpensesRangeOfExchangeFeesTextBlock' xlink:type='locator' />
+<link:loc xlink:href='rr-2008-12-31.xsd#rr_ExpensesNotCorrelatedToRatioDueToAcquiredFundFees' xlink:label='lab_ExpensesNotCorrelatedToRatioDueToAcquiredFundFees' xlink:type='locator' />
+<link:loc xlink:href='rr-2008-12-31.xsd#rr_ExpensesExplanationOfNonrecurringAccountFee' xlink:label='lab_ExpensesExplanationOfNonrecurringAccountFee' xlink:type='locator' />
+<link:loc xlink:href='rr-2008-12-31.xsd#rr_IndexNoDeductionForFeesExpensesTaxes' xlink:label='lab_IndexNoDeductionForFeesExpensesTaxes' xlink:type='locator' />
+<link:loc xlink:href='rr-2008-12-31.xsd#rr_BarChartTableAbstract' xlink:label='lab_BarChartTableAbstract' xlink:type='locator' />
+<link:loc xlink:href='rr-2008-12-31.xsd#rr_AnnualReturn2013' xlink:label='lab_AnnualReturn2013' xlink:type='locator' />
+<link:loc xlink:href='rr-2008-12-31.xsd#rr_AnnualReturn2014' xlink:label='lab_AnnualReturn2014' xlink:type='locator' />
+<link:loc xlink:href='rr-2008-12-31.xsd#rr_PerformanceAvailbilityWebSiteAddress' xlink:label='lab_PerformanceAvailbilityWebSiteAddress' xlink:type='locator' />
+<link:loc xlink:href='rr-2008-12-31.xsd#rr_PerformanceAvailbilityPhone' xlink:label='lab_PerformanceAvailbilityPhone' xlink:type='locator' />
+<link:loc xlink:href='rr-2008-12-31.xsd#rr_ObjectivePrimaryTextBlock' xlink:label='lab_ObjectivePrimaryTextBlock' xlink:type='locator' />
+<link:loc xlink:href='rr-2008-12-31.xsd#rr_ObjectiveSecondaryTextBlock' xlink:label='lab_ObjectiveSecondaryTextBlock' xlink:type='locator' />
+<link:loc xlink:href='rr-2008-12-31.xsd#rr_StrategySectionAbstract' xlink:label='lab_StrategySectionAbstract' xlink:type='locator' />
+<link:loc xlink:href='rr-2008-12-31.xsd#rr_StrategyHeading' xlink:label='lab_StrategyHeading' xlink:type='locator' />
+<link:loc xlink:href='rr-2008-12-31.xsd#rr_StrategyNarrativeTextBlock' xlink:label='lab_StrategyNarrativeTextBlock' xlink:type='locator' />
+<link:loc xlink:href='rr-2008-12-31.xsd#rr_RiskSectionAbstract' xlink:label='lab_RiskSectionAbstract' xlink:type='locator' />
+<link:loc xlink:href='rr-2008-12-31.xsd#rr_RiskHeading' xlink:label='lab_RiskHeading' xlink:type='locator' />
+<link:loc xlink:href='rr-2008-12-31.xsd#rr_RiskNarrativeTextBlock' xlink:label='lab_RiskNarrativeTextBlock' xlink:type='locator' />
+<link:loc xlink:href='rr-2008-12-31.xsd#rr_RiskCaption' xlink:label='lab_RiskCaption' xlink:type='locator' />
+<link:loc xlink:href='rr-2008-12-31.xsd#rr_RiskColumnName' xlink:label='lab_RiskColumnName' xlink:type='locator' />
+<link:loc xlink:href='rr-2008-12-31.xsd#rr_Risk' xlink:label='lab_Risk' xlink:type='locator' />
+<link:loc xlink:href='rr-2008-12-31.xsd#rr_RiskFootnotesTextBlock' xlink:label='lab_RiskFootnotesTextBlock' xlink:type='locator' />
+<link:loc xlink:href='rr-2008-12-31.xsd#rr_RiskClosingTextBlock' xlink:label='lab_RiskClosingTextBlock' xlink:type='locator' />
+<link:loc xlink:href='rr-2008-12-31.xsd#rr_RiskReturnAbstract' xlink:label='lab_RiskReturnAbstract' xlink:type='locator' />
+<link:loc xlink:href='rr-2008-12-31.xsd#rr_ExpensesAbstract' xlink:label='lab_ExpensesAbstract' xlink:type='locator' />
+<link:loc xlink:href='rr-2008-12-31.xsd#rr_ShareholderFeesAbstract' xlink:label='lab_ShareholderFeesAbstract' xlink:type='locator' />
+<link:loc xlink:href='rr-2008-12-31.xsd#rr_OperatingExpensesAbstract' xlink:label='lab_OperatingExpensesAbstract' xlink:type='locator' />
+<link:loc xlink:href='rr-2008-12-31.xsd#rr_ExpenseFootnotesAbstract' xlink:label='lab_ExpenseFootnotesAbstract' xlink:type='locator' />
+<link:loc xlink:href='rr-2008-12-31.xsd#rr_ExpenseExampleNarrativeAbstract' xlink:label='lab_ExpenseExampleNarrativeAbstract' xlink:type='locator' />
+<link:loc xlink:href='rr-2008-12-31.xsd#rr_ExpenseExampleAbstract' xlink:label='lab_ExpenseExampleAbstract' xlink:type='locator' />
+<link:loc xlink:href='rr-2008-12-31.xsd#rr_ExpenseExampleClosingAbstract' xlink:label='lab_ExpenseExampleClosingAbstract' xlink:type='locator' />
+<link:loc xlink:href='rr-2008-12-31.xsd#rr_BarChartAndPerformanceTableSectionAbstract' xlink:label='lab_BarChartAndPerformanceTableSectionAbstract' xlink:type='locator' />
+<link:loc xlink:href='rr-2008-12-31.xsd#rr_BarChartNarrativeAbstract' xlink:label='lab_BarChartNarrativeAbstract' xlink:type='locator' />
+<link:loc xlink:href='rr-2008-12-31.xsd#rr_PerformanceNarrativeAbstract' xlink:label='lab_PerformanceNarrativeAbstract' xlink:type='locator' />
+<link:loc xlink:href='rr-2008-12-31.xsd#rr_PerformanceTableSectionAbstract' xlink:label='lab_PerformanceTableSectionAbstract' xlink:type='locator' />
+<link:loc xlink:href='rr-2008-12-31.xsd#rr_PerformanceTableClosingAbstract' xlink:label='lab_PerformanceTableClosingAbstract' xlink:type='locator' />
+<link:loc xlink:href='rr-2008-12-31.xsd#rr_RiskReturnHeading' xlink:label='lab_RiskReturnHeading' xlink:type='locator' />
+<link:loc xlink:href='rr-2008-12-31.xsd#rr_BarChartAndPerformanceTableHeading' xlink:label='lab_BarChartAndPerformanceTableHeading' xlink:type='locator' />
+<link:loc xlink:href='rr-2008-12-31.xsd#rr_BarChartHeading' xlink:label='lab_BarChartHeading' xlink:type='locator' />
+<link:loc xlink:href='rr-2008-12-31.xsd#rr_BarChartNarrativeTextBlock' xlink:label='lab_BarChartNarrativeTextBlock' xlink:type='locator' />
+<link:loc xlink:href='rr-2008-12-31.xsd#rr_AnnualReturnCaption' xlink:label='lab_AnnualReturnCaption' xlink:type='locator' />
+<link:loc xlink:href='rr-2008-12-31.xsd#rr_AnnualReturnColumnName' xlink:label='lab_AnnualReturnColumnName' xlink:type='locator' />
+<link:loc xlink:href='rr-2008-12-31.xsd#rr_AnnualReturnInceptionDate' xlink:label='lab_AnnualReturnInceptionDate' xlink:type='locator' />
+<link:loc xlink:href='rr-2008-12-31.xsd#rr_AnnualReturn1990' xlink:label='lab_AnnualReturn1990' xlink:type='locator' />
+<link:loc xlink:href='rr-2008-12-31.xsd#rr_AnnualReturn1991' xlink:label='lab_AnnualReturn1991' xlink:type='locator' />
+<link:loc xlink:href='rr-2008-12-31.xsd#rr_AnnualReturn1992' xlink:label='lab_AnnualReturn1992' xlink:type='locator' />
+<link:loc xlink:href='rr-2008-12-31.xsd#rr_AnnualReturn1993' xlink:label='lab_AnnualReturn1993' xlink:type='locator' />
+<link:loc xlink:href='rr-2008-12-31.xsd#rr_AnnualReturn1994' xlink:label='lab_AnnualReturn1994' xlink:type='locator' />
+<link:loc xlink:href='rr-2008-12-31.xsd#rr_AnnualReturn1995' xlink:label='lab_AnnualReturn1995' xlink:type='locator' />
+<link:loc xlink:href='rr-2008-12-31.xsd#rr_AnnualReturn1996' xlink:label='lab_AnnualReturn1996' xlink:type='locator' />
+<link:loc xlink:href='rr-2008-12-31.xsd#rr_AnnualReturn1997' xlink:label='lab_AnnualReturn1997' xlink:type='locator' />
+<link:loc xlink:href='rr-2008-12-31.xsd#rr_AnnualReturn1998' xlink:label='lab_AnnualReturn1998' xlink:type='locator' />
+<link:loc xlink:href='rr-2008-12-31.xsd#rr_AnnualReturn1999' xlink:label='lab_AnnualReturn1999' xlink:type='locator' />
+<link:loc xlink:href='rr-2008-12-31.xsd#rr_AnnualReturn2000' xlink:label='lab_AnnualReturn2000' xlink:type='locator' />
+<link:loc xlink:href='rr-2008-12-31.xsd#rr_AnnualReturn2001' xlink:label='lab_AnnualReturn2001' xlink:type='locator' />
+<link:loc xlink:href='rr-2008-12-31.xsd#rr_AnnualReturn2002' xlink:label='lab_AnnualReturn2002' xlink:type='locator' />
+<link:loc xlink:href='rr-2008-12-31.xsd#rr_AnnualReturn2003' xlink:label='lab_AnnualReturn2003' xlink:type='locator' />
+<link:loc xlink:href='rr-2008-12-31.xsd#rr_AnnualReturn2004' xlink:label='lab_AnnualReturn2004' xlink:type='locator' />
+<link:loc xlink:href='rr-2008-12-31.xsd#rr_AnnualReturn2005' xlink:label='lab_AnnualReturn2005' xlink:type='locator' />
+<link:loc xlink:href='rr-2008-12-31.xsd#rr_AnnualReturn2006' xlink:label='lab_AnnualReturn2006' xlink:type='locator' />
+<link:loc xlink:href='rr-2008-12-31.xsd#rr_AnnualReturn2007' xlink:label='lab_AnnualReturn2007' xlink:type='locator' />
+<link:loc xlink:href='rr-2008-12-31.xsd#rr_AnnualReturn2008' xlink:label='lab_AnnualReturn2008' xlink:type='locator' />
+<link:loc xlink:href='rr-2008-12-31.xsd#rr_AnnualReturn2009' xlink:label='lab_AnnualReturn2009' xlink:type='locator' />
+<link:loc xlink:href='rr-2008-12-31.xsd#rr_AnnualReturn2010' xlink:label='lab_AnnualReturn2010' xlink:type='locator' />
+<link:loc xlink:href='rr-2008-12-31.xsd#rr_AnnualReturn2011' xlink:label='lab_AnnualReturn2011' xlink:type='locator' />
+<link:loc xlink:href='rr-2008-12-31.xsd#rr_AnnualReturn2012' xlink:label='lab_AnnualReturn2012' xlink:type='locator' />
+<link:loc xlink:href='rr-2008-12-31.xsd#rr_YearToDateReturnLabel' xlink:label='lab_YearToDateReturnLabel' xlink:type='locator' />
+<link:loc xlink:href='rr-2008-12-31.xsd#rr_BarChartYearToDateReturn' xlink:label='lab_BarChartYearToDateReturn' xlink:type='locator' />
+<link:loc xlink:href='rr-2008-12-31.xsd#rr_BarChartYearToDateReturnDate' xlink:label='lab_BarChartYearToDateReturnDate' xlink:type='locator' />
+<link:loc xlink:href='rr-2008-12-31.xsd#rr_HighestQuarterlyReturnLabel' xlink:label='lab_HighestQuarterlyReturnLabel' xlink:type='locator' />
+<link:loc xlink:href='rr-2008-12-31.xsd#rr_BarChartHighestQuarterlyReturn' xlink:label='lab_BarChartHighestQuarterlyReturn' xlink:type='locator' />
+<link:loc xlink:href='rr-2008-12-31.xsd#rr_BarChartHighestQuarterlyReturnDate' xlink:label='lab_BarChartHighestQuarterlyReturnDate' xlink:type='locator' />
+<link:loc xlink:href='rr-2008-12-31.xsd#rr_LowestQuarterlyReturnLabel' xlink:label='lab_LowestQuarterlyReturnLabel' xlink:type='locator' />
+<link:loc xlink:href='rr-2008-12-31.xsd#rr_BarChartLowestQuarterlyReturn' xlink:label='lab_BarChartLowestQuarterlyReturn' xlink:type='locator' />
+<link:loc xlink:href='rr-2008-12-31.xsd#rr_BarChartLowestQuarterlyReturnDate' xlink:label='lab_BarChartLowestQuarterlyReturnDate' xlink:type='locator' />
+<link:loc xlink:href='rr-2008-12-31.xsd#rr_BarChartClosingTextBlock' xlink:label='lab_BarChartClosingTextBlock' xlink:type='locator' />
+<link:loc xlink:href='rr-2008-12-31.xsd#rr_AverageAnnualReturnAbstract' xlink:label='lab_AverageAnnualReturnAbstract' xlink:type='locator' />
+<link:loc xlink:href='rr-2008-12-31.xsd#rr_AverageAnnualReturnLabel' xlink:label='lab_AverageAnnualReturnLabel' xlink:type='locator' />
+<link:loc xlink:href='rr-2008-12-31.xsd#rr_AverageAnnualReturnYear01' xlink:label='lab_AverageAnnualReturnYear01' xlink:type='locator' />
+<link:loc xlink:href='rr-2008-12-31.xsd#rr_AverageAnnualReturnYear05' xlink:label='lab_AverageAnnualReturnYear05' xlink:type='locator' />
+<link:loc xlink:href='rr-2008-12-31.xsd#rr_AverageAnnualReturnYear10' xlink:label='lab_AverageAnnualReturnYear10' xlink:type='locator' />
+<link:loc xlink:href='rr-2008-12-31.xsd#rr_AverageAnnualReturnSinceInception' xlink:label='lab_AverageAnnualReturnSinceInception' xlink:type='locator' />
+<link:loc xlink:href='rr-2008-12-31.xsd#rr_AverageAnnualReturnInceptionDate' xlink:label='lab_AverageAnnualReturnInceptionDate' xlink:type='locator' />
+<link:loc xlink:href='rr-2008-12-31.xsd#rr_AverageAnnualReturnAfterTaxesOnDistributionsAbstract' xlink:label='lab_AverageAnnualReturnAfterTaxesOnDistributionsAbstract' xlink:type='locator' />
+<link:loc xlink:href='rr-2008-12-31.xsd#rr_AverageAnnualReturnAfterTaxesOnDistributionsLabel' xlink:label='lab_AverageAnnualReturnAfterTaxesOnDistributionsLabel' xlink:type='locator' />
+<link:loc xlink:href='rr-2008-12-31.xsd#rr_AverageAnnualReturnAfterTaxesOnDistributionsYear01' xlink:label='lab_AverageAnnualReturnAfterTaxesOnDistributionsYear01' xlink:type='locator' />
+<link:loc xlink:href='rr-2008-12-31.xsd#rr_AverageAnnualReturnAfterTaxesOnDistributionsYear05' xlink:label='lab_AverageAnnualReturnAfterTaxesOnDistributionsYear05' xlink:type='locator' />
+<link:loc xlink:href='rr-2008-12-31.xsd#rr_AverageAnnualReturnAfterTaxesOnDistributionsYear10' xlink:label='lab_AverageAnnualReturnAfterTaxesOnDistributionsYear10' xlink:type='locator' />
+<link:loc xlink:href='rr-2008-12-31.xsd#rr_AverageAnnualReturnAfterTaxesOnDistributionsSinceInception' xlink:label='lab_AverageAnnualReturnAfterTaxesOnDistributionsSinceInception' xlink:type='locator' />
+<link:loc xlink:href='rr-2008-12-31.xsd#rr_AverageAnnualReturnAfterTaxesOnDistributionsInceptionDate' xlink:label='lab_AverageAnnualReturnAfterTaxesOnDistributionsInceptionDate' xlink:type='locator' />
+<link:loc xlink:href='rr-2008-12-31.xsd#rr_AverageAnnualReturnAfterTaxesOnDistributionsAndSalesAbstract' xlink:label='lab_AverageAnnualReturnAfterTaxesOnDistributionsAndSalesAbstract' xlink:type='locator' />
+<link:loc xlink:href='rr-2008-12-31.xsd#rr_AverageAnnualReturnAfterTaxesOnDistributionsAndSalesLabel' xlink:label='lab_AverageAnnualReturnAfterTaxesOnDistributionsAndSalesLabel' xlink:type='locator' />
+<link:loc xlink:href='rr-2008-12-31.xsd#rr_AverageAnnualReturnAfterTaxesOnDistributionsAndSalesYear01' xlink:label='lab_AverageAnnualReturnAfterTaxesOnDistributionsAndSalesYear01' xlink:type='locator' />
+<link:loc xlink:href='rr-2008-12-31.xsd#rr_AverageAnnualReturnAfterTaxesOnDistributionsAndSalesYear05' xlink:label='lab_AverageAnnualReturnAfterTaxesOnDistributionsAndSalesYear05' xlink:type='locator' />
+<link:loc xlink:href='rr-2008-12-31.xsd#rr_AverageAnnualReturnAfterTaxesOnDistributionsAndSalesYear10' xlink:label='lab_AverageAnnualReturnAfterTaxesOnDistributionsAndSalesYear10' xlink:type='locator' />
+<link:loc xlink:href='rr-2008-12-31.xsd#rr_AverageAnnualReturnAfterTaxesOnDistributionsAndSalesSinceInception' xlink:label='lab_AverageAnnualReturnAfterTaxesOnDistributionsAndSalesSinceInception' xlink:type='locator' />
+<link:loc xlink:href='rr-2008-12-31.xsd#rr_AverageAnnualReturnAfterTaxesOnDistributionsAndSalesInceptionDate' xlink:label='lab_AverageAnnualReturnAfterTaxesOnDistributionsAndSalesInceptionDate' xlink:type='locator' />
+<link:loc xlink:href='rr-2008-12-31.xsd#rr_MarketIndexReturnAbstract' xlink:label='lab_MarketIndexReturnAbstract' xlink:type='locator' />
+<link:loc xlink:href='rr-2008-12-31.xsd#rr_MarketIndexReturnLabel' xlink:label='lab_MarketIndexReturnLabel' xlink:type='locator' />
+<link:loc xlink:href='rr-2008-12-31.xsd#rr_MarketIndexReturnYear01' xlink:label='lab_MarketIndexReturnYear01' xlink:type='locator' />
+<link:loc xlink:href='rr-2008-12-31.xsd#rr_MarketIndexReturnYear05' xlink:label='lab_MarketIndexReturnYear05' xlink:type='locator' />
+<link:loc xlink:href='rr-2008-12-31.xsd#rr_MarketIndexReturnYear10' xlink:label='lab_MarketIndexReturnYear10' xlink:type='locator' />
+<link:loc xlink:href='rr-2008-12-31.xsd#rr_MarketIndexReturnSinceInception' xlink:label='lab_MarketIndexReturnSinceInception' xlink:type='locator' />
+<link:loc xlink:href='rr-2008-12-31.xsd#rr_MarketIndexReturnInceptionDate' xlink:label='lab_MarketIndexReturnInceptionDate' xlink:type='locator' />
+<link:loc xlink:href='rr-2008-12-31.xsd#rr_PerformanceTableHeading' xlink:label='lab_PerformanceTableHeading' xlink:type='locator' />
+<link:loc xlink:href='rr-2008-12-31.xsd#rr_AverageAnnualReturnCaption' xlink:label='lab_AverageAnnualReturnCaption' xlink:type='locator' />
+<link:loc xlink:href='rr-2008-12-31.xsd#rr_AverageAnnualReturnColumnName' xlink:label='lab_AverageAnnualReturnColumnName' xlink:type='locator' />
+<link:loc xlink:href='rr-2008-12-31.xsd#rr_MoneyMarketSevenDayYieldCaption' xlink:label='lab_MoneyMarketSevenDayYieldCaption' xlink:type='locator' />
+<link:loc xlink:href='rr-2008-12-31.xsd#rr_MoneyMarketSevenDayYieldColumnName' xlink:label='lab_MoneyMarketSevenDayYieldColumnName' xlink:type='locator' />
+<link:loc xlink:href='rr-2008-12-31.xsd#rr_MoneyMarketSevenDayYieldPhone' xlink:label='lab_MoneyMarketSevenDayYieldPhone' xlink:type='locator' />
+<link:loc xlink:href='rr-2008-12-31.xsd#rr_MoneyMarketSevenDayYield' xlink:label='lab_MoneyMarketSevenDayYield' xlink:type='locator' />
+<link:loc xlink:href='rr-2008-12-31.xsd#rr_MoneyMarketSevenDayTaxEquivalentYield' xlink:label='lab_MoneyMarketSevenDayTaxEquivalentYield' xlink:type='locator' />
+<link:loc xlink:href='rr-2008-12-31.xsd#rr_ThirtyDayYieldCaption' xlink:label='lab_ThirtyDayYieldCaption' xlink:type='locator' />
+<link:loc xlink:href='rr-2008-12-31.xsd#rr_ThirtyDayYieldColumnName' xlink:label='lab_ThirtyDayYieldColumnName' xlink:type='locator' />
+<link:loc xlink:href='rr-2008-12-31.xsd#rr_ThirtyDayYieldPhone' xlink:label='lab_ThirtyDayYieldPhone' xlink:type='locator' />
+<link:loc xlink:href='rr-2008-12-31.xsd#rr_ThirtyDayYield' xlink:label='lab_ThirtyDayYield' xlink:type='locator' />
+<link:loc xlink:href='rr-2008-12-31.xsd#rr_ThirtyDayTaxEquivalentYield' xlink:label='lab_ThirtyDayTaxEquivalentYield' xlink:type='locator' />
+<link:loc xlink:href='rr-2008-12-31.xsd#rr_ExpenseHeading' xlink:label='lab_ExpenseHeading' xlink:type='locator' />
+<link:loc xlink:href='rr-2008-12-31.xsd#rr_ExpenseNarrativeTextBlock' xlink:label='lab_ExpenseNarrativeTextBlock' xlink:type='locator' />
+<link:loc xlink:href='rr-2008-12-31.xsd#rr_ShareholderFeesCaption' xlink:label='lab_ShareholderFeesCaption' xlink:type='locator' />
+<link:loc xlink:href='rr-2008-12-31.xsd#rr_ShareholderFeesColumnName' xlink:label='lab_ShareholderFeesColumnName' xlink:type='locator' />
+<link:loc xlink:href='rr-2008-12-31.xsd#rr_MaximumCumulativeSalesChargeOverOfferingPrice' xlink:label='lab_MaximumCumulativeSalesChargeOverOfferingPrice' xlink:type='locator' />
+<link:loc xlink:href='rr-2008-12-31.xsd#rr_MaximumCumulativeSalesChargeOverOther' xlink:label='lab_MaximumCumulativeSalesChargeOverOther' xlink:type='locator' />
+<link:loc xlink:href='rr-2008-12-31.xsd#rr_MaximumSalesChargeImposedOnPurchasesOverOfferingPrice' xlink:label='lab_MaximumSalesChargeImposedOnPurchasesOverOfferingPrice' xlink:type='locator' />
+<link:loc xlink:href='rr-2008-12-31.xsd#rr_MaximumDeferredSalesChargeOverOfferingPrice' xlink:label='lab_MaximumDeferredSalesChargeOverOfferingPrice' xlink:type='locator' />
+<link:loc xlink:href='rr-2008-12-31.xsd#rr_MaximumDeferredSalesChargeOverOther' xlink:label='lab_MaximumDeferredSalesChargeOverOther' xlink:type='locator' />
+<link:loc xlink:href='rr-2008-12-31.xsd#rr_MaximumSalesChargeOnReinvestedDividendsAndDistributionsOverOther' xlink:label='lab_MaximumSalesChargeOnReinvestedDividendsAndDistributionsOverOther' xlink:type='locator' />
+<link:loc xlink:href='rr-2008-12-31.xsd#rr_RedemptionFeeOverRedemption' xlink:label='lab_RedemptionFeeOverRedemption' xlink:type='locator' />
+<link:loc xlink:href='rr-2008-12-31.xsd#rr_RedemptionFee' xlink:label='lab_RedemptionFee' xlink:type='locator' />
+<link:loc xlink:href='rr-2008-12-31.xsd#rr_ExchangeFeeOverRedemption' xlink:label='lab_ExchangeFeeOverRedemption' xlink:type='locator' />
+<link:loc xlink:href='rr-2008-12-31.xsd#rr_ExchangeFee' xlink:label='lab_ExchangeFee' xlink:type='locator' />
+<link:loc xlink:href='rr-2008-12-31.xsd#rr_MaximumAccountFeeOverAssets' xlink:label='lab_MaximumAccountFeeOverAssets' xlink:type='locator' />
+<link:loc xlink:href='rr-2008-12-31.xsd#rr_MaximumAccountFee' xlink:label='lab_MaximumAccountFee' xlink:type='locator' />
+<link:loc xlink:href='rr-2008-12-31.xsd#rr_ShareholderFeeOther' xlink:label='lab_ShareholderFeeOther' xlink:type='locator' />
+<link:loc xlink:href='rr-2008-12-31.xsd#rr_OperatingExpensesCaption' xlink:label='lab_OperatingExpensesCaption' xlink:type='locator' />
+<link:loc xlink:href='rr-2008-12-31.xsd#rr_OperatingExpensesColumnName' xlink:label='lab_OperatingExpensesColumnName' xlink:type='locator' />
+<link:loc xlink:href='rr-2008-12-31.xsd#rr_NetExpensesOverAssetsAbstract' xlink:label='lab_NetExpensesOverAssetsAbstract' xlink:type='locator' />
+<link:loc xlink:href='rr-2008-12-31.xsd#rr_ExpensesOverAssetsAbstract' xlink:label='lab_ExpensesOverAssetsAbstract' xlink:type='locator' />
+<link:loc xlink:href='rr-2008-12-31.xsd#rr_NetExpensesOverAssets' xlink:label='lab_NetExpensesOverAssets' xlink:type='locator' />
+<link:loc xlink:href='rr-2008-12-31.xsd#rr_ManagementFeesOverAssets' xlink:label='lab_ManagementFeesOverAssets' xlink:type='locator' />
+<link:loc xlink:href='rr-2008-12-31.xsd#rr_DistributionAndService12b1FeesOverAssets' xlink:label='lab_DistributionAndService12b1FeesOverAssets' xlink:type='locator' />
+<link:loc xlink:href='rr-2008-12-31.xsd#rr_DistributionOrSimilarNon12b1FeesOverAssets' xlink:label='lab_DistributionOrSimilarNon12b1FeesOverAssets' xlink:type='locator' />
+<link:loc xlink:href='rr-2008-12-31.xsd#rr_OtherExpensesOverAssetsAbstract' xlink:label='lab_OtherExpensesOverAssetsAbstract' xlink:type='locator' />
+<link:loc xlink:href='rr-2008-12-31.xsd#rr_AcquiredFundFeesAndExpensesOverAssets' xlink:label='lab_AcquiredFundFeesAndExpensesOverAssets' xlink:type='locator' />
+<link:loc xlink:href='rr-2008-12-31.xsd#rr_ExpensesOverAssets' xlink:label='lab_ExpensesOverAssets' xlink:type='locator' />
+<link:loc xlink:href='rr-2008-12-31.xsd#rr_Component1OtherExpensesOverAssets' xlink:label='lab_Component1OtherExpensesOverAssets' xlink:type='locator' />
+<link:loc xlink:href='rr-2008-12-31.xsd#rr_Component2OtherExpensesOverAssets' xlink:label='lab_Component2OtherExpensesOverAssets' xlink:type='locator' />
+<link:loc xlink:href='rr-2008-12-31.xsd#rr_Component3OtherExpensesOverAssets' xlink:label='lab_Component3OtherExpensesOverAssets' xlink:type='locator' />
+<link:loc xlink:href='rr-2008-12-31.xsd#rr_OtherExpensesOverAssets' xlink:label='lab_OtherExpensesOverAssets' xlink:type='locator' />
+<link:loc xlink:href='rr-2008-12-31.xsd#rr_ExpenseExampleHeading' xlink:label='lab_ExpenseExampleHeading' xlink:type='locator' />
+<link:loc xlink:href='rr-2008-12-31.xsd#rr_ExpenseExampleNarrativeTextBlock' xlink:label='lab_ExpenseExampleNarrativeTextBlock' xlink:type='locator' />
+<link:loc xlink:href='rr-2008-12-31.xsd#rr_ExpenseExampleByYearHeading' xlink:label='lab_ExpenseExampleByYearHeading' xlink:type='locator' />
+<link:loc xlink:href='rr-2008-12-31.xsd#rr_ExpenseExampleByYearCaption' xlink:label='lab_ExpenseExampleByYearCaption' xlink:type='locator' />
+<link:loc xlink:href='rr-2008-12-31.xsd#rr_ExpenseExampleByYearColumnName' xlink:label='lab_ExpenseExampleByYearColumnName' xlink:type='locator' />
+<link:loc xlink:href='rr-2008-12-31.xsd#rr_ExpenseExampleYear01' xlink:label='lab_ExpenseExampleYear01' xlink:type='locator' />
+<link:loc xlink:href='rr-2008-12-31.xsd#rr_ExpenseExampleYear03' xlink:label='lab_ExpenseExampleYear03' xlink:type='locator' />
+<link:loc xlink:href='rr-2008-12-31.xsd#rr_ExpenseExampleYear05' xlink:label='lab_ExpenseExampleYear05' xlink:type='locator' />
+<link:loc xlink:href='rr-2008-12-31.xsd#rr_ExpenseExampleYear10' xlink:label='lab_ExpenseExampleYear10' xlink:type='locator' />
+<link:loc xlink:href='rr-2008-12-31.xsd#rr_ExpenseExampleNoRedemptionByYearCaption' xlink:label='lab_ExpenseExampleNoRedemptionByYearCaption' xlink:type='locator' />
+<link:loc xlink:href='rr-2008-12-31.xsd#rr_ExpenseExampleNoRedemptionByYearColumnName' xlink:label='lab_ExpenseExampleNoRedemptionByYearColumnName' xlink:type='locator' />
+<link:loc xlink:href='rr-2008-12-31.xsd#rr_ExpenseExampleNoRedemptionYear01' xlink:label='lab_ExpenseExampleNoRedemptionYear01' xlink:type='locator' />
+<link:loc xlink:href='rr-2008-12-31.xsd#rr_ExpenseExampleNoRedemptionYear03' xlink:label='lab_ExpenseExampleNoRedemptionYear03' xlink:type='locator' />
+<link:loc xlink:href='rr-2008-12-31.xsd#rr_ExpenseExampleNoRedemptionYear05' xlink:label='lab_ExpenseExampleNoRedemptionYear05' xlink:type='locator' />
+<link:loc xlink:href='rr-2008-12-31.xsd#rr_ExpenseExampleNoRedemptionYear10' xlink:label='lab_ExpenseExampleNoRedemptionYear10' xlink:type='locator' />
+<link:loc xlink:href='rr-2008-12-31.xsd#rr_ExpenseExampleFootnotesTextBlock' xlink:label='lab_ExpenseExampleFootnotesTextBlock' xlink:type='locator' />
+<link:loc xlink:href='rr-2008-12-31.xsd#rr_ExpenseExampleClosingTextBlock' xlink:label='lab_ExpenseExampleClosingTextBlock' xlink:type='locator' />
+<link:loc xlink:href='rr-2008-12-31.xsd#rr_PortfolioTurnoverHeading' xlink:label='lab_PortfolioTurnoverHeading' xlink:type='locator' />
+<link:loc xlink:href='rr-2008-12-31.xsd#rr_PortfolioTurnoverTextBlock' xlink:label='lab_PortfolioTurnoverTextBlock' xlink:type='locator' />
+<link:loc xlink:href='rr-2008-12-31.xsd#rr_FormN1aAbstract' xlink:label='lab_FormN1aAbstract' xlink:type='locator' />
+<link:loc xlink:href='http://xbrl.us/us-gaap/1.0/non-gaap/dei-2008-03-31.xsd#dei_DocumentCreationDate' xlink:label='lab_DocumentCreationDate' xlink:type='locator' />
+<link:loc xlink:href='http://xbrl.us/us-gaap/1.0/non-gaap/dei-2008-03-31.xsd#dei_DocumentEffectiveDate' xlink:label='lab_DocumentEffectiveDate' xlink:type='locator' />
+<link:loc xlink:href='rr-2008-12-31.xsd#rr_ProspectusDate' xlink:label='lab_ProspectusDate' xlink:type='locator' />
+<link:loc xlink:href='rr-2008-12-31.xsd#rr_ProspectusTable' xlink:label='lab_ProspectusTable' xlink:type='locator' />
+<link:loc xlink:href='http://xbrl.us/us-gaap/1.0/non-gaap/dei-2008-03-31.xsd#dei_LegalEntityAxis' xlink:label='lab_LegalEntityAxis' xlink:type='locator' />
+<link:loc xlink:href='rr-2008-12-31.xsd#rr_ProspectusShareClassAxis' xlink:label='lab_ProspectusShareClassAxis' xlink:type='locator' />
+<link:loc xlink:href='rr-2008-12-31.xsd#rr_ShareClassDomain' xlink:label='lab_ShareClassDomain' xlink:type='locator' />
+<link:loc xlink:href='http://xbrl.us/us-gaap/1.0/non-gaap/dei-2008-03-31.xsd#dei_EntityDomain' xlink:label='lab_EntityDomain' xlink:type='locator' />
+<link:loc xlink:href='rr-2008-12-31.xsd#rr_ExpenseExchangeTradedFundCommissions' xlink:label='lab_ExpenseExchangeTradedFundCommissions' xlink:type='locator' />
+<link:loc xlink:href='rr-2008-12-31.xsd#rr_ExpensesRepresentBothMasterAndFeeder' xlink:label='lab_ExpensesRepresentBothMasterAndFeeder' xlink:type='locator' />
+<link:loc xlink:href='rr-2008-12-31.xsd#rr_ExpensesOtherExpensesHadExtraordinaryExpensesBeenIncluded' xlink:label='lab_ExpensesOtherExpensesHadExtraordinaryExpensesBeenIncluded' xlink:type='locator' />
+<link:loc xlink:href='rr-2008-12-31.xsd#rr_ExpensesRestatedToReflectCurrent' xlink:label='lab_ExpensesRestatedToReflectCurrent' xlink:type='locator' />
+<link:loc xlink:href='rr-2008-12-31.xsd#rr_BarChartDoesNotReflectSalesLoads' xlink:label='lab_BarChartDoesNotReflectSalesLoads' xlink:type='locator' />
+<link:loc xlink:href='rr-2008-12-31.xsd#rr_StrategyPortfolioConcentration' xlink:label='lab_StrategyPortfolioConcentration' xlink:type='locator' />
+<link:loc xlink:href='rr-2008-12-31.xsd#rr_PerformanceInformationIllustratesVariabilityOfReturns' xlink:label='lab_PerformanceInformationIllustratesVariabilityOfReturns' xlink:type='locator' />
+<link:loc xlink:href='rr-2008-12-31.xsd#rr_PerformanceOneYearOrLess' xlink:label='lab_PerformanceOneYearOrLess' xlink:type='locator' />
+<link:loc xlink:href='rr-2008-12-31.xsd#rr_PerformanceAdditionalMarketIndex' xlink:label='lab_PerformanceAdditionalMarketIndex' xlink:type='locator' />
+<link:loc xlink:href='rr-2008-12-31.xsd#rr_RiskLoseMoney' xlink:label='lab_RiskLoseMoney' xlink:type='locator' />
+<link:loc xlink:href='rr-2008-12-31.xsd#rr_RiskNondiversifiedStatus' xlink:label='lab_RiskNondiversifiedStatus' xlink:type='locator' />
+<link:loc xlink:href='rr-2008-12-31.xsd#rr_RiskMoneyMarketFund' xlink:label='lab_RiskMoneyMarketFund' xlink:type='locator' />
+<link:loc xlink:href='rr-2008-12-31.xsd#rr_RiskNotInsuredDepositoryInstitution' xlink:label='lab_RiskNotInsuredDepositoryInstitution' xlink:type='locator' />
+<link:presentationArc order='10.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='lab_ProspectusLineItems' xlink:to='lab_TradingSymbol' xlink:type='arc' />
+<link:presentationArc order='10.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='lab_ObjectiveSectionAbstract' xlink:to='lab_ObjectiveHeading' xlink:type='arc' />
+<link:presentationArc order='10.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='lab_ExpenseBreakpointDiscounts' xlink:to='lab_ExpenseBreakpointMinimumInvestmentRequiredAmount' xlink:type='arc' />
+<link:presentationArc order='10.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='lab_FeeWaiverOrReimbursementOverAssets' xlink:to='lab_FeeWaiverOrReimbursementOverAssetsDateOfTermination' xlink:type='arc' />
+<link:presentationArc order='30.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='lab_PortfolioTurnoverAbstract' xlink:to='lab_PortfolioTurnoverRate' xlink:type='arc' />
+<link:presentationArc order='60.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='lab_PerformanceNarrativeTextBlock' xlink:to='lab_PerformancePastDoesNotIndicateFuture' xlink:type='arc' />
+<link:presentationArc order='10.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='lab_BarChartClosingAbstract' xlink:to='lab_BarChartFootnotesTextBlock' xlink:type='arc' />
+<link:presentationArc order='10.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='lab_BarChartFootnotesTextBlock' xlink:to='lab_BarChartReasonSelectedClassDifferentFromImmediatelyPrecedingPeriod' xlink:type='arc' />
+<link:presentationArc order='20.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='lab_BarChartFootnotesTextBlock' xlink:to='lab_BarChartReturnsForClassNotOfferedInProspectus' xlink:type='arc' />
+<link:presentationArc order='70.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='lab_PerformanceTableNarrativeTextBlock' xlink:to='lab_PerformanceTableExplanationAfterTaxHigher' xlink:type='arc' />
+<link:presentationArc order='10.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='lab_PerformanceTableFootnotesTextBlock' xlink:to='lab_PerformanceTableFootnotesReasonPerformanceInformationForClassDifferentFromImmediatelyPrecedingPeriod' xlink:type='arc' />
+<link:presentationArc order='10.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='lab_PerformanceTableClosingTextBlock' xlink:to='lab_PerformanceTableDoesReflectSalesLoads' xlink:type='arc' />
+<link:presentationArc order='20.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='lab_PerformanceTableClosingTextBlock' xlink:to='lab_PerformanceTableMarketIndexChanged' xlink:type='arc' />
+<link:presentationArc order='40.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='lab_PerformanceTableClosingTextBlock' xlink:to='lab_PerformanceTableUsesHighestFederalRate' xlink:type='arc' />
+<link:presentationArc order='70.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='lab_PerformanceTableClosingTextBlock' xlink:to='lab_PerformanceTableExplanationAfterTaxHigher' xlink:type='arc' />
+<link:presentationArc order='50.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='lab_PerformanceTableNarrativeTextBlock' xlink:to='lab_PerformanceTableNotRelevantToTaxDeferred' xlink:type='arc' />
+<link:presentationArc order='60.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='lab_PerformanceTableNarrativeTextBlock' xlink:to='lab_PerformanceTableOneClassOfAfterTaxShown' xlink:type='arc' />
+<link:presentationArc order='50.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='lab_PerformanceTableClosingTextBlock' xlink:to='lab_PerformanceTableNotRelevantToTaxDeferred' xlink:type='arc' />
+<link:presentationArc order='60.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='lab_PerformanceTableClosingTextBlock' xlink:to='lab_PerformanceTableOneClassOfAfterTaxShown' xlink:type='arc' />
+<link:presentationArc order='70.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='lab_ExpenseFootnotesTextBlock' xlink:to='lab_AcquiredFundFeesAndExpensesBasedOnEstimates' xlink:type='arc' />
+<link:presentationArc order='90.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='lab_ExpenseFootnotesTextBlock' xlink:to='lab_OtherExpensesNewFundBasedOnEstimates' xlink:type='arc' />
+<link:presentationArc order='20.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='lab_ExpenseFootnotesTextBlock' xlink:to='lab_ExpensesDeferredChargesTextBlock' xlink:type='arc' />
+<link:presentationArc order='30.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='lab_ExpenseFootnotesTextBlock' xlink:to='lab_ExpensesRangeOfExchangeFeesTextBlock' xlink:type='arc' />
+<link:presentationArc order='80.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='lab_ExpenseFootnotesTextBlock' xlink:to='lab_ExpensesNotCorrelatedToRatioDueToAcquiredFundFees' xlink:type='arc' />
+<link:presentationArc order='40.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='lab_ExpenseFootnotesTextBlock' xlink:to='lab_ExpensesExplanationOfNonrecurringAccountFee' xlink:type='arc' />
+<link:presentationArc order='30.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='lab_PerformanceTableClosingTextBlock' xlink:to='lab_IndexNoDeductionForFeesExpensesTaxes' xlink:type='arc' />
+<link:presentationArc order='30.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='lab_PerformanceTableNarrativeTextBlock' xlink:to='lab_IndexNoDeductionForFeesExpensesTaxes' xlink:type='arc' />
+<link:presentationArc order='270.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='lab_BarChartTableAbstract' xlink:to='lab_AnnualReturn2013' xlink:type='arc' />
+<link:presentationArc order='280.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='lab_BarChartTableAbstract' xlink:to='lab_AnnualReturn2014' xlink:type='arc' />
+<link:presentationArc order='50.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='lab_PerformanceNarrativeTextBlock' xlink:to='lab_PerformanceAvailbilityWebSiteAddress' xlink:type='arc' />
+<link:presentationArc order='40.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='lab_PerformanceNarrativeTextBlock' xlink:to='lab_PerformanceAvailbilityPhone' xlink:type='arc' />
+<link:presentationArc order='20.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='lab_ObjectiveSectionAbstract' xlink:to='lab_ObjectivePrimaryTextBlock' xlink:type='arc' />
+<link:presentationArc order='30.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='lab_ObjectiveSectionAbstract' xlink:to='lab_ObjectiveSecondaryTextBlock' xlink:type='arc' />
+<link:presentationArc order='10.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='lab_StrategySectionAbstract' xlink:to='lab_StrategyHeading' xlink:type='arc' />
+<link:presentationArc order='20.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='lab_StrategySectionAbstract' xlink:to='lab_StrategyNarrativeTextBlock' xlink:type='arc' />
+<link:presentationArc order='10.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='lab_RiskSectionAbstract' xlink:to='lab_RiskHeading' xlink:type='arc' />
+<link:presentationArc order='20.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='lab_RiskSectionAbstract' xlink:to='lab_RiskNarrativeTextBlock' xlink:type='arc' />
+<link:presentationArc order='30.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='lab_RiskSectionAbstract' xlink:to='lab_RiskCaption' xlink:type='arc' />
+<link:presentationArc order='40.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='lab_RiskSectionAbstract' xlink:to='lab_RiskColumnName' xlink:type='arc' />
+<link:presentationArc order='50.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='lab_RiskSectionAbstract' xlink:to='lab_Risk' xlink:type='arc' />
+<link:presentationArc order='60.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='lab_RiskSectionAbstract' xlink:to='lab_RiskFootnotesTextBlock' xlink:type='arc' />
+<link:presentationArc order='70.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='lab_RiskSectionAbstract' xlink:to='lab_RiskClosingTextBlock' xlink:type='arc' />
+<link:presentationArc order='20.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='lab_ProspectusLineItems' xlink:to='lab_RiskReturnAbstract' xlink:type='arc' />
+<link:presentationArc order='30.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='lab_ProspectusLineItems' xlink:to='lab_ObjectiveSectionAbstract' xlink:type='arc' />
+<link:presentationArc order='40.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='lab_ProspectusLineItems' xlink:to='lab_ExpensesAbstract' xlink:type='arc' />
+<link:presentationArc order='50.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='lab_ProspectusLineItems' xlink:to='lab_ShareholderFeesAbstract' xlink:type='arc' />
+<link:presentationArc order='60.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='lab_ProspectusLineItems' xlink:to='lab_OperatingExpensesAbstract' xlink:type='arc' />
+<link:presentationArc order='70.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='lab_ProspectusLineItems' xlink:to='lab_ExpenseFootnotesAbstract' xlink:type='arc' />
+<link:presentationArc order='80.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='lab_ProspectusLineItems' xlink:to='lab_ExpenseExampleNarrativeAbstract' xlink:type='arc' />
+<link:presentationArc order='90.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='lab_ProspectusLineItems' xlink:to='lab_ExpenseExampleAbstract' xlink:type='arc' />
+<link:presentationArc order='100.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='lab_ProspectusLineItems' xlink:to='lab_ExpenseExampleClosingAbstract' xlink:type='arc' />
+<link:presentationArc order='110.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='lab_ProspectusLineItems' xlink:to='lab_PortfolioTurnoverAbstract' xlink:type='arc' />
+<link:presentationArc order='120.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='lab_ProspectusLineItems' xlink:to='lab_StrategySectionAbstract' xlink:type='arc' />
+<link:presentationArc order='130.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='lab_ProspectusLineItems' xlink:to='lab_RiskSectionAbstract' xlink:type='arc' />
+<link:presentationArc order='140.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='lab_ProspectusLineItems' xlink:to='lab_BarChartAndPerformanceTableSectionAbstract' xlink:type='arc' />
+<link:presentationArc order='150.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='lab_ProspectusLineItems' xlink:to='lab_BarChartNarrativeAbstract' xlink:type='arc' />
+<link:presentationArc order='160.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='lab_ProspectusLineItems' xlink:to='lab_BarChartTableAbstract' xlink:type='arc' />
+<link:presentationArc order='170.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='lab_ProspectusLineItems' xlink:to='lab_BarChartClosingAbstract' xlink:type='arc' />
+<link:presentationArc order='180.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='lab_ProspectusLineItems' xlink:to='lab_PerformanceNarrativeAbstract' xlink:type='arc' />
+<link:presentationArc order='190.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='lab_ProspectusLineItems' xlink:to='lab_PerformanceTableSectionAbstract' xlink:type='arc' />
+<link:presentationArc order='200.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='lab_ProspectusLineItems' xlink:to='lab_PerformanceTableClosingAbstract' xlink:type='arc' />
+<link:presentationArc order='10.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='lab_RiskReturnAbstract' xlink:to='lab_RiskReturnHeading' xlink:type='arc' />
+<link:presentationArc order='10.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='lab_BarChartAndPerformanceTableSectionAbstract' xlink:to='lab_BarChartAndPerformanceTableHeading' xlink:type='arc' />
+<link:presentationArc order='20.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='lab_BarChartAndPerformanceTableSectionAbstract' xlink:to='lab_PerformanceNarrativeTextBlock' xlink:type='arc' />
+<link:presentationArc order='10.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='lab_BarChartNarrativeAbstract' xlink:to='lab_BarChartHeading' xlink:type='arc' />
+<link:presentationArc order='20.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='lab_BarChartNarrativeAbstract' xlink:to='lab_BarChartNarrativeTextBlock' xlink:type='arc' />
+<link:presentationArc order='10.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='lab_BarChartTableAbstract' xlink:to='lab_AnnualReturnCaption' xlink:type='arc' />
+<link:presentationArc order='20.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='lab_BarChartTableAbstract' xlink:to='lab_AnnualReturnColumnName' xlink:type='arc' />
+<link:presentationArc order='30.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='lab_BarChartTableAbstract' xlink:to='lab_AnnualReturnInceptionDate' xlink:type='arc' />
+<link:presentationArc order='40.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='lab_BarChartTableAbstract' xlink:to='lab_AnnualReturn1990' xlink:type='arc' />
+<link:presentationArc order='50.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='lab_BarChartTableAbstract' xlink:to='lab_AnnualReturn1991' xlink:type='arc' />
+<link:presentationArc order='60.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='lab_BarChartTableAbstract' xlink:to='lab_AnnualReturn1992' xlink:type='arc' />
+<link:presentationArc order='70.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='lab_BarChartTableAbstract' xlink:to='lab_AnnualReturn1993' xlink:type='arc' />
+<link:presentationArc order='80.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='lab_BarChartTableAbstract' xlink:to='lab_AnnualReturn1994' xlink:type='arc' />
+<link:presentationArc order='90.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='lab_BarChartTableAbstract' xlink:to='lab_AnnualReturn1995' xlink:type='arc' />
+<link:presentationArc order='100.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='lab_BarChartTableAbstract' xlink:to='lab_AnnualReturn1996' xlink:type='arc' />
+<link:presentationArc order='110.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='lab_BarChartTableAbstract' xlink:to='lab_AnnualReturn1997' xlink:type='arc' />
+<link:presentationArc order='120.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='lab_BarChartTableAbstract' xlink:to='lab_AnnualReturn1998' xlink:type='arc' />
+<link:presentationArc order='130.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='lab_BarChartTableAbstract' xlink:to='lab_AnnualReturn1999' xlink:type='arc' />
+<link:presentationArc order='140.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='lab_BarChartTableAbstract' xlink:to='lab_AnnualReturn2000' xlink:type='arc' />
+<link:presentationArc order='150.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='lab_BarChartTableAbstract' xlink:to='lab_AnnualReturn2001' xlink:type='arc' />
+<link:presentationArc order='160.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='lab_BarChartTableAbstract' xlink:to='lab_AnnualReturn2002' xlink:type='arc' />
+<link:presentationArc order='170.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='lab_BarChartTableAbstract' xlink:to='lab_AnnualReturn2003' xlink:type='arc' />
+<link:presentationArc order='180.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='lab_BarChartTableAbstract' xlink:to='lab_AnnualReturn2004' xlink:type='arc' />
+<link:presentationArc order='190.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='lab_BarChartTableAbstract' xlink:to='lab_AnnualReturn2005' xlink:type='arc' />
+<link:presentationArc order='200.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='lab_BarChartTableAbstract' xlink:to='lab_AnnualReturn2006' xlink:type='arc' />
+<link:presentationArc order='210.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='lab_BarChartTableAbstract' xlink:to='lab_AnnualReturn2007' xlink:type='arc' />
+<link:presentationArc order='220.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='lab_BarChartTableAbstract' xlink:to='lab_AnnualReturn2008' xlink:type='arc' />
+<link:presentationArc order='230.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='lab_BarChartTableAbstract' xlink:to='lab_AnnualReturn2009' xlink:type='arc' />
+<link:presentationArc order='240.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='lab_BarChartTableAbstract' xlink:to='lab_AnnualReturn2010' xlink:type='arc' />
+<link:presentationArc order='250.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='lab_BarChartTableAbstract' xlink:to='lab_AnnualReturn2011' xlink:type='arc' />
+<link:presentationArc order='260.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='lab_BarChartTableAbstract' xlink:to='lab_AnnualReturn2012' xlink:type='arc' />
+<link:presentationArc order='20.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='lab_BarChartClosingAbstract' xlink:to='lab_YearToDateReturnLabel' xlink:type='arc' />
+<link:presentationArc order='30.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='lab_BarChartClosingAbstract' xlink:to='lab_BarChartYearToDateReturn' xlink:type='arc' />
+<link:presentationArc order='40.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='lab_BarChartClosingAbstract' xlink:to='lab_BarChartYearToDateReturnDate' xlink:type='arc' />
+<link:presentationArc order='50.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='lab_BarChartClosingAbstract' xlink:to='lab_HighestQuarterlyReturnLabel' xlink:type='arc' />
+<link:presentationArc order='60.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='lab_BarChartClosingAbstract' xlink:to='lab_BarChartHighestQuarterlyReturn' xlink:type='arc' />
+<link:presentationArc order='70.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='lab_BarChartClosingAbstract' xlink:to='lab_BarChartHighestQuarterlyReturnDate' xlink:type='arc' />
+<link:presentationArc order='80.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='lab_BarChartClosingAbstract' xlink:to='lab_LowestQuarterlyReturnLabel' xlink:type='arc' />
+<link:presentationArc order='90.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='lab_BarChartClosingAbstract' xlink:to='lab_BarChartLowestQuarterlyReturn' xlink:type='arc' />
+<link:presentationArc order='100.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='lab_BarChartClosingAbstract' xlink:to='lab_BarChartLowestQuarterlyReturnDate' xlink:type='arc' />
+<link:presentationArc order='110.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='lab_BarChartClosingAbstract' xlink:to='lab_BarChartClosingTextBlock' xlink:type='arc' />
+<link:presentationArc order='10.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='lab_AverageAnnualReturnAbstract' xlink:to='lab_AverageAnnualReturnLabel' xlink:type='arc' />
+<link:presentationArc order='20.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='lab_AverageAnnualReturnAbstract' xlink:to='lab_AverageAnnualReturnYear01' xlink:type='arc' />
+<link:presentationArc order='30.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='lab_AverageAnnualReturnAbstract' xlink:to='lab_AverageAnnualReturnYear05' xlink:type='arc' />
+<link:presentationArc order='40.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='lab_AverageAnnualReturnAbstract' xlink:to='lab_AverageAnnualReturnYear10' xlink:type='arc' />
+<link:presentationArc order='50.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='lab_AverageAnnualReturnAbstract' xlink:to='lab_AverageAnnualReturnSinceInception' xlink:type='arc' />
+<link:presentationArc order='60.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='lab_AverageAnnualReturnAbstract' xlink:to='lab_AverageAnnualReturnInceptionDate' xlink:type='arc' />
+<link:presentationArc order='10.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='lab_AverageAnnualReturnAfterTaxesOnDistributionsAbstract' xlink:to='lab_AverageAnnualReturnAfterTaxesOnDistributionsLabel' xlink:type='arc' />
+<link:presentationArc order='20.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='lab_AverageAnnualReturnAfterTaxesOnDistributionsAbstract' xlink:to='lab_AverageAnnualReturnAfterTaxesOnDistributionsYear01' xlink:type='arc' />
+<link:presentationArc order='30.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='lab_AverageAnnualReturnAfterTaxesOnDistributionsAbstract' xlink:to='lab_AverageAnnualReturnAfterTaxesOnDistributionsYear05' xlink:type='arc' />
+<link:presentationArc order='40.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='lab_AverageAnnualReturnAfterTaxesOnDistributionsAbstract' xlink:to='lab_AverageAnnualReturnAfterTaxesOnDistributionsYear10' xlink:type='arc' />
+<link:presentationArc order='50.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='lab_AverageAnnualReturnAfterTaxesOnDistributionsAbstract' xlink:to='lab_AverageAnnualReturnAfterTaxesOnDistributionsSinceInception' xlink:type='arc' />
+<link:presentationArc order='60.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='lab_AverageAnnualReturnAfterTaxesOnDistributionsAbstract' xlink:to='lab_AverageAnnualReturnAfterTaxesOnDistributionsInceptionDate' xlink:type='arc' />
+<link:presentationArc order='10.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='lab_AverageAnnualReturnAfterTaxesOnDistributionsAndSalesAbstract' xlink:to='lab_AverageAnnualReturnAfterTaxesOnDistributionsAndSalesLabel' xlink:type='arc' />
+<link:presentationArc order='20.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='lab_AverageAnnualReturnAfterTaxesOnDistributionsAndSalesAbstract' xlink:to='lab_AverageAnnualReturnAfterTaxesOnDistributionsAndSalesYear01' xlink:type='arc' />
+<link:presentationArc order='30.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='lab_AverageAnnualReturnAfterTaxesOnDistributionsAndSalesAbstract' xlink:to='lab_AverageAnnualReturnAfterTaxesOnDistributionsAndSalesYear05' xlink:type='arc' />
+<link:presentationArc order='40.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='lab_AverageAnnualReturnAfterTaxesOnDistributionsAndSalesAbstract' xlink:to='lab_AverageAnnualReturnAfterTaxesOnDistributionsAndSalesYear10' xlink:type='arc' />
+<link:presentationArc order='50.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='lab_AverageAnnualReturnAfterTaxesOnDistributionsAndSalesAbstract' xlink:to='lab_AverageAnnualReturnAfterTaxesOnDistributionsAndSalesSinceInception' xlink:type='arc' />
+<link:presentationArc order='60.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='lab_AverageAnnualReturnAfterTaxesOnDistributionsAndSalesAbstract' xlink:to='lab_AverageAnnualReturnAfterTaxesOnDistributionsAndSalesInceptionDate' xlink:type='arc' />
+<link:presentationArc order='10.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='lab_MarketIndexReturnAbstract' xlink:to='lab_MarketIndexReturnLabel' xlink:type='arc' />
+<link:presentationArc order='20.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='lab_MarketIndexReturnAbstract' xlink:to='lab_MarketIndexReturnYear01' xlink:type='arc' />
+<link:presentationArc order='30.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='lab_MarketIndexReturnAbstract' xlink:to='lab_MarketIndexReturnYear05' xlink:type='arc' />
+<link:presentationArc order='40.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='lab_MarketIndexReturnAbstract' xlink:to='lab_MarketIndexReturnYear10' xlink:type='arc' />
+<link:presentationArc order='50.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='lab_MarketIndexReturnAbstract' xlink:to='lab_MarketIndexReturnSinceInception' xlink:type='arc' />
+<link:presentationArc order='60.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='lab_MarketIndexReturnAbstract' xlink:to='lab_MarketIndexReturnInceptionDate' xlink:type='arc' />
+<link:presentationArc order='10.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='lab_PerformanceNarrativeAbstract' xlink:to='lab_PerformanceTableHeading' xlink:type='arc' />
+<link:presentationArc order='20.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='lab_PerformanceNarrativeAbstract' xlink:to='lab_PerformanceTableNarrativeTextBlock' xlink:type='arc' />
+<link:presentationArc order='30.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='lab_PerformanceNarrativeAbstract' xlink:to='lab_AverageAnnualReturnCaption' xlink:type='arc' />
+<link:presentationArc order='10.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='lab_PerformanceTableSectionAbstract' xlink:to='lab_AverageAnnualReturnColumnName' xlink:type='arc' />
+<link:presentationArc order='20.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='lab_PerformanceTableSectionAbstract' xlink:to='lab_AverageAnnualReturnAbstract' xlink:type='arc' />
+<link:presentationArc order='30.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='lab_PerformanceTableSectionAbstract' xlink:to='lab_AverageAnnualReturnAfterTaxesOnDistributionsAbstract' xlink:type='arc' />
+<link:presentationArc order='40.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='lab_PerformanceTableSectionAbstract' xlink:to='lab_AverageAnnualReturnAfterTaxesOnDistributionsAndSalesAbstract' xlink:type='arc' />
+<link:presentationArc order='50.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='lab_PerformanceTableSectionAbstract' xlink:to='lab_MarketIndexReturnAbstract' xlink:type='arc' />
+<link:presentationArc order='60.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='lab_PerformanceTableSectionAbstract' xlink:to='lab_MoneyMarketSevenDayYieldCaption' xlink:type='arc' />
+<link:presentationArc order='70.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='lab_PerformanceTableSectionAbstract' xlink:to='lab_MoneyMarketSevenDayYieldColumnName' xlink:type='arc' />
+<link:presentationArc order='80.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='lab_PerformanceTableSectionAbstract' xlink:to='lab_MoneyMarketSevenDayYieldPhone' xlink:type='arc' />
+<link:presentationArc order='90.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='lab_PerformanceTableSectionAbstract' xlink:to='lab_MoneyMarketSevenDayYield' xlink:type='arc' />
+<link:presentationArc order='100.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='lab_PerformanceTableSectionAbstract' xlink:to='lab_MoneyMarketSevenDayTaxEquivalentYield' xlink:type='arc' />
+<link:presentationArc order='110.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='lab_PerformanceTableSectionAbstract' xlink:to='lab_ThirtyDayYieldCaption' xlink:type='arc' />
+<link:presentationArc order='120.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='lab_PerformanceTableSectionAbstract' xlink:to='lab_ThirtyDayYieldColumnName' xlink:type='arc' />
+<link:presentationArc order='130.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='lab_PerformanceTableSectionAbstract' xlink:to='lab_ThirtyDayYieldPhone' xlink:type='arc' />
+<link:presentationArc order='140.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='lab_PerformanceTableSectionAbstract' xlink:to='lab_ThirtyDayYield' xlink:type='arc' />
+<link:presentationArc order='150.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='lab_PerformanceTableSectionAbstract' xlink:to='lab_ThirtyDayTaxEquivalentYield' xlink:type='arc' />
+<link:presentationArc order='10.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='lab_PerformanceTableClosingAbstract' xlink:to='lab_PerformanceTableFootnotesTextBlock' xlink:type='arc' />
+<link:presentationArc order='20.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='lab_PerformanceTableClosingAbstract' xlink:to='lab_PerformanceTableClosingTextBlock' xlink:type='arc' />
+<link:presentationArc order='10.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='lab_ExpensesAbstract' xlink:to='lab_ExpenseHeading' xlink:type='arc' />
+<link:presentationArc order='20.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='lab_ExpensesAbstract' xlink:to='lab_ExpenseNarrativeTextBlock' xlink:type='arc' />
+<link:presentationArc order='10.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='lab_ShareholderFeesAbstract' xlink:to='lab_ShareholderFeesCaption' xlink:type='arc' />
+<link:presentationArc order='20.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='lab_ShareholderFeesAbstract' xlink:to='lab_ShareholderFeesColumnName' xlink:type='arc' />
+<link:presentationArc order='30.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='lab_ShareholderFeesAbstract' xlink:to='lab_MaximumCumulativeSalesChargeOverOfferingPrice' xlink:type='arc' />
+<link:presentationArc order='40.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='lab_ShareholderFeesAbstract' xlink:to='lab_MaximumCumulativeSalesChargeOverOther' xlink:type='arc' />
+<link:presentationArc order='50.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='lab_ShareholderFeesAbstract' xlink:to='lab_MaximumSalesChargeImposedOnPurchasesOverOfferingPrice' xlink:type='arc' />
+<link:presentationArc order='60.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='lab_ShareholderFeesAbstract' xlink:to='lab_MaximumDeferredSalesChargeOverOfferingPrice' xlink:type='arc' />
+<link:presentationArc order='70.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='lab_ShareholderFeesAbstract' xlink:to='lab_MaximumDeferredSalesChargeOverOther' xlink:type='arc' />
+<link:presentationArc order='80.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='lab_ShareholderFeesAbstract' xlink:to='lab_MaximumSalesChargeOnReinvestedDividendsAndDistributionsOverOther' xlink:type='arc' />
+<link:presentationArc order='90.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='lab_ShareholderFeesAbstract' xlink:to='lab_RedemptionFeeOverRedemption' xlink:type='arc' />
+<link:presentationArc order='100.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='lab_ShareholderFeesAbstract' xlink:to='lab_RedemptionFee' xlink:type='arc' />
+<link:presentationArc order='110.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='lab_ShareholderFeesAbstract' xlink:to='lab_ExchangeFeeOverRedemption' xlink:type='arc' />
+<link:presentationArc order='120.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='lab_ShareholderFeesAbstract' xlink:to='lab_ExchangeFee' xlink:type='arc' />
+<link:presentationArc order='130.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='lab_ShareholderFeesAbstract' xlink:to='lab_MaximumAccountFeeOverAssets' xlink:type='arc' />
+<link:presentationArc order='140.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='lab_ShareholderFeesAbstract' xlink:to='lab_MaximumAccountFee' xlink:type='arc' />
+<link:presentationArc order='150.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='lab_ShareholderFeesAbstract' xlink:to='lab_ShareholderFeeOther' xlink:type='arc' />
+<link:presentationArc order='10.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='lab_OperatingExpensesAbstract' xlink:to='lab_OperatingExpensesCaption' xlink:type='arc' />
+<link:presentationArc order='20.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='lab_OperatingExpensesAbstract' xlink:to='lab_OperatingExpensesColumnName' xlink:type='arc' />
+<link:presentationArc order='30.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='lab_OperatingExpensesAbstract' xlink:to='lab_NetExpensesOverAssetsAbstract' xlink:type='arc' />
+<link:presentationArc order='10.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='lab_NetExpensesOverAssetsAbstract' xlink:to='lab_ExpensesOverAssetsAbstract' xlink:type='arc' />
+<link:presentationArc order='20.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='lab_NetExpensesOverAssetsAbstract' xlink:to='lab_FeeWaiverOrReimbursementOverAssets' xlink:type='arc' />
+<link:presentationArc order='30.0' preferredLabel='http://www.xbrl.org/2003/role/totalLabel' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='lab_NetExpensesOverAssetsAbstract' xlink:to='lab_NetExpensesOverAssets' xlink:type='arc' />
+<link:presentationArc order='10.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='lab_ExpensesOverAssetsAbstract' xlink:to='lab_ManagementFeesOverAssets' xlink:type='arc' />
+<link:presentationArc order='20.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='lab_ExpensesOverAssetsAbstract' xlink:to='lab_DistributionAndService12b1FeesOverAssets' xlink:type='arc' />
+<link:presentationArc order='30.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='lab_ExpensesOverAssetsAbstract' xlink:to='lab_DistributionOrSimilarNon12b1FeesOverAssets' xlink:type='arc' />
+<link:presentationArc order='40.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='lab_ExpensesOverAssetsAbstract' xlink:to='lab_OtherExpensesOverAssetsAbstract' xlink:type='arc' />
+<link:presentationArc order='50.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='lab_ExpensesOverAssetsAbstract' xlink:to='lab_AcquiredFundFeesAndExpensesOverAssets' xlink:type='arc' />
+<link:presentationArc order='60.0' preferredLabel='http://www.xbrl.org/2003/role/totalLabel' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='lab_ExpensesOverAssetsAbstract' xlink:to='lab_ExpensesOverAssets' xlink:type='arc' />
+<link:presentationArc order='10.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='lab_OtherExpensesOverAssetsAbstract' xlink:to='lab_Component1OtherExpensesOverAssets' xlink:type='arc' />
+<link:presentationArc order='20.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='lab_OtherExpensesOverAssetsAbstract' xlink:to='lab_Component2OtherExpensesOverAssets' xlink:type='arc' />
+<link:presentationArc order='30.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='lab_OtherExpensesOverAssetsAbstract' xlink:to='lab_Component3OtherExpensesOverAssets' xlink:type='arc' />
+<link:presentationArc order='40.0' preferredLabel='http://www.xbrl.org/2003/role/totalLabel' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='lab_OtherExpensesOverAssetsAbstract' xlink:to='lab_OtherExpensesOverAssets' xlink:type='arc' />
+<link:presentationArc order='10.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='lab_ExpenseFootnotesAbstract' xlink:to='lab_ExpenseFootnotesTextBlock' xlink:type='arc' />
+<link:presentationArc order='10.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='lab_ExpenseExampleNarrativeAbstract' xlink:to='lab_ExpenseExampleHeading' xlink:type='arc' />
+<link:presentationArc order='20.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='lab_ExpenseExampleNarrativeAbstract' xlink:to='lab_ExpenseExampleNarrativeTextBlock' xlink:type='arc' />
+<link:presentationArc order='30.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='lab_ExpenseExampleNarrativeAbstract' xlink:to='lab_ExpenseExampleByYearHeading' xlink:type='arc' />
+<link:presentationArc order='40.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='lab_ExpenseExampleNarrativeAbstract' xlink:to='lab_ExpenseExampleByYearCaption' xlink:type='arc' />
+<link:presentationArc order='10.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='lab_ExpenseExampleAbstract' xlink:to='lab_ExpenseExampleByYearColumnName' xlink:type='arc' />
+<link:presentationArc order='20.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='lab_ExpenseExampleAbstract' xlink:to='lab_ExpenseExampleYear01' xlink:type='arc' />
+<link:presentationArc order='30.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='lab_ExpenseExampleAbstract' xlink:to='lab_ExpenseExampleYear03' xlink:type='arc' />
+<link:presentationArc order='40.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='lab_ExpenseExampleAbstract' xlink:to='lab_ExpenseExampleYear05' xlink:type='arc' />
+<link:presentationArc order='50.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='lab_ExpenseExampleAbstract' xlink:to='lab_ExpenseExampleYear10' xlink:type='arc' />
+<link:presentationArc order='60.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='lab_ExpenseExampleAbstract' xlink:to='lab_ExpenseExampleNoRedemptionByYearCaption' xlink:type='arc' />
+<link:presentationArc order='70.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='lab_ExpenseExampleAbstract' xlink:to='lab_ExpenseExampleNoRedemptionByYearColumnName' xlink:type='arc' />
+<link:presentationArc order='80.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='lab_ExpenseExampleAbstract' xlink:to='lab_ExpenseExampleNoRedemptionYear01' xlink:type='arc' />
+<link:presentationArc order='90.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='lab_ExpenseExampleAbstract' xlink:to='lab_ExpenseExampleNoRedemptionYear03' xlink:type='arc' />
+<link:presentationArc order='100.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='lab_ExpenseExampleAbstract' xlink:to='lab_ExpenseExampleNoRedemptionYear05' xlink:type='arc' />
+<link:presentationArc order='110.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='lab_ExpenseExampleAbstract' xlink:to='lab_ExpenseExampleNoRedemptionYear10' xlink:type='arc' />
+<link:presentationArc order='10.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='lab_ExpenseExampleClosingAbstract' xlink:to='lab_ExpenseExampleFootnotesTextBlock' xlink:type='arc' />
+<link:presentationArc order='20.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='lab_ExpenseExampleClosingAbstract' xlink:to='lab_ExpenseExampleClosingTextBlock' xlink:type='arc' />
+<link:presentationArc order='10.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='lab_PortfolioTurnoverAbstract' xlink:to='lab_PortfolioTurnoverHeading' xlink:type='arc' />
+<link:presentationArc order='20.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='lab_PortfolioTurnoverAbstract' xlink:to='lab_PortfolioTurnoverTextBlock' xlink:type='arc' />
+<link:presentationArc order='10.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='lab_FormN1aAbstract' xlink:to='lab_DocumentCreationDate' xlink:type='arc' />
+<link:presentationArc order='20.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='lab_FormN1aAbstract' xlink:to='lab_DocumentEffectiveDate' xlink:type='arc' />
+<link:presentationArc order='30.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='lab_FormN1aAbstract' xlink:to='lab_ProspectusDate' xlink:type='arc' />
+<link:presentationArc order='40.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='lab_FormN1aAbstract' xlink:to='lab_ProspectusTable' xlink:type='arc' />
+<link:presentationArc order='10.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='lab_ProspectusTable' xlink:to='lab_LegalEntityAxis' xlink:type='arc' />
+<link:presentationArc order='20.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='lab_ProspectusTable' xlink:to='lab_ProspectusShareClassAxis' xlink:type='arc' />
+<link:presentationArc order='10.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='lab_ProspectusShareClassAxis' xlink:to='lab_ShareClassDomain' xlink:type='arc' />
+<link:presentationArc order='30.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='lab_ProspectusTable' xlink:to='lab_ProspectusLineItems' xlink:type='arc' />
+<link:presentationArc order='10.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='lab_LegalEntityAxis' xlink:to='lab_EntityDomain' xlink:type='arc' />
+<link:presentationArc order='10.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='lab_ExpenseNarrativeTextBlock' xlink:to='lab_ExpenseBreakpointDiscounts' xlink:type='arc' />
+<link:presentationArc order='20.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='lab_ExpenseNarrativeTextBlock' xlink:to='lab_ExpenseExchangeTradedFundCommissions' xlink:type='arc' />
+<link:presentationArc order='10.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='lab_ExpenseFootnotesTextBlock' xlink:to='lab_ExpensesRepresentBothMasterAndFeeder' xlink:type='arc' />
+<link:presentationArc order='50.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='lab_ExpenseFootnotesTextBlock' xlink:to='lab_ExpensesOtherExpensesHadExtraordinaryExpensesBeenIncluded' xlink:type='arc' />
+<link:presentationArc order='60.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='lab_ExpenseFootnotesTextBlock' xlink:to='lab_ExpensesRestatedToReflectCurrent' xlink:type='arc' />
+<link:presentationArc order='10.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='lab_BarChartNarrativeTextBlock' xlink:to='lab_BarChartDoesNotReflectSalesLoads' xlink:type='arc' />
+<link:presentationArc order='10.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='lab_StrategyNarrativeTextBlock' xlink:to='lab_StrategyPortfolioConcentration' xlink:type='arc' />
+<link:presentationArc order='10.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='lab_PerformanceNarrativeTextBlock' xlink:to='lab_PerformanceInformationIllustratesVariabilityOfReturns' xlink:type='arc' />
+<link:presentationArc order='20.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='lab_PerformanceNarrativeTextBlock' xlink:to='lab_PerformanceOneYearOrLess' xlink:type='arc' />
+<link:presentationArc order='30.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='lab_PerformanceNarrativeTextBlock' xlink:to='lab_PerformanceAdditionalMarketIndex' xlink:type='arc' />
+<link:presentationArc order='10.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='lab_PerformanceTableNarrativeTextBlock' xlink:to='lab_PerformanceTableDoesReflectSalesLoads' xlink:type='arc' />
+<link:presentationArc order='20.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='lab_PerformanceTableNarrativeTextBlock' xlink:to='lab_PerformanceTableMarketIndexChanged' xlink:type='arc' />
+<link:presentationArc order='40.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='lab_PerformanceTableNarrativeTextBlock' xlink:to='lab_PerformanceTableUsesHighestFederalRate' xlink:type='arc' />
+<link:presentationArc order='10.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='lab_RiskNarrativeTextBlock' xlink:to='lab_RiskLoseMoney' xlink:type='arc' />
+<link:presentationArc order='20.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='lab_RiskNarrativeTextBlock' xlink:to='lab_RiskNondiversifiedStatus' xlink:type='arc' />
+<link:presentationArc order='30.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='lab_RiskNarrativeTextBlock' xlink:to='lab_RiskMoneyMarketFund' xlink:type='arc' />
+<link:presentationArc order='40.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/parent-child' xlink:from='lab_RiskNarrativeTextBlock' xlink:to='lab_RiskNotInsuredDepositoryInstitution' xlink:type='arc' />
+</link:presentationLink>
+</link:linkbase>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+Notice: Authorized Uses are Set Forth at http://taxonomies.xbrl.us/terms/rr_legal.html
+Copyright (C) 2008 XBRL US, Inc. All Rights Reserved.
+  -->
+<xsd:schema elementFormDefault='qualified' targetNamespace='http://xbrl.us/rr-ent/2008-12-31' xmlns:link='http://www.xbrl.org/2003/linkbase' xmlns:rr='http://xbrl.us/rr/2008-12-31' xmlns:rr-ent='http://xbrl.us/rr-ent/2008-12-31' xmlns:xbrli='http://www.xbrl.org/2003/instance' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:xsd='http://www.w3.org/2001/XMLSchema'>
+<xsd:annotation>
+<xsd:appinfo>
+<link:linkbaseRef xlink:arcrole='http://www.w3.org/1999/xlink/properties/linkbase' xlink:href='rr-pre-2008-12-31.xml' xlink:role='http://www.xbrl.org/2003/role/presentationLinkbaseRef' xlink:type='simple' />
+<link:linkbaseRef xlink:arcrole='http://www.w3.org/1999/xlink/properties/linkbase' xlink:href='rr-def-2008-12-31.xml' xlink:role='http://www.xbrl.org/2003/role/definitionLinkbaseRef' xlink:type='simple' />
+<link:linkbaseRef xlink:arcrole='http://www.w3.org/1999/xlink/properties/linkbase' xlink:href='rr-cal-2008-12-31.xml' xlink:role='http://www.xbrl.org/2003/role/calculationLinkbaseRef' xlink:type='simple' />
+</xsd:appinfo>
+</xsd:annotation>
+<xsd:import namespace='http://www.xbrl.org/2003/instance' schemaLocation='http://www.xbrl.org/2003/xbrl-instance-2003-12-31.xsd' />
+<xsd:import namespace='http://xbrl.us/rr-std/2008-12-31' schemaLocation='rr-std-2008-12-31.xsd' />
+<xsd:import namespace='http://xbrl.us/dei-std/2008-03-31' schemaLocation='http://xbrl.us/us-gaap/1.0/non-gaap/dei-std-2008-03-31.xsd' />
+</xsd:schema>

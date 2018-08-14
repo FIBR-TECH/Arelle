@@ -10,7 +10,7 @@ from decimal import Decimal
 from lxml import etree
 from xml.sax import SAXParseException
 from arelle import (PackageManager, XbrlConst, XmlUtil, UrlUtil, ValidateFilingText, 
-                    XhtmlValidate, XmlValidateSchema)
+                    XhtmlValidate, XmlValidateSchema, ViewFileFactList)
 from arelle.ModelObject import ModelObject, ModelComment
 from arelle.ModelValue import qname
 from arelle.ModelDtsObject import ModelLink, ModelResource, ModelRelationship
@@ -22,7 +22,11 @@ from arelle.PythonUtil import OrderedDefaultDict, Fraction, normalizeSpace
 from arelle.XhtmlValidate import ixMsgCode
 from arelle.XmlValidate import VALID, validate as xmlValidate
 
+from time import time
+
 creationSoftwareNames = None
+AWESOME_MODS = False
+AWESOME_DEBUG = False
 
 def load(modelXbrl, uri, base=None, referringElement=None, isEntry=False, isDiscovered=False, isIncluded=None, namespace=None, reloadCache=False, **kwargs):
     """Returns a new modelDocument, performing DTS discovery for instance, inline XBRL, schema, 
@@ -47,22 +51,26 @@ def load(modelXbrl, uri, base=None, referringElement=None, isEntry=False, isDisc
     :type checkModifiedTime: bool
     """
 #    print('uri or url ' + str(uri))
+    
     if referringElement is None: # used for error messages
         referringElement = modelXbrl
+       
     normalizedUri = modelXbrl.modelManager.cntlr.webCache.normalizeUrl(uri, base)
+   
 #    print('Normalizeuri' + str(normalizedUri))
     modelDocument = modelXbrl.urlDocs.get(normalizedUri)
     if modelDocument:
         return modelDocument
     elif modelXbrl.urlUnloadableDocs.get(normalizedUri):  # only return None if in this list and marked True (really not loadable)
         return None
-
+    
     if isEntry:
         modelXbrl.entryLoadingUrl = normalizedUri   # for error loggiong during loading
         modelXbrl.uri = normalizedUri
         modelXbrl.uriDir = os.path.dirname(normalizedUri)
         for i in range(modelXbrl.modelManager.disclosureSystem.maxSubmissionSubdirectoryEntryNesting):
             modelXbrl.uriDir = os.path.dirname(modelXbrl.uriDir)
+    
     if modelXbrl.modelManager.validateDisclosureSystem and \
        not normalizedUri.startswith(modelXbrl.uriDir) and \
        not modelXbrl.modelManager.disclosureSystem.hrefValid(normalizedUri):
@@ -98,7 +106,7 @@ def load(modelXbrl, uri, base=None, referringElement=None, isEntry=False, isDisc
     if modelXbrl.fileSource.isInArchive(mappedUri):
         filepath = mappedUri
     else:
-#        print('filepath' + str(filepath))
+        #print('filepath' + str(filepath))
         filepath = modelXbrl.modelManager.cntlr.webCache.getfilename(mappedUri, reload=reloadCache, checkModifiedTime=kwargs.get("checkModifiedTime",False))
         if filepath:
             uri = modelXbrl.modelManager.cntlr.webCache.normalizeUrl(filepath)
@@ -135,6 +143,7 @@ def load(modelXbrl, uri, base=None, referringElement=None, isEntry=False, isDisc
     # load XML and determine type of model document
     modelXbrl.modelManager.showStatus(_("parsing {0}").format(uri))
     file = None
+    
     try:
         for pluginMethod in pluginClassMethods("ModelDocument.PullLoader"):
             # assumes not possible to check file in string format or not all available at once
@@ -303,21 +312,28 @@ def load(modelXbrl, uri, base=None, referringElement=None, isEntry=False, isDisc
         modelDocument.xmlRootElement = rootNode
         modelDocument.schemaLocationElements.add(rootNode)
         modelDocument.documentEncoding = _encoding
-
+        
         if isEntry or isDiscovered:
             modelDocument.inDTS = True
-        
+
+
+        #start = time()
         # discovery (parsing)
         if any(pluginMethod(modelDocument)
                for pluginMethod in pluginClassMethods("ModelDocument.Discover")):
             pass # discovery was performed by plug-in, we're done
         elif _type == Type.SCHEMA:
+            # slow
             modelDocument.schemaDiscover(rootNode, isIncluded, namespace)
+            #print("SCHEMA: {0:.2f} | {1} {2}".format(time()-s, isIncluded, namespace))
         elif _type == Type.LINKBASE:
-            modelDocument.linkbaseDiscover(rootNode)
+            # slow
+            if not AWESOME_MODS:
+                modelDocument.linkbaseDiscover(rootNode)
         elif _type == Type.INSTANCE:
             modelDocument.instanceDiscover(rootNode)
         elif _type == Type.INLINEXBRL:
+            # slow
             modelDocument.inlineXbrlDiscover(rootNode)
         elif _type == Type.VERSIONINGREPORT:
             modelDocument.versioningReportDiscover(rootNode)
@@ -333,7 +349,13 @@ def load(modelXbrl, uri, base=None, referringElement=None, isEntry=False, isDisc
             modelDocument.versioningReportDiscover(rootNode)
         elif _type == Type.RSSFEED:
             modelDocument.rssFeedDiscover(rootNode)
-            
+
+        # ZMIANY
+        #end = time()
+        #diff = end-start
+        #if diff > 0.05:
+        #    print("time: {0:.2f} | {1}".format(diff, int(_type)))
+
         if isEntry:
             for pi in modelDocument.processingInstructions:
                 if pi.target == "arelle-unit-test":
@@ -349,7 +371,7 @@ def load(modelXbrl, uri, base=None, referringElement=None, isEntry=False, isDisc
             modelXbrl.baseSets = OrderedDefaultDict( # order by linkRole, arcRole of key
                 modelXbrl.baseSets.default_factory,
                 sorted(modelXbrl.baseSets.items(), key=lambda i: (i[0][0] or "",i[0][1] or "")))
-
+        
     return modelDocument
 
 def loadSchemalocatedSchema(modelXbrl, element, relativeUrl, namespace, baseUrl):
@@ -865,6 +887,8 @@ class ModelDocument:
     def schemaDiscoverChildElements(self, parentModelObject):
         # find roleTypes, elements, and linkbases
         # must find import/include before processing linkbases or elements
+        #print("SCHEMADISC CALLED, A LOT")
+
         for modelObject in parentModelObject.iterchildren():
             if isinstance(modelObject,ModelObject):
                 ln = modelObject.localName
@@ -872,14 +896,15 @@ class ModelDocument:
                 if modelObject.namespaceURI == XbrlConst.xsd and ln in {"import", "include", "redefine"}:
                     self.importDiscover(modelObject)
                 elif self.inDTS and ns == XbrlConst.link:
-                    if ln == "roleType":
-                        self.modelXbrl.roleTypes[modelObject.roleURI].append(modelObject)
-                    elif ln == "arcroleType":
-                        self.modelXbrl.arcroleTypes[modelObject.arcroleURI].append(modelObject)
-                    elif ln == "linkbaseRef":
-                        self.schemaLinkbaseRefDiscover(modelObject)
-                    elif ln == "linkbase":
-                        self.linkbaseDiscover(modelObject)
+                    if not AWESOME_MODS:
+                        if ln == "roleType":
+                            self.modelXbrl.roleTypes[modelObject.roleURI].append(modelObject)
+                        elif ln == "arcroleType":
+                            self.modelXbrl.arcroleTypes[modelObject.arcroleURI].append(modelObject)
+                        elif ln == "linkbaseRef":
+                            self.schemaLinkbaseRefDiscover(modelObject)
+                        elif ln == "linkbase":
+                            self.linkbaseDiscover(modelObject)
                 # recurse to children
                 self.schemaDiscoverChildElements(modelObject)
 
@@ -943,7 +968,7 @@ class ModelDocument:
                     doc.inDTS = True    # now known to be discovered
                     doc.schemaDiscoverChildElements(doc.xmlRootElement)
             else:
-                doc = load(self.modelXbrl, schemaLocation, base=importElementBase, isDiscovered=self.inDTS, 
+                doc = load(self.modelXbrl, schemaLocation, base=importElementBase, isDiscovered=self.inDTS,
                            isIncluded=isIncluded, namespace=importNamespace, referringElement=element)
             if doc is not None and doc not in self.referencesDocument:
                 self.referencesDocument[doc] = ModelDocumentReference(element.localName, element)  #import or include
@@ -1200,10 +1225,14 @@ class ModelDocument:
                     modelObject=conflictingNSelts)
         self.ixNS = ixNS
         self.ixNStag = ixNStag = "{" + ixNS + "}" if ixNS else ""
+
         # load referenced schemas and linkbases (before validating inline HTML
         for inlineElement in htmlElement.iterdescendants(tag=ixNStag + "references"):
+            st = time()
             self.schemaLinkbaseRefsDiscover(inlineElement)
-            xmlValidate(self.modelXbrl, inlineElement) # validate instance elements
+            if AWESOME_DEBUG:
+                print("schemaLinkbaseRefsDiscover: {:.3f}".format(time()-st))
+            xmlValidate(self.modelXbrl, inlineElement) # validate instance elements # it's rather quick
         # with DTS loaded, now validate inline HTML (so schema definition of facts is available)
         if htmlElement.namespaceURI == XbrlConst.xhtml:  # must validate xhtml
             XhtmlValidate.xhtmlValidate(self.modelXbrl, htmlElement)  # fails on prefixed content

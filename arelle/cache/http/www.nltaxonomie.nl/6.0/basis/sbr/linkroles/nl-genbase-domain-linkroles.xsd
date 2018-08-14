@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  This file is part of the Nederlandse taxonomy (NT, Dutch Taxonomy) 
+  Intellectual Property State of the Netherlands 
+  Version 6.0 
+  Released by the Dutch SBR Programme 
+  Release date Tue October 4 7:30:00 2011
+-->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.nltaxonomie.nl/6.0/basis/sbr/linkroles/nl-genbase-domain-linkroles" xmlns:nl-lr="http://www.nltaxonomie.nl/6.0/basis/sbr/linkroles/nl-genbase-domain-linkroles" xmlns:link="http://www.xbrl.org/2003/linkbase" xmlns:xlink="http://www.w3.org/1999/xlink" elementFormDefault="qualified" attributeFormDefault="unqualified">
+    <xs:annotation>
+        <xs:appinfo>
+            <link:roleType id="nl-lr_domain-FinancialStatement" roleURI="http://www.nltaxonomie.nl/6.0/basis/sbr/linkroles/domain-FinancialStatement">
+                <link:definition>Rapportage</link:definition>
+                <link:usedOn>link:definitionLink</link:usedOn>
+            </link:roleType>
+            <link:roleType id="nl-lr_domain-ValuationMethod" roleURI="http://www.nltaxonomie.nl/6.0/basis/sbr/linkroles/domain-ValuationMethod">
+                <link:definition>Waarderingsmethode</link:definition>
+                <link:usedOn>link:definitionLink</link:usedOn>
+            </link:roleType>
+		<link:linkbaseRef xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase" xlink:href="nl-genbase-domain-linkroles-generic-lab-en.xml" xlink:role="http://www.xbrl.org/2003/role/link" xlink:type="simple"/>
+		<link:linkbaseRef xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase" xlink:href="nl-genbase-domain-linkroles-generic-lab-nl.xml" xlink:role="http://www.xbrl.org/2003/role/link" xlink:type="simple"/>
+        </xs:appinfo>
+    </xs:annotation>
+    <xs:import namespace="http://www.xbrl.org/2003/linkbase" schemaLocation="http://www.xbrl.org/2003/xbrl-linkbase-2003-12-31.xsd"/>
+</xs:schema>

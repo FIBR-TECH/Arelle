@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  This file is part of the Nederlandse taxonomy (NT, Dutch Taxonomy) 
+  Intellectual Property State of the Netherlands 
+  Version 7.0 
+  Released by the Dutch SBR Programme 
+  Release date Tue May 15 15:52:00 2012
+-->
+<link:linkbase xmlns:link="http://www.xbrl.org/2003/linkbase" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<link:labelLink xlink:type="extended" xlink:role="http://www.xbrl.org/2003/role/link">
+		<link:label xlink:type='resource' xlink:label='nl-cd_CountryCodeIso_documentation_nl' xlink:role='http://www.xbrl.org/2003/role/documentation' xml:lang='nl' id='nl-cd_CountryCodeIso_documentation_nl'>NEN14142-1:2010, postadres element gebruik makend van de ISO 3166-1 code voor landen, territorium of gebied met geopolitieke belangen, waarin een leveringspunt is gelokaliseerd of hoe het leveringspunt bereikt kan worden. De ISO 3166-1 twee karakters alfabetische representatie is gespecificeerd.</link:label>
+		<link:label xlink:type='resource' xlink:label='nl-cd_CountryNameIso_documentation_nl' xlink:role='http://www.xbrl.org/2003/role/documentation' xml:lang='nl' id='nl-cd_CountryNameIso_documentation_nl'>NEN14142-1:2010, postadres element  gebruik makend van de ISO 3166-1 code voor landen, territorium of gebied met geopolitieke belangen, waarin een leveringspunt is gelokaliseerd of hoe het leveringspunt bereikt kan worden.</link:label>
+		<link:label xlink:type='resource' xlink:label='nl-cd_DateOfBirth_documentation_nl' xlink:role='http://www.xbrl.org/2003/role/documentation' xml:lang='nl' id='nl-cd_DateOfBirth_documentation_nl'>GBA LO3.7: De datum waarop de persoon is geboren.</link:label>
+		<link:label xlink:type='resource' xlink:label='nl-cd_DescriptionLocationAbroad_documentation_nl' xlink:role='http://www.xbrl.org/2003/role/documentation' xml:lang='nl' id='nl-cd_DescriptionLocationAbroad_documentation_nl'>NEN14142-1:2010, postadres element met meer gegevens of instructies om het leveringspunt te duiden of te bereiken.</link:label>
+		<link:label xlink:type='resource' xlink:label='nl-cd_DescriptionLocationNl_documentation_nl' xlink:role='http://www.xbrl.org/2003/role/documentation' xml:lang='nl' id='nl-cd_DescriptionLocationNl_documentation_nl'>NEN5825:2002, een nadere aanduiding bij de adresgegevens om de plaats aan te duiden waar de persoon dan wel een organisatie bereikbaar is.</link:label>
+		<link:label xlink:type='resource' xlink:label='nl-cd_EmailAddressFull_documentation_nl' xlink:role='http://www.xbrl.org/2003/role/documentation' xml:lang='nl' id='nl-cd_EmailAddressFull_documentation_nl'>NEN5825:2002, het adres waaronder een persoon of organisatie via het internet per elektronische post te bereiken is.</link:label>
+		<link:label xlink:type='resource' xlink:label='nl-cd_HouseNumberAbroad_documentation_nl' xlink:role='http://www.xbrl.org/2003/role/documentation' xml:lang='nl' id='nl-cd_HouseNumberAbroad_documentation_nl'>NEN14142-1:2010, postadres element dat het gebied of een object in een gebied, naast de straat, aanwijst waarin het leveringspunt of toegang tot het leveringspunt is gelokaliseerd.</link:label>
+		<link:label xlink:type='resource' xlink:label='nl-cd_HouseNumberAddition_documentation_nl' xlink:role='http://www.xbrl.org/2003/role/documentation' xml:lang='nl' id='nl-cd_HouseNumberAddition_documentation_nl'>NEN5825:2002, de huisnummertoevoeging zoals deze door de gemeente aan het object is toegekend.</link:label>
+		<link:label xlink:type='resource' xlink:label='nl-cd_HouseNumberNl_documentation_nl' xlink:role='http://www.xbrl.org/2003/role/documentation' xml:lang='nl' id='nl-cd_HouseNumberNl_documentation_nl'>NEN5825:2002, de numerieke aanduiding zoals deze door de gemeente aan het object is toegekend.</link:label>
+		<link:label xlink:type='resource' xlink:label='nl-cd_Initials_documentation_nl' xlink:role='http://www.xbrl.org/2003/role/documentation' xml:lang='nl' id='nl-cd_Initials_documentation_nl'>De eerste letter van elke voornaam in hoofdletters zonder spaties.</link:label>
+		<link:label xlink:type='resource' xlink:label='nl-cd_NameRegion_documentation_nl' xlink:role='http://www.xbrl.org/2003/role/documentation' xml:lang='nl' id='nl-cd_NameRegion_documentation_nl'>NEN14142-1:2010, postadres element dat het geografische of administratieve gebied specificeert waarin een stad is opgenomen.</link:label>
+		<link:label xlink:type='resource' xlink:label='nl-cd_NameShareholder_documentation_nl' xlink:role='http://www.xbrl.org/2003/role/documentation' xml:lang='nl' id='nl-cd_NameShareholder_documentation_nl'>Naam van de aandeelhouder; bedrijf of particulier, alle naamonderdelen toegestaan.</link:label>
+		<link:label xlink:type='resource' xlink:label='nl-cd_NationalityCode_documentation_nl' xlink:role='http://www.xbrl.org/2003/role/documentation' xml:lang='nl' id='nl-cd_NationalityCode_documentation_nl'>Een code in de Nationaliteitentabel, die aangeeft welke nationaliteit de ingeschrevene bezit.</link:label>
+		<link:label xlink:type='resource' xlink:label='nl-cd_PlaceOfResidenceAbroad_documentation_nl' xlink:role='http://www.xbrl.org/2003/role/documentation' xml:lang='nl' id='nl-cd_PlaceOfResidenceAbroad_documentation_nl'>NEN14142-1:2010, postadres element dat de naam van de stad aangeeft, dorp of gemeente waarin het leveringspunt is gesitueerd of waarin de toegang tot het leveringspunt is aangegeven.</link:label>
+		<link:label xlink:type='resource' xlink:label='nl-cd_PlaceOfResidenceNl_documentation_nl' xlink:role='http://www.xbrl.org/2003/role/documentation' xml:lang='nl' id='nl-cd_PlaceOfResidenceNl_documentation_nl'>NEN5825:2002, de officiële door de gemeente vastgestelde gemeentenaam.</link:label>
+		<link:label xlink:type='resource' xlink:label='nl-cd_PoBoxNumber_documentation_nl' xlink:role='http://www.xbrl.org/2003/role/documentation' xml:lang='nl' id='nl-cd_PoBoxNumber_documentation_nl'>NEN5825:2002, de numerieke aanduiding zoals deze door TPG Post is vastgesteld voor een Nederlandse postbus.</link:label>
+		<link:label xlink:type='resource' xlink:label='nl-cd_PostalCodeAbroad_documentation_nl' xlink:role='http://www.xbrl.org/2003/role/documentation' xml:lang='nl' id='nl-cd_PostalCodeAbroad_documentation_nl'>NEN14142-1:2010, postadres element dat de code aangeeft die gebruikt wordt voor het sorteren van de post.</link:label>
+		<link:label xlink:type='resource' xlink:label='nl-cd_PostalCodeNl_documentation_nl' xlink:role='http://www.xbrl.org/2003/role/documentation' xml:lang='nl' id='nl-cd_PostalCodeNl_documentation_nl'>NEN5825:2002, de officiële codering van TPG Post voor een Nederlands postadres, bestaande uit een numeriek deel en een alfabetisch deel.</link:label>
+		<link:label xlink:type='resource' xlink:label='nl-cd_Prefix_documentation_nl' xlink:role='http://www.xbrl.org/2003/role/documentation' xml:lang='nl' id='nl-cd_Prefix_documentation_nl'>De tussenvoegsel(s) tussen de initialen en familienaam van elkaar gescheiden door een spatie.</link:label>
+		<link:label xlink:type='resource' xlink:label='nl-cd_StreetNameAbroad_documentation_nl' xlink:role='http://www.xbrl.org/2003/role/documentation' xml:lang='nl' id='nl-cd_StreetNameAbroad_documentation_nl'>NEN14142-1:2010, postadres onderdeel dat de straat, deel van een straat of andere toegangsroute identificeert waarlangs een leveringspunt bereikt kan worden, direct of middels een secundaire of tertiaire weg of toegangsroute.</link:label>
+		<link:label xlink:type='resource' xlink:label='nl-cd_StreetNameNl_documentation_nl' xlink:role='http://www.xbrl.org/2003/role/documentation' xml:lang='nl' id='nl-cd_StreetNameNl_documentation_nl'>NEN5825:2002, de officiële door de gemeente vastgestelde naam van een straat.</link:label>
+		<link:label xlink:type='resource' xlink:label='nl-cd_TelephoneNumber_documentation_nl' xlink:role='http://www.xbrl.org/2003/role/documentation' xml:lang='nl' id='nl-cd_TelephoneNumber_documentation_nl'>NEN5825:2002, het nummer waaronder een persoon of organisatie telefonisch te bereiken is, bestaande uit een netnummer en een abonneenummer.</link:label>
+		<link:labelArc xlink:type='arc' xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='nl-cd_CountryCodeIso_loc' xlink:to='nl-cd_CountryCodeIso_documentation_nl'/>
+		<link:labelArc xlink:type='arc' xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='nl-cd_CountryNameIso_loc' xlink:to='nl-cd_CountryNameIso_documentation_nl'/>
+		<link:labelArc xlink:type='arc' xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='nl-cd_DateOfBirth_loc' xlink:to='nl-cd_DateOfBirth_documentation_nl'/>
+		<link:labelArc xlink:type='arc' xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='nl-cd_DescriptionLocationAbroad_loc' xlink:to='nl-cd_DescriptionLocationAbroad_documentation_nl'/>
+		<link:labelArc xlink:type='arc' xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='nl-cd_DescriptionLocationNl_loc' xlink:to='nl-cd_DescriptionLocationNl_documentation_nl'/>
+		<link:labelArc xlink:type='arc' xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='nl-cd_EmailAddressFull_loc' xlink:to='nl-cd_EmailAddressFull_documentation_nl'/>
+		<link:labelArc xlink:type='arc' xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='nl-cd_HouseNumberAbroad_loc' xlink:to='nl-cd_HouseNumberAbroad_documentation_nl'/>
+		<link:labelArc xlink:type='arc' xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='nl-cd_HouseNumberAddition_loc' xlink:to='nl-cd_HouseNumberAddition_documentation_nl'/>
+		<link:labelArc xlink:type='arc' xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='nl-cd_HouseNumberNl_loc' xlink:to='nl-cd_HouseNumberNl_documentation_nl'/>
+		<link:labelArc xlink:type='arc' xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='nl-cd_Initials_loc' xlink:to='nl-cd_Initials_documentation_nl'/>
+		<link:labelArc xlink:type='arc' xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='nl-cd_NameRegion_loc' xlink:to='nl-cd_NameRegion_documentation_nl'/>
+		<link:labelArc xlink:type='arc' xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='nl-cd_NameShareholder_loc' xlink:to='nl-cd_NameShareholder_documentation_nl'/>
+		<link:labelArc xlink:type='arc' xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='nl-cd_NationalityCode_loc' xlink:to='nl-cd_NationalityCode_documentation_nl'/>
+		<link:labelArc xlink:type='arc' xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='nl-cd_PlaceOfResidenceAbroad_loc' xlink:to='nl-cd_PlaceOfResidenceAbroad_documentation_nl'/>
+		<link:labelArc xlink:type='arc' xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='nl-cd_PlaceOfResidenceNl_loc' xlink:to='nl-cd_PlaceOfResidenceNl_documentation_nl'/>
+		<link:labelArc xlink:type='arc' xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='nl-cd_PoBoxNumber_loc' xlink:to='nl-cd_PoBoxNumber_documentation_nl'/>
+		<link:labelArc xlink:type='arc' xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='nl-cd_PostalCodeAbroad_loc' xlink:to='nl-cd_PostalCodeAbroad_documentation_nl'/>
+		<link:labelArc xlink:type='arc' xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='nl-cd_PostalCodeNl_loc' xlink:to='nl-cd_PostalCodeNl_documentation_nl'/>
+		<link:labelArc xlink:type='arc' xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='nl-cd_Prefix_loc' xlink:to='nl-cd_Prefix_documentation_nl'/>
+		<link:labelArc xlink:type='arc' xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='nl-cd_StreetNameAbroad_loc' xlink:to='nl-cd_StreetNameAbroad_documentation_nl'/>
+		<link:labelArc xlink:type='arc' xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='nl-cd_StreetNameNl_loc' xlink:to='nl-cd_StreetNameNl_documentation_nl'/>
+		<link:labelArc xlink:type='arc' xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='nl-cd_TelephoneNumber_loc' xlink:to='nl-cd_TelephoneNumber_documentation_nl'/>
+		<link:loc xlink:type='locator' xlink:href='../../../basis/sbr/items/nl-common-data.xsd#nl-cd_CountryCodeISO' xlink:label='nl-cd_CountryCodeIso_loc'/>
+		<link:loc xlink:type='locator' xlink:href='../../../basis/sbr/items/nl-common-data.xsd#nl-cd_CountryNameISO' xlink:label='nl-cd_CountryNameIso_loc'/>
+		<link:loc xlink:type='locator' xlink:href='../../../basis/sbr/items/nl-common-data.xsd#nl-cd_DateOfBirth' xlink:label='nl-cd_DateOfBirth_loc'/>
+		<link:loc xlink:type='locator' xlink:href='../../../basis/sbr/items/nl-common-data.xsd#nl-cd_DateOfDeath' xlink:label='nl-cd_DateOfDeath_loc'/>
+		<link:loc xlink:type='locator' xlink:href='../../../basis/sbr/items/nl-common-data.xsd#nl-cd_DescriptionLocationAbroad' xlink:label='nl-cd_DescriptionLocationAbroad_loc'/>
+		<link:loc xlink:type='locator' xlink:href='../../../basis/sbr/items/nl-common-data.xsd#nl-cd_DescriptionLocationNL' xlink:label='nl-cd_DescriptionLocationNl_loc'/>
+		<link:loc xlink:type='locator' xlink:href='../../../basis/sbr/items/nl-common-data.xsd#nl-cd_DocumentCreationDate' xlink:label='nl-cd_DocumentCreationDate_loc'/>
+		<link:loc xlink:type='locator' xlink:href='../../../basis/sbr/items/nl-common-data.xsd#nl-cd_EmailAddressDescription' xlink:label='nl-cd_EmailAddressDescription_loc'/>
+		<link:loc xlink:type='locator' xlink:href='../../../basis/sbr/items/nl-common-data.xsd#nl-cd_EmailAddressFull' xlink:label='nl-cd_EmailAddressFull_loc'/>
+		<link:loc xlink:type='locator' xlink:href='../../../basis/sbr/items/nl-common-data.xsd#nl-cd_EmailAddressOwner' xlink:label='nl-cd_EmailAddressOwnerCode_loc'/>
+		<link:loc xlink:type='locator' xlink:href='../../../basis/sbr/items/nl-common-data.xsd#nl-cd_EndDateForFinancialPeriod' xlink:label='nl-cd_EndDateForFinancialPeriod_loc'/>
+		<link:loc xlink:type='locator' xlink:href='../../../basis/sbr/items/nl-common-data.xsd#nl-cd_FamilyName' xlink:label='nl-cd_FamilyName_loc'/>
+		<link:loc xlink:type='locator' xlink:href='../../../basis/sbr/items/nl-common-data.xsd#nl-cd_FirstName' xlink:label='nl-cd_FirstName_loc'/>
+		<link:loc xlink:type='locator' xlink:href='../../../basis/sbr/items/nl-common-data.xsd#nl-cd_HouseNumberAbroad' xlink:label='nl-cd_HouseNumberAbroad_loc'/>
+		<link:loc xlink:type='locator' xlink:href='../../../basis/sbr/items/nl-common-data.xsd#nl-cd_HouseNumberAddition' xlink:label='nl-cd_HouseNumberAddition_loc'/>
+		<link:loc xlink:type='locator' xlink:href='../../../basis/sbr/items/nl-common-data.xsd#nl-cd_HouseNumberNL' xlink:label='nl-cd_HouseNumberNl_loc'/>
+		<link:loc xlink:type='locator' xlink:href='../../../basis/sbr/items/nl-common-data.xsd#nl-cd_Initials' xlink:label='nl-cd_Initials_loc'/>
+		<link:loc xlink:type='locator' xlink:href='../../../basis/sbr/items/nl-common-data.xsd#nl-cd_LegalForm' xlink:label='nl-cd_LegalForm_loc'/>
+		<link:loc xlink:type='locator' xlink:href='../../../basis/sbr/items/nl-common-data.xsd#nl-cd_NameRegion' xlink:label='nl-cd_NameRegion_loc'/>
+		<link:loc xlink:type='locator' xlink:href='../../../basis/sbr/items/nl-common-data.xsd#nl-cd_NameShareholder' xlink:label='nl-cd_NameShareholder_loc'/>
+		<link:loc xlink:type='locator' xlink:href='../../../basis/sbr/items/nl-common-data.xsd#nl-cd_Namebusiness' xlink:label='nl-cd_TradeNameOfTheCompany_loc'/>
+		<link:loc xlink:type='locator' xlink:href='../../../basis/sbr/items/nl-common-data.xsd#nl-cd_Nationality' xlink:label='nl-cd_Nationality_loc'/>
+		<link:loc xlink:type='locator' xlink:href='../../../basis/sbr/items/nl-common-data.xsd#nl-cd_NationalityCode' xlink:label='nl-cd_NationalityCode_loc'/>
+		<link:loc xlink:type='locator' xlink:href='../../../basis/sbr/items/nl-common-data.xsd#nl-cd_POBoxNumber' xlink:label='nl-cd_PoBoxNumber_loc'/>
+		<link:loc xlink:type='locator' xlink:href='../../../basis/sbr/items/nl-common-data.xsd#nl-cd_PlaceOfResidenceAbroad' xlink:label='nl-cd_PlaceOfResidenceAbroad_loc'/>
+		<link:loc xlink:type='locator' xlink:href='../../../basis/sbr/items/nl-common-data.xsd#nl-cd_PlaceOfResidenceNL' xlink:label='nl-cd_PlaceOfResidenceNl_loc'/>
+		<link:loc xlink:type='locator' xlink:href='../../../basis/sbr/items/nl-common-data.xsd#nl-cd_PostalCodeAbroad' xlink:label='nl-cd_PostalCodeAbroad_loc'/>
+		<link:loc xlink:type='locator' xlink:href='../../../basis/sbr/items/nl-common-data.xsd#nl-cd_PostalCodeNL' xlink:label='nl-cd_PostalCodeNl_loc'/>
+		<link:loc xlink:type='locator' xlink:href='../../../basis/sbr/items/nl-common-data.xsd#nl-cd_Prefix' xlink:label='nl-cd_Prefix_loc'/>
+		<link:loc xlink:type='locator' xlink:href='../../../basis/sbr/items/nl-common-data.xsd#nl-cd_PrivatePersonIdentification' xlink:label='nl-cd_GovernmentCivilianServiceNumberBsn_loc'/>
+		<link:loc xlink:type='locator' xlink:href='../../../basis/sbr/items/nl-common-data.xsd#nl-cd_SexCode' xlink:label='nl-cd_GenderCode_loc'/>
+		<link:loc xlink:type='locator' xlink:href='../../../basis/sbr/items/nl-common-data.xsd#nl-cd_StartDateForFinancialPeriod' xlink:label='nl-cd_StartDateForFinancialPeriod_loc'/>
+		<link:loc xlink:type='locator' xlink:href='../../../basis/sbr/items/nl-common-data.xsd#nl-cd_StatutoryNameEntity' xlink:label='nl-cd_StatutoryNameEntity_loc'/>
+		<link:loc xlink:type='locator' xlink:href='../../../basis/sbr/items/nl-common-data.xsd#nl-cd_StreetNameAbroad' xlink:label='nl-cd_StreetNameAbroad_loc'/>
+		<link:loc xlink:type='locator' xlink:href='../../../basis/sbr/items/nl-common-data.xsd#nl-cd_StreetNameNL' xlink:label='nl-cd_StreetNameNl_loc'/>
+		<link:loc xlink:type='locator' xlink:href='../../../basis/sbr/items/nl-common-data.xsd#nl-cd_TaxReferenceNumber' xlink:label='nl-cd_TaxReferenceNumberNonprivatePersons_loc'/>
+		<link:loc xlink:type='locator' xlink:href='../../../basis/sbr/items/nl-common-data.xsd#nl-cd_TelephoneNumber' xlink:label='nl-cd_TelephoneNumber_loc'/>
+		<link:loc xlink:type='locator' xlink:href='../../../basis/sbr/items/nl-common-data.xsd#nl-cd_TelephoneNumberUsage' xlink:label='nl-cd_UsagePhoneNumber_loc'/>
+	</link:labelLink>
+</link:linkbase>

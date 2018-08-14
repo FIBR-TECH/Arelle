@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="US-ASCII"?>
+<link:linkbase xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.xbrl.org/2003/linkbase http://www.xbrl.org/2003/xbrl-linkbase-2003-12-31.xsd" xmlns:link="http://www.xbrl.org/2003/linkbase" xmlns:xlink="http://www.w3.org/1999/xlink">
+<link:roleRef roleURI="http://xbrl.sec.gov/rr/role/OperatingExpensesData" xlink:type="simple" xlink:href="rr-2012-01-31.xsd#OperatingExpensesData"/>
+<link:calculationLink xlink:type="extended" xlink:role="http://xbrl.sec.gov/rr/role/OperatingExpensesData">
+<link:loc xlink:type="locator" xlink:href="rr-2012-01-31.xsd#rr_NetExpensesOverAssets" xlink:label="NetExpensesOverAssets"/>
+<link:loc xlink:type="locator" xlink:href="rr-2012-01-31.xsd#rr_ExpensesOverAssets" xlink:label="ExpensesOverAssets"/>
+<link:loc xlink:type="locator" xlink:href="rr-2012-01-31.xsd#rr_OtherExpensesOverAssets" xlink:label="OtherExpensesOverAssets"/>
+<link:loc xlink:type="locator" xlink:href="rr-2012-01-31.xsd#rr_ManagementFeesOverAssets" xlink:label="ManagementFeesOverAssets"/>
+<link:loc xlink:type="locator" xlink:href="rr-2012-01-31.xsd#rr_DistributionAndService12b1FeesOverAssets" xlink:label="DistributionAndService12b1FeesOverAssets"/>
+<link:loc xlink:type="locator" xlink:href="rr-2012-01-31.xsd#rr_DistributionOrSimilarNon12b1FeesOverAssets" xlink:label="DistributionOrSimilarNon12b1FeesOverAssets"/>
+<link:loc xlink:type="locator" xlink:href="rr-2012-01-31.xsd#rr_Component1OtherExpensesOverAssets" xlink:label="Component1OtherExpensesOverAssets"/>
+<link:loc xlink:type="locator" xlink:href="rr-2012-01-31.xsd#rr_Component2OtherExpensesOverAssets" xlink:label="Component2OtherExpensesOverAssets"/>
+<link:loc xlink:type="locator" xlink:href="rr-2012-01-31.xsd#rr_Component3OtherExpensesOverAssets" xlink:label="Component3OtherExpensesOverAssets"/>
+<link:loc xlink:type="locator" xlink:href="rr-2012-01-31.xsd#rr_AcquiredFundFeesAndExpensesOverAssets" xlink:label="AcquiredFundFeesAndExpensesOverAssets"/>
+<link:loc xlink:type="locator" xlink:href="rr-2012-01-31.xsd#rr_FeeWaiverOrReimbursementOverAssets" xlink:label="FeeWaiverOrReimbursementOverAssets"/>
+<link:calculationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="NetExpensesOverAssets" xlink:to="ExpensesOverAssets" use="optional" priority="0" order="1.0" weight="1"/>
+<link:calculationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="ExpensesOverAssets" xlink:to="ManagementFeesOverAssets" use="optional" priority="0" order="1.0" weight="1"/>
+<link:calculationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="ExpensesOverAssets" xlink:to="DistributionAndService12b1FeesOverAssets" use="optional" priority="0" order="2.0" weight="1"/>
+<link:calculationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="ExpensesOverAssets" xlink:to="DistributionOrSimilarNon12b1FeesOverAssets" use="optional" priority="0" order="3.0" weight="1"/>
+<link:calculationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="ExpensesOverAssets" xlink:to="OtherExpensesOverAssets" use="optional" priority="0" order="4.0" weight="1"/>
+<link:calculationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="OtherExpensesOverAssets" xlink:to="Component1OtherExpensesOverAssets" use="optional" priority="0" order="1.0" weight="1"/>
+<link:calculationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="OtherExpensesOverAssets" xlink:to="Component2OtherExpensesOverAssets" use="optional" priority="0" order="2.0" weight="1"/>
+<link:calculationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="OtherExpensesOverAssets" xlink:to="Component3OtherExpensesOverAssets" use="optional" priority="0" order="3.0" weight="1"/>
+<link:calculationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="ExpensesOverAssets" xlink:to="AcquiredFundFeesAndExpensesOverAssets" use="optional" priority="0" order="5.0" weight="1"/>
+<link:calculationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="NetExpensesOverAssets" xlink:to="FeeWaiverOrReimbursementOverAssets" use="optional" priority="0" order="2.0" weight="1"/>
+</link:calculationLink>
+</link:linkbase>

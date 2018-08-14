@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+Notice: Authorized Uses are Set Forth at http://taxonomies.xbrl.us/terms/rr_legal.html
+Copyright (C) 2008 XBRL US, Inc. All Rights Reserved.
+  -->
+<link:linkbase xmlns:link='http://www.xbrl.org/2003/linkbase' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'>
+<link:roleRef roleURI='http://xbrl.us/rr/role/document/n1a' xlink:href='rr-2008-12-31.xsd#N1A' xlink:type='simple' />
+<link:calculationLink xlink:role='http://xbrl.us/rr/role/document/n1a' xlink:type='extended'>
+<link:loc xlink:href='rr-2008-12-31.xsd#rr_NetExpensesOverAssets' xlink:label='lab_NetExpensesOverAssets' xlink:type='locator' />
+<link:loc xlink:href='rr-2008-12-31.xsd#rr_ExpensesOverAssets' xlink:label='lab_ExpensesOverAssets' xlink:type='locator' />
+<link:loc xlink:href='rr-2008-12-31.xsd#rr_FeeWaiverOrReimbursementOverAssets' xlink:label='lab_FeeWaiverOrReimbursementOverAssets' xlink:type='locator' />
+<link:loc xlink:href='rr-2008-12-31.xsd#rr_ManagementFeesOverAssets' xlink:label='lab_ManagementFeesOverAssets' xlink:type='locator' />
+<link:loc xlink:href='rr-2008-12-31.xsd#rr_DistributionAndService12b1FeesOverAssets' xlink:label='lab_DistributionAndService12b1FeesOverAssets' xlink:type='locator' />
+<link:loc xlink:href='rr-2008-12-31.xsd#rr_DistributionOrSimilarNon12b1FeesOverAssets' xlink:label='lab_DistributionOrSimilarNon12b1FeesOverAssets' xlink:type='locator' />
+<link:loc xlink:href='rr-2008-12-31.xsd#rr_OtherExpensesOverAssets' xlink:label='lab_OtherExpensesOverAssets' xlink:type='locator' />
+<link:loc xlink:href='rr-2008-12-31.xsd#rr_AcquiredFundFeesAndExpensesOverAssets' xlink:label='lab_AcquiredFundFeesAndExpensesOverAssets' xlink:type='locator' />
+<link:loc xlink:href='rr-2008-12-31.xsd#rr_Component1OtherExpensesOverAssets' xlink:label='lab_Component1OtherExpensesOverAssets' xlink:type='locator' />
+<link:loc xlink:href='rr-2008-12-31.xsd#rr_Component2OtherExpensesOverAssets' xlink:label='lab_Component2OtherExpensesOverAssets' xlink:type='locator' />
+<link:loc xlink:href='rr-2008-12-31.xsd#rr_Component3OtherExpensesOverAssets' xlink:label='lab_Component3OtherExpensesOverAssets' xlink:type='locator' />
+<link:calculationArc order='10.0' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='lab_NetExpensesOverAssets' xlink:to='lab_ExpensesOverAssets' xlink:type='arc' />
+<link:calculationArc order='20.0' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='lab_NetExpensesOverAssets' xlink:to='lab_FeeWaiverOrReimbursementOverAssets' xlink:type='arc' />
+<link:calculationArc order='10.0' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='lab_ExpensesOverAssets' xlink:to='lab_ManagementFeesOverAssets' xlink:type='arc' />
+<link:calculationArc order='20.0' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='lab_ExpensesOverAssets' xlink:to='lab_DistributionAndService12b1FeesOverAssets' xlink:type='arc' />
+<link:calculationArc order='30.0' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='lab_ExpensesOverAssets' xlink:to='lab_DistributionOrSimilarNon12b1FeesOverAssets' xlink:type='arc' />
+<link:calculationArc order='40.0' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='lab_ExpensesOverAssets' xlink:to='lab_OtherExpensesOverAssets' xlink:type='arc' />
+<link:calculationArc order='50.0' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='lab_ExpensesOverAssets' xlink:to='lab_AcquiredFundFeesAndExpensesOverAssets' xlink:type='arc' />
+<link:calculationArc order='10.0' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='lab_OtherExpensesOverAssets' xlink:to='lab_Component1OtherExpensesOverAssets' xlink:type='arc' />
+<link:calculationArc order='20.0' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='lab_OtherExpensesOverAssets' xlink:to='lab_Component2OtherExpensesOverAssets' xlink:type='arc' />
+<link:calculationArc order='30.0' weight='1.0' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='lab_OtherExpensesOverAssets' xlink:to='lab_Component3OtherExpensesOverAssets' xlink:type='arc' />
+</link:calculationLink>
+</link:linkbase>
